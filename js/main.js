@@ -110,7 +110,7 @@ $(document).ready(function () {
       }
       else
       if (scroll_pos > 5300) {
-          $("#contact-us").css('background-color', '#353535');
+          // $("#contact-us").css('background-color', '#353535');
           $(".h2ContactUs").css('transform', 'scale(1)');
           $(".h2ContactUs").css('opacity', '1');  
       } 
@@ -136,8 +136,8 @@ $(document).ready(function () {
       else
      
       if (scroll_pos > 1200) {
-          $("#TopOffers").css('background-color', '#021836fa');
-          $("#contact-us").css('background-color', '#021836fa');
+          // $("#TopOffers").css('background-color', '#021836fa');
+          // $("#contact-us").css('background-color', '#021836fa');
           $(".h2Blog").css('transform', 'scale(1)');
           $(".h2Blog").css('opacity', '1');
       } else
@@ -148,7 +148,7 @@ $(document).ready(function () {
       }
       else
       if (scroll_pos > 600) {
-          $("#TopOffers").css('background-color', '#353535');
+          // $("#TopOffers").css('background-color', '#353535');
           $(".h2TopOffers").css('transform', 'scale(1)');
           $(".h2TopOffers").css('opacity', '1');
          
@@ -158,12 +158,12 @@ $(document).ready(function () {
           $(".h2AboutUs").css('opacity', '1');
       }else 
       if (scroll_pos > 400) {
-          $("#AboutUs").css('background-color', '#353535');           
+          // $("#AboutUs").css('background-color', '#353535');           
          
       }       
       else
       if (scroll_pos >200) {
-          $("#AboutUs").css('background-color', '#022350fa');
+          // $("#AboutUs").css('background-color', '#022350fa');
           $(".h2AboutUs").css('transform', 'scale(1)');
           $(".h2AboutUs").css('opacity', '1');
           $(".about").css('transform', 'translateX(-10%)')        ;
@@ -172,7 +172,7 @@ $(document).ready(function () {
       }
       
       else if (scroll_pos >100){
-          $("#AboutUs").css('background-color', '#021836fa');
+          // $("#AboutUs").css('background-color', '#021836fa');
           $(".about").css('transform', 'translateX(10%)')  
           $(".us").css('transform', 'translateX(10%)')   
        
@@ -206,27 +206,3 @@ $( ".section-offers-row.swiper-slide" )
 //   $( this ).css('transform', 'scale(1.1)'); 
 // });
 
-/////////////////////////////backgroundMenu onScroll
-
-$(window).scroll(function () {
-  var height = $(window).scrollTop();
-  if (height > 100) {
-    $('.navbar').addClass('menuColor');     
-  
-  }
-  else {
-    $('.navbar').removeClass('menuColor')
-  }
-});
-
-/////////////////////////menu on scroll
-$(window).scroll(function () {
-  var height = $(window).scrollTop();
-  if (height > 100) {
-    $('.navbar').addClass('menuColor');     
-  
-  }
-  else {
-    $('.navbar').removeClass('menuColor')
-  }
-});

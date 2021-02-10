@@ -337,17 +337,10 @@ a:focus:after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* html {
-  height: 100%;
-} */
+
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333;
 }
 
 img {
@@ -1951,7 +1944,7 @@ textarea.w-select {
   width: 500px !important;
 }
 .side-nav {
-  display: none;
+  display: none ;
 }
 }
 @media (min-width: 768px) {
