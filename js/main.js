@@ -6,7 +6,7 @@ if ($(window).width() >1100) {
     lazyLoad: false,
     focus: 1,
     perPage: 4,
-    interval: 5000,
+    interval: 2000,
     pauseOnHover: true,
     autoplay: true,
     gap: .1,
@@ -104,80 +104,81 @@ $(document).ready(function () {
   var scroll_pos = 0;
   $(window).scroll(function () {
       scroll_pos = $(this).scrollTop();
-      if (scroll_pos > 5500){
-          $(".h2ContactUs").css('transform', 'scale(2)');
-          $(".h2ContactUs").css('opacity', '1');  
-      }
-      else
-      if (scroll_pos > 5300) {
-          // $("#contact-us").css('background-color', '#353535');
-          $(".h2ContactUs").css('transform', 'scale(1)');
-          $(".h2ContactUs").css('opacity', '1');  
-      } 
-      else
+      // if (scroll_pos > 5500){
+      //     $(".h2ContactUs").css('transform', 'scale(2)');
+      //     $(".h2ContactUs").css('opacity', '1');  
+      // }
+      // else
+      // if (scroll_pos > 5300) {
+      //      $("#contact-us").css('background-color', '#353535');
+      //     $(".h2ContactUs").css('transform', 'scale(1)');
+      //     $(".h2ContactUs").css('opacity', '1');  
+      // } 
+      // else
       
-      if (scroll_pos > 4700){
+      // if (scroll_pos > 4700){
           
-          $(".h2Where").css('transform', 'scale(2)');
-          $(".h2Where").css('opacity', '1');  
-      }
-       else
-      if (scroll_pos > 4650){
-          $(".h2Where").css('transform', 'scale(1)');
-          $(".h2Where").css('opacity', '1');    
-      }
-      else
+      //     $(".h2Where").css('transform', 'scale(2)');
+      //     $(".h2Where").css('opacity', '1');  
+      // }
+      //  else
+      // if (scroll_pos > 4650){
+      //     $(".h2Where").css('transform', 'scale(1)');
+      //     $(".h2Where").css('opacity', '1');    
+      // }
+      // else
       
-      if (scroll_pos > 2550){
-          $(".h2Blog").css('transform', 'scale(2)');
-          $(".h2Blog").css('opacity', '1'); 
+      // if (scroll_pos > 2550){
+      //     $(".h2Blog").css('transform', 'scale(2)');
+      //     $(".h2Blog").css('opacity', '1'); 
                 
-      }
-      else
+      // }
+      // else
      
-      if (scroll_pos > 1200) {
-          // $("#TopOffers").css('background-color', '#021836fa');
-          // $("#contact-us").css('background-color', '#021836fa');
-          $(".h2Blog").css('transform', 'scale(1)');
-          $(".h2Blog").css('opacity', '1');
-      } else
+      // if (scroll_pos > 1200) {
+      //      $("#TopOffers").css('background-color', '#021836fa');
+      //      $("#contact-us").css('background-color', '#021836fa');
+      //     $(".h2Blog").css('transform', 'scale(1)');
+      //     $(".h2Blog").css('opacity', '1');
+      // } else
       
-      if (scroll_pos > 1150){
-          $(".h2TopOffers").css('transform', 'scale(2)');
-          $(".h2TopOffers").css('opacity', '1');
-      }
-      else
-      if (scroll_pos > 600) {
-          // $("#TopOffers").css('background-color', '#353535');
-          $(".h2TopOffers").css('transform', 'scale(1)');
-          $(".h2TopOffers").css('opacity', '1');
+      // if (scroll_pos > 1150){
+      //     $(".h2TopOffers").css('transform', 'scale(2)');
+      //     $(".h2TopOffers").css('opacity', '1');
+      // }
+      // else
+      // if (scroll_pos > 600) {
+      //      $("#TopOffers").css('background-color', '#353535');
+      //     $(".h2TopOffers").css('transform', 'scale(1)');
+      //     $(".h2TopOffers").css('opacity', '1');
          
-      } else
-      if (scroll_pos > 470){
-          $(".h2AboutUs").css('transform', 'scale(2)');
-          $(".h2AboutUs").css('opacity', '1');
-      }else 
-      if (scroll_pos > 400) {
-          // $("#AboutUs").css('background-color', '#353535');           
+      // } else
+      // if (scroll_pos > 470){
+      //     $(".h2AboutUs").css('transform', 'scale(2)');
+      //     $(".h2AboutUs").css('opacity', '1');
+      // }else 
+      // if (scroll_pos > 400) {
+      //      $("#AboutUs").css('background-color', '#353535');           
          
-      }       
-      else
-      if (scroll_pos >200) {
-          // $("#AboutUs").css('background-color', '#022350fa');
-          $(".h2AboutUs").css('transform', 'scale(1)');
-          $(".h2AboutUs").css('opacity', '1');
-          $(".about").css('transform', 'translateX(-10%)')        ;
-          $(".us").css('transform', 'translateX(50%)')  
+      // }       
+      // else
+      // if (scroll_pos >200) {
+      //     $("#AboutUs").css('background-color', '#022350fa');
+      //     $(".h2AboutUs").css('transform', 'scale(1)');
+      //     $(".h2AboutUs").css('opacity', '1');
+      //     $(".about").css('transform', 'translateX(-10%)')        ;
+      //     $(".us").css('transform', 'translateX(10%)')  
           
-      }
+      // }
       
-      else if (scroll_pos >100){
-          // $("#AboutUs").css('background-color', '#021836fa');
-          $(".about").css('transform', 'translateX(10%)')  
-          $(".us").css('transform', 'translateX(10%)')   
+      // else if (scroll_pos >100){
+      //      $("#AboutUs").css('background-color', '#021836fa');
+      //     $(".about").css('transform', 'translateX(10%)')  
+      //     $(".us").css('transform', 'translateX(10%)')   
        
-      }
-      else if (scroll_pos >10){
+      // }
+      // else 
+      if (scroll_pos >10){
           $(".heading").css('transform', 'scale(2)');
           $(".heading").css('opacity', '0.1');
        
@@ -193,16 +194,30 @@ $(document).ready(function () {
 
 
 
-$( ".section-offers-row.swiper-slide" )
-.mouseenter(function() {   
-  $( this ).css('transform', 'scale(1.1)'); 
-})
-.mouseleave(function() {
-  $( this ).css('transform', 'scale(1)'); 
-});
+// $( ".section-offers-row.swiper-slide" )
+// .mouseenter(function() {   
+//   $( this ).css('transform', 'scale(1.1)'); 
+// })
+// .mouseleave(function() {
+//   $( this ).css('transform', 'scale(1)'); 
+// });
 
 
 // $( ".section-offers-row.swiper-slide" ).hover(function() {
 //   $( this ).css('transform', 'scale(1.1)'); 
 // });
 
+//////////////////menu scroll
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 500) {
+      $(".navbar.w-nav").addClass("menuColor");
+  } else {
+      $(".navbar.w-nav").removeClass("menuColor");
+  }
+});
+
+      ////////////////////////////////////
+
+    

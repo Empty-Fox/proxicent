@@ -16,7 +16,10 @@
     padding-left: 20px;
     height: 50px
 }
-
+.medium-title {
+     font-size: 45px;
+    line-height: 1.2em;
+}
 .view-pages a:hover {
     background: #fff;
     color: #0a184b
@@ -1108,7 +1111,8 @@ html {
 } */
 
 body {
-    margin: 0
+    margin: 0;
+    color: #ededed;
 }
 
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary {
@@ -1312,12 +1316,22 @@ body {
     position:relative;
     background-color: #193c6d;
     background-size: 100%;
-    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #022350fa), color-stop(100%, #021836fa));
-    background-image: -webkit-linear-gradient(135deg, #022350fa, #021836fa);
-    background-image: -moz-linear-gradient(45deg, #022350fa, #021836fa);
-    background-image: -ms-linear-gradient(45deg, #022350fa 0, #021836fa 100%);
-    background-image: -o-linear-gradient(45deg, #022350fa, #021836fa);
-    background-image: linear-gradient(135deg, #022350fa, #021836fa);
+    background-image: -webkit-linear-gradient(105deg,#193c6d,  #022350fa, #021836fa);
+    background-image: -moz-linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
+    background-image: -ms-linear-gradient(105deg, #193c6d, #022350fa 0, #021836fa 100%);
+    background-image: -o-linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
+    background-image: linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
+
+}
+canvas {
+    position:relative;
+    background-color: #193c6d; 
+    background-size: 100%;  
+    background-image: -webkit-linear-gradient(45deg,#193c6d,  #022350fa, #021836fa);
+    background-image: -moz-linear-gradient(45deg, #193c6d, #022350fa, #021836fa);
+    background-image: -ms-linear-gradient(45deg, #193c6d, #022350fa 0, #021836fa 100%);
+    background-image: -o-linear-gradient(45deg, #193c6d, #022350fa, #021836fa);
+    background-image: linear-gradient(45deg, #193c6d, #022350fa, #021836fa);
 
 }
 
@@ -2296,7 +2310,7 @@ body.is-popup-active {
 
 
 .ui-title.is-theme-bg {
-    opacity: .1;
+    opacity: .4;
     color: transparent;
     text-shadow:
     5px 1px 1px rgb(163, 163, 163),
@@ -2438,7 +2452,10 @@ body.is-popup-active {
     padding: 0 .6rem 0 .4rem;
     min-height: 1.8rem;
     font-size: 1.2rem;
-    line-height: 1
+    line-height: 1;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(210 209 212);
 }
 
 .ui-counter {
@@ -2580,7 +2597,12 @@ body.is-popup-active {
     -webkit-box-shadow: 0 10px 15px rgba(28,28,28,.37);
     box-shadow: 0 10px 15px rgba(28,28,28,.37);
     padding: 1rem;
-    position: relative
+    position: relative;
+
+    background-color: #193c6d;     
+    background-image: linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
+
+
 }
 
 .ui-tooltip__content:after {
@@ -3439,8 +3461,11 @@ body.is-popup-active {
     height: auto
 }
 
+
 .section-offers-footer {
-    background-color: rgb(255, 0, 57);
+  
+    background-color: #193c6d;       
+    background-image: linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
     padding: 2.5rem 7rem 2.5rem 8rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3487,8 +3512,10 @@ body.is-popup-active {
     font-weight: 900;
     text-transform: uppercase;
     padding: 20px;
-    background-color: rgb(255, 0, 57);
     opacity: 1;
+
+    background-color: #193c6d;       
+    background-image: linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
   
 }
 
@@ -3750,7 +3777,7 @@ body.is-popup-active {
 
 
 .section-offers-row.swiper-slide:nth-child(2n) {
-    background-color: rgb(255 0 57 / 61%);
+    background-color: #193c6d;       
 }
 
 
@@ -3940,23 +3967,7 @@ body.is-popup-active {
     }
 }
 
-.section-offers {
-    margin-bottom: 11.5rem;
-    padding-top: 13.5rem
-}
 
-@media (max-width: 1140px) {
-    .section-offers {
-        margin-bottom:5rem
-    }
-}
-
-@media (max-width: 770px) {
-    .section-offers {
-        margin-bottom:0;
-        padding-top: 6.2rem
-    }
-}
 
 .section-offers__body {
     position: relative
@@ -3988,10 +3999,8 @@ body.is-popup-active {
 }
 
 .section-offers__title-bg {
-    position: absolute;
-    top: -13rem;
-    left: -2rem;
-    font-size: 280px;
+    position: absolute;   
+    font-size: 200px;
     line-height: 1em;
     font-weight: 700;
     letter-spacing: -.02em;

@@ -516,7 +516,10 @@ THREE.PerspectiveCamera.prototype.updateProjectionMatrix = function () { if (thi
         this.shadowMapSize = this.shadowMap = null
 }; THREE.SpotLight.prototype = Object.create(THREE.Light.prototype); THREE.Loader = function (a) { this.statusDomElement = (this.showStatus = a) ? THREE.Loader.prototype.addStatusElement() : null; this.onLoadStart = function () { }; this.onLoadProgress = function () { }; this.onLoadComplete = function () { } };
 THREE.Loader.prototype = {
-    constructor: THREE.Loader, crossOrigin: "anonymous", addStatusElement: function () { var a = document.createElement("div"); a.style.position = "absolute"; a.style.right = "0px"; a.style.top = "0px"; a.style.fontSize = "0.8em"; a.style.textAlign = "left"; a.style.background = "rgba(0,0,0,0.25)"; a.style.color = "#fff"; a.style.width = "120px"; a.style.padding = "0.5em 0.5em 0.5em 0.5em"; a.style.zIndex = 1E3; a.innerHTML = "Loading ..."; return a }, updateProgress: function (a) {
+    constructor: THREE.Loader, crossOrigin: "anonymous", addStatusElement: function () { var a = document.createElement("div"); a.style.position = "absolute"; a.style.right = "0px"; a.style.top = "0px"; a.style.fontSize = "0.8em"; a.style.textAlign = "left"; 
+    //  a.style.background = "rgba(0,0,0,0.25)"; 
+    a.style.color = "#fff"; 
+    a.style.width = "120px"; a.style.padding = "0.5em 0.5em 0.5em 0.5em"; a.style.zIndex = 1E3; a.innerHTML = "Loading ..."; return a }, updateProgress: function (a) {
         var b = "Loaded ", b = a.total ? b + ((100 * a.loaded /
             a.total).toFixed(0) + "%") : b + ((a.loaded / 1E3).toFixed(2) + " KB"); this.statusDomElement.innerHTML = b
     }, extractUrlBase: function (a) { a = a.split("/"); a.pop(); return (1 > a.length ? "." : a.join("/")) + "/" }, initMaterials: function (a, b) { for (var c = [], d = 0; d < a.length; ++d)c[d] = THREE.Loader.prototype.createMaterial(a[d], b); return c }, needsTangents: function (a) { for (var b = 0, c = a.length; b < c; b++)if (a[b] instanceof THREE.ShaderMaterial) return !0; return !1 }, createMaterial: function (a, b) {
@@ -527,7 +530,7 @@ THREE.Loader.prototype = {
             var y = /\.dds$/i.test(f), v = b + "/" + f; if (y) { var z = THREE.ImageUtils.loadCompressedTexture(v); a[e] = z } else z = document.createElement("canvas"), a[e] = new THREE.Texture(z); a[e].sourceFile = f; h && (a[e].repeat.set(h[0], h[1]), 1 !== h[0] && (a[e].wrapS = THREE.RepeatWrapping), 1 !== h[1] && (a[e].wrapT = THREE.RepeatWrapping)); i && a[e].offset.set(i[0], i[1]); k && (f = { repeat: THREE.RepeatWrapping, mirror: THREE.MirroredRepeatWrapping }, void 0 !==
                 f[k[0]] && (a[e].wrapS = f[k[0]]), void 0 !== f[k[1]] && (a[e].wrapT = f[k[1]])); q && (a[e].anisotropy = q); if (!y) { var t = a[e], a = new Image; a.onload = function () { if (!c(this.width) || !c(this.height)) { var a = d(this.width), b = d(this.height); t.image.width = a; t.image.height = b; t.image.getContext("2d").drawImage(this, 0, 0, a, b) } else t.image = this; t.needsUpdate = !0 }; a.crossOrigin = g.crossOrigin; a.src = v }
         } function f(a) { return (255 * a[0] << 16) + (255 * a[1] << 8) + 255 * a[2] } var g = this, h = "MeshLambertMaterial", i = {
-            color: 15658734, opacity: 1, map: null,
+            color: 15658734, opacity: 0, map: null,
             lightMap: null, normalMap: null, bumpMap: null, wireframe: !1
         }; if (a.shading) { var k = a.shading.toLowerCase(); "phong" === k ? h = "MeshPhongMaterial" : "basic" === k && (h = "MeshBasicMaterial") } void 0 !== a.blending && void 0 !== THREE[a.blending] && (i.blending = THREE[a.blending]); if (void 0 !== a.transparent || 1 > a.opacity) i.transparent = a.transparent; void 0 !== a.depthTest && (i.depthTest = a.depthTest); void 0 !== a.depthWrite && (i.depthWrite = a.depthWrite); void 0 !== a.visible && (i.visible = a.visible); void 0 !== a.flipSided && (i.side = THREE.BackSide);
         void 0 !== a.doubleSided && (i.side = THREE.DoubleSide); void 0 !== a.wireframe && (i.wireframe = a.wireframe); void 0 !== a.vertexColors && ("face" === a.vertexColors ? i.vertexColors = THREE.FaceColors : a.vertexColors && (i.vertexColors = THREE.VertexColors)); a.colorDiffuse ? i.color = f(a.colorDiffuse) : a.DbgColor && (i.color = a.DbgColor); a.colorSpecular && (i.specular = f(a.colorSpecular)); a.colorAmbient && (i.ambient = f(a.colorAmbient)); a.transparency && (i.opacity = a.transparency); a.specularCoef && (i.shininess = a.specularCoef); a.mapDiffuse &&
@@ -767,7 +770,7 @@ THREE.Scene.prototype.__removeObject = function (a) { if (a instanceof THREE.Lig
 };
 THREE.UniformsUtils = { merge: function (a) { var b, c, d, e = {}; for (b = 0; b < a.length; b++)for (c in d = this.clone(a[b]), d) e[c] = d[c]; return e }, clone: function (a) { var b, c, d, e = {}; for (b in a) for (c in e[b] = {}, a[b]) d = a[b][c], e[b][c] = d instanceof THREE.Color || d instanceof THREE.Vector2 || d instanceof THREE.Vector3 || d instanceof THREE.Vector4 || d instanceof THREE.Matrix4 || d instanceof THREE.Texture ? d.clone() : d instanceof Array ? d.slice() : d; return e } };
 THREE.UniformsLib = {
-    common: { diffuse: { type: "c", value: new THREE.Color(15658734) }, opacity: { type: "f", value: 1 }, map: { type: "t", value: null }, offsetRepeat: { type: "v4", value: new THREE.Vector4(0, 0, 1, 1) }, lightMap: { type: "t", value: null }, specularMap: { type: "t", value: null }, envMap: { type: "t", value: null }, flipEnvMap: { type: "f", value: -1 }, useRefract: { type: "i", value: 0 }, reflectivity: { type: "f", value: 1 }, refractionRatio: { type: "f", value: 0.98 }, combine: { type: "i", value: 0 }, morphTargetInfluences: { type: "f", value: 0 } }, bump: {
+    common: { diffuse: { type: "c", value: new THREE.Color(15658734) }, opacity: { type: "f", value: 0 }, map: { type: "t", value: null }, offsetRepeat: { type: "v4", value: new THREE.Vector4(0, 0, 1, 1) }, lightMap: { type: "t", value: null }, specularMap: { type: "t", value: null }, envMap: { type: "t", value: null }, flipEnvMap: { type: "f", value: -1 }, useRefract: { type: "i", value: 0 }, reflectivity: { type: "f", value: 1 }, refractionRatio: { type: "f", value: 0.98 }, combine: { type: "i", value: 0 }, morphTargetInfluences: { type: "f", value: 0 } }, bump: {
         bumpMap: {
             type: "t",
             value: null
@@ -778,7 +781,7 @@ THREE.UniformsLib = {
             value: []
         }, hemisphereLightGroundColor: { type: "fv", value: [] }, pointLightColor: { type: "fv", value: [] }, pointLightPosition: { type: "fv", value: [] }, pointLightDistance: { type: "fv1", value: [] }, spotLightColor: { type: "fv", value: [] }, spotLightPosition: { type: "fv", value: [] }, spotLightDirection: { type: "fv", value: [] }, spotLightDistance: { type: "fv1", value: [] }, spotLightAngleCos: { type: "fv1", value: [] }, spotLightExponent: { type: "fv1", value: [] }
     }, particle: {
-        psColor: { type: "c", value: new THREE.Color(15658734) }, opacity: { type: "f", value: 1 }, size: {
+        psColor: { type: "c", value: new THREE.Color(15658734) }, opacity: { type: "f", value: 0 }, size: {
             type: "f",
             value: 1
         }, scale: { type: "f", value: 1 }, map: { type: "t", value: null }, fogDensity: { type: "f", value: 2.5E-4 }, fogNear: { type: "f", value: 1 }, fogFar: { type: "f", value: 2E3 }, fogColor: { type: "c", value: new THREE.Color(16777215) }
