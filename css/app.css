@@ -1767,8 +1767,8 @@ a.ui-btn {
 .ui-btn.is-theme-accent:hover .ui-btn__body {
     color: #fff
 }
-.section-offers-row.swiper-slide:hover .swiper-slide{
-    width: 110% !important;
+.section-offers-row.swiper-slide:hover {
+    transform: scale(1.1)!important;
   }
 .ui-field {
     font-weight: 400;
@@ -5703,10 +5703,6 @@ body.is-popup-active {
     }
 }
 
-.section-events {
-    padding-top: 10rem;
-    height: 115vh;
-}
 
 @media (max-width: 770px) {
     .section-events {

@@ -549,12 +549,7 @@ figcaption {
   margin-top: 5px;
   text-align: center;
 }
-ul,
-ol {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px;
-}
+
 .w-list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -855,7 +850,10 @@ textarea.w-select {
   width: 58.33333333%;
 }
 .w-col-8 {
-  width: 66.66666667%;
+  width: 66.66666667%;  
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 .w-col-9 {
   width: 75%;

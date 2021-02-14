@@ -503,16 +503,16 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
+    margin-top: -20vh;
   padding: 25px 15px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/galaxy-2150265_1280.png');
+  background: url('../images/galaxy-2150265_1280.png') 100% 100% no-repeat;;
   background-position: 50% 50%;
-  background-size: 101% 100%;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .iphones {
@@ -674,12 +674,17 @@ a {
   background-color: #fff;
 }
 
+
+
+
 .footer {
   padding: 10px 15px;
-  background-image: url('../images/network-4894813_1280.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  /* background-image: url('../images/1.jpg'); */
+  /* background-position: 50% 50%;
+  background-size: cover; */
   background-repeat: no-repeat;
+  box-shadow: 1px 1px 20px 0 rgb(0 0 0 / 32%);
+    background-color: #353535;
 }
 .footer .paragraph.center {
   line-height: 18px;
@@ -940,19 +945,16 @@ a {
   width: 100%;
 }
 
-.splide__track {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .splide__slide {
   margin: 10px;
 }
 
 .splide--draggable>.splide__track>.splide__list>.splide__slide {
-  height: 400px;
+  height: 300px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
@@ -960,9 +962,9 @@ a {
 
 .meeting_baner {
   background-color: #021836fa;
-  height: 400px;
+  height: 300px;
   width: 120px;
-  margin-top: -500px;
+  margin-top: -300px;
   color: white;
   position: absolute;
   text-align: center;
@@ -1038,7 +1040,9 @@ a {
 
 }
 .h2.h2ContactUs {
-  width: 50%;
+padding-top: 200px;
+  width: 100%;
+  text-align: center;
 }
 .splide__slide.is-active .meeting_baner { 
   background-color: #021836cc;
@@ -1046,8 +1050,9 @@ a {
 }
 
 .splide__slide.is-active {
-  transform: scale(1.2);
-  margin-right: 150px;
+  transform: scale(1.5)!important;
+  margin-right: 70px !important;
+  margin-left: 90px !important;
   z-index: 99999;
 }
 
@@ -1058,10 +1063,13 @@ a {
 .splide__slide.is-active h4 {
   transform: rotate(0deg);
 }
-
+.splide__track { 
+  height: 400px;
+  overflow-y: inherit !important;
+}
 .splide__slide img {
   vertical-align: bottom;
-  height: 500px;
+  height: 300px;
   width: auto;
   object-fit: cover;
 }
@@ -1110,7 +1118,7 @@ a {
 }
 .splide__arrows {
   position: absolute;
-  margin-top: 550px;
+  margin-top: 490px;
 }
 
 .div-block-14:hover {

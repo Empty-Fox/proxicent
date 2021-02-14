@@ -6,7 +6,7 @@ if ($(window).width() >1100) {
     lazyLoad: false,
     focus: 1,
     perPage: 4,
-    interval: 2000,
+    interval: 5000,
     pauseOnHover: true,
     autoplay: true,
     gap: .1,
@@ -219,5 +219,4 @@ $(window).scroll(function() {
 });
 
       ////////////////////////////////////
-
-    
+  
