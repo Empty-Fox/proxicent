@@ -11,7 +11,7 @@ if ($(window).width() >1100) {
     autoplay: true,
     gap: .1,
     classes: {           
-      next: 'splide__arrow--next btn fancy-btn orange dark w-button',
+      next: 'splide__arrow--next splidebtn',
     }    
   }).mount();
 }
@@ -91,8 +91,7 @@ $(window).scroll(function () {
           $(".nav-menu.w-nav-menu.nav-1 > a").eq(index).removeClass("activeMenu");
       }
   })
-
-
+ 
 });
 
 // .......................Поява блоку при загрузці..............
