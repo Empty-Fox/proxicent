@@ -8,7 +8,7 @@ if ($(window).width() >1100) {
     perPage: 4,
     interval: 5000,
     pauseOnHover: true,
-    autoplay: false,
+    autoplay: true,
     gap: .1,
     classes: {           
       next: 'splide__arrow--next splidebtn',
