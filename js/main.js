@@ -43,7 +43,7 @@ new Splide('.splide', {
     perPage: 2,
     interval: 5000,
     pauseOnHover: true,
-    autoplay: true,
+    autoplay: false,
     gap: .1,
     classes: {           
       next: 'splide__arrow--next btn fancy-btn orange dark w-button',
@@ -61,7 +61,7 @@ new Splide('.splide', {
     perPage: 1,
     interval: 5000,
     pauseOnHover: true,
-    autoplay: true,
+    autoplay: false,
     gap: .1,
     classes: {           
       next: 'splide__arrow--next btn fancy-btn orange dark w-button',
@@ -131,4 +131,4 @@ $(window).scroll(function() {
 });
 
       ////////////////////////////////////
-  
+      document.getElementById("year").innerHTML = new Date().getFullYear();
