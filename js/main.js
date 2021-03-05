@@ -1,73 +1,73 @@
 ////////////carousel sweep adaptive
-if ($(window).width() >1100) {
-    new Splide('.splide', {
-    type: 'loop',
-    perMove: 1,
-    lazyLoad: false,
-    focus: 1,
-    perPage: 4,
-    interval: 5000,
-    pauseOnHover: true,
-    autoplay: true,
-    gap: .1,
-    classes: {           
-      next: 'splide__arrow--next splidebtn',
-    }    
-  }).mount();
-}
-else
-if ($(window).width() >800) {
-new Splide('.splide', {
-    type: 'loop',
-    perMove: 1,
-    lazyLoad: false,
-    focus: 1,
-    perPage: 3,
-    interval: 5000,
-    pauseOnHover: true,
-    autoplay: true,
-    gap: .1,
-    classes: {           
-      next: 'splide__arrow--next btn fancy-btn orange dark w-button',
-    }    
-  }).mount();
-}
+// if ($(window).width() >1100) {
+//     new Splide('.splide', {
+//     type: 'loop',
+//     perMove: 1,
+//     lazyLoad: false,
+//     focus: 1,
+//     perPage: 4,
+//     interval: 5000,
+//     pauseOnHover: true,
+//     autoplay: true,
+//     gap: .1,
+//     classes: {           
+//       next: 'splide__arrow--next splidebtn',
+//     }    
+//   }).mount();
+// }
+// else
+// if ($(window).width() >800) {
+// new Splide('.splide', {
+//     type: 'loop',
+//     perMove: 1,
+//     lazyLoad: false,
+//     focus: 1,
+//     perPage: 3,
+//     interval: 5000,
+//     pauseOnHover: true,
+//     autoplay: true,
+//     gap: .1,
+//     classes: {           
+//       next: 'splide__arrow--next btn fancy-btn orange dark w-button',
+//     }    
+//   }).mount();
+// }
 
-else
-if ($(window).width() >500) {
-new Splide('.splide', {
-    type: 'loop',
-    perMove: 0,
-    lazyLoad: false,
-    focus: 0,
-    perPage: 2,
-    interval: 5000,
-    pauseOnHover: true,
-    autoplay: true,
-    gap: .1,
-    classes: {           
-      next: 'splide__arrow--next btn fancy-btn orange dark w-button',
-    }    
-  }).mount();
-}
+// else
+// if ($(window).width() >500) {
+// new Splide('.splide', {
+//     type: 'loop',
+//     perMove: 0,
+//     lazyLoad: false,
+//     focus: 0,
+//     perPage: 2,
+//     interval: 5000,
+//     pauseOnHover: true,
+//     autoplay: true,
+//     gap: .1,
+//     classes: {           
+//       next: 'splide__arrow--next btn fancy-btn orange dark w-button',
+//     }    
+//   }).mount();
+// }
 
-else
-if ($(window).width() >0) {
-new Splide('.splide', {
-    type: 'loop',
-    perMove: 0,
-    lazyLoad: false,
-    focus: 0,
-    perPage: 1,
-    interval: 5000,
-    pauseOnHover: true,
-    autoplay: true,
-    gap: .1,
-    classes: {           
-      next: 'splide__arrow--next btn fancy-btn orange dark w-button',
-    }    
-  }).mount();
-}
+// else
+// if ($(window).width() >0) {
+// new Splide('.splide', {
+//     type: 'loop',
+//     perMove: 0,
+//     lazyLoad: false,
+//     focus: 0,
+//     perPage: 1,
+//     interval: 5000,
+//     pauseOnHover: true,
+//     autoplay: true,
+//     gap: .1,
+//     classes: {           
+//       next: 'splide__arrow--next btn fancy-btn orange dark w-button',
+//     }    
+//   }).mount();
+// }
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -125,6 +125,7 @@ $(window).scroll(function() {
 
   if (scroll >= 200) {
       $(".navbar.w-nav").addClass("menuColor");
+      console.log('navbar')
   } else {
       $(".navbar.w-nav").removeClass("menuColor");
   }
