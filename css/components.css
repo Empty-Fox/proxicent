@@ -361,7 +361,7 @@ input.w-button {
 }
 .tableHideName {
   display: none; 
-  opacity: .5;
+  /* opacity: .5; */
 }
 textarea.w-input,
 textarea.w-select {
@@ -3045,6 +3045,8 @@ textarea.w-select {
   animation-delay: 0s, -2s;
 }
 
+
+
 @keyframes rotate {
   to {
     transform: rotateY(360deg);
@@ -3064,6 +3066,373 @@ textarea.w-select {
   }
 } 
 
+
+/* ///////////////////////new orbit////////////// */
+.eclipse {
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  border: 1px solid #ededed20;
+  transform-style: preserve-3d;
+}
+.eclipse1 {
+  width: 20em;
+  height: 20em;
+  
+ left: -30% !important;
+ top:-30% !important
+}
+.eclipse2 {
+  width: 50em;
+  height: 50em;   
+  left: -22% !important;
+  top:-25% !important
+}
+.eclipse3 {
+  width: 90em;
+  height: 90em;   
+  left: -10% !important;
+  top:-10% !important
+}
+.eclipse4 {
+  width: 120em;
+  height: 120em; 
+/*   
+  margin-left: 10% !important; */
+}
+.eclipse2 .circle1 {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position:absolute ;
+  background: #ededed;
+  animation: move2_1 linear infinite;
+}
+.eclipse2 .circle2 {
+  width: .8em;
+  height: .8em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move2_2 linear infinite; 
+}
+.eclipse2 .circle3 {
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move2_3 linear infinite;
+}
+.eclipse2 .circle4 {
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move2_4 linear infinite;
+ 
+}
+
+
+
+.eclipse3 .circle1 {
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position:absolute ;
+  background: #ededed;
+  animation: move3_1 linear infinite;
+}
+.eclipse3 .circle2 {
+  width: .9em;
+  height: .9em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move3_2 linear infinite; 
+}
+.eclipse3 .circle3 {
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move3_3 linear infinite;
+}
+.eclipse3 .circle4 {
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move3_4 linear infinite;
+ 
+}
+
+.eclipse3 .circle5 {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move3_5 linear infinite;
+ 
+}
+
+
+.eclipse4 .circle1 {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position:absolute ;
+  background: #ededed;
+  animation: move4_1 linear infinite;
+}
+.eclipse4 .circle2 {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move4_2 linear infinite; 
+}
+.eclipse4 .circle3 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move4_3 linear infinite;
+}
+.eclipse4 .circle4 {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move4_4 linear infinite;
+ 
+}
+
+.eclipse4 .circle5 {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background: #ededed;
+  animation: move4_5 linear infinite;
+ 
+}
+
+
+.eclipse2, .eclipse1,  .eclipse3, .eclipse4 {
+  transform: rotateZ(277deg) rotateY(359deg);
+}
+.eclipse2 .circle {
+  animation-duration: 40s;
+}
+.eclipse3 .circle {
+  animation-duration: 30s;
+}
+.eclipse4 .circle {
+  animation-duration: 20s;
+}
+
+
+@keyframes move2_1 {
+  from {
+    transform: rotateZ(0) translateX(25em) rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(25em) rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move2_2 {
+  from {
+    transform: rotateZ(0) translateX(24.6em) translateY(-4.4em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(24.6em) translateY(-4.4em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move2_3 {
+  from {
+    transform: rotateZ(0) translateX(23.5em)  translateY(-8.6em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(23.5em)  translateY(-8.6em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move2_4 {
+  from {
+    transform: rotateZ(0) translateX(21.6em)  translateY(-12.7em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(21.6em) translateY(-12.7em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+
+
+@keyframes move3_1 {
+  from {
+    transform: rotateZ(0) translateX(44.9em) rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(44.9em) rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move3_2 {
+  from {
+    transform: rotateZ(0) translateX(44.6em) translateY(-5.45em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(44.6em) translateY(-5.45em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move3_3 {
+  from {
+    transform: rotateZ(0) translateX(43.8em)  translateY(-10.7em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(43.8em)  translateY(-10.7em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move3_4 {
+  from {
+    transform: rotateZ(0) translateX(42.2em)  translateY(-15.9em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(42.2em) translateY(-15.9em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move3_5 {
+  from {
+    transform: rotateZ(0) translateX(39.9em)  translateY(-21.25em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(39.9em) translateY(-21.25em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+
+
+
+@keyframes move4_1 {
+  from {
+    transform: rotateZ(0) translateX(60em) rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(60em) rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move4_2 {
+  from {
+    transform: rotateZ(0) translateX(59.6em) translateY(-6.75em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(59.6em) translateY(-6.75em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move4_3 {
+  from {
+    transform: rotateZ(0) translateX(58.7em)  translateY(-13em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(58.7em)  translateY(-13em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move4_4 {
+  from {
+    transform: rotateZ(0) translateX(57em)  translateY(-19.25em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(57em) translateY(-19.25em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+
+@keyframes move4_5 {
+  from {
+    transform: rotateZ(0) translateX(54.5em)  translateY(-25.5em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(54.5em) translateY(-25.5em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+
 /* ................................................ */
 
 
@@ -3073,6 +3442,8 @@ textarea.w-select {
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
+  
+  padding-top: 400px;
 }
 
 .system {
@@ -3081,9 +3452,9 @@ textarea.w-select {
   height: 100%;
 
   /* -webkit-transform: rotateX(319deg) rotateY(356deg);
-  transform: rotateX(301deg) rotateY(360deg); 
+  transform: rotateX(301deg) rotateY(360deg);  */
    -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d; */
+  transform-style: preserve-3d; 
 
 }
 
@@ -3097,8 +3468,6 @@ textarea.w-select {
   top: 50%;
   left: 50%;
 
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 
 .satellite-orbit1 {
@@ -3232,6 +3601,7 @@ textarea.w-select {
   height: 0.5em;
   margin-top: -33em;
   margin-left: -23.9em;
+
 }
 
 .satellite2_2 {
@@ -3239,6 +3609,7 @@ textarea.w-select {
   height: .8em;
   margin-top: -31.5em;
   margin-left: -24.5em;
+
 }
 
 .satellite2_3 {
@@ -3246,6 +3617,7 @@ textarea.w-select {
   height: 1.2em;
   margin-top: -29.7em;
   margin-left: -25.2em;
+
 }
 
 .satellite2_4 {
@@ -3253,6 +3625,7 @@ textarea.w-select {
   height: 1.4em;
   margin-top: -27.5em;
   margin-left: -25.7em;
+
 }
 
 .satellite2_5 {
@@ -3300,15 +3673,11 @@ textarea.w-select {
 }
 
 
-
-
 .satellite4_1 {
   width: 3em;
   height: 3em;
   margin-top: -50em;
   margin-left: 57.5em;
- 
-
 }
 
 .satellite4_2 {
@@ -4470,8 +4839,15 @@ text-align: center;
 }
 /* 
 ///////////////////////////media//////////////////////// */
+@media screen and (max-width:1550px){
+  #orbit-system {    
+    padding-top: 150px;
+  }
+}
+
 
 @media screen and (max-width:1350px){
+  
   .section-offers__title-bg {   
     font-size: 200px !important;
   }
@@ -4481,11 +4857,13 @@ text-align: center;
   .section-offers__title-bg, .meetUs {
     font-size: 150px !important;
   }
+  
 }
 @media (max-width: 1320px) {
   .section-offers__container {
       padding:0
   }
+  
 }
 @media screen and (max-width: 1300px){
   .navbar {
@@ -4530,9 +4908,12 @@ text-align: center;
   #TopOffers .rot1 {
     margin-top: -40vh !important;
 }
+
 }
 
 @media (max-width: 1140px) {
+
+  
   .ui-title.is-size-h2 {
       font-size:3.5rem;
       line-height: 125%
@@ -4557,6 +4938,7 @@ text-align: center;
   .big-text {
     font-size: 150px;
   }
+  
 }
 
 
@@ -4581,7 +4963,7 @@ text-align: center;
     margin-top: -20em;
     margin-left: -38em;  
   }
-
+ 
 }
 
 @media screen and (max-width:1050px){
@@ -4643,6 +5025,10 @@ text-align: center;
   }
   .splide__arrows {
     display: none;
+  }
+
+  .eclipse3 {
+    left: 0% !important;
   }
 }
 
@@ -4821,7 +5207,9 @@ text-align: center;
   .medium-title {
     font-size: 35px;
   }
-  
+  .eclipse3 {
+    left: 5% !important;
+  }
 }
 
 @media screen and (max-width:850px){
@@ -4960,7 +5348,9 @@ text-align: center;
     margin-top: -30em;
   }
 
-
+  .eclipse2 {
+    left: -12% !important;
+  }
 
 }
 
@@ -4989,10 +5379,15 @@ text-align: center;
   #contact-us .btn.fancy-btn.orange.dark.w-button {
     margin-left: 65%;
   }
-
+  .eclipse2 {
+    left: -2% !important;
+  }
 }
 
 @media (max-width: 600px) {
+  .eclipse2 {
+    left: 10% !important;
+  }
   .main-wrap {
       padding:0 2rem
   }
@@ -5011,9 +5406,9 @@ text-align: center;
     display: flex;
     flex-direction: column;
   }
-  tr td:first-child {
+  /* tr td:first-child {
     color: #ff0039;
-  }
+  } */
   .hideRang {
     display: inline-block;
   }
@@ -5085,7 +5480,210 @@ text-align: center;
 }
 
 @media screen and (max-width: 479px) { 
-  
+  .eclipse1 {
+    width: 10em;
+    height: 10em;
+  }
+  .eclipse2 {
+    width: 25em;
+    height: 25em;
+    left: -22% !important;
+    top: -25% !important;
+}
+.eclipse3 {
+  width: 45em;
+  height: 45em;
+  left: -10% !important;
+  top: -30% !important;
+}
+.eclipse4 {
+  width: 60em;
+  height: 60em;
+  left: -10% !important;
+  top: -30% !important;
+}
+#orbit-system {
+  padding-top: 150px;
+}
+.eclipse2 .circle1 {
+  width: 0.25em;
+  height: 0.25em;
+}
+.eclipse2 .circle2 {
+  width: .4em;
+  height: .4em;
+}
+.eclipse2 .circle3 {
+  width: .6em;
+  height: .6em;
+}
+.eclipse2 .circle4 {
+  width: .7em;
+  height: .7em;
+}
+
+.eclipse3 .circle1 {
+  width: 0.35em;
+  height: 0.35em;
+}
+.eclipse3 .circle2 {
+  width: .45em;
+  height: .45em;
+}
+.eclipse3 .circle3 {
+  width: .7em;
+  height: .7em;
+}
+.eclipse3 .circle4 {
+  width: .9em;
+  height: .9em;
+}
+.eclipse3 .circle5 {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.eclipse4 .circle1 {
+  width: .5em;
+  height: .5em;
+}
+.eclipse4 .circle2 {
+  width: .75em;
+  height: .75em;
+}
+.eclipse4 .circle3 {
+  width: 1em;
+  height: 1em;
+}
+.eclipse4 .circle4 {
+  width: 1.25em;
+  height: 1.25em;
+}
+.eclipse4 .circle5 {
+  width: 1.5em;
+  height: 1.5em;
+}
+/* /////////////////////////animate///////////// */
+
+@keyframes move2_1 {
+  from {
+    transform: rotateZ(0) translateX(12.4em) rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(12.4em) rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move2_2 {
+  from {
+    transform: rotateZ(0) translateX(12.4em) translateY(-1.2em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(12.4em) translateY(-1.2em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move2_3 {
+  from {
+    transform: rotateZ(0) translateX(12.2em)  translateY(-2.5em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(12.2em)  translateY(-2.5em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move2_4 {
+  from {
+    transform: rotateZ(0) translateX(11.8em)  translateY(-4em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(11.8em) translateY(-4em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+
+@keyframes move3_1 {
+  from {
+    transform: rotateZ(0) translateX(22.5em) rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(22.5em) rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move3_2 {
+  from {
+    transform: rotateZ(0) translateX(22.3em) translateY(-2.13em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(22.3em) translateY(-2.13em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move3_3 {
+  from {
+    transform: rotateZ(0) translateX(22.1em)  translateY(-4.22em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(22.1em)  translateY(-4.22em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move3_4 {
+  from {
+    transform: rotateZ(0) translateX(21.6em)  translateY(-6.35em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(21.6em) translateY(-6.35em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move3_5 {
+  from {
+    transform: rotateZ(0) translateX(20.8em)  translateY(-8.45em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(20.8em) translateY(-8.45em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+
+
+
+@keyframes move4_1 {
+  from {
+    transform: rotateZ(0) translateX(30em) rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(30em) rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move4_2 {
+  from {
+    transform: rotateZ(0) translateX(29.8em) translateY(-3.25em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(29.8em) translateY(-3.25em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move4_3 {
+  from {
+    transform: rotateZ(0) translateX(29.3em)  translateY(-6.38em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(29.3em)  translateY(-6.38em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+@keyframes move4_4 {
+  from {
+    transform: rotateZ(0) translateX(28.4em)  translateY(-9.63em)   rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(28.4em) translateY(-9.63em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+
+@keyframes move4_5 {
+  from {
+    transform: rotateZ(0) translateX(27.2em)  translateY(-12.73em) rotateZ(0) rotateY(359deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(27.2em) translateY(-12.73em)   rotateZ(-360deg) rotateY(359deg);
+  }
+}
+
+/* /////////////////////////////////////////////// */
   .blockContainer {    
     width: 100% !important;
   }
