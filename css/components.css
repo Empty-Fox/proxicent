@@ -5070,7 +5070,7 @@ text-align: center;
   }
   .navbar {
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 15px !important;
   }
   .nav {
     width: 100%;
