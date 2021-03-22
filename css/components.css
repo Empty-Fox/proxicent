@@ -96,7 +96,26 @@ html {
 .btn.fancy-btn.w-button {
   transition: all .5s ease-in-out;
 }
+#prev.btn.fancy-btn.w-button:before {
+  transform: rotate(180deg);
+  top: 20px;  
+  left: 15px;
+}
+#next.btn.fancy-btn.w-button:before {
+  transform: rotate(360deg);
+  top: 5px;  
+  right: 15px;
+}
+#next.btn.fancy-btn.w-button:after {
+  right: 0;
+}
+#prev.btn.fancy-btn.w-button:after {
+  left: 0;
 
+}
+#prev.btn.fancy-btn.w-button:hover:after, #next.btn.fancy-btn.w-button:hover:after {
+  width: 80%;
+}
 .btn.fancy-btn.dark {
   color: #ededed;
 }
@@ -366,7 +385,7 @@ input.w-button {
 textarea.w-input,
 textarea.w-select {
   height: auto;
-  color: #ededed;
+  color: #333333;
 }
 
 .w-container {
@@ -4963,13 +4982,18 @@ text-align: center;
     margin-top: -20em;
     margin-left: -38em;  
   }
- 
+  
+  .logo {
+    width: 150px !important;
+  }
+  .navbar {
+    padding-left: 20px !important;
+}
+
 }
 
 @media screen and (max-width:1050px){
-  .nav-menu {
-    width: 92% !important;
-  }
+
   .register {    
     padding: 6px 12px !important;
   } 
@@ -4986,6 +5010,10 @@ text-align: center;
   }
   .collection-list-wrapper.w-dyn-list .btn.fancy-btn.dark {
     margin-left: 35%;
+  }
+  #prev.btn.fancy-btn.orange.dark.w-button.slidebutton,
+  #next.btn.fancy-btn.orange.dark.w-button.slidebutton {
+    margin-left:0;
   }
   .ui-title.is-size-h2 {
     font-size: 2.5rem !important;
@@ -5182,7 +5210,9 @@ text-align: center;
     padding-top: 15px;
     padding-right: 0px;
   }
-
+  .scrolltext1 {
+    font-size: 150px !important;
+  }
 }
 
 @media (max-width: 960px) {
@@ -5351,7 +5381,9 @@ text-align: center;
   .eclipse2 {
     left: -12% !important;
   }
-
+  .scrolltext1 {
+    font-size: 120px !important;
+}
 }
 
 @media screen and (max-width:700px){
@@ -5382,9 +5414,21 @@ text-align: center;
   .eclipse2 {
     left: -2% !important;
   }
+  .cta-paragraph.center p {
+    word-wrap: break-word;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    line-height: 1em;
+  }
+
 }
 
 @media (max-width: 600px) {
+  .scrolltext1 {
+    font-size: 100px !important;
+}
   .eclipse2 {
     left: 10% !important;
   }
@@ -5480,6 +5524,22 @@ text-align: center;
 }
 
 @media screen and (max-width: 479px) { 
+  .scrolltext1 {
+    font-size: 70px !important;
+}
+#prev.btn.fancy-btn, #next.btn.fancy-btn {
+  padding: 18px 60px 18px 60px;
+}
+  .cta-paragraph.center p {
+    
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 1em;
+    word-wrap: break-word;
+  }
+
   .eclipse1 {
     width: 10em;
     height: 10em;
@@ -5810,8 +5870,24 @@ text-align: center;
   }
 }
 @media screen and (max-width: 400px){
-
-  #contact-us .btn.fancy-btn.orange.dark.w-button  {
+  .btn.fancy-btn.w-button:after {
+    width: 30px;
+    height: 30px;
+  }
+  #prev.btn.fancy-btn {
+    padding: 8px 40px 8px 40px;
+}
+#next.btn.fancy-btn.w-button:before {
+  right: 5px;
+}
+#prev.btn.fancy-btn.w-button:before {
+  right: 5px;
+}
+#next.btn.fancy-btn {
+  
+  padding: 8px 40px 8px 40px;
+}
+#contact-us .btn.fancy-btn.orange.dark.w-button  {
     margin-left: 40% !important;
   }
   .main-block {    
@@ -5841,6 +5917,33 @@ text-align: center;
   }
 }
 @media screen and (max-width:350px){
+  .btn.fancy-btn.w-button:after {   
+    height: 40px;
+    width: 40px;
+  }
+  .btn.fancy-btn.w-button:before {
+    padding-top: 7px;
+    right: 9px;
+  }
+  .div-block-5-copy.w-clearfix a {
+    
+    line-height: 12px !important;
+  }
+  .btn.fancy-btn {    
+    font-size: 12px;    
+  }
+  .scrolltext1 {
+    font-size: 50px !important;
+}
+  .cta-paragraph.center p {
+    
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 1em;
+    word-wrap: break-word;
+  }
   .text-main-block {
     font-size: 16px;
     line-height: 18px;
@@ -5873,7 +5976,7 @@ text-align: center;
     padding-top: 15px;
   }
   .btn.fancy-btn.orange.dark.w-button  { 
-      padding: 10px 40px 10px 20px;
+      padding: 13px 40px 10px 20px;
   }
   .collection-list-wrapper.w-dyn-list .btn.fancy-btn.dark ,
   .section-offers-footer__btn .btn.fancy-btn.orange.dark.w-button {    
