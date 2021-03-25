@@ -3894,7 +3894,6 @@ a {
   align-items: center;
 }
 
-
 .heading {
   margin-bottom: 0px;
   padding-top: 50px;
@@ -4096,7 +4095,7 @@ a {
   width: 100%;
 }
 .section-one-column-left {
-  width: 50%; 
+  width: initial; 
   float: left;
 }
 
@@ -4109,8 +4108,11 @@ a {
 }
 
 .section-one-column-right.w-clearfix {
-  width: 50%; 
+  width: 78%; 
   float: right;
+}
+.section-one-column-right.w-clearfix .paragraph {
+  padding-bottom: 40px;
 }
 
 .section-5 {
