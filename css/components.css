@@ -5062,7 +5062,7 @@ text-align: center;
   .section-offers__title-bg {
     font-size: 100px !important;
   }
-  .ui-title.is-theme-bg {
+  .ui-title.is-theme-bg, .topOffersHeader {
     text-shadow: 5px 1px 1px rgb(163 163 163), -5px 1px 1px #0218362e;
   }
   .ui-title.section-offers__title-bg.is-theme-bg.about, 
@@ -5274,7 +5274,7 @@ text-align: center;
 
 @media screen and (max-width:850px){
 
-  .ui-title.is-theme-bg {
+  .ui-title.is-theme-bg, .topOffersHeader {
     text-shadow: 5px 1px 1px rgb(163 163 163), -5px 1px 1px #02183638;
   }
 
@@ -5477,7 +5477,7 @@ text-align: center;
     margin-top: -1700px;
   }
 
-  .ui-title.is-theme-bg {
+  .ui-title.is-theme-bg, .topOffersHeader {
     text-shadow: 5px 1px 1px rgb(163 163 163);
   }
   .scrolltext1 {
