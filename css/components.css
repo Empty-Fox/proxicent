@@ -4119,6 +4119,7 @@ a {
 .section-one-column-right.w-clearfix {
   width: 78%; 
   float: right;
+  padding-left: 20px;
 }
 .section-one-column-right.w-clearfix .paragraph {
   padding-bottom: 40px;
@@ -5153,7 +5154,7 @@ text-align: center;
   .medium-title {
     padding-bottom: 20px;
 }
-  .text-main-block {
+  .text-main-block, .paragraph {
     line-height: 24px;
   }
 
@@ -5823,7 +5824,7 @@ text-align: center;
     padding-left: 15px;
   }
 
-  .text-main-block {
+  .text-main-block, .paragraph {
     font-size: 18px;
     line-height: 20px;
   }
@@ -5897,9 +5898,7 @@ text-align: center;
   .section-2 {
     padding-bottom: 155px;
   }
-  .paragraph {
-    line-height: 18px;
-  }
+ 
   .section-offers-advantage, 
   .section-offers-advantage__icon {
     margin-left: auto;
@@ -6040,7 +6039,7 @@ text-align: center;
     line-height: 1em;
     word-wrap: break-word;
   }
-  .text-main-block {
+  .text-main-block, .paragraph {
     font-size: 16px;
     line-height: 18px;
   }
