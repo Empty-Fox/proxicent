@@ -144,7 +144,19 @@
                background-position: 0px -3000px;
            }
        }
-
+        .col_passwordRecov {
+            width: 47%; 
+            float: left;
+        }
+        .col_btn {
+            width: 47%; 
+            float: right; 
+            margin-top: -40px ;
+        }
+        
+        .col_btn a {
+            float: right;
+        }
        input {
            background: transparent;
            margin: 0;
@@ -414,6 +426,25 @@
            background: url(images/get-in-touch.png) no-repeat center center / cover;
            margin: 0;
        }
+       @media only screen and (max-width:800px){
+        .blockLogin {
+            width: 100%;
+        }
+        .signup-tabs__wrap {
+            width: 100%;
+        }
+        .col_passwordRecov, .col_btn {
+            float: none;
+            width: 100%;
+        }
+        .col_btn {
+            margin-top: 0;
+            text-align: center;
+        }
+        .col_btn a {
+            float: none;
+        }
+       }
 
     </style>
 </head>
@@ -516,12 +547,11 @@
                                         value="yes">
                                     <label for="remember">Remember me</label>
                                     <div style="padding-top: 10px; padding-bottom: 10px; width: 100%;">
-                                        <div style="width: 47%; float: left;">
+                                        <div class="col_passwordRecov">
                                             <a href="#" class="a_link" style="color: #ededed;">*Password Recovering</a>
                                         </div>
-                                        <div style="width: 47%; float: right; margin-top: -40px ;">
-                                            <a href="#" class="btn fancy-btn orange dark w-button"
-                                                style="float: right;">Continue</a>
+                                        <div class="col_btn">
+                                            <a href="#" class="btn fancy-btn orange dark w-button">Continue</a>
                                         </div>
 
                                     </div>
@@ -575,7 +605,7 @@
                         </div>
                     </form>
                 </div>
-                
+
                 <div style="width: 75%; margin-left: auto; margin-right: auto; margin-top: 50px;">
                     <p>View our <a href="#" style="text-decoration: underline;"> Privacy Policy</a></p>
                     <p>You must have <a href="https://support.google.com/accounts/answer/61416б" target="_blank"
