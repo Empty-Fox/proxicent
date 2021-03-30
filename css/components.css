@@ -4139,14 +4139,14 @@ a {
 
 .section-5 {
   padding: 120px 15px;
-  padding: 55px 15px;
+  padding: 100px 15px;
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .section-7 {
-  padding: 150px 0px;
+  padding: 100px 0px;
 }
 .ui-title.section-offers__title-bg.is-theme-bg.about {
   width: 100%;
@@ -5866,10 +5866,13 @@ text-align: center;
   }
 
   .section-7 {
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 35px;
   }
-
+  .section-events {
+  
+  padding-top: 100px;
+}
   .column {
     padding-right: 0px;
     padding-left: 0px;
