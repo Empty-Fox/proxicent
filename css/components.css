@@ -4,6 +4,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .text-main-block a {
   margin-top: 50px;
 }
@@ -5588,6 +5589,14 @@ text-align: center;
 }
 
 @media screen and (max-width: 479px) { 
+  .main-block {
+    margin-top: -70px;    
+    margin-bottom: 20px;
+  }
+  .text-main-block a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
   .section-offers__title-bg, .section-offers__title-bg, .meetUs, #Blog .blog, .topOffersHeader {
     font-size: 40px !important;
   }
@@ -5971,9 +5980,7 @@ text-align: center;
 #contact-us .btn.fancy-btn.orange.dark.w-button  {
     margin-left: 40% !important;
   }
-  .main-block {    
-    margin-top: 0vh;
-  }
+ 
  
   #TopOffers {
     margin-top: 30px;

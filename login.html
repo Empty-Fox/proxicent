@@ -36,6 +36,11 @@
             transition: all .5s ease-in-out;
         }
 
+        .blockLogin {
+            position: absolute; 
+            width: 950px;
+        }
+
         .btn.fancy-btn.dark {
             color: #ededed;
         }
@@ -44,12 +49,11 @@
             position: relative;
             z-index: 100;
             overflow: visible;
-            padding: 18px 60px;
+            padding: 20px 60px;
             background-color: transparent;
             -webkit-transform: translate(0px, 0px) translate(0px, 0px);
             -ms-transform: translate(0px, 0px) translate(0px, 0px);
             transform: translate(0px, 0px) translate(0px, 0px);
-
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 0.2em;
@@ -101,8 +105,6 @@
         }
 
         .btn.fancy-btn.orange.w-button:hover:after {
-            /* background-image: linear-gradient(73deg, #ffffff, #193c6d);     */
-
             background-color: #ededed;
         }
 
@@ -121,6 +123,298 @@
             color: #193c6d;
 
         }
+        .wrapper {
+            background-position: 50% 50%;
+            background-size: cover;
+            -o-object-fit: cover;
+            object-fit: cover;
+            color: #eee;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;          
+            perspective-origin: 50% 50%;
+            animation: animation 100s linear infinite;
+            z-index: -5;
+       }
+
+       @keyframes animation {
+           100% {
+               background-position: 0px -3000px;
+           }
+       }
+
+       input {
+           background: transparent;
+           margin: 0;
+           padding: 0;
+           border: 0;
+           color: inherit;
+           width: 100%;
+           outline: none;
+           font-size: 1.4rem;
+           line-height: 2.1rem;
+           font-family: Lato, sans-serif;
+           font-weight: 400;
+           letter-spacing: -.02em;
+           text-align: left;
+       }
+
+       .tabs-input__wrap {
+
+           font-weight: 400;
+           border: .2rem solid #c4c4c4;
+           position: relative;
+           background-color: #021836fa;
+           margin-top: 2rem;
+
+           padding: .9rem 1.4rem;
+       }
+
+       .signup-tabs__wrap {
+           width: 82%;
+           margin: 0 auto;
+       }
+
+       .signup__tabs {
+           display: -webkit-flex;
+           display: -moz-flex;
+           display: -ms-flex;
+           display: -o-flex;
+           display: flex;
+           -ms-align-items: center;
+           align-items: center;
+           border-bottom: 2px solid #ededed;
+       }
+
+       .signup__tabs>div.active {
+           background-color: #ee534f !important;
+       }
+
+       .signup__tabs>div {
+           width: 33.333%;
+           cursor: pointer;
+           position: relative;
+           display: -webkit-flex;
+           display: -moz-flex;
+           display: -ms-flex;
+           display: -o-flex;
+           display: flex;
+           -ms-align-items: center;
+           align-items: center;
+           justify-content: center;
+           padding: 10px 0;
+       }
+
+       .signup__tabs>div>h2 {
+           display: inline-block;
+           color: #fff;
+           font-weight: 400;
+           font-size: 22px;
+           z-index: 1;
+           position: relative;
+       }
+
+       .signup__tabs>div.active>h2:after {
+           color: #bd403c;
+       }
+
+       .signup__tabs>div:nth-child(1)>h2:after {
+           content: "1";
+       }
+
+       .signup__tabs>div>h2:after {
+           position: absolute;
+           left: -24px;
+           top: 50%;
+           transform: translateY(-50%);
+           color: #1d1c22;
+           font-size: 75px;
+           font-weight: 900;
+           z-index: -1;
+       }
+
+       .signup__tabs>div.active:after {
+           content: "";
+           position: absolute;
+           top: 50%;
+           left: 100%;
+           z-index: 1;
+           transform: translateY(-50%);
+           border: 13px solid transparent;
+           border-left: 13px solid #ee534f;
+       }
+
+       .signup__tabs>div:nth-child(2) {
+           background-color: #33363b;
+       }
+
+       .signup__tabs>div {
+           width: 33.333%;
+           cursor: pointer;
+           position: relative;
+           display: -webkit-flex;
+           display: -moz-flex;
+           display: -ms-flex;
+           display: -o-flex;
+           display: flex;
+           -ms-align-items: center;
+           align-items: center;
+           justify-content: center;
+           padding: 10px 0;
+       }
+
+       .signup__tabs>div>h2 {
+           display: inline-block;
+           color: #fff;
+           font-weight: 400;
+           font-size: 22px;
+           z-index: 1;
+           position: relative;
+       }
+
+       .signup__tabs>div:nth-child(2)>h2:after {
+           content: "2";
+           color: #28292d;
+       }
+
+       .signup__tabs>div>h2:after {
+           position: absolute;
+           left: -24px;
+           top: 50%;
+           transform: translateY(-50%);
+           color: #1d1c22;
+           font-size: 75px;
+           font-weight: 900;
+           z-index: -1;
+       }
+
+       .signup__tabs>div:nth-child(3) {
+           background-color: #27282c;
+       }
+
+       .signup__tabs>div:nth-child(3)>h2:after {
+           content: "3";
+       }
+
+       .signup__tabs_content {
+           padding: 0px 10px 15px;
+       }
+
+       .signup__tabs_content>div.active {
+           display: block;
+       }
+
+       .tabs__input-group.main-inputs {
+           margin-bottom: 5px;
+       }
+
+       .tabs__input-group input,
+       .tabs__input-group textarea {
+           display: block;
+           width: 100%;
+           border: none;
+           outline: none;
+           color: #fff;
+           background-color: transparent;
+           z-index: 1;
+           font-size: 14px;
+           padding: 2px 5px 2px 4px;
+       }
+
+       .tabs_column2 {
+           display: -webkit-flex;
+           display: -moz-flex;
+           display: -ms-flex;
+           display: -o-flex;
+           display: flex;
+           justify-content: space-between;
+       }
+
+       .tabs__input-group .tabs_column2 .tabs-input__wrap {
+           width: 47%;
+       }
+
+       .tabs__input-group {
+           padding: 12px 25px 4px;
+       }
+
+       .tabs_column2 {
+           display: -webkit-flex;
+           display: -moz-flex;
+           display: -ms-flex;
+           display: -o-flex;
+           display: flex;
+           justify-content: space-between;
+       }
+
+       .tabs__input-group .tabs-input__wrap {
+           margin-bottom: 0;
+           position: relative;
+       }
+
+       .tabs_column3,
+       .select,
+       .control-checkbox {
+           position: relative;
+
+
+       }
+
+       .select {
+           cursor: pointer;
+           width: 100%;
+           color: #fff;
+           background-color: transparent;
+           z-index: 1;
+           font-size: 14px;
+       }
+
+       .tabs__input-group .tabs-input__wrap.padd .select__gap,
+       .tabs__input-group .tabs-input__wrap.padd input {
+           padding: 2px 5px 2px 5px;
+       }
+
+       .select__gap {
+           z-index: 1;
+           border-bottom: 1px solid #ededed;
+       }
+
+       .footer__get-in-touch__button.open img,
+       .select .select__gap.on:after {
+           -webkit-transform: rotateX(180deg);
+           transform: rotateX(180deg);
+       }
+
+       .footer__get-in-touch__button.open img,
+       .select .select__gap.on:after {
+           -webkit-transform: rotateX(180deg);
+           transform: rotateX(180deg);
+       }
+
+       .footer__get-in-touch__button img,
+       .select .select__gap:after {
+           margin-left: 23px;
+           -webkit-transition: -webkit-transform .3s ease;
+           transition: -webkit-transform .3s ease;
+           transition: transform .3s ease;
+           transition: transform .3s ease, -webkit-transform .3s ease;
+       }
+
+       .select__gap:after {
+           content: '';
+           right: 10px;
+           display: block;
+           position: absolute;
+           top: 50%;
+           margin-top: -5px;
+           height: 10px;
+           width: 16px;
+           background: url(images/get-in-touch.png) no-repeat center center / cover;
+           margin: 0;
+       }
+
     </style>
 </head>
 
@@ -198,403 +492,102 @@
             </div>
         
           </div>
-          <div id="" class="wrapper" style="    
-          background-position: 50% 50%;
-          background-size: cover;
-          -o-object-fit: cover;
-          object-fit: cover;
-          ">
-<img src="images/2.png" style="left: 0;transform: rotate(180deg);     opacity: .1;">
-<img src="images/2.png" style="right: 0;     opacity: .1;">
-        <section style="position: absolute; width: 950px;">
-            
-            <div class="section-signup__header" data-aos="zoom-out-left">
-                <h1 class="heading" data-aos="zoom-out-up">Login</h1>
-            </div>
+          <div class="wrapper">
+            <img src="images/2.png" style="left: 0;transform: rotate(180deg); opacity: .1;">
+            <img src="images/2.png" style="right: 0; opacity: .1;">
+            <section class="blockLogin">            
+                <div class="section-signup__header" data-aos="zoom-out-left">
+                    <h1 class="heading" data-aos="zoom-out-up">Login</h1>
+                </div>
 
-            <div class="signup__first-row">
-                <form id="form-signup" action="" method="post" class="signup-tabs__wrap">
-                    <div class="signup__tabs_content">
-                        <div class="tabs_content1 active">
-                            <div class="tabs__input-group main-inputs">
-                                <div class="tabs-input__wrap">
-                                    <input type="text" name="email" placeholder="Email*" value="" required="">
-                                </div>
-                                <div class="tabs-input__wrap" style="margin-bottom:10px">
-                                    <input id="password" type="password" name="password" placeholder="Password*"
-                                        required="">
-                                </div>
-                                <input type="checkbox" class="custom-checkbox" id="remember" name="remember"
-                                    value="yes">
-                                <label for="remember">Remember me</label>
-                                <div style="padding-top: 10px; padding-bottom: 10px; width: 100%;">
-                                    <div style="width: 47%; float: left;">
-                                        <a href="#" class="a_link" style="color: #ededed;">*Password Recovering</a>
+                <div class="signup__first-row">
+                    <form id="form-signup" action="" method="post" class="signup-tabs__wrap">
+                        <div class="signup__tabs_content">
+                            <div class="tabs_content1 active">
+                                <div class="tabs__input-group main-inputs">
+                                    <div class="tabs-input__wrap">
+                                        <input type="text" name="email" placeholder="Email*" value="" required="">
                                     </div>
-                                    <div style="width: 47%; float: right; margin-top: -40px ;">
-                                        <a href="#" class="btn fancy-btn orange dark w-button"
-                                            style="float: right;">Continue</a>
+                                    <div class="tabs-input__wrap" style="margin-bottom:10px">
+                                        <input id="password" type="password" name="password" placeholder="Password*"
+                                            required="">
                                     </div>
+                                    <input type="checkbox" class="custom-checkbox" id="remember" name="remember"
+                                        value="yes">
+                                    <label for="remember">Remember me</label>
+                                    <div style="padding-top: 10px; padding-bottom: 10px; width: 100%;">
+                                        <div style="width: 47%; float: left;">
+                                            <a href="#" class="a_link" style="color: #ededed;">*Password Recovering</a>
+                                        </div>
+                                        <div style="width: 47%; float: right; margin-top: -40px ;">
+                                            <a href="#" class="btn fancy-btn orange dark w-button"
+                                                style="float: right;">Continue</a>
+                                        </div>
 
+                                    </div>
                                 </div>
+
+                                <style>
+                                    .a_link:link {
+                                        color: rgb(255, 255, 255);
+                                        text-decoration: underline;
+                                        font-size: 16px;
+                                    }
+
+                                    .custom-checkbox {
+                                        position: absolute;
+                                        z-index: -1;
+                                        opacity: 0;
+                                    }
+
+                                    .custom-checkbox+label {
+                                        display: inline-flex;
+                                        align-items: center;
+                                        user-select: none;
+                                        font-size: 14px
+                                    }
+
+                                    .custom-checkbox+label::before {
+                                        content: '';
+                                        display: inline-block;
+                                        width: 1em;
+                                        height: 1em;
+                                        flex-shrink: 0;
+                                        flex-grow: 0;
+                                        border: 1px solid #adb5bd;
+                                        border-radius: 0.25em;
+                                        margin-right: 0.5em;
+                                        background-repeat: no-repeat;
+                                        background-position: center center;
+                                        background-size: 50% 50%;
+                                    }
+
+                                    .custom-checkbox:checked+label::before {
+                                        border-color: #adb5bd;
+                                        background-color: #021836fa;
+                                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+                                    }
+                                </style>
+
+
+
                             </div>
-
-                            <style>
-                                .a_link:link {
-                                    color: rgb(255, 255, 255);
-                                    text-decoration: underline;
-                                    font-size: 16px;
-                                }
-
-                                .custom-checkbox {
-                                    position: absolute;
-                                    z-index: -1;
-                                    opacity: 0;
-                                }
-
-                                .custom-checkbox+label {
-                                    display: inline-flex;
-                                    align-items: center;
-                                    user-select: none;
-                                    font-size: 14px
-                                }
-
-                                .custom-checkbox+label::before {
-                                    content: '';
-                                    display: inline-block;
-                                    width: 1em;
-                                    height: 1em;
-                                    flex-shrink: 0;
-                                    flex-grow: 0;
-                                    border: 1px solid #adb5bd;
-                                    border-radius: 0.25em;
-                                    margin-right: 0.5em;
-                                    background-repeat: no-repeat;
-                                    background-position: center center;
-                                    background-size: 50% 50%;
-                                }
-
-                                .custom-checkbox:checked+label::before {
-                                    border-color: #adb5bd;
-                                    background-color: #021836fa;
-                                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-                                }
-                            </style>
-
-
-
                         </div>
-                    </div>
-                </form>
-            </div>
-            <div style="width: 75%; margin-left: auto; margin-right: auto; margin-top: 50px;">
-                <p>View our <a href="#" style="text-decoration: underline;"> Privacy Policy</a></p>
-                <p>You must have <a href="https://support.google.com/accounts/answer/61416б" target="_blank"
-                        style="text-decoration: underline;"> cookies enabled</a> to use this site (cookies enabled)
-                    <a href="#" style="text-decoration: underline;">terms and conditions</a>
-                </p>
-            </div>
+                    </form>
+                </div>
+                
+                <div style="width: 75%; margin-left: auto; margin-right: auto; margin-top: 50px;">
+                    <p>View our <a href="#" style="text-decoration: underline;"> Privacy Policy</a></p>
+                    <p>You must have <a href="https://support.google.com/accounts/answer/61416б" target="_blank"
+                            style="text-decoration: underline;"> cookies enabled</a> to use this site (cookies enabled)
+                        <a href="#" style="text-decoration: underline;">terms and conditions</a>
+                    </p>
+                </div>
 
 
         </section>
 
     </div>
-
-    <style>
-        .wrapper {
-           
-            color: #eee;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* perspective: 1000px; */
-            perspective-origin: 50% 50%;
-            animation: animation 100s linear infinite;
-            z-index: -5;
-        }
-
-        @keyframes animation {
-            100% {
-                background-position: 0px -3000px;
-            }
-        }
-
-        input {
-            background: transparent;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            color: inherit;
-            width: 100%;
-            outline: none;
-            font-size: 1.4rem;
-            line-height: 2.1rem;
-            font-family: Lato, sans-serif;
-            font-weight: 400;
-            letter-spacing: -.02em;
-            text-align: left;
-        }
-
-        .tabs-input__wrap {
-
-            font-weight: 400;
-            border: .2rem solid #c4c4c4;
-            position: relative;
-            background-color: #021836fa;
-            margin-top: 2rem;
-
-            padding: .9rem 1.4rem;
-        }
-
-        .signup-tabs__wrap {
-            width: 82%;
-            margin: 0 auto;
-        }
-
-        .signup__tabs {
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            -ms-align-items: center;
-            align-items: center;
-            border-bottom: 2px solid #ededed;
-        }
-
-        .signup__tabs>div.active {
-            background-color: #ee534f !important;
-        }
-
-        .signup__tabs>div {
-            width: 33.333%;
-            cursor: pointer;
-            position: relative;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            -ms-align-items: center;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 0;
-        }
-
-        .signup__tabs>div>h2 {
-            display: inline-block;
-            color: #fff;
-            font-weight: 400;
-            font-size: 22px;
-            z-index: 1;
-            position: relative;
-        }
-
-        .signup__tabs>div.active>h2:after {
-            color: #bd403c;
-        }
-
-        .signup__tabs>div:nth-child(1)>h2:after {
-            content: "1";
-        }
-
-        .signup__tabs>div>h2:after {
-            position: absolute;
-            left: -24px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #1d1c22;
-            font-size: 75px;
-            font-weight: 900;
-            z-index: -1;
-        }
-
-        .signup__tabs>div.active:after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            z-index: 1;
-            transform: translateY(-50%);
-            border: 13px solid transparent;
-            border-left: 13px solid #ee534f;
-        }
-
-        .signup__tabs>div:nth-child(2) {
-            background-color: #33363b;
-        }
-
-        .signup__tabs>div {
-            width: 33.333%;
-            cursor: pointer;
-            position: relative;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            -ms-align-items: center;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 0;
-        }
-
-        .signup__tabs>div>h2 {
-            display: inline-block;
-            color: #fff;
-            font-weight: 400;
-            font-size: 22px;
-            z-index: 1;
-            position: relative;
-        }
-
-        .signup__tabs>div:nth-child(2)>h2:after {
-            content: "2";
-            color: #28292d;
-        }
-
-        .signup__tabs>div>h2:after {
-            position: absolute;
-            left: -24px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #1d1c22;
-            font-size: 75px;
-            font-weight: 900;
-            z-index: -1;
-        }
-
-        .signup__tabs>div:nth-child(3) {
-            background-color: #27282c;
-        }
-
-        .signup__tabs>div:nth-child(3)>h2:after {
-            content: "3";
-        }
-
-        .signup__tabs_content {
-            padding: 0px 10px 15px;
-        }
-
-        .signup__tabs_content>div.active {
-            display: block;
-        }
-
-        .tabs__input-group.main-inputs {
-            margin-bottom: 5px;
-        }
-
-        .tabs__input-group input,
-        .tabs__input-group textarea {
-            display: block;
-            width: 100%;
-            border: none;
-            outline: none;
-            color: #fff;
-            background-color: transparent;
-            z-index: 1;
-            font-size: 14px;
-            padding: 2px 5px 2px 4px;
-        }
-
-        .tabs_column2 {
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .tabs__input-group .tabs_column2 .tabs-input__wrap {
-            width: 47%;
-        }
-
-        .tabs__input-group {
-            padding: 12px 25px 4px;
-        }
-
-        .tabs_column2 {
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .tabs__input-group .tabs-input__wrap {
-            margin-bottom: 0;
-            position: relative;
-        }
-
-        .tabs_column3,
-        .select,
-        .control-checkbox {
-            position: relative;
-
-
-        }
-
-        .select {
-            cursor: pointer;
-            width: 100%;
-            color: #fff;
-            background-color: transparent;
-            z-index: 1;
-            font-size: 14px;
-        }
-
-        .tabs__input-group .tabs-input__wrap.padd .select__gap,
-        .tabs__input-group .tabs-input__wrap.padd input {
-            padding: 2px 5px 2px 5px;
-        }
-
-        .select__gap {
-            z-index: 1;
-            border-bottom: 1px solid #ededed;
-        }
-
-        .footer__get-in-touch__button.open img,
-        .select .select__gap.on:after {
-            -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
-        }
-
-        .footer__get-in-touch__button.open img,
-        .select .select__gap.on:after {
-            -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
-        }
-
-        .footer__get-in-touch__button img,
-        .select .select__gap:after {
-            margin-left: 23px;
-            -webkit-transition: -webkit-transform .3s ease;
-            transition: -webkit-transform .3s ease;
-            transition: transform .3s ease;
-            transition: transform .3s ease, -webkit-transform .3s ease;
-        }
-
-        .select__gap:after {
-            content: '';
-            right: 10px;
-            display: block;
-            position: absolute;
-            top: 50%;
-            margin-top: -5px;
-            height: 10px;
-            width: 16px;
-            background: url(images/get-in-touch.png) no-repeat center center / cover;
-            margin: 0;
-        }
-    </style>
-
-
-
-
 
 <footer class="footer">
     <div class="text-block-6">All Rights Reserved. © Proxicent <span id="year">2021</span></div>
