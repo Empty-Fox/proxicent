@@ -4170,7 +4170,7 @@ a {
 .ui-title.section-offers__title-bg.is-theme-bg.blog {
   width: 100%;
   text-align: center;
-  margin-top: -100px;  
+  margin-top: -50px;  
   opacity: .3;
 }
 
@@ -4206,7 +4206,7 @@ a {
   width: 100%;
   text-align: center;
   opacity: .3;            
-  margin-top: -100px;
+  margin-top: -50px;
   z-index: -1;
 }
 .contact-image {
