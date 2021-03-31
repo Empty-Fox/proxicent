@@ -27,6 +27,255 @@
 
 
     <style>
+         .wrapper {
+            color: #eee;
+            width: 100%;
+            height: 100vh;
+            display: flex;         
+            justify-content: center;
+            align-items: center;
+            /* perspective: 1000px; */
+            perspective-origin: 50% 50%;
+            animation: animation 100s linear infinite;
+            z-index: -5;           
+        }
+
+        @keyframes animation {
+            100% {
+                background-position: 0px -3000px;
+            }
+        }
+        input {
+            background: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: inherit;
+    width: 100%;
+    outline: none;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    text-align: left;
+        }
+        .tabs-input__wrap {
+         
+    font-weight: 400;
+    border: .2rem solid #c4c4c4;
+    position: relative;
+    background-color: #021836fa;
+    margin-top: 2rem;
+    
+    padding: .9rem 1.4rem;
+        }
+        .signup-tabs__wrap {
+    width: 82%;
+    margin: 0 auto;
+}
+.signup__tabs {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    border-bottom: 2px solid #ededed;
+}
+.signup__tabs > div.active {
+    background-color: #ee534f!important;
+}
+.signup__tabs > div {
+    width: 33.333%;
+    cursor: pointer;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.signup__tabs > div > h2 {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    z-index: 1;
+    position: relative;
+}
+.signup__tabs > div.active > h2:after {
+    color: #bd403c;
+}
+.signup__tabs > div:nth-child(1) > h2:after {
+    content: "1";
+}
+.signup__tabs > div > h2:after {
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1d1c22;
+    font-size: 75px;
+    font-weight: 900;
+    z-index: -1;
+}
+.signup__tabs > div.active:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    z-index: 1;
+    transform: translateY(-50%);
+    border: 13px solid transparent;
+    border-left: 13px solid #ee534f;
+}
+.signup__tabs > div:nth-child(2) {
+    background-color: #33363b;
+}
+.signup__tabs > div {
+    width: 33.333%;
+    cursor: pointer;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.signup__tabs > div > h2 {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    z-index: 1;
+    position: relative;
+}
+.signup__tabs > div:nth-child(2) > h2:after {
+    content: "2";
+    color: #28292d;
+}
+.signup__tabs > div > h2:after {
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1d1c22;
+    font-size: 75px;
+    font-weight: 900;
+    z-index: -1;
+}
+.signup__tabs > div:nth-child(3) {
+    background-color: #27282c;
+}
+
+.signup__tabs > div:nth-child(3) > h2:after {
+    content: "3";
+}
+.signup__tabs_content {
+    padding: 0px 10px 15px;
+}
+.signup__tabs_content > div.active {
+    display: block;
+}
+.tabs__input-group.main-inputs {
+    margin-bottom: 5px;
+}
+
+.tabs__input-group input, .tabs__input-group textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    z-index: 1;
+    font-size: 14px;
+    padding: 2px 5px 2px 4px;
+}
+.tabs_column2 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.tabs__input-group .tabs_column2 .tabs-input__wrap {
+    width: 47%;
+}
+.tabs__input-group {
+    padding: 12px 25px 4px;
+}
+.tabs_column2 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.tabs__input-group .tabs-input__wrap {
+    margin-bottom: 0;
+    position: relative;
+}
+.tabs_column3, .select, .control-checkbox {
+    position: relative;
+   
+    
+}
+.select {
+    cursor: pointer;
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+    z-index: 1;
+    font-size: 14px;
+}
+.tabs__input-group .tabs-input__wrap.padd .select__gap, .tabs__input-group .tabs-input__wrap.padd input {
+    padding: 2px 5px 2px 5px;
+}
+.select__gap {
+    z-index: 1;
+    border-bottom: 1px solid #ededed;
+}
+.footer__get-in-touch__button.open img, .select .select__gap.on:after {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+.footer__get-in-touch__button.open img, .select .select__gap.on:after {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+.footer__get-in-touch__button img, .select .select__gap:after {
+    margin-left: 23px;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.select__gap:after {
+    content: '';
+    right: 10px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    height: 10px;
+    width: 16px;
+    background: url(images/get-in-touch.png) no-repeat center center / cover;
+    margin: 0;
+}
+
         .btn.fancy-btn.w-button:before,
         .btn.fancy-btn.w-button:hover:before,
         .btn.fancy-btn.w-button:after,
@@ -44,7 +293,7 @@
           position: relative;
           z-index: 100;
           overflow: visible;
-          padding: 18px 60px;
+          padding: 20px 60px;
           background-color: transparent;
           -webkit-transform: translate(0px, 0px) translate(0px, 0px);
           -ms-transform: translate(0px, 0px) translate(0px, 0px);
@@ -123,155 +372,623 @@
 </head>
 
 <body>
-
-    <div id="" class="wrapper" style="    
-  background-position: 50% 50%;
-  background-size: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
-  ">
-        <div data-collapse="medium" class="navbar w-nav">
-            <a href="#" style="color: white; line-height: 60px; float: left;">
-                <!-- <img src="images/logo-mnu.svg" loading="lazy" alt="Supremedia" class="logo"> -->
-                LOGO
+    <div id="Home">
+        <div data-collapse="medium" class="navbar w-nav" style=" padding-left: 20px;">
+          <a href="#" style="color: white; line-height: 60px; float: left; ">
+            <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo" style="width: 200px; ">
+          </a>
+          <nav class="nav-menu w-nav-menu nav-1" style=" width: 80%;">
+            <a href="index.html" class="nav w-nav-link link-1 ">Home</a>
+            <a href="index.html#AboutUs" class="nav  w-nav-link link-1">About us</a>
+            <a href="index.html#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
+    
+            <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
+            <a href="blog.html" class="nav w-nav-link link-1 ">Blog</a>
+            <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us at the conferences
             </a>
-            <nav class="nav-menu w-nav-menu nav-1">
-                <a href="index.html#Home" class="nav w-nav-link link-1 ">Home</a>
-                <a href="index.html#AboutUs" class="nav  w-nav-link link-1">About us</a>
-                <a href="index.html#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
+    
+            <a href="login.html" class="nav w-nav-link link-1">Login</a>
+    
+            <div class="dropdown">
+              <button class="dropbtn">
+                <img src="images/united-kingdom.png">
+                <span style="padding-left:4px; font-size: 12px;"> EN</span>
+                <i class="fa fa-caret-down" style="color: white;"></i>
+              </button>
+    
+              <div class="dropdown-content">
+                <a href="#"> <img src="images/russia.png"><span style="padding-left:4px; font-size: 12px;"> RU</span> </a>
+                <a href="#"> <img src="images/spain.png"> <span style="padding-left:4px; font-size: 12px;"> ES</span></a>
+              </div>
+    
+            </div>
+    
+    
+            <a href="signup.html" class="register w-nav-link activeMenu">Register</a>
+          </nav>
+    
+          <div class="menu-button-2 w-nav-button">
+            <div class="lottie-animation-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712 712" width="712" height="712"
+                style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+    
+                <g>
+                  <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="60"
+                        d=" M-324,250 C-324,250 324,250 324,250">
+                      </path>
+                    </g>
+                  </g>
+                  <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="60"
+                        d=" M-324,-250 C-324,-250 324,-250 324,-250"></path>
+                    </g>
+                  </g>
+                  <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="60" d=" M-324,0 C-324,0 324,0 324,0">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    <div class="wrapper">
+        
 
-                <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
-                <a href="blog.html" class="nav w-nav-link link-1">Blog</a>
-                <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us at the conferences
-                </a>
+        <section style="position: absolute; width: 950px; padding-top: 200px;">
+            <div class="section-signup__header" >
+                <h1 class="heading" data-aos="zoom-out-up">Register</h1>
+            </div>
+            
 
+<form role="form" action="" method="post" >
+    <div class="row setup-content-2" id="step-1">      
+<!-- Stepper -->
+<div class="steps-form-2">
+    <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
+        <div class="steps-step-2">
+            <a href="#step-1" type="button" class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information">
+               1</a>
+        </div>
+        <div class="steps-step-2">
+            <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Personal Data">
+                2</a>
+        </div>
+        <div class="steps-step-2">
+            <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
+               3</a>
+        </div>
+    </div>
+</div>
 
-
-                <a href="login.html" class="nav w-nav-link link-1">Login</a>
-
-                <div class="dropdown">
-                    <button class="dropbtn">
-                        <img src="images/united-kingdom.png"><span style="padding-left:4px; font-size: 12px;"> EN</span>                       
-                    </button>
-
-                    <div class="dropdown-content">
-                        <a href="#"> <img src="images/russia.png"><span style="padding-left:4px; font-size: 12px;">
-                                RU</span> </a>
-                        <a href="#"> <img src="images/spain.png"> <span style="padding-left:4px; font-size: 12px;">
-                                ES</span></a>
-                    </div>
-
+        <div class="tabs__input-group main-inputs">
+            <div class="tabs-input__wrap">                                 
+                <input type="text" name="email" placeholder="Email*" value="" required="">
+            </div>
+            <div class="tabs_column2">
+                <div class="tabs-input__wrap">
+                  
+                    <input id="password" type="password" name="password" placeholder="Password*" required="">
+                 
                 </div>
-
-
-
-                <style>
-                    .dropdown {
-                        float: inherit;
-                        overflow: hidden;
-                        width: auto;
-                        margin-left: 70px;
-                        margin-right: 70px;
-                    }
-
-                    .dropbtn img,
-                    .dropdown-content img {
-                        width: 30px;
-                    }
-
-                    .dropdown .dropbtn {
-                        border: none;
-                        outline: none;
-                        color: #ededed;
-                        padding: 14px 16px;
-                        background-color: inherit;
-                        font-family: 'Montserrat', sans-serif;
-                        margin: 0;
-                    }
-
-                    .dropdown-content {
-                        display: none;
-                        position: absolute;
-
-                        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                        z-index: 1;
-                    }
-
-                    .dropdown-content a {
-                        float: none;
-                        color: #ededed;
-
-                        padding: 12px 16px;
-                        text-decoration: none;
-                        display: block;
-                        text-align: left;
-                    }
-
-                    .dropdown-content a:hover {
-                        background-color: rgba(40, 40, 40, 0.5);
-                    }
-
-                    .dropdown:hover .dropdown-content {
-                        display: block;
-                    }
-                </style>
-
-                <a href="signup.html" class="register w-nav-link">Register</a>
-            </nav>
-
-            <div class="menu-button-2 w-nav-button" style="-webkit-user-select: text;">
-                <div class="lottie-animation-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712 712" width="712" height="712"
-                        style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
-
-                        <g>
-                            <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
-                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                                    <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
-                                        stroke-miterlimit="10" stroke="rgb(255,255,255)" stroke-opacity="1"
-                                        stroke-width="60" d=" M-324,250 C-324,250 324,250 324,250">
-                                    </path>
-                                </g>
-                            </g>
-                            <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
-                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                                    <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
-                                        stroke-miterlimit="10" stroke="rgb(255,255,255)" stroke-opacity="1"
-                                        stroke-width="60" d=" M-324,-250 C-324,-250 324,-250 324,-250"></path>
-                                </g>
-                            </g>
-                            <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
-                                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                                    <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0"
-                                        stroke-miterlimit="10" stroke="rgb(255,255,255)" stroke-opacity="1"
-                                        stroke-width="60" d=" M-324,0 C-324,0 324,0 324,0">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
+                <div class="tabs-input__wrap">
+                  
+                    <input type="password" name="password_confirmation" placeholder="Confirm password*" required="">
                 </div>
             </div>
         </div>
 
-
-        <section style="position: absolute; width: 950px;height: 100vh;">
-            <div class="section-signup__header" style="padding: 8rem 0 6rem;">
-                <h1 class="heading" data-aos="zoom-out-up" >Register</h1>
+        <div class="tabs__input-group">
+            <div class="tabs_column2">
+                <div class="tabs-input__wrap">
+                   
+                    <input type="text" name="name" value="" placeholder="Name" required="">
+                </div>
+                <div class="tabs-input__wrap">
+                  
+                    <input type="text" name="country" value="" placeholder="Country" required="">
+                </div>
             </div>
+            <div class="tabs-input__wrap">
+               
+                <input type="text" name="address" value="" placeholder="Address">
+            </div>
+            <div class="tabs_column2 ">
+                <div class="tabs-input__wrap padd">
+                   <div class="custom-select" style="width:100%">
+                      <select>
+                        <option value="IM Type*"><span style="color: #646262;"> IM Type*</span></option>
+                        <option value="Skype">Skype</option>
+                        <option value="Telegram">Telegram</option>
+                        <option value="Other">Other</option>                                        
+                      </select>
+                    </div>
+                  </div>
+                  <style>
+                    
+                      .custom-select {
+                        position: relative;
+                        font-family: Arial;
+                        font-size: 14px;
+                        
+padding: 2px 5px 2px 4px;
+                      }
+                      
+                      .custom-select select {
+                        display: none;
+                      }
+                                                             
+                    
+                      .select-selected:after {
+                        position: absolute;
+                        content: "";
+                        top: 7px;
+                        right: 10px;
+                        width: 0;
+                        height: 0;
+                        border: 6px solid transparent;
+                        border-color: #fff transparent transparent transparent;
+                      }
+                      
+               
+                      .select-selected.select-arrow-active:after {
+                        border-color: transparent transparent #fff transparent;
+                        top: 0px;
+                      }
+                      
+                    
+                      .select-items div,.select-selected {
+                        color: #ffffff;                                          
+                        border: 1px solid transparent;
+                        border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
+                        cursor: pointer;
+                        user-select: none;                                          
+                          padding-bottom: 5px;
+                      }
+                      
+                   
+                      .select-items {
+                        position: absolute;
+                        background-color: #021836fa;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        z-index: 99;
+                        
+box-shadow: 0 0 10px rgb(255 255 255 / 50%);
+                      }
+                      
+                    
+                      .select-hide {
+                        display: none;
+                      }
+                      
+                      .select-items div:hover, .same-as-selected {
+                        background-color: rgba(0, 0, 0, 0.1);
+                      }
+                      </style>
+                      <script>
+                          var x, i, j, l, ll, selElmnt, a, b, c;
+                        
+                          x = document.getElementsByClassName("custom-select");
+                          l = x.length;
+                          for (i = 0; i < l; i++) {
+                            selElmnt = x[i].getElementsByTagName("select")[0];
+                            ll = selElmnt.length;
+                          
+                            a = document.createElement("DIV");
+                            a.setAttribute("class", "select-selected");
+                            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                            x[i].appendChild(a);
+                            
+                            b = document.createElement("DIV");
+                            b.setAttribute("class", "select-items select-hide");
+                            for (j = 1; j < ll; j++) {
+                        
+                              c = document.createElement("DIV");
+                              c.innerHTML = selElmnt.options[j].innerHTML;
+                              c.addEventListener("click", function(e) {
+                                
+                                  var y, i, k, s, h, sl, yl;
+                                  s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                                  sl = s.length;
+                                  h = this.parentNode.previousSibling;
+                                  for (i = 0; i < sl; i++) {
+                                    if (s.options[i].innerHTML == this.innerHTML) {
+                                      s.selectedIndex = i;
+                                      h.innerHTML = this.innerHTML;
+                                      y = this.parentNode.getElementsByClassName("same-as-selected");
+                                      yl = y.length;
+                                      for (k = 0; k < yl; k++) {
+                                        y[k].removeAttribute("class");
+                                      }
+                                      this.setAttribute("class", "same-as-selected");
+                                      break;
+                                    }
+                                  }
+                                  h.click();
+                              });
+                              b.appendChild(c);
+                            }
+                            x[i].appendChild(b);
+                            a.addEventListener("click", function(e) {
+                              
+                                e.stopPropagation();
+                                closeAllSelect(this);
+                                this.nextSibling.classList.toggle("select-hide");
+                                this.classList.toggle("select-arrow-active");
+                              });
+                          }
+                          function closeAllSelect(elmnt) {
+                           
+                            var x, y, i, xl, yl, arrNo = [];
+                            x = document.getElementsByClassName("select-items");
+                            y = document.getElementsByClassName("select-selected");
+                            xl = x.length;
+                            yl = y.length;
+                            for (i = 0; i < yl; i++) {
+                              if (elmnt == y[i]) {
+                                arrNo.push(i)
+                              } else {
+                                y[i].classList.remove("select-arrow-active");
+                              }
+                            }
+                            for (i = 0; i < xl; i++) {
+                              if (arrNo.indexOf(i)) {
+                                x[i].classList.add("select-hide");
+                              }
+                            }
+                          }
+                         
+                          document.addEventListener("click", closeAllSelect);
+                          </script>
+                <div class="tabs-input__wrap padd">
+                    <input type="text" name="im_type" value="" placeholder="Contact Info" required="">
+                </div>
+            </div>
+            <div class="tabs_column2">
+                <div class="tabs-input__wrap">
+                  
+                    <input type="text" name="company_name" value="" placeholder="Company name">
+                </div>
+                <div class="tabs-input__wrap">
+                 
+                    <input type="text" name="url_company" value="" placeholder="URL (company / personal / etc.)">
+                </div>
+            </div>
+        </div>
+        <div class="tabs__button" style="width: 100%;
+        padding: 12px 25px 4px;
+        margin-left: calc;
+        margin-left: 60%;">                            
+            <a href="#" class="btn fancy-btn orange dark w-button nextBtn-2">Continue</a>
+        </div>
+  </div>
+
+<!-- Second Step -->
+    <div class="row setup-content-2" id="step-2">
+        <!-- Stepper -->
+<div class="steps-form-2">
+    <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
+        <div class="steps-step-2">
+            <a href="#step-1" type="button" class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information">
+               1</a>
+        </div>
+        <div class="steps-step-2">
+            <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Personal Data">
+                2</a>
+        </div>
+        <div class="steps-step-2">
+            <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
+               3</a>
+        </div>
+    </div>
+</div>
+
+        <div class="tabs-input__wrap">                                 
+            <h3>Name main verticals          
+            </h3>
+        </div>
+        <section>
+  
+            <h1>Checkboxes that work goodly</h1>
+            
+            <input id='one' type='checkbox' />
+            <label for='one'>
+              <span></span>
+              Off with your head
+              <ins><i>Off with your head</i></ins>
+            </label>
+            
+            <input id='two' type='checkbox' />
+            <label for='two'>
+              <span></span>
+              Dance ’til you’re dead
+              <ins><i>Dance ’til you’re dead</i></ins>
+            </label>
+            
+            <input id='three' type='checkbox' />
+            <label for='three'>
+              <span></span>
+              Heads will roll
+              <ins><i>Heads will roll</i></ins>
+            </label>
+            
+            <input id='four' type='checkbox' />
+            <label for='four'>
+              <span></span>
+              On the floor
+              <ins><i>On the floor</i></ins>
+            </label>
+            
+          </section>
+          <style>
+             input[type='checkbox']{ height: 0; width: 0; }
+
+input[type='checkbox'] + label{
+  position: relative;
+  display: flex;
+  margin: .6em 0;
+  align-items: center;
+  color: #9e9e9e;
+  transition: color 250ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox'] + label > ins{
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 2em;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  transition: height 300ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox'] + label > ins > i{
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+  color: #4FC3F7;
+}
+input[type='checkbox'] + label > span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  width: 1em;
+  height: 1em;
+  background: transparent;
+  border: 2px solid #9E9E9E;
+  border-radius: 2px;
+  cursor: pointer;  
+  transition: all 250ms cubic-bezier(.4,.0,.23,1);
+}
+
+input[type='checkbox'] + label:hover, input[type='checkbox']:focus + label{
+  color: #fff;
+}
+input[type='checkbox'] + label:hover > span, input[type='checkbox']:focus + label > span{
+  background: rgba(255,255,255,.1);
+}
+input[type='checkbox']:checked + label > ins{ height: 100%; }
+
+input[type='checkbox']:checked + label > span{
+  border: .5em solid #FFEB3B;
+  animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox']:checked + label > span:before{
+  content: "";
+  position: absolute;
+  top: .6em;
+  left: .2em;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+  animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
+}
+
+@keyframes shrink-bounce{
+  0%{
+    transform: scale(1);
+  }
+  33%{    
+    transform: scale(.85);
+  }
+  100%{
+    transform: scale(1);    
+  }
+}
+@keyframes checkbox-check{
+  0%{
+    width: 0;
+    height: 0;
+    border-color: #212121;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  33%{
+    width: .2em;
+    height: 0;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  100%{    
+    width: .2em;
+    height: .5em;    
+    border-color: #212121;
+    transform: translate3d(0,-.5em,0) rotate(45deg);
+  }
+}
+          </style>
+        <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
+        <button class="btn btn-mdb-color btn-rounded nextBtn-2 float-right" type="button">Next</button>
+    </div>
+
+    <!-- Third Step -->
+    <div class="row setup-content-2" id="step-3">
+        <!-- Stepper -->
+<div class="steps-form-2">
+    <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
+        <div class="steps-step-2">
+            <a href="#step-1" type="button" class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information">
+               1</a>
+        </div>
+        <div class="steps-step-2">
+            <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Personal Data">
+                2</a>
+        </div>
+        <div class="steps-step-2">
+            <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
+               3</a>
+        </div>        
+    </div>
+</div>
+
+        <div class="col-md-12">
+            <h3 class="font-weight-bold pl-0 my-4"><strong>Terms and conditions</strong></h3>
+            <div class="form-check">
+                <input type="checkbox" id="checkbox111" class="form-check-input">
+                <label for="checkbox111" class="form-check-label">I agree to the terms and conditions</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="checkbox112" class="form-check-input">
+                <label for="checkbox112" class="form-check-label">I want to receive newsletter</label>
+            </div>
+            <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
+            <button class="btn btn-mdb-color btn-rounded nextBtn-2 float-right" type="button">Next</button>
+        </div>
+    </div>
+
+    <!-- Fourth Step -->
+    <!-- <div class="row setup-content-2" id="step-4">
+        <div class="col-md-12">
+            <h3 class="font-weight-bold pl-0 my-4"><strong>Finish</strong></h3>
+            <h2 class="text-center font-weight-bold my-4">Registration completed!</h2>
+            <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
+            <button class="btn btn-success btn-rounded float-right" type="submit">Submit</button>
+        </div>
+    </div> -->
+</form>
+
+<style>
+    .steps-form-2 {
+    display: table;
+    width: 100%;
+    position: relative; }
+.steps-form-2 .steps-row-2 {
+    display: table-row; }
+.steps-form-2 .steps-row-2:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: #7283a7; }
+.steps-form-2 .steps-row-2 .steps-step-2 {
+    display: table-cell;
+    text-align: center;
+    position: relative; }
+.steps-form-2 .steps-row-2 .steps-step-2 p {
+    margin-top: 0.5rem; }
+.steps-form-2 .steps-row-2 .steps-step-2 button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important; }
+.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #59698D;
+    background-color: white !important;
+    color: #59698D !important;
+    border-radius: 50%;
+    padding: 22px 18px 15px 18px;
+    margin-top: -22px; }
+.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2:hover {
+    border: 2px solid #4285F4;
+    color: #4285F4 !important;
+    background-color: white !important; }
+.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 .fa {
+    font-size: 1.7rem; }
+    .btn-blue-grey {
+          width: 70px;
+    height: 70px;
+    }
+</style>
+<script>
+    // Tooltips Initialization
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// Steppers
+$(document).ready(function () {
+  var navListItems = $('div.setup-panel-2 div a'),
+          allWells = $('.setup-content-2'),
+          allNextBtn = $('.nextBtn-2'),
+          allPrevBtn = $('.prevBtn-2');
+
+  allWells.hide();
+
+  navListItems.click(function (e) {
+      e.preventDefault();
+      var $target = $($(this).attr('href')),
+              $item = $(this);
+
+      if (!$item.hasClass('disabled')) {
+          navListItems.removeClass('btn-amber').addClass('btn-blue-grey');
+          $item.addClass('btn-amber');
+          allWells.hide();
+          $target.show();
+          $target.find('input:eq(0)').focus();
+      }
+  });
+
+  allPrevBtn.click(function(){
+      var curStep = $(this).closest(".setup-content-2"),
+          curStepBtn = curStep.attr("id"),
+          prevStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+
+          prevStepSteps.removeAttr('disabled').trigger('click');
+  });
+
+  allNextBtn.click(function(){
+      var curStep = $(this).closest(".setup-content-2"),
+          curStepBtn = curStep.attr("id"),
+          nextStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+          curInputs = curStep.find("input[type='text'],input[type='url']"),
+          isValid = true;
+
+      $(".form-group").removeClass("has-error");
+      for(var i=0; i< curInputs.length; i++){
+          if (!curInputs[i].validity.valid){
+              isValid = false;
+              $(curInputs[i]).closest(".form-group").addClass("has-error");
+          }
+      }
+
+      if (isValid)
+          nextStepSteps.removeAttr('disabled').trigger('click');
+  });
+
+  $('div.setup-panel-2 div a.btn-amber').trigger('click');
+});
+</script>
            
-            <div class="signup__first-row">
+            <!-- <div class="signup__first-row">
                 <form id="form-signup" action="https://c3pa.net/signup" method="post" class="signup-tabs__wrap">
-                                <input type="hidden" name="_token" value="A0oaNuDPnOLwNuhCmgul8JtOFLIIKd2eDQv7BAqX">            <div class="signup__tabs">
-                    <!-- <div id="tab1" class="active">
-                        <h2>Personal info</h2>
-                    </div>
-                    <div id="tab2">
-                        <h2>Experience</h2>
-                    </div>
-                    <div id="tab3">
-                        <h2>Last step</h2>
-                    </div> -->
+                                <input type="hidden" name="_token" value="A0oaNuDPnOLwNuhCmgul8JtOFLIIKd2eDQv7BAqX">           
+                                <div class="signup__tabs">
+                   
                   </div>
                   <input type="hidden" name="partner_ip" value="178.214.200.9">
                   <input type="hidden" name="utm_source" value="">
@@ -311,13 +1028,153 @@
                               </div>
                               <div class="tabs_column2 ">
                                   <div class="tabs-input__wrap padd">
-                                      <div class="select on"><select name="im_type_code" id="imType" required="" style="position: absolute; opacity: 0; visibility: hidden;">
-                                          <option value="" disabled="" selected="" hidden="">IM Type*</option>
+                                     <div class="custom-select" style="width:100%">
+                                        <select>
+                                          <option value="IM Type*"><span style="color: #646262;"> IM Type*</span></option>
                                           <option value="Skype">Skype</option>
                                           <option value="Telegram">Telegram</option>
-                                          <option value="Other">Other</option>
-                                      </select><div class="select__gap on">IM Type*</div><div class="select__bg" style="top: -105px;"></div><ul class="select__list" style="display: block;"><li class="select__item" data-value="Skype"><span>Skype</span></li><li class="select__item" data-value="Telegram"><span>Telegram</span></li><li class="select__item" data-value="Other"><span>Other</span></li></ul></div>
-                                  </div>
+                                          <option value="Other">Other</option>                                        
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <style>
+                                      
+                                        .custom-select {
+                                          position: relative;
+                                          font-family: Arial;
+                                          font-size: 14px;
+                                          
+    padding: 2px 5px 2px 4px;
+                                        }
+                                        
+                                        .custom-select select {
+                                          display: none;
+                                        }
+                                                                               
+                                      
+                                        .select-selected:after {
+                                          position: absolute;
+                                          content: "";
+                                          top: 7px;
+                                          right: 10px;
+                                          width: 0;
+                                          height: 0;
+                                          border: 6px solid transparent;
+                                          border-color: #fff transparent transparent transparent;
+                                        }
+                                        
+                                 
+                                        .select-selected.select-arrow-active:after {
+                                          border-color: transparent transparent #fff transparent;
+                                          top: 0px;
+                                        }
+                                        
+                                      
+                                        .select-items div,.select-selected {
+                                          color: #ffffff;                                          
+                                          border: 1px solid transparent;
+                                          border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
+                                          cursor: pointer;
+                                          user-select: none;                                          
+                                            padding-bottom: 5px;
+                                        }
+                                        
+                                     
+                                        .select-items {
+                                          position: absolute;
+                                          background-color: #021836fa;
+                                          top: 100%;
+                                          left: 0;
+                                          right: 0;
+                                          z-index: 99;
+                                          
+    box-shadow: 0 0 10px rgb(255 255 255 / 50%);
+                                        }
+                                        
+                                      
+                                        .select-hide {
+                                          display: none;
+                                        }
+                                        
+                                        .select-items div:hover, .same-as-selected {
+                                          background-color: rgba(0, 0, 0, 0.1);
+                                        }
+                                        </style>
+                                        <script>
+                                            var x, i, j, l, ll, selElmnt, a, b, c;
+                                          
+                                            x = document.getElementsByClassName("custom-select");
+                                            l = x.length;
+                                            for (i = 0; i < l; i++) {
+                                              selElmnt = x[i].getElementsByTagName("select")[0];
+                                              ll = selElmnt.length;
+                                            
+                                              a = document.createElement("DIV");
+                                              a.setAttribute("class", "select-selected");
+                                              a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                                              x[i].appendChild(a);
+                                              
+                                              b = document.createElement("DIV");
+                                              b.setAttribute("class", "select-items select-hide");
+                                              for (j = 1; j < ll; j++) {
+                                          
+                                                c = document.createElement("DIV");
+                                                c.innerHTML = selElmnt.options[j].innerHTML;
+                                                c.addEventListener("click", function(e) {
+                                                  
+                                                    var y, i, k, s, h, sl, yl;
+                                                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                                                    sl = s.length;
+                                                    h = this.parentNode.previousSibling;
+                                                    for (i = 0; i < sl; i++) {
+                                                      if (s.options[i].innerHTML == this.innerHTML) {
+                                                        s.selectedIndex = i;
+                                                        h.innerHTML = this.innerHTML;
+                                                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                                                        yl = y.length;
+                                                        for (k = 0; k < yl; k++) {
+                                                          y[k].removeAttribute("class");
+                                                        }
+                                                        this.setAttribute("class", "same-as-selected");
+                                                        break;
+                                                      }
+                                                    }
+                                                    h.click();
+                                                });
+                                                b.appendChild(c);
+                                              }
+                                              x[i].appendChild(b);
+                                              a.addEventListener("click", function(e) {
+                                                
+                                                  e.stopPropagation();
+                                                  closeAllSelect(this);
+                                                  this.nextSibling.classList.toggle("select-hide");
+                                                  this.classList.toggle("select-arrow-active");
+                                                });
+                                            }
+                                            function closeAllSelect(elmnt) {
+                                             
+                                              var x, y, i, xl, yl, arrNo = [];
+                                              x = document.getElementsByClassName("select-items");
+                                              y = document.getElementsByClassName("select-selected");
+                                              xl = x.length;
+                                              yl = y.length;
+                                              for (i = 0; i < yl; i++) {
+                                                if (elmnt == y[i]) {
+                                                  arrNo.push(i)
+                                                } else {
+                                                  y[i].classList.remove("select-arrow-active");
+                                                }
+                                              }
+                                              for (i = 0; i < xl; i++) {
+                                                if (arrNo.indexOf(i)) {
+                                                  x[i].classList.add("select-hide");
+                                                }
+                                              }
+                                            }
+                                           
+                                            document.addEventListener("click", closeAllSelect);
+                                            </script>
                                   <div class="tabs-input__wrap padd">
                                       <input type="text" name="im_type" value="" placeholder="Contact Info" required="">
                                   </div>
@@ -593,280 +1450,16 @@
                           </div>
                       </div>
                   </form>
-              </div>
+              </div> -->
 
         </section>
 
     </div>
 
-    <style>
-        .wrapper {
-            background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url(images/milky-way-2695569_1280.jpg);
-            color: #eee;
-            width: 100%;
-            height: 130vh;
-            display: flex;         
-            justify-content: center;
-            align-items: center;
-            /* perspective: 1000px; */
-            perspective-origin: 50% 50%;
-            animation: animation 100s linear infinite;
-            z-index: -5;
-        }
-
-        @keyframes animation {
-            100% {
-                background-position: 0px -3000px;
-            }
-        }
-        input {
-            background: transparent;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    color: inherit;
-    width: 100%;
-    outline: none;
-    font-size: 1.4rem;
-    line-height: 2.1rem;
-    font-family: Lato,sans-serif;
-    font-weight: 400;
-    letter-spacing: -.02em;
-    text-align: left;
-        }
-        .tabs-input__wrap {
-         
-    font-weight: 400;
-    border: .2rem solid #c4c4c4;
-    position: relative;
-    background-color: #0a184b;
-    margin-top: 2rem;
-    
-    padding: .9rem 1.4rem;
-        }
-        .signup-tabs__wrap {
-    width: 82%;
-    margin: 0 auto;
-}
-.signup__tabs {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    border-bottom: 2px solid #ededed;
-}
-.signup__tabs > div.active {
-    background-color: #ee534f!important;
-}
-.signup__tabs > div {
-    width: 33.333%;
-    cursor: pointer;
-    position: relative;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-}
-.signup__tabs > div > h2 {
-    display: inline-block;
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
-    z-index: 1;
-    position: relative;
-}
-.signup__tabs > div.active > h2:after {
-    color: #bd403c;
-}
-.signup__tabs > div:nth-child(1) > h2:after {
-    content: "1";
-}
-.signup__tabs > div > h2:after {
-    position: absolute;
-    left: -24px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #1d1c22;
-    font-size: 75px;
-    font-weight: 900;
-    z-index: -1;
-}
-.signup__tabs > div.active:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    z-index: 1;
-    transform: translateY(-50%);
-    border: 13px solid transparent;
-    border-left: 13px solid #ee534f;
-}
-.signup__tabs > div:nth-child(2) {
-    background-color: #33363b;
-}
-.signup__tabs > div {
-    width: 33.333%;
-    cursor: pointer;
-    position: relative;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-}
-.signup__tabs > div > h2 {
-    display: inline-block;
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
-    z-index: 1;
-    position: relative;
-}
-.signup__tabs > div:nth-child(2) > h2:after {
-    content: "2";
-    color: #28292d;
-}
-.signup__tabs > div > h2:after {
-    position: absolute;
-    left: -24px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #1d1c22;
-    font-size: 75px;
-    font-weight: 900;
-    z-index: -1;
-}
-.signup__tabs > div:nth-child(3) {
-    background-color: #27282c;
-}
-
-.signup__tabs > div:nth-child(3) > h2:after {
-    content: "3";
-}
-.signup__tabs_content {
-    padding: 0px 10px 15px;
-}
-.signup__tabs_content > div.active {
-    display: block;
-}
-.tabs__input-group.main-inputs {
-    margin-bottom: 5px;
-}
-
-.tabs__input-group input, .tabs__input-group textarea {
-    display: block;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    background-color: transparent;
-    z-index: 1;
-    font-size: 14px;
-    padding: 2px 5px 2px 4px;
-}
-.tabs_column2 {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-}
-.tabs__input-group .tabs_column2 .tabs-input__wrap {
-    width: 47%;
-}
-.tabs__input-group {
-    padding: 12px 25px 4px;
-}
-.tabs_column2 {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-}
-.tabs__input-group .tabs-input__wrap {
-    margin-bottom: 0;
-    position: relative;
-}
-.tabs_column3, .select, .control-checkbox {
-    position: relative;
-   
-    
-}
-.select {
-    cursor: pointer;
-    width: 100%;
-    color: #fff;
-    background-color: transparent;
-    z-index: 1;
-    font-size: 14px;
-}
-.tabs__input-group .tabs-input__wrap.padd .select__gap, .tabs__input-group .tabs-input__wrap.padd input {
-    padding: 2px 5px 2px 5px;
-}
-.select__gap {
-    z-index: 1;
-    border-bottom: 1px solid #ededed;
-}
-.footer__get-in-touch__button.open img, .select .select__gap.on:after {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-.footer__get-in-touch__button.open img, .select .select__gap.on:after {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-.footer__get-in-touch__button img, .select .select__gap:after {
-    margin-left: 23px;
-    -webkit-transition: -webkit-transform .3s ease;
-    transition: -webkit-transform .3s ease;
-    transition: transform .3s ease;
-    transition: transform .3s ease, -webkit-transform .3s ease;
-}
-.select__gap:after {
-    content: '';
-    right: 10px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -5px;
-    height: 10px;
-    width: 16px;
-    background: url(images/get-in-touch.png) no-repeat center center / cover;
-    margin: 0;
-}
-    </style>
-
-
-    
+ 
 <footer class="footer">
-    <div class="w-container">
-        <p style="text-align: center; color: white; font-size: 42px; line-height: 94px;" data-aos="zoom-out">LOGO</p>
-        <p class="paragraph center c">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum sint minus
-            consectetur, amet ad cupiditate, distinctio dolores qui aperiam, dignissimos aspernatur suscipit
-            laboriosam
-            aliquam doloremque. Minus optio quibusdam impedit voluptatum.</p>
-
-        <div class="text-block-6">All Rights Reserved. © Supremedia 2020</div>
-    </div>
-</footer>
-
-
-
+    <div class="text-block-6">All Rights Reserved. © Proxicent <span id="year">2021</span></div>
+  </footer>
 
     <script>
         $(window).scroll(function () {
