@@ -5597,9 +5597,32 @@ text-align: center;
 
 @media screen and (max-width: 479px) { 
   .main-block {
-    margin-top: -100px;    
+    margin-top: 0px;    
     margin-bottom: 20px;
   }
+  .heading, .medium-title, .h2, .ui-title.is-size-h2, .h2.center.h2Blog {
+    font-size: 40px;
+    line-height: 52px;
+}
+.heading_smaller {
+  font-size: 30px;
+  line-height: 32px;
+}
+  .text-main-block_secondP {
+    padding-top: 50px;
+}
+.text-main-block p:first-child{
+  padding-top: 50px;
+  
+  padding-bottom: 50px;
+}
+.section-2 {
+  padding: 0px 0px 0px 0px;
+  margin-top: -10px;
+}
+.section-one-column-left {
+  padding-top: 50px;
+}
   .text-main-block a {
     margin-top: 20px;
     margin-bottom: 20px;
