@@ -28,16 +28,17 @@
 
     <style>
          .wrapper {
-            color: #eee;
-            width: 100%;
-            height: 100vh;
-            display: flex;         
-            justify-content: center;
-            align-items: center;
-            /* perspective: 1000px; */
-            perspective-origin: 50% 50%;
-            animation: animation 100s linear infinite;
-            z-index: -5;           
+          color: #eee;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          perspective: 1000px;
+          perspective-origin: 50% 50%;
+          animation: animation 100s linear infinite;
+          z-index: -5;
+          margin-top: 100%;     
         }
 
         @keyframes animation {
@@ -446,7 +447,7 @@
     <div class="wrapper">
         
 
-        <section style="position: absolute; width: 950px; padding-top: 200px;">
+        <section style="position: absolute; width: 950px; margin-top: -100%;">
             <div class="section-signup__header" >
                 <h1 class="heading" data-aos="zoom-out-up">Register</h1>
             </div>
@@ -695,53 +696,243 @@ box-shadow: 0 0 10px rgb(255 255 255 / 50%);
         </div>
     </div>
 </div>
-
-        <div class="tabs-input__wrap">                                 
-            <h3>Name main verticals          
-            </h3>
+          <div style="
+          padding-top: 50px;
+          padding-bottom: 20px;">
+          <h3 style="font-size: 24px;">Name main verticals </h3>
         </div>
-        <section>
-  
-            <h1>Checkboxes that work goodly</h1>
+        
+        <section class="paragraph" style="display: flex;
+        justify-content: space-between;">  
+        <div style="width: 50%;">
+          <input id='Crypto' type='checkbox' />
+          <label for='Crypto'>           
+            <span></span>
+            Crypto           
+          </label>
+          
+          <input id='ForexFinance' type='checkbox' />
+          <label for='ForexFinance'>
+            <span></span>
+            Forex / Finance           
+          </label>
+          
+          <input id='Gambling' type='checkbox' />
+          <label for='Gambling'>
+            <span></span>
+            Gambling
+          </label>
+          
+          <input id='AdultCasualDating' type='checkbox' />
+          <label for='AdultCasualDating'>
+            <span></span>
+            Adult / Casual Dating
+          </label>
+
+          <input id='MainstreamDating' type='checkbox' />
+          <label for='MainstreamDating'>
+            <span></span>
+            Mainstream Dating
+          </label>
+        </div>
+        <div style="width: 50%;">
+          <input id='Livecams' type='checkbox' />
+          <label for='Livecams'>
+            <span></span>
+            Livecams
+          </label>
+
+          <input id='Adult Games' type='checkbox' />
+          <label for='Adult Games'>
+            <span></span>
+            Adult Games
+          </label>
+
+          <input id='Other' type='checkbox' />
+          <label for='Other'>
+            <span></span>
+            Other
+          </label>
+        </div>
+          
             
-            <input id='one' type='checkbox' />
-            <label for='one'>
-              <span></span>
-              Off with your head
-              <ins><i>Off with your head</i></ins>
-            </label>
-            
-            <input id='two' type='checkbox' />
-            <label for='two'>
-              <span></span>
-              Dance ’til you’re dead
-              <ins><i>Dance ’til you’re dead</i></ins>
-            </label>
-            
-            <input id='three' type='checkbox' />
-            <label for='three'>
-              <span></span>
-              Heads will roll
-              <ins><i>Heads will roll</i></ins>
-            </label>
-            
-            <input id='four' type='checkbox' />
-            <label for='four'>
-              <span></span>
-              On the floor
-              <ins><i>On the floor</i></ins>
-            </label>
-            
-          </section>
+
+        </section>
+
+        <h3 style="font-size: 20px; 
+        padding-bottom: 20px; padding-top: 10px;">Other verticals</h3>
+        <div class="tabs-input__wrap" style=" margin-top: 4px;
+    ">                
+          <input type="text" name="verticals" value="" placeholder="Enter Text" required="">
+        </div>
+
+
+
+        <h3 style="font-size: 22px; padding-top: 40px;
+        padding-bottom: 20px;">What CPA networks do you currently work with? 
+        <span style="font-size: 16px"> (Or reference contacts)</span></h3>
+        <div class="tabs-input__wrap" style=" margin-top: 4px;
+    ">                
+          <input type="text" name="verticals" value="" placeholder="Enter Text" required="">
+        </div>
+
+
+
+
+        <div style="
+        padding-top: 50px;
+        padding-bottom: 20px;">
+        <h3 style="font-size: 24px;">What traffic types do you generally use for promotional purposes? </h3>
+      </div>
+      
+      <section class="paragraph" style="display: flex;
+      justify-content: space-between;">  
+      <div style="width: 50%;">
+        <input id='SEODoorways' type='checkbox' />
+        <label for='SEODoorways'>           
+          <span></span>
+          SEO / Doorways           
+        </label>
+        
+        <input id='PPC' type='checkbox' />
+        <label for='PPC'>
+          <span></span>
+          PPC (Google, Yahoo, Yandex etc.)          
+        </label>
+        
+        <input id='NativeAds' type='checkbox' />
+        <label for='NativeAds'>
+          <span></span>
+          Native Ads
+        </label>
+        
+        <input id='AdNetworks' type='checkbox' />
+        <label for='AdNetworks'>
+          <span></span>
+          Ad Networks
+        </label>
+
+        <input id='SocialMedia' type='checkbox' />
+        <label for='SocialMedia'>
+          <span></span>
+          Social Media
+        </label>
+      </div>
+      <div style="width: 50%;">
+        <input id='Email' type='checkbox' />
+        <label for='Email'>
+          <span></span>
+          Email
+        </label>
+
+        <input id='Popunder' type='checkbox' />
+        <label for='Popunder'>
+          <span></span>
+          Popunder
+        </label>
+
+        <input id='PushNotifications' type='checkbox' />
+        <label for='PushNotifications'>
+          <span></span>
+          Push Notifications
+        </label>
+
+        <input id='Other2' type='checkbox' />
+        <label for='Other2'>
+          <span></span>
+          Other
+        </label>
+      </div>
+        
+          
+
+      </section>
+
+      <h3 style="font-size: 20px; 
+      padding-bottom: 20px; padding-top: 10px;">Other traffic types</h3>
+      <div class="tabs-input__wrap" style=" margin-top: 4px;
+  ">                
+        <input type="text" name="traffic" value="" placeholder="Enter Text" required="">
+      </div>
+
+<!-- ////////////////////////////////////// -->
+
+      <div style="
+        padding-top: 50px;
+        padding-bottom: 20px;">
+        <h3 style="font-size: 24px;">TOP Geo</h3>
+      </div>
+      
+      <section class="paragraph" style="display: flex;
+      justify-content: space-between;">  
+      <div style="width: 33%;">
+        <input id='TIER1' type='checkbox' />
+        <label for='TIER1'>           
+          <span></span>
+          TIER1          
+        </label>
+        
+        <input id='Europe' type='checkbox' />
+        <label for='Europe'>
+          <span></span>
+          Europe          
+        </label>
+        
+        <input id='RU-speakingcountries' type='checkbox' />
+        <label for='RU-speakingcountries'>
+          <span></span>
+          RU-speaking countries
+        </label>        
+      </div>
+      <div style="width: 33%;">
+        <input id='LATAM' type='checkbox' />
+        <label for='LATAM'>
+          <span></span>
+          LATAM
+        </label>
+
+        <input id='GCC' type='checkbox' />
+        <label for='GCC'>
+          <span></span>
+          GCC
+        </label>
+
+        <input id='Asia-Pacific' type='checkbox' />
+        <label for='Asia-Pacific'>
+          <span></span>
+          Asia-Pacific
+        </label>
+      </div>
+
+
+      <div style="width: 33%;">       
+        <input id='Other2' type='checkbox' />
+        <label for='Other2'>
+          <span></span>
+          Other
+        </label>
+      </div>          
+
+      </section>
+
+      <h3 style="font-size: 20px; 
+      padding-bottom: 20px; padding-top: 10px;">Other traffic types</h3>
+      <div class="tabs-input__wrap" style=" margin-top: 4px;
+  ">                
+        <input type="text" name="traffic" value="" placeholder="Enter Text" required="">
+      </div>
+
+
+
           <style>
-             input[type='checkbox']{ height: 0; width: 0; }
+             input[type='checkbox']{ height: 0; width: 0; display: none;}
 
 input[type='checkbox'] + label{
   position: relative;
   display: flex;
   margin: .6em 0;
   align-items: center;
-  color: #9e9e9e;
+  color: #eaeaea;
   transition: color 250ms cubic-bezier(.4,.0,.23,1);
 }
 input[type='checkbox'] + label > ins{
@@ -784,13 +975,13 @@ input[type='checkbox'] + label:hover > span, input[type='checkbox']:focus + labe
 input[type='checkbox']:checked + label > ins{ height: 100%; }
 
 input[type='checkbox']:checked + label > span{
-  border: .5em solid #FFEB3B;
+  border: .5em solid #eaeaea;
   animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
 }
 input[type='checkbox']:checked + label > span:before{
   content: "";
   position: absolute;
-  top: .6em;
+  top: .7em;
   left: .2em;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
@@ -830,6 +1021,7 @@ input[type='checkbox']:checked + label > span:before{
   }
 }
           </style>
+
         <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
         <button class="btn btn-mdb-color btn-rounded nextBtn-2 float-right" type="button">Next</button>
     </div>
