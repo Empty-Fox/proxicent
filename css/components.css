@@ -4,7 +4,18 @@
 html {
   scroll-behavior: smooth;
 }
-
+.icons-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  color: #E5E5E5;
+}
 .text-main-block a {
   margin-top: 20px;
 }
@@ -5596,6 +5607,19 @@ text-align: center;
 }
 
 @media screen and (max-width: 479px) { 
+  .collection-list-wrapper.w-dyn-list {
+    margin-top: -50px;
+  }
+  .section-3 {   
+    padding: 0px 15px 0px 15px;
+}
+.section-offers__title {
+  margin-bottom: 0;
+}
+.icons-offer {  
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
   .main-block {
     margin-top: 0px;    
     margin-bottom: 20px;
@@ -5604,9 +5628,58 @@ text-align: center;
     font-size: 40px;
     line-height: 52px;
 }
+.section-one-column-right.w-clearfix p:nth-child(2) {
+  text-align: center;
+}
+ul.paragraph {
+  list-style: none;
+  margin-left: 0 !important;
+}
+
+ul.paragraph  li {
+  position: relative;
+  padding: 20px 0 0px 20px; 
+  font-variant: small-caps;
+  font-weight: bold;
+  cursor: pointer;
+}
+ul.paragraph  li:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ededed;
+  content: "";
+  left: 0;
+  transition: .3s ease-in-out;
+  top: 27px;
+}
+ul.paragraph li:after {
+  position: absolute;
+  border-left: 1px dotted #ededed;
+  width: 1px;
+  bottom: -12px;
+  content: "";
+  left: 3px;
+  top: 48px;
+}
+ul.paragraph  li:hover:before{box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2)}
+ul.paragraph  li:last-child:after {content: none;}
+
+
+.section-one-column-right.w-clearfix p:nth-child(2) {
+  font-size: 20px;
+  line-height: 22px;
+}
+.blockContainer .h2.center.h2Blog {
+line-height: 0px;
+}
 .heading_smaller {
   font-size: 30px;
   line-height: 32px;
+}
+.section-4 {
+  padding-top: 30px;
 }
   .text-main-block_secondP {
     padding-top: 50px;
@@ -5884,17 +5957,16 @@ text-align: center;
     margin-bottom: 50px;
   }
 
-  .section-4 {
-    padding-bottom: 35px;
-  }
-
   .section-7 {
-    padding-top: 100px;
-    padding-bottom: 35px;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .h2.center.h2Blog.meet {
+    line-height: 32px;
   }
   .section-events {
   
-  padding-top: 100px;
+  padding-top: 70px;
 }
   .column {
     padding-right: 0px;
