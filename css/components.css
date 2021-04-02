@@ -120,6 +120,7 @@ html {
   top: 20px;  
   left: 15px;
 }
+
 #next.btn.fancy-btn.w-button:before {
   transform: rotate(360deg);
   top: 5px;  
