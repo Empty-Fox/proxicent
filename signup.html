@@ -2,1679 +2,1140 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Sign Up</title>
-    <meta content="Supreme Media" property="twitter:title">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <link href="css/components.css" rel="stylesheet" type="text/css">
-    <link href="css/supreme-media.css" rel="stylesheet" type="text/css">
-    <link href="app.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <!-- <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <meta charset="utf-8">
+  <title>Sign Up</title>
+  <meta content="Supreme Media" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <link href="css/components.css" rel="stylesheet" type="text/css">
+  <link href="css/supreme-media.css" rel="stylesheet" type="text/css">
+  <link href="app.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <!-- <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="images/webclip.png" rel="apple-touch-icon"> -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <style>
+    .footer {
+      margin-top: 0;
+    }
 
-    <style>
-         .wrapper {
-          color: #eee;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          perspective: 1000px;
-          perspective-origin: 50% 50%;
-          animation: animation 100s linear infinite;
-          z-index: -5;
-          margin-top: 100%;     
-        }
+    .section-signup__header {
+      padding-bottom: 50px;
+    }
 
-        @keyframes animation {
-            100% {
-                background-position: 0px -3000px;
-            }
-        }
-        input {
-            background: transparent;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    color: inherit;
-    width: 100%;
-    outline: none;
-    font-size: 1.4rem;
-    line-height: 2.1rem;
-    font-family: Lato,sans-serif;
-    font-weight: 400;
-    letter-spacing: -.02em;
-    text-align: left;
-        }
-        .tabs-input__wrap {
-         
-    font-weight: 400;
-    border: .2rem solid #c4c4c4;
-    position: relative;
-    background-color: #021836fa;
-    margin-top: 2rem;
-    
-    padding: .9rem 1.4rem;
-        }
-        .signup-tabs__wrap {
-    width: 82%;
-    margin: 0 auto;
-}
-.signup__tabs {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    border-bottom: 2px solid #ededed;
-}
-.signup__tabs > div.active {
-    background-color: #ee534f!important;
-}
-.signup__tabs > div {
-    width: 33.333%;
-    cursor: pointer;
-    position: relative;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-}
-.signup__tabs > div > h2 {
-    display: inline-block;
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
-    z-index: 1;
-    position: relative;
-}
-.signup__tabs > div.active > h2:after {
-    color: #bd403c;
-}
-.signup__tabs > div:nth-child(1) > h2:after {
-    content: "1";
-}
-.signup__tabs > div > h2:after {
-    position: absolute;
-    left: -24px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #1d1c22;
-    font-size: 75px;
-    font-weight: 900;
-    z-index: -1;
-}
-.signup__tabs > div.active:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    z-index: 1;
-    transform: translateY(-50%);
-    border: 13px solid transparent;
-    border-left: 13px solid #ee534f;
-}
-.signup__tabs > div:nth-child(2) {
-    background-color: #33363b;
-}
-.signup__tabs > div {
-    width: 33.333%;
-    cursor: pointer;
-    position: relative;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-}
-.signup__tabs > div > h2 {
-    display: inline-block;
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
-    z-index: 1;
-    position: relative;
-}
-.signup__tabs > div:nth-child(2) > h2:after {
-    content: "2";
-    color: #28292d;
-}
-.signup__tabs > div > h2:after {
-    position: absolute;
-    left: -24px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #1d1c22;
-    font-size: 75px;
-    font-weight: 900;
-    z-index: -1;
-}
-.signup__tabs > div:nth-child(3) {
-    background-color: #27282c;
-}
+    .wrapper {
+      color: #eee;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -5;
+    }
 
-.signup__tabs > div:nth-child(3) > h2:after {
-    content: "3";
-}
-.signup__tabs_content {
-    padding: 0px 10px 15px;
-}
-.signup__tabs_content > div.active {
-    display: block;
-}
-.tabs__input-group.main-inputs {
-    margin-bottom: 5px;
-}
+    .wrapper section:first-child {
+      width: 950px;
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
 
-.tabs__input-group input, .tabs__input-group textarea {
-    display: block;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    background-color: transparent;
-    z-index: 1;
-    font-size: 14px;
-    padding: 2px 5px 2px 4px;
-}
-.tabs_column2 {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-}
-.tabs__input-group .tabs_column2 .tabs-input__wrap {
-    width: 47%;
-}
-.tabs__input-group {
-    padding: 12px 25px 4px;
-}
-.tabs_column2 {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-}
-.tabs__input-group .tabs-input__wrap {
-    margin-bottom: 0;
-    position: relative;
-}
-.tabs_column3, .select, .control-checkbox {
-    position: relative;
-   
-    
-}
-.select {
-    cursor: pointer;
-    width: 100%;
-    color: #fff;
-    background-color: transparent;
-    z-index: 1;
-    font-size: 14px;
-}
-.tabs__input-group .tabs-input__wrap.padd .select__gap, .tabs__input-group .tabs-input__wrap.padd input {
-    padding: 2px 5px 2px 5px;
-}
-.select__gap {
-    z-index: 1;
-    border-bottom: 1px solid #ededed;
-}
-.footer__get-in-touch__button.open img, .select .select__gap.on:after {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-.footer__get-in-touch__button.open img, .select .select__gap.on:after {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-.footer__get-in-touch__button img, .select .select__gap:after {
-    margin-left: 23px;
-    -webkit-transition: -webkit-transform .3s ease;
-    transition: -webkit-transform .3s ease;
-    transition: transform .3s ease;
-    transition: transform .3s ease, -webkit-transform .3s ease;
-}
-.select__gap:after {
-    content: '';
-    right: 10px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -5px;
-    height: 10px;
-    width: 16px;
-    background: url(images/get-in-touch.png) no-repeat center center / cover;
-    margin: 0;
-}
+    input {
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      color: inherit;
+      width: 100%;
+      outline: none;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      font-family: Lato, sans-serif;
+      font-weight: 400;
+      letter-spacing: -.02em;
+      text-align: left;
+    }
 
-        .btn.fancy-btn.w-button:before,
-        .btn.fancy-btn.w-button:hover:before,
-        .btn.fancy-btn.w-button:after,
-        .btn.fancy-btn.w-button:hover:after,
-        .btn.fancy-btn.w-button:hover,
-        .btn.fancy-btn.w-button {
-          transition: all .5s ease-in-out;
-        }
-  
-        .btn.fancy-btn.dark {
-          color: #ededed;
-        }
-  
-        .btn.fancy-btn {
-          position: relative;
-          z-index: 100;
-          overflow: visible;
-          padding: 20px 60px;
-          background-color: transparent;
-          -webkit-transform: translate(0px, 0px) translate(0px, 0px);
-          -ms-transform: translate(0px, 0px) translate(0px, 0px);
-          transform: translate(0px, 0px) translate(0px, 0px);
-  
-          font-size: 14px;
-          font-weight: 600;
-          letter-spacing: 0.2em;
-          text-transform: uppercase;
-        }
-  
-        .btn {
-          margin-top: 20px;
-          padding-right: 40px;
-          padding-left: 40px;
-          border-width: 0px;
-          border-color: #000;
-          border-radius: 50px;
-        }
-  
-        .w-button {
-          display: inline-block;
-          border: 0;
-          line-height: inherit;
-          text-decoration: none;
-          cursor: pointer;
-        }
-  
-        .btn.fancy-btn.w-button:before {
-          content: url(./images/5e8708494cbe79d585eb640e_chevron-24\ копия.png);
-          width: 20px;
-          height: 20px;
-          position: absolute;
-          right: 13px;
-          top: 6px;
-          padding-top: 12px;
-          transform: translateX(0px);
-          color: #ededed;
-        }
-  
-        .btn.fancy-btn.w-button:after {
-          width: 50px;
-          height: 50px;
-          background: #ededed;
-          position: absolute;
-          right: 0;
-          top: 4px;
-          content: '';
-          text-align: center;
-          border-radius: 50px;
-          z-index: -1;
-  
-          box-shadow: 0 0 10px rgb(210 209 212);
-        }
-  
-        .btn.fancy-btn.orange.w-button:hover:after {
-          background-color: #ededed;
-        }
-  
-        .btn.fancy-btn.w-button:hover:after {
-          width: 120%;
-          content: '';
-          right: -10%;
-        }
-  
-        .btn.fancy-btn.w-button:hover:before {
-          transform: translateX(20px);
-          color: transparent;
-        }
-  
-        .btn.fancy-btn.dark:hover {
-          color: #193c6d;
-  
-        }
-      </style>
+    .tabs-input__wrap {
+      font-weight: 400;
+      border: .2rem solid #7283a7;
+      position: relative;
+      background-color: #021836fa;
+      margin-top: 2rem;
+      padding: .9rem 1.4rem;
+    }
+
+    .tabs__input-group.main-inputs {
+      margin-bottom: 5px;
+    }
+
+    .tabs__input-group input,
+    .tabs__input-group textarea {
+      display: block;
+      width: 100%;
+      border: none;
+      outline: none;
+      color: #fff;
+      background-color: transparent;
+      z-index: 1;
+      font-size: 14px;
+      padding: 2px 5px 2px 4px;
+    }
+
+    .tabs_column2 {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .tabs__input-group .tabs_column2 .tabs-input__wrap {
+      width: 47%;
+    }
+
+    .tabs__input-group {
+      padding: 12px 25px 4px;
+    }
+
+    .tabs_column2 {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .tabs__input-group .tabs-input__wrap {
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    .btn.fancy-btn.w-button:before,
+    .btn.fancy-btn.w-button:hover:before,
+    .btn.fancy-btn.w-button:after,
+    .btn.fancy-btn.w-button:hover:after,
+    .btn.fancy-btn.w-button:hover,
+    .btn.fancy-btn.w-button {
+      transition: all .5s ease-in-out;
+    }
+
+    .btn.fancy-btn.dark {
+      color: #ededed;
+    }
+
+    .btn.fancy-btn {
+      position: relative;
+      z-index: 100;
+      overflow: visible;
+      padding: 20px 60px;
+      background-color: transparent;
+      -webkit-transform: translate(0px, 0px) translate(0px, 0px);
+      -ms-transform: translate(0px, 0px) translate(0px, 0px);
+      transform: translate(0px, 0px) translate(0px, 0px);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding-right: 40px;
+      padding-left: 40px;
+      border-width: 0px;
+      border-color: #000;
+      border-radius: 50px;
+    }
+
+    .w-button {
+      display: inline-block;
+      border: 0;
+      line-height: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn.fancy-btn.w-button:before {
+      content: url(./images/5e8708494cbe79d585eb640e_chevron-24\ копия.png);
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 13px;
+      top: 6px;
+      padding-top: 12px;
+      transform: translateX(0px);
+      color: #ededed;
+    }
+
+    .btn.fancy-btn.w-button:after {
+      width: 50px;
+      height: 50px;
+      background: #ededed;
+      position: absolute;
+      right: 0;
+      top: 4px;
+      content: '';
+      text-align: center;
+      border-radius: 50px;
+      z-index: -1;
+      box-shadow: 0 0 10px rgb(210 209 212);
+    }
+
+    .btn.fancy-btn.orange.w-button:hover:after {
+      background-color: #ededed;
+    }
+
+    .btn.fancy-btn.w-button:hover:after {
+      width: 120%;
+      content: '';
+      right: -10%;
+    }
+
+    .btn.fancy-btn.w-button:hover:before {
+      transform: translateX(20px);
+      color: transparent;
+    }
+
+    .btn.fancy-btn.dark:hover {
+      color: #193c6d;
+    }
+
+    .custom-select {
+      position: relative;
+      font-family: Arial;
+      font-size: 14px;
+
+      padding: 2px 5px 2px 4px;
+    }
+
+    .custom-select select {
+      display: none;
+    }
+  </style>
+
 </head>
 
 <body>
-    <div id="Home">
-        <div data-collapse="medium" class="navbar w-nav" style=" padding-left: 20px;">
-          <a href="#" style="color: white; line-height: 60px; float: left; ">
-            <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo" style="width: 200px; ">
-          </a>
-          <nav class="nav-menu w-nav-menu nav-1" style=" width: 80%;">
-            <a href="index.html" class="nav w-nav-link link-1 ">Home</a>
-            <a href="index.html#AboutUs" class="nav  w-nav-link link-1">About us</a>
-            <a href="index.html#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
-    
-            <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
-            <a href="blog.html" class="nav w-nav-link link-1 ">Blog</a>
-            <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us at the conferences
-            </a>
-    
-            <a href="login.html" class="nav w-nav-link link-1">Login</a>
-    
-            <div class="dropdown">
-              <button class="dropbtn">
-                <img src="images/united-kingdom.png">
-                <span style="padding-left:4px; font-size: 12px;"> EN</span>
-                <i class="fa fa-caret-down" style="color: white;"></i>
-              </button>
-    
-              <div class="dropdown-content">
-                <a href="#"> <img src="images/russia.png"><span style="padding-left:4px; font-size: 12px;"> RU</span> </a>
-                <a href="#"> <img src="images/spain.png"> <span style="padding-left:4px; font-size: 12px;"> ES</span></a>
-              </div>
-    
-            </div>
-    
-    
-            <a href="signup.html" class="register w-nav-link activeMenu">Register</a>
-          </nav>
-    
-          <div class="menu-button-2 w-nav-button">
-            <div class="lottie-animation-3">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712 712" width="712" height="712"
-                style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
-    
-                <g>
-                  <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
-                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                      <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
-                        stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="60"
-                        d=" M-324,250 C-324,250 324,250 324,250">
-                      </path>
-                    </g>
-                  </g>
-                  <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
-                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                      <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
-                        stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="60"
-                        d=" M-324,-250 C-324,-250 324,-250 324,-250"></path>
-                    </g>
-                  </g>
-                  <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
-                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                      <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
-                        stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="60" d=" M-324,0 C-324,0 324,0 324,0">
-                      </path>
-                    </g>
-                  </g>
+  <div id="Home">
+    <div data-collapse="medium" class="navbar w-nav" style=" padding-left: 20px;">
+      <a href="#" style="color: white; line-height: 60px; float: left; ">
+        <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo" style="width: 200px; ">
+      </a>
+      <nav class="nav-menu w-nav-menu nav-1" style=" width: 80%;">
+        <a href="index.html" class="nav w-nav-link link-1 ">Home</a>
+        <a href="index.html#AboutUs" class="nav  w-nav-link link-1">About us</a>
+        <a href="index.html#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
+
+        <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
+        <a href="blog.html" class="nav w-nav-link link-1 ">Blog</a>
+        <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us at the conferences
+        </a>
+
+        <a href="login.html" class="nav w-nav-link link-1">Login</a>
+
+        <div class="dropdown">
+
+          <button class="dropbtn">
+            <img src="images/united-kingdom.png">
+            <span style="padding-left:4px; font-size: 12px;"> EN</span>
+            <i class="fa fa-caret-down" style="color: white;"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="#"> <img src="images/russia.png"><span style="padding-left:4px; font-size: 12px;"> RU</span> </a>
+            <a href="#"> <img src="images/spain.png"> <span style="padding-left:4px; font-size: 12px;"> ES</span></a>
+          </div>
+
+        </div>
+
+
+        <a href="signup.html" class="register w-nav-link activeMenu">Register</a>
+      </nav>
+
+      <div class="menu-button-2 w-nav-button">
+        <div class="lottie-animation-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712 712" width="712" height="712"
+            style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+
+            <g>
+              <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                  <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                    stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="60"
+                    d=" M-324,250 C-324,250 324,250 324,250">
+                  </path>
                 </g>
-              </svg>
+              </g>
+              <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                  <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                    stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="60"
+                    d=" M-324,-250 C-324,-250 324,-250 324,-250"></path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,356,356)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                  <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                    stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="60" d=" M-324,0 C-324,0 324,0 324,0">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="wrapper">
+
+    <section>
+      <div class="section-signup__header">
+        <h1 class="heading" data-aos="zoom-out-up">Register</h1>
+      </div>
+
+
+      <form role="form" action="" method="post">
+        <div class="row setup-content-2" id="step-1">
+          <!-- Stepper -->
+          <div class="steps-form-2">
+            <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
+              <div class="steps-step-2">
+                <a href="#step-1" style="background-color: #021836fa;" type="button"
+                  class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top"
+                  title="Basic Information">
+                  1</a>
+              </div>
+              <div class="steps-step-2">
+                <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect"
+                  data-toggle="tooltip" data-placement="top" title="Personal Data">
+                  2</a>
+              </div>
+              <div class="steps-step-2">
+                <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect"
+                  data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
+                  3</a>
+              </div>
             </div>
           </div>
-    
-        </div>
-    
-      </div>
-    <div class="wrapper">
-        
 
-        <section style="position: absolute; width: 950px; margin-top: -100%;">
-            <div class="section-signup__header" >
-                <h1 class="heading" data-aos="zoom-out-up">Register</h1>
-            </div>
-            
-
-<form role="form" action="" method="post" >
-    <div class="row setup-content-2" id="step-1">      
-<!-- Stepper -->
-<div class="steps-form-2">
-    <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
-        <div class="steps-step-2">
-            <a href="#step-1" type="button" class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information">
-               1</a>
-        </div>
-        <div class="steps-step-2">
-            <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Personal Data">
-                2</a>
-        </div>
-        <div class="steps-step-2">
-            <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
-               3</a>
-        </div>
-    </div>
-</div>
-
-        <div class="tabs__input-group main-inputs">
-            <div class="tabs-input__wrap">                                 
-                <input type="text" name="email" placeholder="Email*" value="" required="">
+          <div class="tabs__input-group main-inputs">
+            <div class="tabs-input__wrap">
+              <input type="text" name="email" placeholder="Email*" value="" required="">
             </div>
             <div class="tabs_column2">
-                <div class="tabs-input__wrap">
-                  
-                    <input id="password" type="password" name="password" placeholder="Password*" required="">
-                 
-                </div>
-                <div class="tabs-input__wrap">
-                  
-                    <input type="password" name="password_confirmation" placeholder="Confirm password*" required="">
-                </div>
+              <div class="tabs-input__wrap">
+                <input id="password" type="password" name="password" placeholder="Password*" required="">
+              </div>
+              <div class="tabs-input__wrap">
+                <input type="password" name="password_confirmation" placeholder="Confirm password*" required="">
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="tabs__input-group">
+          <div class="tabs__input-group">
             <div class="tabs_column2">
-                <div class="tabs-input__wrap">
-                   
-                    <input type="text" name="name" value="" placeholder="Name" required="">
-                </div>
-                <div class="tabs-input__wrap">
-                  
-                    <input type="text" name="country" value="" placeholder="Country" required="">
-                </div>
+              <div class="tabs-input__wrap">
+                <input type="text" name="name" value="" placeholder="Name" required="">
+              </div>
+              <div class="tabs-input__wrap">
+                <input type="text" name="country" value="" placeholder="Country" required="">
+              </div>
             </div>
             <div class="tabs-input__wrap">
-               
-                <input type="text" name="address" value="" placeholder="Address">
+              <input type="text" name="address" value="" placeholder="Address">
             </div>
             <div class="tabs_column2 ">
-                <div class="tabs-input__wrap padd">
-                   <div class="custom-select" style="width:100%">
-                      <select>
-                        <option value="IM Type*"><span style="color: #646262;"> IM Type*</span></option>
-                        <option value="Skype">Skype</option>
-                        <option value="Telegram">Telegram</option>
-                        <option value="Other">Other</option>                                        
-                      </select>
-                    </div>
-                  </div>
-                  <style>
-                    
-                      .custom-select {
-                        position: relative;
-                        font-family: Arial;
-                        font-size: 14px;
-                        
-padding: 2px 5px 2px 4px;
-                      }
-                      
-                      .custom-select select {
-                        display: none;
-                      }
-                                                             
-                    
-                      .select-selected:after {
-                        position: absolute;
-                        content: "";
-                        top: 7px;
-                        right: 10px;
-                        width: 0;
-                        height: 0;
-                        border: 6px solid transparent;
-                        border-color: #fff transparent transparent transparent;
-                      }
-                      
-               
-                      .select-selected.select-arrow-active:after {
-                        border-color: transparent transparent #fff transparent;
-                        top: 0px;
-                      }
-                      
-                    
-                      .select-items div,.select-selected {
-                        color: #ffffff;                                          
-                        border: 1px solid transparent;
-                        border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
-                        cursor: pointer;
-                        user-select: none;                                          
-                          padding-bottom: 5px;
-                      }
-                      
-                   
-                      .select-items {
-                        position: absolute;
-                        background-color: #021836fa;
-                        top: 100%;
-                        left: 0;
-                        right: 0;
-                        z-index: 99;
-                        
-box-shadow: 0 0 10px rgb(255 255 255 / 50%);
-                      }
-                      
-                    
-                      .select-hide {
-                        display: none;
-                      }
-                      
-                      .select-items div:hover, .same-as-selected {
-                        background-color: rgba(0, 0, 0, 0.1);
-                      }
-                      </style>
-                      <script>
-                          var x, i, j, l, ll, selElmnt, a, b, c;
-                        
-                          x = document.getElementsByClassName("custom-select");
-                          l = x.length;
-                          for (i = 0; i < l; i++) {
-                            selElmnt = x[i].getElementsByTagName("select")[0];
-                            ll = selElmnt.length;
-                          
-                            a = document.createElement("DIV");
-                            a.setAttribute("class", "select-selected");
-                            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-                            x[i].appendChild(a);
-                            
-                            b = document.createElement("DIV");
-                            b.setAttribute("class", "select-items select-hide");
-                            for (j = 1; j < ll; j++) {
-                        
-                              c = document.createElement("DIV");
-                              c.innerHTML = selElmnt.options[j].innerHTML;
-                              c.addEventListener("click", function(e) {
-                                
-                                  var y, i, k, s, h, sl, yl;
-                                  s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                                  sl = s.length;
-                                  h = this.parentNode.previousSibling;
-                                  for (i = 0; i < sl; i++) {
-                                    if (s.options[i].innerHTML == this.innerHTML) {
-                                      s.selectedIndex = i;
-                                      h.innerHTML = this.innerHTML;
-                                      y = this.parentNode.getElementsByClassName("same-as-selected");
-                                      yl = y.length;
-                                      for (k = 0; k < yl; k++) {
-                                        y[k].removeAttribute("class");
-                                      }
-                                      this.setAttribute("class", "same-as-selected");
-                                      break;
-                                    }
-                                  }
-                                  h.click();
-                              });
-                              b.appendChild(c);
-                            }
-                            x[i].appendChild(b);
-                            a.addEventListener("click", function(e) {
-                              
-                                e.stopPropagation();
-                                closeAllSelect(this);
-                                this.nextSibling.classList.toggle("select-hide");
-                                this.classList.toggle("select-arrow-active");
-                              });
-                          }
-                          function closeAllSelect(elmnt) {
-                           
-                            var x, y, i, xl, yl, arrNo = [];
-                            x = document.getElementsByClassName("select-items");
-                            y = document.getElementsByClassName("select-selected");
-                            xl = x.length;
-                            yl = y.length;
-                            for (i = 0; i < yl; i++) {
-                              if (elmnt == y[i]) {
-                                arrNo.push(i)
-                              } else {
-                                y[i].classList.remove("select-arrow-active");
-                              }
-                            }
-                            for (i = 0; i < xl; i++) {
-                              if (arrNo.indexOf(i)) {
-                                x[i].classList.add("select-hide");
-                              }
-                            }
-                          }
-                         
-                          document.addEventListener("click", closeAllSelect);
-                          </script>
-                <div class="tabs-input__wrap padd">
-                    <input type="text" name="im_type" value="" placeholder="Contact Info" required="">
+              <div class="tabs-input__wrap padd">
+                <div class="custom-select" style="width:100%">
+                  <select>
+                    <option value="IM Type*"><span style="color: #646262;"> IM Type*</span></option>
+                    <option value="Skype">Skype</option>
+                    <option value="Telegram">Telegram</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
+              </div>
+              <style>
+                .select-selected:after {
+                  position: absolute;
+                  content: "";
+                  top: 7px;
+                  right: 10px;
+                  width: 0;
+                  height: 0;
+                  border: 6px solid transparent;
+                  border-color: #fff transparent transparent transparent;
+                }
+
+
+                .select-selected.select-arrow-active:after {
+                  border-color: transparent transparent #fff transparent;
+                  top: 0px;
+                }
+
+
+                .select-items div,
+                .select-selected {
+                  color: #ffffff;
+                  border: 1px solid transparent;
+                  border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
+                  cursor: pointer;
+                  user-select: none;
+                  padding-bottom: 5px;
+                }
+
+
+                .select-items {
+                  position: absolute;
+                  background-color: #021836fa;
+                  top: 100%;
+                  left: 0;
+                  right: 0;
+                  z-index: 99;
+
+                  box-shadow: 0 0 10px rgb(255 255 255 / 50%);
+                }
+
+
+                .select-hide {
+                  display: none;
+                }
+
+                .select-items div:hover,
+                .same-as-selected {
+                  background-color: rgba(0, 0, 0, 0.1);
+                }
+              </style>
+              <script>
+                var x, i, j, l, ll, selElmnt, a, b, c;
+
+                x = document.getElementsByClassName("custom-select");
+                l = x.length;
+                for (i = 0; i < l; i++) {
+                  selElmnt = x[i].getElementsByTagName("select")[0];
+                  ll = selElmnt.length;
+
+                  a = document.createElement("DIV");
+                  a.setAttribute("class", "select-selected");
+                  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                  x[i].appendChild(a);
+
+                  b = document.createElement("DIV");
+                  b.setAttribute("class", "select-items select-hide");
+                  for (j = 1; j < ll; j++) {
+
+                    c = document.createElement("DIV");
+                    c.innerHTML = selElmnt.options[j].innerHTML;
+                    c.addEventListener("click", function (e) {
+
+                      var y, i, k, s, h, sl, yl;
+                      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                      sl = s.length;
+                      h = this.parentNode.previousSibling;
+                      for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                          s.selectedIndex = i;
+                          h.innerHTML = this.innerHTML;
+                          y = this.parentNode.getElementsByClassName("same-as-selected");
+                          yl = y.length;
+                          for (k = 0; k < yl; k++) {
+                            y[k].removeAttribute("class");
+                          }
+                          this.setAttribute("class", "same-as-selected");
+                          break;
+                        }
+                      }
+                      h.click();
+                    });
+                    b.appendChild(c);
+                  }
+                  x[i].appendChild(b);
+                  a.addEventListener("click", function (e) {
+
+                    e.stopPropagation();
+                    closeAllSelect(this);
+                    this.nextSibling.classList.toggle("select-hide");
+                    this.classList.toggle("select-arrow-active");
+                  });
+                }
+                function closeAllSelect(elmnt) {
+
+                  var x, y, i, xl, yl, arrNo = [];
+                  x = document.getElementsByClassName("select-items");
+                  y = document.getElementsByClassName("select-selected");
+                  xl = x.length;
+                  yl = y.length;
+                  for (i = 0; i < yl; i++) {
+                    if (elmnt == y[i]) {
+                      arrNo.push(i)
+                    } else {
+                      y[i].classList.remove("select-arrow-active");
+                    }
+                  }
+                  for (i = 0; i < xl; i++) {
+                    if (arrNo.indexOf(i)) {
+                      x[i].classList.add("select-hide");
+                    }
+                  }
+                }
+
+                document.addEventListener("click", closeAllSelect);
+              </script>
+              <div class="tabs-input__wrap padd">
+                <input type="text" name="im_type" value="" placeholder="Contact Info" required="">
+              </div>
             </div>
             <div class="tabs_column2">
-                <div class="tabs-input__wrap">
-                  
-                    <input type="text" name="company_name" value="" placeholder="Company name">
-                </div>
-                <div class="tabs-input__wrap">
-                 
-                    <input type="text" name="url_company" value="" placeholder="URL (company / personal / etc.)">
-                </div>
+              <div class="tabs-input__wrap">
+
+                <input type="text" name="company_name" value="" placeholder="Company name">
+              </div>
+              <div class="tabs-input__wrap">
+
+                <input type="text" name="url_company" value="" placeholder="URL (company / personal / etc.)">
+              </div>
             </div>
-        </div>
-        <div class="tabs__button" style="width: 100%;
+          </div>
+          <div class="tabs__button" style="width: 100%;
         padding: 12px 25px 4px;
         margin-left: calc;
-        margin-left: 60%;">                            
+        margin-left: 60%;">
             <a href="#" class="btn fancy-btn orange dark w-button nextBtn-2">Continue</a>
+          </div>
         </div>
-  </div>
 
-<!-- Second Step -->
-    <div class="row setup-content-2" id="step-2">
-        <!-- Stepper -->
-<div class="steps-form-2">
-    <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
-        <div class="steps-step-2">
-            <a href="#step-1" type="button" class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information">
-               1</a>
-        </div>
-        <div class="steps-step-2">
-            <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Personal Data">
-                2</a>
-        </div>
-        <div class="steps-step-2">
-            <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
-               3</a>
-        </div>
-    </div>
-</div>
+        <!-- Second Step -->
+        <div class="row setup-content-2" id="step-2">
+          <!-- Stepper -->
+          <div class="steps-form-2">
+            <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
+              <div class="steps-step-2">
+                <a href="#step-1" style=" background-color: #021836fa;" type="button"
+                  class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top"
+                  title="Basic Information">
+                  1</a>
+              </div>
+              <div class="steps-step-2">
+                <a href="#step-2" style=" background-color: #021836fa;" type="button"
+                  class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top"
+                  title="Personal Data">
+                  2</a>
+              </div>
+              <div class="steps-step-2">
+                <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect"
+                  data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
+                  3</a>
+              </div>
+            </div>
+          </div>
           <div style="
           padding-top: 50px;
           padding-bottom: 20px;">
-          <h3 style="font-size: 24px;">Name main verticals </h3>
-        </div>
-        
-        <section class="paragraph" style="display: flex;
-        justify-content: space-between;">  
-        <div style="width: 50%;">
-          <input id='Crypto' type='checkbox' />
-          <label for='Crypto'>           
-            <span></span>
-            Crypto           
-          </label>
-          
-          <input id='ForexFinance' type='checkbox' />
-          <label for='ForexFinance'>
-            <span></span>
-            Forex / Finance           
-          </label>
-          
-          <input id='Gambling' type='checkbox' />
-          <label for='Gambling'>
-            <span></span>
-            Gambling
-          </label>
-          
-          <input id='AdultCasualDating' type='checkbox' />
-          <label for='AdultCasualDating'>
-            <span></span>
-            Adult / Casual Dating
-          </label>
+            <h3 style="font-size: 24px;">Name main verticals </h3>
+          </div>
 
-          <input id='MainstreamDating' type='checkbox' />
-          <label for='MainstreamDating'>
-            <span></span>
-            Mainstream Dating
-          </label>
-        </div>
-        <div style="width: 50%;">
-          <input id='Livecams' type='checkbox' />
-          <label for='Livecams'>
-            <span></span>
-            Livecams
-          </label>
+          <section class="paragraph" style="display: flex;
+        justify-content: space-between;">
+            <div style="width: 50%;">
+              <input id='Crypto' type='checkbox' />
+              <label for='Crypto'>
+                <span></span>
+                Crypto
+              </label>
 
-          <input id='Adult Games' type='checkbox' />
-          <label for='Adult Games'>
-            <span></span>
-            Adult Games
-          </label>
+              <input id='ForexFinance' type='checkbox' />
+              <label for='ForexFinance'>
+                <span></span>
+                Forex / Finance
+              </label>
 
-          <input id='Other' type='checkbox' />
-          <label for='Other'>
-            <span></span>
-            Other
-          </label>
-        </div>
-          
-            
+              <input id='Gambling' type='checkbox' />
+              <label for='Gambling'>
+                <span></span>
+                Gambling
+              </label>
 
-        </section>
+              <input id='AdultCasualDating' type='checkbox' />
+              <label for='AdultCasualDating'>
+                <span></span>
+                Adult / Casual Dating
+              </label>
 
-        <h3 style="font-size: 20px; 
+              <input id='MainstreamDating' type='checkbox' />
+              <label for='MainstreamDating'>
+                <span></span>
+                Mainstream Dating
+              </label>
+            </div>
+            <div style="width: 50%;">
+              <input id='Livecams' type='checkbox' />
+              <label for='Livecams'>
+                <span></span>
+                Livecams
+              </label>
+
+              <input id='Adult Games' type='checkbox' />
+              <label for='Adult Games'>
+                <span></span>
+                Adult Games
+              </label>
+
+              <input id='Other' type='checkbox' />
+              <label for='Other'>
+                <span></span>
+                Other
+              </label>
+            </div>
+
+
+
+          </section>
+
+          <h3 style="font-size: 20px; 
         padding-bottom: 20px; padding-top: 10px;">Other verticals</h3>
-        <div class="tabs-input__wrap" style=" margin-top: 4px;
-    ">                
-          <input type="text" name="verticals" value="" placeholder="Enter Text" required="">
-        </div>
+          <div class="tabs-input__wrap" style=" margin-top: 4px;
+    ">
+            <input type="text" name="verticals" value="" placeholder="Enter Text">
+          </div>
 
 
 
-        <h3 style="font-size: 22px; padding-top: 40px;
-        padding-bottom: 20px;">What CPA networks do you currently work with? 
-        <span style="font-size: 16px"> (Or reference contacts)</span></h3>
-        <div class="tabs-input__wrap" style=" margin-top: 4px;
-    ">                
-          <input type="text" name="verticals" value="" placeholder="Enter Text" required="">
-        </div>
+          <h3 style="font-size: 22px; padding-top: 40px;
+        padding-bottom: 20px;">What CPA networks do you currently work with?
+            <span style="font-size: 16px"> (Or reference contacts)</span>
+          </h3>
+          <div class="tabs-input__wrap" style=" margin-top: 4px;
+    ">
+            <input type="text" name="verticals" value="" placeholder="Enter Text" required="">
+          </div>
 
 
 
 
-        <div style="
+          <div style="
         padding-top: 50px;
         padding-bottom: 20px;">
-        <h3 style="font-size: 24px;">What traffic types do you generally use for promotional purposes? </h3>
-      </div>
-      
-      <section class="paragraph" style="display: flex;
-      justify-content: space-between;">  
-      <div style="width: 50%;">
-        <input id='SEODoorways' type='checkbox' />
-        <label for='SEODoorways'>           
-          <span></span>
-          SEO / Doorways           
-        </label>
-        
-        <input id='PPC' type='checkbox' />
-        <label for='PPC'>
-          <span></span>
-          PPC (Google, Yahoo, Yandex etc.)          
-        </label>
-        
-        <input id='NativeAds' type='checkbox' />
-        <label for='NativeAds'>
-          <span></span>
-          Native Ads
-        </label>
-        
-        <input id='AdNetworks' type='checkbox' />
-        <label for='AdNetworks'>
-          <span></span>
-          Ad Networks
-        </label>
+            <h3 style="font-size: 24px;">What traffic types do you generally use for promotional purposes? </h3>
+          </div>
 
-        <input id='SocialMedia' type='checkbox' />
-        <label for='SocialMedia'>
-          <span></span>
-          Social Media
-        </label>
-      </div>
-      <div style="width: 50%;">
-        <input id='Email' type='checkbox' />
-        <label for='Email'>
-          <span></span>
-          Email
-        </label>
+          <section class="paragraph" style="display: flex;
+      justify-content: space-between;">
+            <div style="width: 50%;">
+              <input id='SEODoorways' type='checkbox' />
+              <label for='SEODoorways'>
+                <span></span>
+                SEO / Doorways
+              </label>
 
-        <input id='Popunder' type='checkbox' />
-        <label for='Popunder'>
-          <span></span>
-          Popunder
-        </label>
+              <input id='PPC' type='checkbox' />
+              <label for='PPC'>
+                <span></span>
+                PPC (Google, Yahoo, Yandex etc.)
+              </label>
 
-        <input id='PushNotifications' type='checkbox' />
-        <label for='PushNotifications'>
-          <span></span>
-          Push Notifications
-        </label>
+              <input id='NativeAds' type='checkbox' />
+              <label for='NativeAds'>
+                <span></span>
+                Native Ads
+              </label>
 
-        <input id='Other2' type='checkbox' />
-        <label for='Other2'>
-          <span></span>
-          Other
-        </label>
-      </div>
-        
-          
+              <input id='AdNetworks' type='checkbox' />
+              <label for='AdNetworks'>
+                <span></span>
+                Ad Networks
+              </label>
 
-      </section>
+              <input id='SocialMedia' type='checkbox' />
+              <label for='SocialMedia'>
+                <span></span>
+                Social Media
+              </label>
+            </div>
+            <div style="width: 50%;">
+              <input id='Email' type='checkbox' />
+              <label for='Email'>
+                <span></span>
+                Email
+              </label>
 
-      <h3 style="font-size: 20px; 
+              <input id='Popunder' type='checkbox' />
+              <label for='Popunder'>
+                <span></span>
+                Popunder
+              </label>
+
+              <input id='PushNotifications' type='checkbox' />
+              <label for='PushNotifications'>
+                <span></span>
+                Push Notifications
+              </label>
+
+              <input id='Other2' type='checkbox' />
+              <label for='Other2'>
+                <span></span>
+                Other
+              </label>
+            </div>
+
+
+
+          </section>
+
+          <h3 style="font-size: 20px; 
       padding-bottom: 20px; padding-top: 10px;">Other traffic types</h3>
-      <div class="tabs-input__wrap" style=" margin-top: 4px;
-  ">                
-        <input type="text" name="traffic" value="" placeholder="Enter Text" required="">
-      </div>
+          <div class="tabs-input__wrap" style=" margin-top: 4px;
+  ">
+            <input type="text" name="traffic" value="" placeholder="Enter Text">
+          </div>
 
-<!-- ////////////////////////////////////// -->
+          <!-- ////////////////////////////////////// -->
 
-      <div style="
+          <div style="
         padding-top: 50px;
         padding-bottom: 20px;">
-        <h3 style="font-size: 24px;">TOP Geo</h3>
-      </div>
-      
-      <section class="paragraph" style="display: flex;
-      justify-content: space-between;">  
-      <div style="width: 33%;">
-        <input id='TIER1' type='checkbox' />
-        <label for='TIER1'>           
-          <span></span>
-          TIER1          
-        </label>
-        
-        <input id='Europe' type='checkbox' />
-        <label for='Europe'>
-          <span></span>
-          Europe          
-        </label>
-        
-        <input id='RU-speakingcountries' type='checkbox' />
-        <label for='RU-speakingcountries'>
-          <span></span>
-          RU-speaking countries
-        </label>        
-      </div>
-      <div style="width: 33%;">
-        <input id='LATAM' type='checkbox' />
-        <label for='LATAM'>
-          <span></span>
-          LATAM
-        </label>
+            <h3 style="font-size: 24px;">TOP Geo</h3>
+          </div>
 
-        <input id='GCC' type='checkbox' />
-        <label for='GCC'>
-          <span></span>
-          GCC
-        </label>
+          <section class="paragraph" style="display: flex;
+      justify-content: space-between;">
+            <div style="width: 33%;">
+              <input id='TIER1' type='checkbox' />
+              <label for='TIER1'>
+                <span></span>
+                TIER1
+              </label>
 
-        <input id='Asia-Pacific' type='checkbox' />
-        <label for='Asia-Pacific'>
-          <span></span>
-          Asia-Pacific
-        </label>
-      </div>
+              <input id='Europe' type='checkbox' />
+              <label for='Europe'>
+                <span></span>
+                Europe
+              </label>
+
+              <input id='RU-speakingcountries' type='checkbox' />
+              <label for='RU-speakingcountries'>
+                <span></span>
+                RU-speaking countries
+              </label>
+            </div>
+            <div style="width: 33%;">
+              <input id='LATAM' type='checkbox' />
+              <label for='LATAM'>
+                <span></span>
+                LATAM
+              </label>
+
+              <input id='GCC' type='checkbox' />
+              <label for='GCC'>
+                <span></span>
+                GCC
+              </label>
+
+              <input id='Asia-Pacific' type='checkbox' />
+              <label for='Asia-Pacific'>
+                <span></span>
+                Asia-Pacific
+              </label>
+            </div>
 
 
-      <div style="width: 33%;">       
-        <input id='Other2' type='checkbox' />
-        <label for='Other2'>
-          <span></span>
-          Other
-        </label>
-      </div>          
+            <div style="width: 33%;">
+              <input id='Other2' type='checkbox' />
+              <label for='Other2'>
+                <span></span>
+                Other
+              </label>
+            </div>
 
-      </section>
+          </section>
 
-      <h3 style="font-size: 20px; 
-      padding-bottom: 20px; padding-top: 10px;">Other traffic types</h3>
-      <div class="tabs-input__wrap" style=" margin-top: 4px;
-  ">                
-        <input type="text" name="traffic" value="" placeholder="Enter Text" required="">
-      </div>
+          <h3 style="font-size: 20px; 
+      padding-bottom: 20px; padding-top: 10px;">Other Geo</h3>
+          <div class="tabs-input__wrap" style=" margin-top: 4px;
+  ">
+            <input type="text" name="geo" value="" placeholder="Enter Text">
+          </div>
 
 
 
           <style>
-             input[type='checkbox']{ height: 0; width: 0; display: none;}
+            input[type='checkbox'] {
+              height: 0;
+              width: 0;
+              display: none;
+            }
 
-input[type='checkbox'] + label{
-  position: relative;
-  display: flex;
-  margin: .6em 0;
-  align-items: center;
-  color: #eaeaea;
-  transition: color 250ms cubic-bezier(.4,.0,.23,1);
-}
-input[type='checkbox'] + label > ins{
-  position: absolute;
-  display: block;
-  bottom: 0;
-  left: 2em;
-  height: 0;
-  width: 100%;
-  overflow: hidden;
-  text-decoration: none;
-  transition: height 300ms cubic-bezier(.4,.0,.23,1);
-}
-input[type='checkbox'] + label > ins > i{
-  position: absolute;
-  bottom: 0;
-  font-style: normal;
-  color: #4FC3F7;
-}
-input[type='checkbox'] + label > span{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1em;
-  width: 1em;
-  height: 1em;
-  background: transparent;
-  border: 2px solid #9E9E9E;
-  border-radius: 2px;
-  cursor: pointer;  
-  transition: all 250ms cubic-bezier(.4,.0,.23,1);
-}
+            input[type='checkbox']+label {
+              position: relative;
+              display: flex;
+              margin: .6em 0;
+              align-items: center;
+              color: #eaeaea;
+              transition: color 250ms cubic-bezier(.4, .0, .23, 1);
+            }
 
-input[type='checkbox'] + label:hover, input[type='checkbox']:focus + label{
-  color: #fff;
-}
-input[type='checkbox'] + label:hover > span, input[type='checkbox']:focus + label > span{
-  background: rgba(255,255,255,.1);
-}
-input[type='checkbox']:checked + label > ins{ height: 100%; }
+            input[type='checkbox']+label>ins {
+              position: absolute;
+              display: block;
+              bottom: 0;
+              left: 2em;
+              height: 0;
+              width: 100%;
+              overflow: hidden;
+              text-decoration: none;
+              transition: height 300ms cubic-bezier(.4, .0, .23, 1);
+            }
 
-input[type='checkbox']:checked + label > span{
-  border: .5em solid #eaeaea;
-  animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
-}
-input[type='checkbox']:checked + label > span:before{
-  content: "";
-  position: absolute;
-  top: .7em;
-  left: .2em;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  transform: rotate(45deg);
-  transform-origin: 0% 100%;
-  animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
-}
+            input[type='checkbox']+label>ins>i {
+              position: absolute;
+              bottom: 0;
+              font-style: normal;
+              color: #4FC3F7;
+            }
 
-@keyframes shrink-bounce{
-  0%{
-    transform: scale(1);
-  }
-  33%{    
-    transform: scale(.85);
-  }
-  100%{
-    transform: scale(1);    
-  }
-}
-@keyframes checkbox-check{
-  0%{
-    width: 0;
-    height: 0;
-    border-color: #212121;
-    transform: translate3d(0,0,0) rotate(45deg);
-  }
-  33%{
-    width: .2em;
-    height: 0;
-    transform: translate3d(0,0,0) rotate(45deg);
-  }
-  100%{    
-    width: .2em;
-    height: .5em;    
-    border-color: #212121;
-    transform: translate3d(0,-.5em,0) rotate(45deg);
-  }
-}
+            input[type='checkbox']+label>span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 1em;
+              width: 1em;
+              height: 1em;
+              background: transparent;
+              border: 2px solid #9E9E9E;
+              border-radius: 2px;
+              cursor: pointer;
+              transition: all 250ms cubic-bezier(.4, .0, .23, 1);
+            }
+
+            input[type='checkbox']+label:hover,
+            input[type='checkbox']:focus+label {
+              color: #fff;
+            }
+
+            input[type='checkbox']+label:hover>span,
+            input[type='checkbox']:focus+label>span {
+              background: rgba(255, 255, 255, .1);
+            }
+
+            input[type='checkbox']:checked+label>ins {
+              height: 100%;
+            }
+
+            input[type='checkbox']:checked+label>span {
+              border: .5em solid #eaeaea;
+              animation: shrink-bounce 200ms cubic-bezier(.4, .0, .23, 1);
+            }
+
+            input[type='checkbox']:checked+label>span:before {
+              content: "";
+              position: absolute;
+              top: .7em;
+              left: .2em;
+              border-right: 3px solid transparent;
+              border-bottom: 3px solid transparent;
+              transform: rotate(45deg);
+              transform-origin: 0% 100%;
+              animation: checkbox-check 125ms 250ms cubic-bezier(.4, .0, .23, 1) forwards;
+            }
+
+            @keyframes shrink-bounce {
+              0% {
+                transform: scale(1);
+              }
+
+              33% {
+                transform: scale(.85);
+              }
+
+              100% {
+                transform: scale(1);
+              }
+            }
+
+            @keyframes checkbox-check {
+              0% {
+                width: 0;
+                height: 0;
+                border-color: #212121;
+                transform: translate3d(0, 0, 0) rotate(45deg);
+              }
+
+              33% {
+                width: .2em;
+                height: 0;
+                transform: translate3d(0, 0, 0) rotate(45deg);
+              }
+
+              100% {
+                width: .2em;
+                height: .5em;
+                border-color: #212121;
+                transform: translate3d(0, -.5em, 0) rotate(45deg);
+              }
+            }
           </style>
 
-        <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
-        <button class="btn btn-mdb-color btn-rounded nextBtn-2 float-right" type="button">Next</button>
-    </div>
 
-    <!-- Third Step -->
-    <div class="row setup-content-2" id="step-3">
-        <!-- Stepper -->
-<div class="steps-form-2">
-    <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
-        <div class="steps-step-2">
-            <a href="#step-1" type="button" class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information">
-               1</a>
-        </div>
-        <div class="steps-step-2">
-            <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Personal Data">
-                2</a>
-        </div>
-        <div class="steps-step-2">
-            <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
-               3</a>
-        </div>        
-    </div>
-</div>
+          <button id="next" class="btn fancy-btn orange dark w-button nextBtn-2 float-right" type="button"
+            style="float: left; ">Next</button>
+          <button id="prev" class="btn fancy-btn orange dark w-button prevBtn-2 float-left" type="button"
+            style="float: right; ">Prev</button>
 
-        <div class="col-md-12">
-            <h3 class="font-weight-bold pl-0 my-4"><strong>Terms and conditions</strong></h3>
-            <div class="form-check">
-                <input type="checkbox" id="checkbox111" class="form-check-input">
-                <label for="checkbox111" class="form-check-label">I agree to the terms and conditions</label>
+        </div>
+
+        <!-- Third Step -->
+        <div class="row setup-content-2" id="step-3">
+          <!-- Stepper -->
+          <div class="steps-form-2">
+            <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
+              <div class="steps-step-2">
+                <a href="#step-1" style=" background-color: #021836fa;" type="button"
+                  class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top"
+                  title="Basic Information">
+                  1</a>
+              </div>
+              <div class="steps-step-2">
+                <a href="#step-2" style=" background-color: #021836fa;" type="button"
+                  class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top"
+                  title="Personal Data">
+                  2</a>
+              </div>
+              <div class="steps-step-2">
+                <a href="#step-3" style=" background-color: #021836fa;" type="button"
+                  class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top"
+                  title="Terms and Conditions">
+                  3</a>
+              </div>
             </div>
-            <div class="form-check">
-                <input type="checkbox" id="checkbox112" class="form-check-input">
-                <label for="checkbox112" class="form-check-label">I want to receive newsletter</label>
+          </div>
+
+
+          <!-- ////////////////////////////////////// -->
+
+          <div style="
+padding-top: 50px;
+padding-bottom: 20px;">
+            <h3 style="font-size: 24px;">How did you hear about Proxicent?</h3>
+            <div class="tabs-input__wrap" style=" margin-top: 4px;
+">
+              <input type="text" name="geo" value="" placeholder="Enter Text" required="">
             </div>
-            <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
-            <button class="btn btn-mdb-color btn-rounded nextBtn-2 float-right" type="button">Next</button>
-        </div>
-    </div>
+          </div>
 
-    <!-- Fourth Step -->
-    <!-- <div class="row setup-content-2" id="step-4">
-        <div class="col-md-12">
-            <h3 class="font-weight-bold pl-0 my-4"><strong>Finish</strong></h3>
-            <h2 class="text-center font-weight-bold my-4">Registration completed!</h2>
-            <button class="btn btn-mdb-color btn-rounded prevBtn-2 float-left" type="button">Previous</button>
-            <button class="btn btn-success btn-rounded float-right" type="submit">Submit</button>
-        </div>
-    </div> -->
-</form>
 
-<style>
-    .steps-form-2 {
-    display: table;
-    width: 100%;
-    position: relative; }
-.steps-form-2 .steps-row-2 {
-    display: table-row; }
-.steps-form-2 .steps-row-2:before {
-    top: 14px;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 2px;
-    background-color: #7283a7; }
-.steps-form-2 .steps-row-2 .steps-step-2 {
-    display: table-cell;
-    text-align: center;
-    position: relative; }
-.steps-form-2 .steps-row-2 .steps-step-2 p {
-    margin-top: 0.5rem; }
-.steps-form-2 .steps-row-2 .steps-step-2 button[disabled] {
-    opacity: 1 !important;
-    filter: alpha(opacity=100) !important; }
-.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {
-    width: 70px;
-    height: 70px;
-    border: 2px solid #59698D;
-    background-color: white !important;
-    color: #59698D !important;
-    border-radius: 50%;
-    padding: 22px 18px 15px 18px;
-    margin-top: -22px; }
-.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2:hover {
-    border: 2px solid #4285F4;
-    color: #4285F4 !important;
-    background-color: white !important; }
-.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 .fa {
-    font-size: 1.7rem; }
-    .btn-blue-grey {
+          <section class="paragraph" style="display: flex;
+justify-content: space-between;">
+            <div style="width: 50%;">
+              <div>
+                <h3 style="font-size: 24px;">Promo code</h3>
+                <div class="tabs-input__wrap" style=" margin-top: 4px;
+">
+                  <input type="text" name="geo" value="" placeholder="Enter Text" required="">
+                </div>
+              </div>
+            </div>
+            <div style="width: 50%; padding-left: 80px;">
+              <input id='agreeNews' type='checkbox' />
+              <label for='agreeNews'>
+                <span></span>
+                I agree to receive news
+              </label>
+
+              <input id='agreeTerms' type='checkbox' />
+              <label for='agreeTerms'>
+                <span></span>
+                I agree with terms & conditions
+              </label>
+
+
+            </div>
+
+
+          </section>
+          <div>
+
+
+
+            <button id="next" class="btn fancy-btn orange dark w-button float-right" type="submit"
+              style="float: left;">Submit</button>
+            <button id="prev" class="btn fancy-btn orange dark w-button prevBtn-2 float-left" type="button"
+              style="float: right;">Prev</button>
+
+          </div>
+
+        </div>
+      </form>
+
+      <style>
+        .steps-form-2 {
+          display: table;
+          width: 100%;
+          position: relative;
+          margin-bottom: 50px;
+        }
+
+        .steps-form-2 .steps-row-2 {
+          display: table-row;
+        }
+
+        .steps-form-2 .steps-row-2:before {
+          top: 14px;
+          bottom: 0;
+          position: absolute;
+          content: " ";
+          width: 100%;
+          height: 2px;
+          background-color: #7283a7;
+        }
+
+        .steps-form-2 .steps-row-2 .steps-step-2 {
+          display: table-cell;
+          text-align: center;
+          position: relative;
+        }
+
+        .steps-form-2 .steps-row-2 .steps-step-2 p {
+          margin-top: 0.5rem;
+        }
+
+        .steps-form-2 .steps-row-2 .steps-step-2 button[disabled] {
+          opacity: 1 !important;
+          filter: alpha(opacity=100) !important;
+        }
+
+        .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {
           width: 70px;
-    height: 70px;
-    }
-</style>
-<script>
-    // Tooltips Initialization
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+          height: 70px;
+          border: 2px solid #7283a7;
+          background-color: white;
+          color: #7283a7;
+          border-radius: 50%;
+          padding: 12px 22px 12px 22px;
+          margin-top: -22px;
+          font-size: 26px;
+        }
 
-// Steppers
-$(document).ready(function () {
-  var navListItems = $('div.setup-panel-2 div a'),
-          allWells = $('.setup-content-2'),
-          allNextBtn = $('.nextBtn-2'),
-          allPrevBtn = $('.prevBtn-2');
+        .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2:hover {
+          box-shadow: 0 0 10px rgb(210 209 212);
+          ;
+          background-color: white;
+        }
 
-  allWells.hide();
+        .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 .fa {
+          font-size: 1.7rem;
+        }
 
-  navListItems.click(function (e) {
-      e.preventDefault();
-      var $target = $($(this).attr('href')),
+        .btn-blue-grey {
+          width: 70px;
+          height: 70px;
+        }
+      </style>
+      <script>
+        // Tooltips Initialization
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        // Steppers
+        $(document).ready(function () {
+          var navListItems = $('div.setup-panel-2 div a'),
+            allWells = $('.setup-content-2'),
+            allNextBtn = $('.nextBtn-2'),
+            allPrevBtn = $('.prevBtn-2');
+
+          allWells.hide();
+
+          navListItems.click(function (e) {
+            e.preventDefault();
+            var $target = $($(this).attr('href')),
               $item = $(this);
 
-      if (!$item.hasClass('disabled')) {
-          navListItems.removeClass('btn-amber').addClass('btn-blue-grey');
-          $item.addClass('btn-amber');
-          allWells.hide();
-          $target.show();
-          $target.find('input:eq(0)').focus();
-      }
-  });
+            if (!$item.hasClass('disabled')) {
+              navListItems.removeClass('btn-amber').addClass('btn-blue-grey');
+              $item.addClass('btn-amber');
+              allWells.hide();
+              $target.show();
+              $target.find('input:eq(0)').focus();
+            }
+          });
 
-  allPrevBtn.click(function(){
-      var curStep = $(this).closest(".setup-content-2"),
-          curStepBtn = curStep.attr("id"),
-          prevStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+          allPrevBtn.click(function () {
+            var curStep = $(this).closest(".setup-content-2"),
+              curStepBtn = curStep.attr("id"),
+              prevStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
 
-          prevStepSteps.removeAttr('disabled').trigger('click');
-  });
+            prevStepSteps.removeAttr('disabled').trigger('click');
+          });
 
-  allNextBtn.click(function(){
-      var curStep = $(this).closest(".setup-content-2"),
-          curStepBtn = curStep.attr("id"),
-          nextStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-          curInputs = curStep.find("input[type='text'],input[type='url']"),
-          isValid = true;
+          allNextBtn.click(function () {
+            var curStep = $(this).closest(".setup-content-2"),
+              curStepBtn = curStep.attr("id"),
+              nextStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+              curInputs = curStep.find("input[type='text'],input[type='url']"),
+              isValid = true;
 
-      $(".form-group").removeClass("has-error");
-      for(var i=0; i< curInputs.length; i++){
-          if (!curInputs[i].validity.valid){
-              isValid = false;
-              $(curInputs[i]).closest(".form-group").addClass("has-error");
-          }
-      }
+            $(".form-group").removeClass("has-error");
+            for (var i = 0; i < curInputs.length; i++) {
+              if (!curInputs[i].validity.valid) {
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+              }
+            }
 
-      if (isValid)
-          nextStepSteps.removeAttr('disabled').trigger('click');
-  });
+            if (isValid)
+              nextStepSteps.removeAttr('disabled').trigger('click');
+          });
 
-  $('div.setup-panel-2 div a.btn-amber').trigger('click');
-});
-</script>
-           
-            <!-- <div class="signup__first-row">
-                <form id="form-signup" action="https://c3pa.net/signup" method="post" class="signup-tabs__wrap">
-                                <input type="hidden" name="_token" value="A0oaNuDPnOLwNuhCmgul8JtOFLIIKd2eDQv7BAqX">           
-                                <div class="signup__tabs">
-                   
-                  </div>
-                  <input type="hidden" name="partner_ip" value="178.214.200.9">
-                  <input type="hidden" name="utm_source" value="">
-                  <div class="signup__tabs_content">
-                        <div class="tabs_content1 active">
-                          <div class="tabs__input-group main-inputs">
-                              <div class="tabs-input__wrap">                                 
-                                  <input type="text" name="email" placeholder="Email*" value="" required="">
-                              </div>
-                              <div class="tabs_column2">
-                                  <div class="tabs-input__wrap">
-                                    
-                                      <input id="password" type="password" name="password" placeholder="Password*" required="">
-                                   
-                                  </div>
-                                  <div class="tabs-input__wrap">
-                                    
-                                      <input type="password" name="password_confirmation" placeholder="Confirm password*" required="">
-                                  </div>
-                              </div>
-                          </div>
-      
-                          <div class="tabs__input-group">
-                              <div class="tabs_column2">
-                                  <div class="tabs-input__wrap">
-                                     
-                                      <input type="text" name="name" value="" placeholder="Name" required="">
-                                  </div>
-                                  <div class="tabs-input__wrap">
-                                    
-                                      <input type="text" name="country" value="" placeholder="Country" required="">
-                                  </div>
-                              </div>
-                              <div class="tabs-input__wrap">
-                                 
-                                  <input type="text" name="address" value="" placeholder="Address">
-                              </div>
-                              <div class="tabs_column2 ">
-                                  <div class="tabs-input__wrap padd">
-                                     <div class="custom-select" style="width:100%">
-                                        <select>
-                                          <option value="IM Type*"><span style="color: #646262;"> IM Type*</span></option>
-                                          <option value="Skype">Skype</option>
-                                          <option value="Telegram">Telegram</option>
-                                          <option value="Other">Other</option>                                        
-                                        </select>
-                                      </div>
-                                    </div>
-                                    <style>
-                                      
-                                        .custom-select {
-                                          position: relative;
-                                          font-family: Arial;
-                                          font-size: 14px;
-                                          
-    padding: 2px 5px 2px 4px;
-                                        }
-                                        
-                                        .custom-select select {
-                                          display: none;
-                                        }
-                                                                               
-                                      
-                                        .select-selected:after {
-                                          position: absolute;
-                                          content: "";
-                                          top: 7px;
-                                          right: 10px;
-                                          width: 0;
-                                          height: 0;
-                                          border: 6px solid transparent;
-                                          border-color: #fff transparent transparent transparent;
-                                        }
-                                        
-                                 
-                                        .select-selected.select-arrow-active:after {
-                                          border-color: transparent transparent #fff transparent;
-                                          top: 0px;
-                                        }
-                                        
-                                      
-                                        .select-items div,.select-selected {
-                                          color: #ffffff;                                          
-                                          border: 1px solid transparent;
-                                          border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
-                                          cursor: pointer;
-                                          user-select: none;                                          
-                                            padding-bottom: 5px;
-                                        }
-                                        
-                                     
-                                        .select-items {
-                                          position: absolute;
-                                          background-color: #021836fa;
-                                          top: 100%;
-                                          left: 0;
-                                          right: 0;
-                                          z-index: 99;
-                                          
-    box-shadow: 0 0 10px rgb(255 255 255 / 50%);
-                                        }
-                                        
-                                      
-                                        .select-hide {
-                                          display: none;
-                                        }
-                                        
-                                        .select-items div:hover, .same-as-selected {
-                                          background-color: rgba(0, 0, 0, 0.1);
-                                        }
-                                        </style>
-                                        <script>
-                                            var x, i, j, l, ll, selElmnt, a, b, c;
-                                          
-                                            x = document.getElementsByClassName("custom-select");
-                                            l = x.length;
-                                            for (i = 0; i < l; i++) {
-                                              selElmnt = x[i].getElementsByTagName("select")[0];
-                                              ll = selElmnt.length;
-                                            
-                                              a = document.createElement("DIV");
-                                              a.setAttribute("class", "select-selected");
-                                              a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-                                              x[i].appendChild(a);
-                                              
-                                              b = document.createElement("DIV");
-                                              b.setAttribute("class", "select-items select-hide");
-                                              for (j = 1; j < ll; j++) {
-                                          
-                                                c = document.createElement("DIV");
-                                                c.innerHTML = selElmnt.options[j].innerHTML;
-                                                c.addEventListener("click", function(e) {
-                                                  
-                                                    var y, i, k, s, h, sl, yl;
-                                                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                                                    sl = s.length;
-                                                    h = this.parentNode.previousSibling;
-                                                    for (i = 0; i < sl; i++) {
-                                                      if (s.options[i].innerHTML == this.innerHTML) {
-                                                        s.selectedIndex = i;
-                                                        h.innerHTML = this.innerHTML;
-                                                        y = this.parentNode.getElementsByClassName("same-as-selected");
-                                                        yl = y.length;
-                                                        for (k = 0; k < yl; k++) {
-                                                          y[k].removeAttribute("class");
-                                                        }
-                                                        this.setAttribute("class", "same-as-selected");
-                                                        break;
-                                                      }
-                                                    }
-                                                    h.click();
-                                                });
-                                                b.appendChild(c);
-                                              }
-                                              x[i].appendChild(b);
-                                              a.addEventListener("click", function(e) {
-                                                
-                                                  e.stopPropagation();
-                                                  closeAllSelect(this);
-                                                  this.nextSibling.classList.toggle("select-hide");
-                                                  this.classList.toggle("select-arrow-active");
-                                                });
-                                            }
-                                            function closeAllSelect(elmnt) {
-                                             
-                                              var x, y, i, xl, yl, arrNo = [];
-                                              x = document.getElementsByClassName("select-items");
-                                              y = document.getElementsByClassName("select-selected");
-                                              xl = x.length;
-                                              yl = y.length;
-                                              for (i = 0; i < yl; i++) {
-                                                if (elmnt == y[i]) {
-                                                  arrNo.push(i)
-                                                } else {
-                                                  y[i].classList.remove("select-arrow-active");
-                                                }
-                                              }
-                                              for (i = 0; i < xl; i++) {
-                                                if (arrNo.indexOf(i)) {
-                                                  x[i].classList.add("select-hide");
-                                                }
-                                              }
-                                            }
-                                           
-                                            document.addEventListener("click", closeAllSelect);
-                                            </script>
-                                  <div class="tabs-input__wrap padd">
-                                      <input type="text" name="im_type" value="" placeholder="Contact Info" required="">
-                                  </div>
-                              </div>
-                              <div class="tabs_column2">
-                                  <div class="tabs-input__wrap">
-                                    
-                                      <input type="text" name="company_name" value="" placeholder="Company name">
-                                  </div>
-                                  <div class="tabs-input__wrap">
-                                   
-                                      <input type="text" name="url_company" value="" placeholder="URL (company / personal / etc.)">
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="tabs__button" style="width: 100%;
-                          padding: 12px 25px 4px;
-                          margin-left: calc;
-                          margin-left: 60%;">                            
-                              <a href="#" class="btn fancy-btn orange dark w-button">Continue</a>
-                          </div>
-                        </div>
-      
-                        <div class="tabs_content2"  style="display: none;">
-                          <div class="tabs__input-group">
-                              <h4 class="tabs__title">Name main verticals</h4>
-                              <div class="tabs_column3">
-                                  <div class="tabs__check-group">
-                                                                          <label class="control control-checkbox">
-                                              <input type="checkbox" name="name_main_verticals[]" value="Crypto" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Crypto</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="name_main_verticals[]" value="Forex / Finance" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Forex / Finance</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="name_main_verticals[]" value="Gambling" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Gambling</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="name_main_verticals[]" value="Adult / Casual Dating" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Adult / Casual Dating</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="name_main_verticals[]" value="Mainstream Dating" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Mainstream Dating</span>
-                                          </label>
-      
-                                                                                  </div>
-                                              <div class="tabs__check-group">
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="name_main_verticals[]" value="Livecams" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Livecams</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="name_main_verticals[]" value="Adult Games" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Adult Games</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="name_main_verticals[]" value="Other" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Other</span>
-                                          </label>
-      
-                                                                                                      </div>
-                              </div>
-                              <div class="tabs__input-other">
-                                  <h4 class="tabs__title_other">Other verticals</h4>
-                                  <div class="tabs-input__wrap">
-                                      <input type="text" name="other_verticals" value="" placeholder="enter text">
-                                  </div>
-                              </div>
-                              <div class="tabs__input-other">
-                                  <h4 class="tabs__title_other">What CPA networks do you currently work  with? <span class="tabs__title_desc">(Or reference contacts)</span></h4>
-                                  <div class="tabs-input__wrap">
-                                      <input type="text" name="what_cpa_networks" value="" placeholder="enter text">
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="tabs__input-group">
-                              <h4 class="tabs__title">What traffic types do you generally use for promotional purposes?</h4>
-                              <div class="tabs_column3">
-                                  <div class="tabs__check-group">
-                                                                          <label class="control control-checkbox">
-                                              <input type="checkbox" name="what_traffic_types[]" value="SEO / Doorways" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">SEO / Doorways</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="what_traffic_types[]" value="PPC (Google, Yahoo, Yandex etc.)" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">PPC (Google, Yahoo, Yandex etc.)</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="what_traffic_types[]" value="Native Ads" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Native Ads</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="what_traffic_types[]" value="Ad Networks" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Ad Networks</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="what_traffic_types[]" value="Social Media" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Social Media</span>
-                                          </label>
-      
-                                                                                  </div>
-                                              <div class="tabs__check-group">
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="what_traffic_types[]" value="Email" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Email</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="what_traffic_types[]" value="Popunder" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Popunder</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="what_traffic_types[]" value="Push Notifications" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Push Notifications</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="what_traffic_types[]" value="Other" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Other</span>
-                                          </label>
-      
-                                                                                                      </div>
-                              </div>
-                              <div class="tabs__input-other">
-                                  <h4 class="tabs__title_other">Other traffic types</h4>
-                                  <div class="tabs-input__wrap">
-                                      <input type="text" name="other_traffic_types" value="" placeholder="enter text">
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="tabs__input-group">
-                              <h4 class="tabs__title">TOP Geo</h4>
-                              <div class="tabs_column3">
-                                  <div class="tabs__check-group">
-                                                                          <label class="control control-checkbox">
-                                              <input type="checkbox" name="top_geo[]" value="TIER1" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">TIER1</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="top_geo[]" value="Europe" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Europe</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="top_geo[]" value="RU-speaking countries" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">RU-speaking countries</span>
-                                          </label>
-      
-                                                                                  </div>
-                                              <div class="tabs__check-group">
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="top_geo[]" value="LATAM" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">LATAM</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="top_geo[]" value="GCC" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">GCC</span>
-                                          </label>
-      
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="top_geo[]" value="Asia-Pacific" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Asia-Pacific</span>
-                                          </label>
-      
-                                                                                  </div>
-                                              <div class="tabs__check-group">
-                                                                                                              <label class="control control-checkbox">
-                                              <input type="checkbox" name="top_geo[]" value="Other" required="">
-                                              <span class="control_indicator"></span>
-                                              <span class="control_name">Other</span>
-                                          </label>
-      
-                                                                                                      </div>
-                              </div>
-                              <div class="tabs__input-other">
-                                  <h4 class="tabs__title_other">Other Geo</h4>
-                                  <div class="tabs-input__wrap">
-                                      <input type="text" name="other_geo" value="" placeholder="enter text">
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="tabs__button">
-                              <div id="button2" class="button-return arrow">
-                                  Click to return
-                              </div>
-                              <div id="button3" class="button-continue arrow">
-                                  Continue
-                              </div>
-                          </div>
-                        </div>
-                        <div class="tabs_content3" style="display: none;">
-                              <div class="tabs__input-group">
-                                  <div class="tabs__input-other">
-                                      <h4 class="tabs__title_other">How did you hear about C3PA?</h4>
-                                      <div class="tabs-input__wrap">
-                                          <input type="text" name="how_did_you hear" value="" required="" placeholder="enter text">
-                                      </div>
-                                  </div>
-                                  <div class="tabs_column2">
-                                      <div class="tabs-input__wrap">
-                                          <div class="tabs__input-other">
-                                              <h4 class="tabs__title_other">Promo code</h4>
-                                              <input type="text" name="promocode" value="" placeholder="enter text">
-                                          </div>
-                                      </div>
-      
-                                      <div class="tabs-input__wrap">
-                                          <div class="tabs__check-group">
-                                              <label class="control control-checkbox">
-                                                  <input type="checkbox" name="i_agree_to_resive_news" value="1">
-                                                  <span class="control_indicator"></span>
-                                                  <span class="control_name">I agree to receive news</span>
-                                              </label>
-      
-                                              <label class="control control-checkbox">
-                                                  <input type="checkbox" name="agree_terms" value="1" required="">
-                                                  <span class="control_indicator"></span>
-                                                  <span class="control_name">I agree with <a href="/terms-conditions" target="_blank">terms &amp; conditions</a></span>
-                                              </label>
-                                          </div>
-                                      </div>
-      
-                                  </div>
-                              </div>
-                              <div class="tabs__button">
-                                  <div id="button4" class="button-return arrow">
-                                      Click to return
-                                  </div>
-                                  <button type="submit" id="submit" class="button-continue arrow">
-                                      Register
-                                  </button>
-                              </div>
-                          </div>
-                      </div>
-                  </form>
-              </div> -->
+          $('div.setup-panel-2 div a.btn-amber').trigger('click');
+        });
+      </script>
 
-        </section>
 
-    </div>
+    </section>
 
- 
-<footer class="footer">
+  </div>
+
+
+  <footer class="footer">
     <div class="text-block-6">All Rights Reserved. © Proxicent <span id="year">2021</span></div>
   </footer>
 
-    <script>
-        $(window).scroll(function () {
-            var height = $(window).scrollTop();
-            if (height > 10) {
-                $('.navbar').addClass('menuColor')
-                // $('.sticky-nav').addClass('scrolled');
+  <script>
+    $(window).scroll(function () {
+      var height = $(window).scrollTop();
+      if (height > 10) {
+        $('.navbar').addClass('menuColor')
+        // $('.sticky-nav').addClass('scrolled');
 
-                console.log('scrolled')
-            }
-            else {
-                $('.navbar').removeClass('menuColor')
-            }
-        });
+        console.log('scrolled')
+      }
+      else {
+        $('.navbar').removeClass('menuColor')
+      }
+    });
 
-    </script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 
-      <script>
-        AOS.init();
-      </script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
