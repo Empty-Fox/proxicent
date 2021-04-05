@@ -17,10 +17,13 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
     integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
   <!-- <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="images/webclip.png" rel="apple-touch-icon"> -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
@@ -30,7 +33,7 @@
     .footer {
       margin-top: 0;
     }
-
+ 
     .section-signup__header {
       padding-bottom: 50px;
     }
@@ -199,7 +202,7 @@
     }
 
     .btn.fancy-btn.w-button:hover:after {
-      width: 120%;
+      width: 100%;
       content: '';
       right: -10%;
     }
@@ -280,8 +283,7 @@
     }
 
     .block2_nameVerticals {
-      padding-top: 50px;
-      padding-bottom: 20px;
+      padding: 12px 25px 4px;
     }
 
     .block2_nameVerticals h3 {
@@ -291,6 +293,7 @@
     .paragraphSignUp1 {
       display: flex;
       justify-content: space-between;
+      padding: 12px 25px 4px;
     }
 
     .paragraphcolumn_block {
@@ -301,16 +304,20 @@
       font-size: 20px;
       padding-bottom: 20px;
       padding-top: 10px;
+      padding: 12px 25px 4px;
     }
 
     .tabs-input__wrap_verticals {
       margin-top: 4px;
+      margin: 12px 25px 4px;
     }
 
     .name_whatCPA {
       font-size: 22px;
       padding-top: 40px;
-      padding-bottom: 20px;
+      padding-bottom: 4px;
+     padding-left: 25px;
+     padding-right: 25px;
     }
 
     .name_whatCPA span {
@@ -319,11 +326,14 @@
 
     .tabs-input__wrap_whatCPA {
       margin-top: 4px;
+      margin: 12px 25px 4px;
     }
 
     .name_traffic {
-      padding-top: 50px;
-      padding-bottom: 20px;
+      padding-top: 40px;
+      padding-bottom: 4px;
+     padding-left: 25px;
+     padding-right: 25px;
     }
 
     .name_traffic h3 {
@@ -333,21 +343,23 @@
     .section_checkbox {
       display: flex;
       justify-content: space-between;
+      padding: 12px 25px 4px;
     }
 
     .name_otherTraffic {
       font-size: 20px;
-      padding-bottom: 20px;
-      padding-top: 10px;
+      padding: 12px 25px 4px;
     }
 
     .inputPaddingtraffic {
-      margin-top: 4px;
+      margin: 12px 25px 4px;
     }
 
     .nameGeo {
-      padding-top: 50px;
-      padding-bottom: 20px;
+      padding-top: 40px;
+      padding-bottom: 4px;
+     padding-left: 25px;
+     padding-right: 25px;
     }
 
     .nameGeo h3 {
@@ -360,12 +372,11 @@
 
     .name_otherGeo {
       font-size: 20px;
-      padding-bottom: 20px;
-      padding-top: 10px;
+      padding: 12px 25px 4px;
     }
 
     .tabs-input_geo {
-      margin-top: 4px;
+      margin: 12px 25px 4px;
     }
 
     input[type='checkbox'] {
@@ -514,15 +525,14 @@
       padding: 18px 60px 18px 60px;
     }
 
-    .prevBtn-2:before {
+    .btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left::before {
       transform: rotate(180deg);
       top: 20px;
       left: 15px;
     }
 
-    .block_hearProxicent {
-      padding-top: 50px;
-      padding-bottom: 20px;
+    .block_hearProxicent {   
+      padding: 12px 25px 4px;
     }
 
     .block_hearProxicent h3 {
@@ -607,23 +617,137 @@
       width: 70px;
       height: 70px;
     }
+    #step-3 {
+      height: 70vh;
+    }
 
-    @media only screen and (max-width:1000px){
+    @media only screen and (max-width:1000px) {
       .wrapper section:first-child {
-    width: 100%;
-    padding: 50px;
+        width: 100%;
+        padding: 50px;
       }
     }
+    @media only screen and (max-width:900px){
+      input[type='checkbox']:checked+label>span:before {
+        top: .4em;
+      }
+      .paragraphcolumn_block.last_page {
+        padding-left: 20px;
+      }
+    }
+@media only screen and (max-width:700px){
+  .paragraph.section_checkbox.trafficBox {
+    display: block;
+  }
+  .paragraph.section_checkbox .paragraphcolumn_block:first-child {
+    width: 100%;
+  }
+  .paragraph.section_checkbox .paragraphcolumn_block:nth-child(2) {
+    width: 100%;
+  }
+  .section_checkbox {
+    display: block;
+  }
+}
     @media only screen and (max-width:600px) {
       .nextBtn1section {
         margin-left: 0;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+
+     
+    }
+@media only screen and (max-width:500px) {
+  .section_checkbox {
+    display: block;
+  }
+  .columnOf3 {
+    width: 100%;
 }
+}
+    @media only screen and (max-width:460px) {
+      .tabs_column2 {
+        display: block;
+      }
+      .btn.fancy-btn {  
+    font-size: 12px;
+    padding: 22px 55px;
+      }
+      .paragraphSignUp1 {
+    display: block;
+      }
+      .btn.fancy-btn.w-button:hover:after {
+    width: 80%;
+    right: 0;
+}
+.paragraphcolumn_block {
+    width: 100%;
+}
+.btn.fancy-btn.w-button:hover:before {
+    transform: translateX(0px);
+}
+
+      .tabs__input-group .tabs_column2 .tabs-input__wrap {
+        width: 100%;
+      }
+
+      .wrapper section:first-child {
+        width: 100%;
+        padding: 20px;
       }
     }
+    @media only screen and (max-width:360px){
+      .heading, .medium-title, .h2, .ui-title.is-size-h2, .h2.center.h2Blog {
+    font-size: 30px;
+    line-height: 42px;
+}
+.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {   
+    padding: 8px 16px 8px 16px;
+    font-size: 22px;
+}
+.block2_nameVerticals h3, .name_whatCPA, .name_traffic h3, .nameGeo h3, .block_hearProxicent h3, .name_promocode {
+    font-size: 20px;
+}
+.name_otherVeticals, .name_otherTraffic , .name_otherGeo{
+    font-size: 16px;
+}
+.btn.fancy-btn {
+    font-size: 10px;
+    padding: 20px 45px;
+}
+.btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left::before {
+    top: 15px;
+    left: 10px;
+}
+.btn.fancy-btn.w-button:before {
+    top: 2px;
+    right: 10px;
+}
+.btn.fancy-btn.w-button:after {
+    width: 40px;
+    height: 40px;
+    }
+    
+  }
+  @media  only screen and (max-width:300px) {
+    .wrapper section:first-child {
+ 
+    padding: 10px;
+}
+.btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left {
+  padding: 20px 45px 10px 45px;
+}
+
+.btn.fancy-btn.orange.dark.w-button.nextBtn-2.float-right {
+    padding: 20px 45px 10px 30px;
+}
+.btn.fancy-btn.orange.dark.w-button.nextBtn-2.continueBlock {
+  padding: 20px 45px 10px 45px;
+}
+  }
   </style>
 
 </head>
@@ -631,7 +755,7 @@
 <body>
 
   <div id="Home">
-    <div data-collapse="medium" class="navbar w-nav" style=" padding-left: 20px;">
+    <div data-collapse="medium" class="navbar w-nav " style=" padding-left: 20px;">
       <a href="#" style="color: white; line-height: 60px; float: left; ">
         <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo" style="width: 200px; ">
       </a>
@@ -791,7 +915,7 @@
           </div>
 
           <div class="tabs__button nextBtn1section">
-            <a href="#" class="btn fancy-btn orange dark w-button nextBtn-2">Continue</a>
+            <a href="#" class="btn fancy-btn orange dark w-button nextBtn-2 continueBlock">Continue</a>
           </div>
 
         </div>
@@ -891,7 +1015,7 @@
           <div class="name_traffic">
             <h3>What traffic types do you generally use for promotional purposes? </h3>
           </div>
-          <section class="paragraph section_checkbox">
+          <section class="paragraph section_checkbox trafficBox">
             <div class="paragraphcolumn_block">
               <input id='SEODoorways' type='checkbox' />
               <label for='SEODoorways'>
@@ -1000,8 +1124,8 @@
             </div>
 
             <div class="columnOf3">
-              <input id='Other2' type='checkbox' />
-              <label for='Other2'>
+              <input id='Other3' type='checkbox' />
+              <label for='Other3'>
                 <span></span>
                 Other
               </label>
@@ -1078,7 +1202,7 @@
           </section>
 
           <div>
-            <button class="btn fancy-btn orange dark w-button float-right nextBtn-2" type="submit">Submit</button>
+            <button class="btn fancy-btn orange dark w-button float-right nextBtn-2 submit" type="submit">Submit</button>
             <button class="btn fancy-btn orange dark w-button prevBtn-2 float-left" type="button">Prev</button>
           </div>
 
@@ -1095,6 +1219,7 @@
     <div class="text-block-6">All Rights Reserved. © Proxicent <span id="year">2021</span></div>
   </footer>
 
+ 
   <script>
     $(window).scroll(function () {
       var height = $(window).scrollTop();
@@ -1185,72 +1310,73 @@
     document.addEventListener("click", closeAllSelect);
 
   </script>
-  
- <script>
-  // Tooltips Initialization
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
 
-  // Steppers
-  $(document).ready(function () {
-    var navListItems = $('div.setup-panel-2 div a'),
-      allWells = $('.setup-content-2'),
-      allNextBtn = $('.nextBtn-2'),
-      allPrevBtn = $('.prevBtn-2');
+  <script>
+    // Tooltips Initialization
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
 
-    allWells.hide();
+    // Steppers
+    $(document).ready(function () {
+      var navListItems = $('div.setup-panel-2 div a'),
+        allWells = $('.setup-content-2'),
+        allNextBtn = $('.nextBtn-2'),
+        allPrevBtn = $('.prevBtn-2');
 
-    navListItems.click(function (e) {
-      e.preventDefault();
-      var $target = $($(this).attr('href')),
-        $item = $(this);
+      allWells.hide();
 
-      if (!$item.hasClass('disabled')) {
-        navListItems.removeClass('btn-amber').addClass('btn-blue-grey');
-        $item.addClass('btn-amber');
-        allWells.hide();
-        $target.show();
-        $target.find('input:eq(0)').focus();
-      }
-    });
+      navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+          $item = $(this);
 
-    allPrevBtn.click(function () {
-      var curStep = $(this).closest(".setup-content-2"),
-        curStepBtn = curStep.attr("id"),
-        prevStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
-
-      prevStepSteps.removeAttr('disabled').trigger('click');
-    });
-
-    allNextBtn.click(function () {
-      var curStep = $(this).closest(".setup-content-2"),
-        curStepBtn = curStep.attr("id"),
-        nextStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-        curInputs = curStep.find("input[type='text'],input[type='url']"),
-        isValid = true;
-
-      $(".form-group").removeClass("has-error");
-      for (var i = 0; i < curInputs.length; i++) {
-        if (!curInputs[i].validity.valid) {
-          isValid = false;
-          $(curInputs[i]).closest(".form-group").addClass("has-error");
+        if (!$item.hasClass('disabled')) {
+          navListItems.removeClass('btn-amber').addClass('btn-blue-grey');
+          $item.addClass('btn-amber');
+          allWells.hide();
+          $target.show();
+          $target.find('input:eq(0)').focus();
         }
-      }
+      });
 
-      if (isValid)
-        nextStepSteps.removeAttr('disabled').trigger('click');
+      allPrevBtn.click(function () {
+        var curStep = $(this).closest(".setup-content-2"),
+          curStepBtn = curStep.attr("id"),
+          prevStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+
+        prevStepSteps.removeAttr('disabled').trigger('click');
+      });
+
+      allNextBtn.click(function () {
+        var curStep = $(this).closest(".setup-content-2"),
+          curStepBtn = curStep.attr("id"),
+          nextStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+          curInputs = curStep.find("input[type='text'],input[type='url']"),
+          isValid = true;
+
+        $(".form-group").removeClass("has-error");
+        for (var i = 0; i < curInputs.length; i++) {
+          if (!curInputs[i].validity.valid) {
+            isValid = false;
+            $(curInputs[i]).closest(".form-group").addClass("has-error");
+          }
+        }
+
+        if (isValid)
+          nextStepSteps.removeAttr('disabled').trigger('click');
+      });
+
+      $('div.setup-panel-2 div a.btn-amber').trigger('click');
     });
-
-    $('div.setup-panel-2 div a.btn-amber').trigger('click');
-  });
-</script>
+  </script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
     AOS.init();
   </script>
+ 
 
 </body>
 
