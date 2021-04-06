@@ -3807,7 +3807,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80vh;
+  min-height: 100vh;
   padding-right: 15px;
   padding-left: 15px;
   -webkit-box-orient: vertical;
@@ -3930,7 +3930,7 @@ a {
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 60px;
+  font-size: 80px;
   line-height: 40px;
   font-weight: 700;     
   padding-bottom: 10px;
