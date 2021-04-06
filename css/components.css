@@ -3886,7 +3886,18 @@ a {
 .nav.m.mem.w--current {
   color: #5b8fff;
 }
-
+.imageGFirstBlock {
+  width: 50%; 
+  height:100vh; 
+  position: absolute; 
+  opacity: .4;
+}
+.imageGFirstBlock img {
+  width: 100%;
+  top: 40%;
+  -ms-transform: translateY(40%);
+  transform: translateY(40%);
+}
 .div-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5036,6 +5047,14 @@ text-align: center;
 }
 
 @media screen and (max-width:1050px){
+  .imageGFirstBlock {
+    width: 90%;
+  }
+  .imageGFirstBlock img {    
+    top: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+  }
 
   .register {    
     padding: 6px 12px !important;
@@ -5325,6 +5344,7 @@ text-align: center;
   #contact-us .btn.fancy-btn.orange.dark.w-button {
     margin-left: 70%;
   }
+
 }
 
 @media (max-width: 770px) {
@@ -5480,6 +5500,11 @@ text-align: center;
 }
 
 @media (max-width: 600px) {
+  .imageGFirstBlock img {    
+    top: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
   td:nth-child(4) .tableHideName p {
     padding-top: 10px;
   }
@@ -6052,6 +6077,18 @@ line-height: 0px;
   }
 }
 @media screen and (max-width: 400px){
+  .text-main-block p:first-child {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text-main-block_secondP {
+  padding-top: 10px;
+}
+  .imageGFirstBlock img {
+    top: 100%;
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
   .btn.fancy-btn.w-button:before {
     top: -2px;
   }
@@ -6173,6 +6210,20 @@ line-height: 0px;
 }
 }
 @media screen and (max-width:280px){
+  .heading_smaller {
+    font-size: 20px;
+    line-height: 22px;
+}
+  .heading, .medium-title, .h2, .ui-title.is-size-h2, .h2.center.h2Blog {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+  .imageGFirstBlock img {
+    top: 100%;
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
   #email-form-2 .btn.fancy-btn.orange.dark.w-button {
     padding: 18px 30px;
 }
@@ -6190,9 +6241,12 @@ line-height: 0px;
     padding-top: 15px;
   }
   .btn.fancy-btn.orange.dark.w-button  { 
-      padding: 20px 60px 10px 20px;
+      padding: 10px 40px 10px 20px;
 
   }
+  .text-main-block_secondP {
+    padding-top: 0px;
+}
   .collection-list-wrapper.w-dyn-list .btn.fancy-btn.dark ,
   .section-offers-footer__btn .btn.fancy-btn.orange.dark.w-button {    
     padding-top: 15px;
