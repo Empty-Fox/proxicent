@@ -4,9 +4,10 @@
 html {
   scroll-behavior: smooth;
 }
-#MainPage {
-  min-height: 90vh;
+.section-main_container, .icons-offer {
+  padding-top: 100px;
 }
+  
 .icons-offer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,8 +21,8 @@ html {
   width: 80%;    
   margin-left: auto;
   margin-right: auto;
-  height: 10vh; 
-  margin-top: -100px;
+  /* height: 20vh;
+  margin-bottom: -20vh; */
 }
 .text-main-block a {
   margin-top: 20px;
@@ -3917,7 +3918,7 @@ a {
   width: 50%; 
   height:100vh; 
   position: absolute; 
-  opacity: .4;
+  opacity: .07;
 }
 .imageGFirstBlock img {
   width: 100%;
@@ -4980,6 +4981,9 @@ text-align: center;
   
 }
 @media screen and (max-width: 1300px){
+  .section-main_container, .icons-offer {
+    padding-top: 150px;
+  }
   .navbar {
     padding-left: 40px !important;
   }
@@ -5534,8 +5538,11 @@ text-align: center;
 }
 
 @media (max-width: 600px) {
-  #MainPage {
+  /* #MainPage {
     min-height: 50vh;
+} */
+.section-main_container, .icons-offer {
+  padding-top: 80px;
 }
   .text-main-block p:first-child {
     width: 90%;
@@ -6136,14 +6143,15 @@ line-height: 0px;
     width: 100%;
     padding-right: 15px;
     padding-left: 30px;
+    padding-top: 100px;
   }
 
   .section-offers-advantage {
     font-size: 1.5rem;
   }
-  #MainPage {
+  /* #MainPage {
     min-height: 80vh;
-  }
+  } */
     .heading {
       padding-top: 0px;
     }
@@ -6162,9 +6170,9 @@ line-height: 0px;
   .heading_smaller:nth-child(3) {
     font-size: 22px;
   }
-  .main-block {
+  /* .main-block {
     margin-top: 2vh;
-  }
+  } */
   .text-main-block a {
     margin-bottom: 0;
   }
@@ -6174,6 +6182,13 @@ line-height: 0px;
   }
 }
 @media screen and (max-width: 400px){
+  .section-main_container {
+    padding-top: 150px;
+}
+.icons-offer {
+  padding-top: 100px;
+}
+
   .text-main-block .btn.fancy-btn.orange.dark.w-button {
     margin-top: 0px;
   }
@@ -6236,8 +6251,14 @@ line-height: 0px;
 
   }
 }
-@media screen and (max-width:350px){
-
+@media screen and (max-width:360px){
+  .icons-offer {
+    padding-top: 30px;
+}
+.section-main_container {
+  padding-top: 150px;
+}
+  
   #email-form-2 .btn.fancy-btn.orange.dark.w-button {
     padding: 18px 60px;
   }
@@ -6300,9 +6321,7 @@ line-height: 0px;
 }
 }
 @media screen and (max-width:280px){
-  .icons-offer {
-    margin-top: -200px;
-}
+
 
   .text-main-block p {
     width: 90%;
