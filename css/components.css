@@ -164,7 +164,7 @@ html {
   position: relative;
   z-index: 100;
   overflow: visible;
-  padding: 18px 60px;
+  padding: 14px 60px;
   background-color: transparent;
   -webkit-transform: translate(0px, 0px) translate(0px, 0px);
   -ms-transform: translate(0px, 0px) translate(0px, 0px);
@@ -6126,14 +6126,14 @@ line-height: 0px;
   }
   .icons-offer {
     height: auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 30px;
   }
-  .ui-icon.section-offers-advantage__icon img {
-    width: 30px;
-    height: 30px;
-  }
+
   .section-offers-advantage {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     margin-bottom: 10px;
   }
   #MainPage {
