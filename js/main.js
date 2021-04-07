@@ -101,7 +101,7 @@ $(document).ready(function () {
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
 
-  if (scroll >= 200) {
+  if (scroll >= 100) {
       $(".navbar.w-nav").addClass("menuColor");
       console.log('navbar')
   } else {
