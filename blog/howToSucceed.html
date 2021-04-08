@@ -99,6 +99,7 @@
             background-image: -o-linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
             background-image: linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
             box-shadow: 4px 4px 20px 11px #d6d6d6;
+            color: #eaeaea;
         }
 
         label {
@@ -130,10 +131,16 @@
         margin-top: 5%;
         margin-right: auto;
         margin-left: auto;
-        text-align: left;
-        font-size: 16px;
-
+        text-align: left; 
+        color: #021836fa;   
     }
+    ul {
+        padding-left: 40px;
+    }
+  .paragraph {
+      line-height: initial;
+      color: #021836fa;  
+  }
 
     .block_btn_seeAllPosts {
         height: 100px;
@@ -184,28 +191,37 @@
         -ms-grid-rows: auto;
         grid-template-rows: auto;
     }
+    
     .blog1_mainBlock {
         position: relative;
         margin: -20vh 0% 0%;
         padding: 5% 5% 7%;
-        background-color: #193c6d;
-        background-image: linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
+        background-color: #fdfcfc;        
         -webkit-box-shadow: 0 60px 50px rgb(255 255 255 / 25%);
         box-shadow: 0 60px 50px rgb(255 255 255 / 25%);
         position: relative;
         z-index: 2;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        color: #ededed;
+        color: #021836fa;
         font-size: 20px;
         font-weight: 200;
         text-align: center;
         letter-spacing: 0.33px;
         line-height: 1.7em;
     }
+    @media screen and (max-width:1300px){
+        #email-form {    
+    margin: -40px auto 0px;
+        }
+        .contactText {
+            font-size: 150px;
+        }
+    }
     @media screen and (max-width: 1100px) {
         .contactText {
             font-size: 100px;
+            text-shadow: 2px 1px 1px rgb(163 163 163), -2px 1px 1px #021836fa;
         }
         #email-form {
             margin: 20px 0px;
@@ -214,6 +230,7 @@
     @media screen and (max-width: 650px) {
         .contactText {
             font-size: 50px;
+            text-shadow: 2px 1px 1px rgb(163 163 163), -1px 1px 1px #021836fa;
         }
         .btn.fancy-btn {
             padding: 13px 60px;
@@ -299,10 +316,7 @@
         .blog1_mainBlock {
             padding: 5px;
         }
-        .btn.fancy-btn.w-button:before {
-            top: 4px;
-            right: 9px;
-        }
+      
         .btn.fancy-btn {
             padding: 5px 50px 5px 40px;
         }
@@ -419,7 +433,7 @@
     line-height: 28px;
     font-weight: 400;">March 15, 2021</div> -->
             <h2 class="text-block-2">How to succeed in crypto vertical</h2>
-            <div class="text-block-3">
+            <div class="text-block-3 paragraph">
                 <p>Increasing numbers of people are turning to crypto affiliate marketing programs as a means of making excellent money. But as with all expanding markets care is needed to make sure you make the right moves at the right time. </p>
                 <br>
                 <p>С3PA Network  offers some valuable affiliate marketing cryptocurrency tips to ensure you are earning from the very start.  </p>
