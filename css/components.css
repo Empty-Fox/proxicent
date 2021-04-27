@@ -4803,14 +4803,14 @@ body {
 .section-offers-advantage {
     color: #ededed;
     opacity: 1;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 2rem;
     font-weight: 700
 }
 
 .ui-icon.section-offers-advantage__icon img {
-  width: 40px; 
-  height: 40px;
+  width: 45px; 
+  height: 45px;
 }
 .section-offers-advantage,.section-offers-advantage__icon {
     display: -webkit-box;
@@ -5524,6 +5524,9 @@ text-align: center;
 }
 
 @media screen and (max-width: 770px) {  
+  .section-offers-advantage {
+    margin-bottom: 30px;
+}
   .section-2 {
     padding: 0px 0px 0px 0px;
   }
@@ -5624,9 +5627,9 @@ text-align: center;
 }
 
 @media (max-width: 600px) {
-  /* #MainPage {
-    min-height: 50vh;
-} */
+  .icons-offer {
+    width: 90%;
+  }
 .section-main_container, .icons-offer {
   padding-top: 80px;
 }
@@ -6216,7 +6219,7 @@ line-height: 30px;
     padding-top: 20px;
   }
   .ui-icon.section-offers-advantage__icon {
-    margin-right: 0;
+    margin-right: 10px;
     margin-left: 0;
   }
     .text-main-block_secondP {  
