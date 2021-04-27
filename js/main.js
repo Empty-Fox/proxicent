@@ -73,28 +73,28 @@
 
 
 // .......................Поява блоку при загрузці..............
-$(window).ready(function(){
-  $(".container").fadeIn(1000);
-});
+// $(window).ready(function(){
+//   $(".container").fadeIn(1000);
+// });
 //  ....................меняем цвет фона при прокрутке..............
-$(document).ready(function () {
-  var scroll_pos = 0;
-  $(window).scroll(function () {
-      scroll_pos = $(this).scrollTop();
+// $(document).ready(function () {
+//   var scroll_pos = 0;
+//   $(window).scroll(function () {
+//       scroll_pos = $(this).scrollTop();
   
-      if (scroll_pos >10){
-          $(".heading").css('transform', 'scale(2)');
-          $(".heading").css('opacity', '0.1');
+//       if (scroll_pos >10){
+//           $(".heading").css('transform', 'scale(2)');
+//           $(".heading").css('opacity', '0.1');
        
-      }            
-      else {
-          $(".heading").css('transform', 'scale(1)');
-          $(".heading").css('opacity', '1');
+//       }            
+//       else {
+//           $(".heading").css('transform', 'scale(1)');
+//           $(".heading").css('opacity', '1');
        
-      }                                                   
+//       }                                                   
   
-  });
-});
+//   });
+// });
 
 
 //////////////////menu scroll
@@ -111,3 +111,18 @@ $(window).scroll(function() {
 
       ////////////////////////////////////
       document.getElementById("year").innerHTML = new Date().getFullYear();
+
+         ///////burger button///////////
+
+     $('#headerCollapseButton').click(function () {
+      $(this).toggleClass('open_burger');
+      $(".nav-menu.w-nav-menu.nav-1").toggleClass('openHeader__full');
+  });
+  $('.nav.w-nav-link.link-1').click(function () {
+      $('.nav-menu.w-nav-menu.nav-1').removeClass('openHeader__full');
+      $('#headerCollapseButton').removeClass('open_burger');
+  });
+  $('.dropdown-content a').click(function () {
+      $('.nav-menu.w-nav-menu.nav-1').removeClass('openHeader__full');
+      $('#headerCollapseButton').removeClass('open_burger');
+  });
