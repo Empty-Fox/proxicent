@@ -4960,6 +4960,9 @@ text-align: center;
   margin-top: 40px;
   font-size: 20px;
 }
+.swiper-slide img:hover  {
+  transform: scale(1.1) !important;
+}
 /* 
 ///////////////////////////media//////////////////////// */
 @media screen and (max-width:1550px){
