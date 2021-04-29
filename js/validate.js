@@ -6,26 +6,9 @@ jQuery.validator.addMethod("regex_password", function(value, element) {
     return this.optional(element) || /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/i.test(value);
 }, "The password must contain at least one uppercase letter, one lowercase letter, and one digit. The password must be at least 8 characters long");
 
-
-$.validator.addMethod('onecheck', function(value, ele) {
-    return $("input:checked").length >= 1;
-  } , "Please select main verticals ");
-  $.validator.addMethod('onecheck2', function(value, ele) {
-    return $("input:checked").length >= 1;
-  } , "Please select traffic types ");
-
-  $.validator.addMethod('onecheck3', function(value, ele) {
-    return $("input:checked").length >= 1;
-  } , "Please select Geo ");
-
-  $.validator.addMethod('onecheck_agreeNews', function(value, ele) {
-    return $("input:checked").length >= 1;
-  } , "Choose that you agree to receive the news");
-  $.validator.addMethod('onecheck_agreeTerms', function(value, ele) {    
-    return $("input:checked").length >= 1;
-  } , "Choose that you agree with  terms & conditions");
-  
-
+jQuery.validator.addMethod("phone_numberCheck", function(value, element) {
+    return this.optional(element) || /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/i.test(value);
+}, "Check that the phone number is entered correctly");
 
 
 $('#email-form-2').validate({
@@ -103,7 +86,41 @@ $('#form-login').validate({
     }
 });
 
+$('#email-form').validate({
+    rules: {
+        First_Name_2: {
+            required:true,
+            minlength:3,
+            lettersonly:true           
+        },
+        Last_Name_2: {
+            required:true,
+            minlength:3,
+            lettersonly:true 
+        },
+        Email_2: {
+            required: true,
+            email: true
+          },
+          Contact_Phone_Number_2:{
+            required: true,
+            phone_numberCheck:true
+          }
+          
+    },
+ 
+    submitHandler: function () {
+        $('#email-form').hide();
+         $('.w-form-done').show();
+        // form.submit();
+        setTimeout(function(){ 
+            $('#email-form').show();
+             $('.w-form-done').hide();
+            $('#email-form')[0].reset();          
 
+         }, 3000);
+    }
+});
 
 /////////////////validate SignUp Form/////////////
 $(document).ready(function () {

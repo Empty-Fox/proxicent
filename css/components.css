@@ -4967,6 +4967,11 @@ text-align: center;
   display: grid; 
   grid-template-columns: 1fr .4fr;
 }
+.blog_image_3 {
+  transform: rotate(90deg);
+  transform: scaleX(-1);
+  z-index: -1;
+}
 /* 
 ///////////////////////////media//////////////////////// */
 @media screen and (max-width:1550px){
@@ -5531,6 +5536,9 @@ text-align: center;
 }
 
 @media screen and (max-width: 770px) {  
+  .text-block-6 {   
+    font-size: 12px;
+  }
   .section-offers-advantage {
     margin-bottom: 30px;
 }
@@ -5595,6 +5603,9 @@ text-align: center;
 }
 
 @media screen and (max-width:700px){
+  #Blog-Form {
+    display: block;
+  }
   .section-offers__title-bg {   
     left: 0rem !important;
   }
