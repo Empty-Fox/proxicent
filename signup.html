@@ -12,6 +12,7 @@
   <link href="css/supreme-media.css" rel="stylesheet" type="text/css">
   <link href="app.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="css/multi-form.css" rel="stylesheet" type="text/css">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -24,12 +25,29 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+  <script type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.js"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
+    .paragraphcolumn_block label.error,
+    .paragraph.section_checkbox label.error {
+      color: red !important;
+      font-size: 10px;
+      margin-top: -20px;
+    }
+
+    .paragraphcolumn_block.last_page label.error {
+      color: red !important;
+      font-size: 10px;
+      margin-top: 0;
+    }
+
     .footer {
       margin-top: 0;
     }
@@ -82,19 +100,6 @@
       margin-bottom: 5px;
     }
 
-    .tabs__input-group input,
-    .tabs__input-group textarea {
-      display: block;
-      width: 100%;
-      border: none;
-      outline: none;
-      color: #fff;
-      background-color: transparent;
-      z-index: 1;
-      font-size: 14px;
-      padding: 2px 5px 2px 4px;
-    }
-
     .tabs_column2 {
       display: -webkit-flex;
       display: -moz-flex;
@@ -109,7 +114,8 @@
     }
 
     .tabs__input-group {
-      padding: 12px 25px 4px;
+      padding: 0px 25px 4px;
+      margin-top: -10px;
     }
 
     .tabs_column2 {
@@ -238,12 +244,10 @@
       border-color: #fff transparent transparent transparent;
     }
 
-
     .select-selected.select-arrow-active:after {
       border-color: transparent transparent #fff transparent;
       top: 0px;
     }
-
 
     .select-items div,
     .select-selected {
@@ -254,7 +258,6 @@
       user-select: none;
       padding-bottom: 5px;
     }
-
 
     .select-items {
       position: absolute;
@@ -288,6 +291,7 @@
 
     .block2_nameVerticals h3 {
       font-size: 24px;
+      font-weight: 300;
     }
 
     .paragraphSignUp1 {
@@ -298,13 +302,13 @@
 
     .paragraphcolumn_block {
       width: 50%;
+      margin-top: -20px;
     }
 
     .name_otherVeticals {
       font-size: 20px;
-      padding-bottom: 20px;
-      padding-top: 10px;
-      padding: 12px 25px 4px;
+      padding: 20px 25px 4px;
+      font-weight: 300;
     }
 
     .tabs-input__wrap_verticals {
@@ -313,11 +317,12 @@
     }
 
     .name_whatCPA {
-      font-size: 22px;
       padding-top: 40px;
       padding-bottom: 4px;
-     padding-left: 25px;
-     padding-right: 25px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 24px;
+      font-weight: 300;
     }
 
     .name_whatCPA span {
@@ -332,12 +337,13 @@
     .name_traffic {
       padding-top: 40px;
       padding-bottom: 4px;
-     padding-left: 25px;
-     padding-right: 25px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
 
     .name_traffic h3 {
       font-size: 24px;
+      font-weight: 300;
     }
 
     .section_checkbox {
@@ -348,7 +354,8 @@
 
     .name_otherTraffic {
       font-size: 20px;
-      padding: 12px 25px 4px;
+      padding: 20px 25px 4px;
+      font-weight: 300;
     }
 
     .inputPaddingtraffic {
@@ -358,21 +365,24 @@
     .nameGeo {
       padding-top: 40px;
       padding-bottom: 4px;
-     padding-left: 25px;
-     padding-right: 25px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
 
     .nameGeo h3 {
       font-size: 24px;
+      font-weight: 300;
     }
 
     .columnOf3 {
       width: 33%;
+      margin-top: -20px;
     }
 
     .name_otherGeo {
       font-size: 20px;
-      padding: 12px 25px 4px;
+      padding: 20px 25px 4px;
+      font-weight: 300;
     }
 
     .tabs-input_geo {
@@ -382,16 +392,18 @@
     input[type='checkbox'] {
       height: 0;
       width: 0;
-      display: none;
     }
 
     input[type='checkbox']+label {
       position: relative;
       display: flex;
-      margin: .6em 0;
+      margin: 0;
       align-items: center;
       color: #eaeaea;
       transition: color 250ms cubic-bezier(.4, .0, .23, 1);
+      font-size: 16px;
+      line-height: 12px;
+      margin-top: -20px;
     }
 
     input[type='checkbox']+label>ins {
@@ -449,7 +461,7 @@
     input[type='checkbox']:checked+label>span:before {
       content: "";
       position: absolute;
-      top: .7em;
+      top: .3em;
       left: .2em;
       border-right: 3px solid transparent;
       border-bottom: 3px solid transparent;
@@ -531,12 +543,14 @@
       left: 15px;
     }
 
-    .block_hearProxicent {   
+    .block_hearProxicent {
       padding: 12px 25px 4px;
+      margin-bottom: 20px;
     }
 
     .block_hearProxicent h3 {
       font-size: 24px;
+      font-weight: 300;
     }
 
     .input_hear {
@@ -549,6 +563,7 @@
 
     .name_promocode {
       font-size: 24px;
+      font-weight: 300;
     }
 
     .input_pronocode {
@@ -559,7 +574,7 @@
       display: table;
       width: 100%;
       position: relative;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
 
     .steps-form-2 .steps-row-2 {
@@ -605,7 +620,6 @@
 
     .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2:hover {
       box-shadow: 0 0 10px rgb(210 209 212);
-      ;
       background-color: white;
     }
 
@@ -617,41 +631,131 @@
       width: 70px;
       height: 70px;
     }
+
     #step-3 {
       height: 70vh;
     }
+
+    .signUp_input_style {
+      font-weight: 400;
+      border: .2rem solid #7283a7;
+      position: relative;
+      background-color: #021836fa;
+      margin-top: 2rem;
+      padding: .9rem 1.4rem;
+    }
+
+    form {
+      background-color: transparent;
+      margin: auto;
+      font-family: 'Lato';
+      padding: 0;
+      width: 100%;
+      min-width: 300px;
+      height: 100%;
+    }
+
+    .wrapper section:first-child {
+      min-height: 100vh;
+    }
+
+    .tabs_column2_width {
+      width: 47%;
+    }
+    .padd.tabs_column2_width select {
+      color: white;
+      width: 100%;
+      font-weight: 400;
+      border: .2rem solid #7283a7;
+      position: relative;
+      background-color: #021836fa;
+      margin-top: 2rem;
+      padding: 1.1rem 1.4rem;
+    }
+    option {
+      font-weight: 400;
+      border: .2rem solid #7283a7;
+      position: relative;
+      background-color: #021836fa;
+      margin-top: 2rem;
+      padding: .9rem 1.4rem;
+    }
+  
+  .previous.btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left {
+    padding: 20px 40px 20px 60px;
+  }
+  .next.btn.fancy-btn.orange.dark.w-button.nextBtn-2.float-right.btn_step2 {
+    padding: 20px 60px 20px 100px
+  }
 
     @media only screen and (max-width:1000px) {
       .wrapper section:first-child {
         width: 100%;
         padding: 50px;
+
       }
     }
-    @media only screen and (max-width:900px){
+
+    @media only screen and (max-width:900px) {
       input[type='checkbox']:checked+label>span:before {
         top: .4em;
       }
+
       .paragraphcolumn_block.last_page {
         padding-left: 20px;
       }
-      .wrapper {
-        height: 100vh;
+
+    }
+
+    @media only screen and (max-width:700px) {
+      input {   
+        font-size: 1.2rem;
+      }
+      input[type='checkbox']+label {
+          margin-top: -10px;
+      }
+
+      .paragraphcolumn_block.last_page {
+        margin-top: 20px;
+      }
+      .columnOf3, .paragraphcolumn_block {
+          width: 100%;
+          margin-top: 0;
+      }
+
+      .tabs_column2_width {
+          width: 100%;
+      }
+
+      .paragraph.section_checkbox.trafficBox {
+        display: block;
+      }
+
+      .paragraph.section_checkbox .paragraphcolumn_block:first-child {
+        width: 100%;
+      }
+
+      .paragraph.section_checkbox .paragraphcolumn_block:nth-child(2) {
+        width: 100%;
+      }
+
+      .section_checkbox {
+        display: block;
+      }
+
+      .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {
+        width: 40px;
+        height: 40px;
+        padding: 6px 12px 6px 12px;
+        margin-top: -6px;
+        font-size: 18px;
+      }
+
+      .tabs_column2 {
+        display: block;
       }
     }
-@media only screen and (max-width:700px){
-  .paragraph.section_checkbox.trafficBox {
-    display: block;
-  }
-  .paragraph.section_checkbox .paragraphcolumn_block:first-child {
-    width: 100%;
-  }
-  .paragraph.section_checkbox .paragraphcolumn_block:nth-child(2) {
-    width: 100%;
-  }
-  .section_checkbox {
-    display: block;
-  }
-}
+
     @media only screen and (max-width:600px) {
       .nextBtn1section {
         margin-left: 0;
@@ -661,37 +765,68 @@
         justify-content: center;
       }
 
-     
+
     }
-@media only screen and (max-width:500px) {
-  .section_checkbox {
-    display: block;
-  }
-  .columnOf3 {
-    width: 100%;
-}
-}
+
+    @media only screen and (max-width:500px) {
+      .section_checkbox {
+        display: block;
+      }
+
+      .columnOf3 {
+        width: 100%;
+      }
+      .btn.fancy-btn.w-button:after {
+        width: 40px;
+        height: 40px;
+      }
+      .btn.fancy-btn.w-button:before {
+        right: 10px;
+        top: 2px;
+      }
+      .footer_block {
+          grid-template-columns: 1fr;
+          grid-auto-rows: 1fr 1fr;
+      }
+      .text-block-6 {
+          text-align: left;
+          font-size: 12px;
+      }
+
+    }
+
     @media only screen and (max-width:460px) {
       .tabs_column2 {
         display: block;
       }
-      .btn.fancy-btn {  
-    font-size: 12px;
-    padding: 22px 55px;
+
+      .btn.fancy-btn { 
+        padding: 18px 40px !important;
+      }
+      .btn.fancy-btn {
+        font-size: 12px;       
+        line-height: 7px;
+      }
+      .btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left::before {
+        top: 15px;
+        left: 12px;
       }
       .paragraphSignUp1 {
-    display: block;
+        display: block;
       }
+
       .btn.fancy-btn.w-button:hover:after {
-    width: 80%;
-    right: 0;
-}
-.paragraphcolumn_block {
-    width: 100%;
-}
-.btn.fancy-btn.w-button:hover:before {
-    transform: translateX(0px);
-}
+        width: 80%;
+        right: 0;
+      }
+
+      .paragraphcolumn_block {
+        width: 100%;
+      }
+
+      .btn.fancy-btn.w-button:hover:before {
+        transform: translateX(0px);
+      }
 
       .tabs__input-group .tabs_column2 .tabs-input__wrap {
         width: 100%;
@@ -703,56 +838,85 @@
         padding-top: 80px;
       }
     }
-    @media only screen and (max-width:360px){
-      .heading, .medium-title, .h2, .ui-title.is-size-h2, .h2.center.h2Blog {
-    font-size: 30px;
-    line-height: 42px;
-}
-.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {   
-    padding: 8px 16px 8px 16px;
-    font-size: 22px;
-}
-.block2_nameVerticals h3, .name_whatCPA, .name_traffic h3, .nameGeo h3, .block_hearProxicent h3, .name_promocode {
-    font-size: 20px;
-}
-.name_otherVeticals, .name_otherTraffic , .name_otherGeo{
-    font-size: 16px;
-}
-.btn.fancy-btn {
-    font-size: 10px;
-    padding: 20px 45px;
-}
-.btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left::before {
-    top: 15px;
-    left: 10px;
-}
-.btn.fancy-btn.w-button:before {
-    top: 2px;
-    right: 10px;
-}
-.btn.fancy-btn.w-button:after {
-    width: 40px;
-    height: 40px;
-    }
-    
-  }
-  @media  only screen and (max-width:300px) {
-    .wrapper section:first-child {
- 
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left {
-  padding: 20px 45px 10px 45px;
-}
 
-.btn.fancy-btn.orange.dark.w-button.nextBtn-2.float-right {
-    padding: 20px 45px 10px 30px;
-}
-.btn.fancy-btn.orange.dark.w-button.nextBtn-2.continueBlock {
-  padding: 20px 45px 10px 45px;
-}
-  }
+    @media only screen and (max-width:360px) {
+     
+      
+      form {
+        min-width: 100%;
+      }
+      input[type='checkbox']+label {
+        font-size: 12px;
+        line-height: 10px;
+      }
+      .heading,
+      .medium-title,
+      .h2,
+      .ui-title.is-size-h2,
+      .h2.center.h2Blog {
+        font-size: 30px;
+        line-height: 42px;
+      }
+
+      .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {
+        font-size: 22px;
+      }
+
+      .block2_nameVerticals h3,
+      .name_whatCPA,
+      .name_traffic h3,
+      .nameGeo h3,
+      .block_hearProxicent h3,
+      .name_promocode {
+        font-size: 20px;
+      }
+
+      .name_otherVeticals,
+      .name_otherTraffic,
+      .name_otherGeo {
+        font-size: 16px;
+      }
+
+      .btn.fancy-btn {
+        font-size: 10px;
+      }
+
+      .btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left::before {
+        top: 11px;
+        left: 7px;
+      }
+
+      .btn.fancy-btn.w-button:before {
+        top: -2px;
+        right: 5px;
+      }
+
+      .btn.fancy-btn.w-button:after {
+        width: 30px;
+        height: 30px;
+      }
+
+    }
+
+    @media only screen and (max-width:300px) {
+      .wrapper section:first-child {
+
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left {
+        padding: 20px 45px 10px 45px;
+      }
+
+      .btn.fancy-btn.orange.dark.w-button.nextBtn-2.float-right {
+        padding: 20px 45px 10px 30px;
+      }
+
+      .btn.fancy-btn.orange.dark.w-button.nextBtn-2.continueBlock {
+        padding: 20px 45px 10px 45px;
+      }
+    }
   </style>
 
 </head>
@@ -761,8 +925,8 @@
 
   <div id="Home">
     <div data-collapse="medium" class="navbar w-nav" style=" padding-left: 20px;">
-      <a  href="index.html" style="color: white; line-height: 60px; float: left; ">
-        <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo" style="width: 200px; ">   
+      <a href="index.html" style="color: white; line-height: 60px; float: left; ">
+        <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo" style="width: 200px; ">
       </a>
       <nav class="nav-menu w-nav-menu nav-1" style=" width: 80%;">
         <a href="index.html#Home" class="nav w-nav-link link-1 ">Home</a>
@@ -801,7 +965,7 @@
             <span class="line1"></span>
             <span class="line2"></span>
             <span class="line3"></span>
-        </button>
+          </button>
 
         </div>
       </div>
@@ -817,381 +981,233 @@
         <h1 class="heading" data-aos="zoom-out-up">Register</h1>
       </div>
 
+      <form id="signUp_form">
 
-      <form role="form" action="" method="post">
+        <!-- Circles which indicates the steps of the form: -->
+        <div class="steps-form-2">
+          <div class="steps-row-2 setup-panel-2 d-flex justify-content-between"
+            style="text-align:center;margin-top:40px;">
+            <div class="steps-step-2">
+              <button class="btn btn-amber btn-circle-2 waves-effect ml-0 step" data-toggle="tooltip"
+                data-placement="top" title="Basic Information">
+                1</button>
+            </div>
+            <div class="steps-step-2">
+              <button class="btn btn-amber btn-circle-2 waves-effect ml-0 step" data-toggle="tooltip"
+                data-placement="top" title="Basic Information">
+                2</button>
+            </div>
 
-        <div class="row setup-content-2" id="step-1">
-          <!-- Stepper -->
-          <div class="steps-form-2">
-            <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
-              <div class="steps-step-2">
-                <a href="#step-1" style="background-color: #021836fa;" type="button"
-                  class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top"
-                  title="Basic Information">
-                  1</a>
-              </div>
-              <div class="steps-step-2">
-                <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect"
-                  data-toggle="tooltip" data-placement="top" title="Personal Data">
-                  2</a>
-              </div>
-              <div class="steps-step-2">
-                <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect"
-                  data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
-                  3</a>
-              </div>
+            <div class="steps-step-2">
+              <button class="btn btn-amber btn-circle-2 waves-effect ml-0 step" data-toggle="tooltip"
+                data-placement="top" title="Basic Information">
+                3</button>
             </div>
           </div>
-
-          <div class="tabs__input-group main-inputs">
-            <div class="tabs-input__wrap">
-              <input type="text" name="email" placeholder="Email*" value="" required="">
-            </div>
-            <div class="tabs_column2">
-              <div class="tabs-input__wrap">
-                <input id="password" type="password" name="password" placeholder="Password*" required="">
-              </div>
-              <div class="tabs-input__wrap">
-                <input type="password" name="password_confirmation" placeholder="Confirm password*" required="">
-              </div>
-            </div>
-          </div>
-
-          <div class="tabs__input-group">
-            <div class="tabs_column2">
-              <div class="tabs-input__wrap">
-                <input type="text" name="name" value="" placeholder="Name" required="">
-              </div>
-              <div class="tabs-input__wrap">
-                <input type="text" name="country" value="" placeholder="Country" required="">
-              </div>
-            </div>
-            <div class="tabs-input__wrap">
-              <input type="text" name="address" value="" placeholder="Address">
-            </div>
-            <div class="tabs_column2 ">
-              <div class="tabs-input__wrap padd">
-                <div class="custom-select" style="width:100%">
-                  <select>
-                    <option value="IM Type*"><span style="color: #646262;"> IM Type*</span></option>
-                    <option value="Skype">Skype</option>
-                    <option value="Telegram">Telegram</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-              </div>
-              <div class="tabs-input__wrap padd">
-                <input type="text" name="im_type" value="" placeholder="Contact Info" required="">
-              </div>
-            </div>
-
-            <div class="tabs_column2">
-              <div class="tabs-input__wrap">
-
-                <input type="text" name="company_name" value="" placeholder="Company name">
-              </div>
-              <div class="tabs-input__wrap">
-
-                <input type="text" name="url_company" value="" placeholder="URL (company / personal / etc.)">
-              </div>
-            </div>
-          </div>
-
-          <div class="tabs__button nextBtn1section">
-            <a href="#" class="btn fancy-btn orange dark w-button nextBtn-2 continueBlock">Continue</a>
-          </div>
-
         </div>
 
-        <!-- Second Step -->
-        <div class="row setup-content-2" id="step-2">
-          <!-- Stepper -->
-          <div class="steps-form-2">
-            <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
-              <div class="steps-step-2">
-                <a href="#step-1" style=" background-color: #021836fa;" type="button"
-                  class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top"
-                  title="Basic Information">
-                  1</a>
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          <div class="tabs__input-group main-inputs">
+            <input type="email" name="email_sign_up" placeholder="Email*" value="" id="email_sign_up"
+              class="signUp_input_style">
+            <div class="tabs_column2">
+              <div class="tabs_column2_width">
+                <input id="password_sign_up" type="password" name="password_sign_up" placeholder="Password*"
+                  class="signUp_input_style">
               </div>
-              <div class="steps-step-2">
-                <a href="#step-2" style=" background-color: #021836fa;" type="button"
-                  class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top"
-                  title="Personal Data">
-                  2</a>
-              </div>
-              <div class="steps-step-2">
-                <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect"
-                  data-toggle="tooltip" data-placement="top" title="Terms and Conditions">
-                  3</a>
+              <div class="tabs_column2_width">
+                <input type="password" name="confirm" id="confirm" name="confirm" placeholder="Confirm password*"
+                  class="signUp_input_style">
               </div>
             </div>
           </div>
-          <div class="block2_nameVerticals">
-            <h3>Name main verticals </h3>
-          </div>
+          <div class="tabs__input-group">
+            <div class="tabs_column2">
+              <div class="tabs_column2_width">
+                <input type="text" name="name_sign_up" value="" placeholder="Name" id="name_sign_up"
+                  class="signUp_input_style">
+              </div>
+              <div class="tabs_column2_width">
+                <input type="text" name="country_sign_up" value="" placeholder="Country" id="country_sign_up"
+                  class="signUp_input_style">
+              </div>
+            </div>
+            <input type="text" name="address_sign_up" value="" placeholder="Address" id="address_sign_up"
+              class="signUp_input_style">
 
+            <div class="tabs_column2 ">
+              <div class="padd tabs_column2_width">             
+                <select name="select_Type">
+                  <option value=""><span style="color: #646262;"> IM Type*</span></option>
+                  <option value="Skype">Skype</option>
+                  <option value="Telegram">Telegram</option>
+                  <option value="Other">Other</option>
+                </select>     
+              </div>
+              <div class="tabs_column2_width">
+                <input type="text" name="contact info" value="" placeholder="Contact Info" required
+                  class="signUp_input_style">
+              </div>
+            </div>
+
+            <div class="tabs_column2">
+              <div class="tabs_column2_width">
+                <input type="text" name="company_name" value="" placeholder="Company name" required
+                  class="signUp_input_style">
+              </div>
+              <div class="tabs_column2_width">
+                <input type="url" name="url_company" value="" placeholder="URL (company / personal / etc.)" required
+                  class="signUp_input_style">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab">
+          <div class="block2_nameVerticals"><h3>Name main verticals </h3></div>
           <section class="paragraph paragraphSignUp1">
             <div class="paragraphcolumn_block">
-              <input id='Crypto' type='checkbox' />
-              <label for='Crypto'>
-                <span></span>
-                Crypto
-              </label>
+              <input type='checkbox' name="gradeRange[]" />
+              <input id='Crypto' type='checkbox' name="gradeRange[]" />
+              <label for='Crypto'><span></span>Crypto</label>
 
-              <input id='ForexFinance' type='checkbox' />
-              <label for='ForexFinance'>
-                <span></span>
-                Forex / Finance
-              </label>
+              <input id='ForexFinance' type='checkbox' name="gradeRange[]" />
+              <label for='ForexFinance'><span></span>Forex / Finance</label>
 
-              <input id='Gambling' type='checkbox' />
-              <label for='Gambling'>
-                <span></span>
-                Gambling
-              </label>
+              <input id='Gambling' type='checkbox' name="gradeRange[]" />
+              <label for='Gambling'><span></span>Gambling</label>
 
-              <input id='AdultCasualDating' type='checkbox' />
-              <label for='AdultCasualDating'>
-                <span></span>
-                Adult / Casual Dating
-              </label>
+              <input id='AdultCasualDating' type='checkbox' name="gradeRange[]" />
+              <label for='AdultCasualDating'><span></span>Adult / Casual Dating</label>
 
-              <input id='MainstreamDating' type='checkbox' />
-              <label for='MainstreamDating'>
-                <span></span>
-                Mainstream Dating
-              </label>
+              <input id='MainstreamDating' type='checkbox' name="gradeRange[]" />
+              <label for='MainstreamDating'><span></span>Mainstream Dating</label>
             </div>
             <div class="paragraphcolumn_block">
-              <input id='Livecams' type='checkbox' />
-              <label for='Livecams'>
-                <span></span>
-                Livecams
-              </label>
+              <input id='Livecams' type='checkbox' name="gradeRange[]" />
+              <label for='Livecams'><span></span>Livecams</label>
 
-              <input id='Adult Games' type='checkbox' />
-              <label for='Adult Games'>
-                <span></span>
-                Adult Games
-              </label>
+              <input id='Adult Games' type='checkbox' name="gradeRange[]" />
+              <label for='Adult Games'><span></span>Adult Games</label>
 
-              <input id='Other' type='checkbox' />
-              <label for='Other'>
-                <span></span>
-                Other
-              </label>
+              <input id='Other' type='checkbox' name="gradeRange[]" />
+              <label for='Other'><span></span>Other</label>
             </div>
           </section>
-
           <h3 class="name_otherVeticals">Other verticals</h3>
-          <div class="tabs-input__wrap tabs-input__wrap_verticals">
-            <input type="text" name="verticals" value="" placeholder="Enter Text">
-          </div>
+          <input type="text" name="verticals" value="" placeholder="Enter verticals" class="signUp_input_style">
+          <h3 class="name_whatCPA">What CPA networks do you currently work with?<span> (Or reference contacts)</span></h3>
 
-          <h3 class="name_whatCPA">What CPA networks do you currently work with?
-            <span> (Or reference contacts)</span>
-          </h3>
-          <div class="tabs-input__wrap tabs-input__wrap_whatCPA">
-            <input type="text" name="verticals" value="" placeholder="Enter Text" required="">
-          </div>
-          <div class="name_traffic">
-            <h3>What traffic types do you generally use for promotional purposes? </h3>
-          </div>
+          <input type="text" name="verticals" value="" placeholder="Enter Text" required class="signUp_input_style">
+          <div class="name_traffic"><h3>What traffic types do you generally use for promotional purposes? </h3></div>
           <section class="paragraph section_checkbox trafficBox">
             <div class="paragraphcolumn_block">
-              <input id='SEODoorways' type='checkbox' />
-              <label for='SEODoorways'>
-                <span></span>
-                SEO / Doorways
-              </label>
+              <input type='checkbox' name="trafficRange[]" />
+              <input id='SEODoorways' type='checkbox' name="trafficRange[]" />
+              <label for='SEODoorways'><span></span>SEO / Doorways</label>
 
-              <input id='PPC' type='checkbox' />
-              <label for='PPC'>
-                <span></span>
-                PPC (Google, Yahoo, Yandex etc.)
-              </label>
+              <input id='PPC' type='checkbox' name="trafficRange[]" />
+              <label for='PPC'><span></span>PPC (Google, Yahoo, Yandex etc.)</label>
 
-              <input id='NativeAds' type='checkbox' />
-              <label for='NativeAds'>
-                <span></span>
-                Native Ads
-              </label>
+              <input id='NativeAds' type='checkbox' name="trafficRange[]" />
+              <label for='NativeAds'><span></span>Native Ads</label>
 
-              <input id='AdNetworks' type='checkbox' />
-              <label for='AdNetworks'>
-                <span></span>
-                Ad Networks
-              </label>
+              <input id='AdNetworks' type='checkbox' name="trafficRange[]" />
+              <label for='AdNetworks'><span></span>Ad Networks</label>
 
-              <input id='SocialMedia' type='checkbox' />
-              <label for='SocialMedia'>
-                <span></span>
-                Social Media
-              </label>
+              <input id='SocialMedia' type='checkbox' name="trafficRange[]" />
+              <label for='SocialMedia'><span></span>Social Media</label>
             </div>
             <div class="paragraphcolumn_block">
-              <input id='Email' type='checkbox' />
-              <label for='Email'>
-                <span></span>
-                Email
-              </label>
+              <input id='Email' type='checkbox' name="trafficRange[]" />
+              <label for='Email'><span></span>Email</label>
 
-              <input id='Popunder' type='checkbox' />
-              <label for='Popunder'>
-                <span></span>
-                Popunder
-              </label>
+              <input id='Popunder' type='checkbox' name="trafficRange[]" />
+              <label for='Popunder'><span></span>Popunder</label>
 
-              <input id='PushNotifications' type='checkbox' />
-              <label for='PushNotifications'>
-                <span></span>
-                Push Notifications
-              </label>
+              <input id='PushNotifications' type='checkbox' name="trafficRange[]" />
+              <label for='PushNotifications'><span></span>Push Notifications</label>
 
-              <input id='Other2' type='checkbox' />
-              <label for='Other2'>
-                <span></span>
-                Other
-              </label>
+              <input id='Other2' type='checkbox' name="trafficRange[]" />
+              <label for='Other2'><span></span>Other</label>
             </div>
           </section>
-
           <h3 class="name_otherTraffic">Other traffic types</h3>
-          <div class="tabs-input__wrap inputPaddingtraffic">
-            <input type="text" name="traffic" value="" placeholder="Enter Text">
-          </div>
-
-          <div class="nameGeo">
-            <h3>TOP Geo</h3>
-          </div>
+          <input type="text" name="traffic" value="" placeholder="Enter Text" class="signUp_input_style">
+          <div class="nameGeo"><h3>TOP Geo</h3></div>
 
           <section class="paragraph section_checkbox">
             <div class="columnOf3">
-              <input id='TIER1' type='checkbox' />
-              <label for='TIER1'>
-                <span></span>
-                TIER1
-              </label>
+              <input type='checkbox' name="geoRange[]" />
+              <input id='TIER1' type='checkbox' name="geoRange[]" />
+              <label for='TIER1'><span></span>TIER1</label>
 
-              <input id='Europe' type='checkbox' />
-              <label for='Europe'>
-                <span></span>
-                Europe
-              </label>
+              <input id='Europe' type='checkbox' name="geoRange[]" />
+              <label for='Europe'><span></span>Europe</label>
 
-              <input id='RU-speakingcountries' type='checkbox' />
-              <label for='RU-speakingcountries'>
-                <span></span>
-                RU-speaking countries
-              </label>
+              <input id='RU-speakingcountries' type='checkbox' name="geoRange[]" />
+              <label for='RU-speakingcountries'><span></span>RU-speaking countries</label>
             </div>
             <div class="columnOf3">
-              <input id='LATAM' type='checkbox' />
-              <label for='LATAM'>
-                <span></span>
-                LATAM
-              </label>
+              <input id='LATAM' type='checkbox' name="geoRange[]" />
+              <label for='LATAM'><span></span>LATAM</label>
 
-              <input id='GCC' type='checkbox' />
-              <label for='GCC'>
-                <span></span>
-                GCC
-              </label>
+              <input id='GCC' type='checkbox' name="geoRange[]" />
+              <label for='GCC'><span></span>GCC</label>
 
-              <input id='Asia-Pacific' type='checkbox' />
-              <label for='Asia-Pacific'>
-                <span></span>
-                Asia-Pacific
-              </label>
+              <input id='Asia-Pacific' type='checkbox' name="geoRange[]" />
+              <label for='Asia-Pacific'><span></span>Asia-Pacific</label>
             </div>
-
             <div class="columnOf3">
-              <input id='Other3' type='checkbox' />
-              <label for='Other3'>
-                <span></span>
-                Other
-              </label>
+              <input id='Other3' type='checkbox' name="geoRange[]" />
+              <label for='Other3'><span></span>Other</label>
             </div>
-
           </section>
 
           <h3 class="name_otherGeo">Other Geo</h3>
-          <div class="tabs-input__wrap tabs-input_geo">
-            <input type="text" name="geo" value="" placeholder="Enter Text">
-          </div>
-
-          <button class="btn fancy-btn orange dark w-button nextBtn-2 float-right" type="button">Next</button>
-          <button class="btn fancy-btn orange dark w-button prevBtn-2 float-left" type="button">Prev</button>
-
+          <input type="text" name="geo" value="" placeholder="Enter Text" class="signUp_input_style">
         </div>
 
-        <!-- Third Step -->
-        <div class="row setup-content-2" id="step-3">
-          <!-- Stepper -->
-          <div class="steps-form-2">
-            <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
-              <div class="steps-step-2">
-                <a href="#step-1" style=" background-color: #021836fa;" type="button"
-                  class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top"
-                  title="Basic Information">
-                  1</a>
-              </div>
-              <div class="steps-step-2">
-                <a href="#step-2" style=" background-color: #021836fa;" type="button"
-                  class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top"
-                  title="Personal Data">
-                  2</a>
-              </div>
-              <div class="steps-step-2">
-                <a href="#step-3" style=" background-color: #021836fa;" type="button"
-                  class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top"
-                  title="Terms and Conditions">
-                  3</a>
-              </div>
-            </div>
-          </div>
-
+        <div class="tab">
           <div class="block_hearProxicent">
             <h3>How did you hear about Proxicent?</h3>
-            <div class="tabs-input__wrap input_hear">
-              <input type="text" name="geo" value="" placeholder="Enter Text" required="">
-            </div>
+            <input type="text" name="hear_proxicent" value="" placeholder="Enter Text" class="signUp_input_style">
           </div>
-
           <section class="paragraph section_checkbox">
             <div class="paragraphcolumn_block">
               <div>
                 <h3 class="name_promocode">Promo code</h3>
-                <div class="tabs-input__wrap input_pronocode">
-                  <input type="text" name="promocode" value="" placeholder="Enter Text" required="">
-                </div>
+                <input type="text" name="promocode" value="" placeholder="Enter Text" class="signUp_input_style">
               </div>
             </div>
             <div class="paragraphcolumn_block last_page">
-              <input id='agreeNews' type='checkbox' />
-              <label for='agreeNews'>
-                <span></span>
-                I agree to receive news
-              </label>
-
-              <input id='agreeTerms' type='checkbox' />
-              <label for='agreeTerms'>
-                <span></span>
-                <p>I agree with <a href="" style="color: #ededed; text-decoration: revert;"> terms & conditions</a></p>
-              </label>
+              <input type='checkbox' name="agreeNews[]" />
+              <input id='agreeNews' type='checkbox' name="agreeNews[]" />
+              <label for='agreeNews'><span></span>I agree to receive news</label>
+              <input type='checkbox' name="agreeTerms[]" />
+              <input id='agreeTerms' type='checkbox' name="agreeTerms[]" />
+              <label for='agreeTerms'><span></span><p>I agree with <a href="" style="color: #ededed; text-decoration: revert;"> terms & conditions</a></p></label>
             </div>
-
           </section>
-
-          <div>
-            <button class="btn fancy-btn orange dark w-button float-right nextBtn-2 submit" type="submit">Submit</button>
-            <button class="btn fancy-btn orange dark w-button prevBtn-2 float-left" type="button">Prev</button>
+        </div>
+        
+        <div style="overflow:auto;">
+          <div style="float:right; margin-top: 5px; margin-right: 30px; display: contents;">
+            <button type="button" class="previous btn fancy-btn orange dark w-button prevBtn-2 float-left">Previous</button>
+            <button type="button"
+              class="next btn fancy-btn orange dark w-button nextBtn-2 float-right btn_step2">Next</button>
+            <button type="button"
+              class="submit btn fancy-btn orange dark w-button float-right nextBtn-2 submit">Submit</button>
           </div>
-
         </div>
 
       </form>
+
+
+      <script type="text/javascript">
+       
+      </script>
 
     </section>
 
@@ -1199,166 +1215,23 @@
 
 
   <footer class="footer">
-    <div class="text-block-6"><p>All Rights Reserved. © Proxicent <span id="year"></span></p></div>
-  </footer>
- 
-  <script>
-    $(window).scroll(function () {
-      var height = $(window).scrollTop();
-      if (height > 10) {
-        $('.navbar').addClass('menuColor')
-        // $('.sticky-nav').addClass('scrolled');      
-      }
-      else {
-        $('.navbar').removeClass('menuColor')
-      }
-    });
-  </script>
+    <div class="footer_block">
+        <div>
+            <div class="text-block-6">
+                <p style="text-align: left">All Rights Reserved. © Proxicent <span id="year"></span></p>
+            </div>
+        </div>
+        <div class="text-block-6" style="display: grid; grid-template-columns: 1fr 1fr;">
+            <div> <a href="#" style="text-decoration: underline; color: #ededed;">Terms conditions</a></div>
+            <div> <a href="#" style="text-decoration: underline; color: #ededed;">Privacy Policy</a></div>
+        </div>
+    </div>
+</footer>
 
-  <script>
-    var x, i, j, l, ll, selElmnt, a, b, c;
+  <script src="js/main.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/multi-form.js"></script>
 
-    x = document.getElementsByClassName("custom-select");
-    l = x.length;
-    for (i = 0; i < l; i++) {
-      selElmnt = x[i].getElementsByTagName("select")[0];
-      ll = selElmnt.length;
-
-      a = document.createElement("DIV");
-      a.setAttribute("class", "select-selected");
-      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-      x[i].appendChild(a);
-
-      b = document.createElement("DIV");
-      b.setAttribute("class", "select-items select-hide");
-      for (j = 1; j < ll; j++) {
-
-        c = document.createElement("DIV");
-        c.innerHTML = selElmnt.options[j].innerHTML;
-        c.addEventListener("click", function (e) {
-
-          var y, i, k, s, h, sl, yl;
-          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-          sl = s.length;
-          h = this.parentNode.previousSibling;
-          for (i = 0; i < sl; i++) {
-            if (s.options[i].innerHTML == this.innerHTML) {
-              s.selectedIndex = i;
-              h.innerHTML = this.innerHTML;
-              y = this.parentNode.getElementsByClassName("same-as-selected");
-              yl = y.length;
-              for (k = 0; k < yl; k++) {
-                y[k].removeAttribute("class");
-              }
-              this.setAttribute("class", "same-as-selected");
-              break;
-            }
-          }
-          h.click();
-        });
-        b.appendChild(c);
-      }
-      x[i].appendChild(b);
-      a.addEventListener("click", function (e) {
-
-        e.stopPropagation();
-        closeAllSelect(this);
-        this.nextSibling.classList.toggle("select-hide");
-        this.classList.toggle("select-arrow-active");
-      });
-    }
-
-    function closeAllSelect(elmnt) {
-
-      var x, y, i, xl, yl, arrNo = [];
-      x = document.getElementsByClassName("select-items");
-      y = document.getElementsByClassName("select-selected");
-      xl = x.length;
-      yl = y.length;
-      for (i = 0; i < yl; i++) {
-        if (elmnt == y[i]) {
-          arrNo.push(i)
-        } else {
-          y[i].classList.remove("select-arrow-active");
-        }
-      }
-      for (i = 0; i < xl; i++) {
-        if (arrNo.indexOf(i)) {
-          x[i].classList.add("select-hide");
-        }
-      }
-    }
-
-    document.addEventListener("click", closeAllSelect);
-
-  </script>
-
-  <script>
-    // Tooltips Initialization
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-
-    // Steppers
-    $(document).ready(function () {
-      var navListItems = $('div.setup-panel-2 div a'),
-        allWells = $('.setup-content-2'),
-        allNextBtn = $('.nextBtn-2'),
-        allPrevBtn = $('.prevBtn-2');
-
-      allWells.hide();
-
-      navListItems.click(function (e) {
-        e.preventDefault();
-        var $target = $($(this).attr('href')),
-          $item = $(this);
-
-        if (!$item.hasClass('disabled')) {
-          navListItems.removeClass('btn-amber').addClass('btn-blue-grey');
-          $item.addClass('btn-amber');
-          allWells.hide();
-          $target.show();
-          $target.find('input:eq(0)').focus();
-        }
-      });
-
-      allPrevBtn.click(function () {
-        var curStep = $(this).closest(".setup-content-2"),
-          curStepBtn = curStep.attr("id"),
-          prevStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
-
-        prevStepSteps.removeAttr('disabled').trigger('click');
-      });
-
-      allNextBtn.click(function () {
-        var curStep = $(this).closest(".setup-content-2"),
-          curStepBtn = curStep.attr("id"),
-          nextStepSteps = $('div.setup-panel-2 div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-          curInputs = curStep.find("input[type='text'],input[type='url']"),
-          isValid = true;
-
-        $(".form-group").removeClass("has-error");
-        for (var i = 0; i < curInputs.length; i++) {
-          if (!curInputs[i].validity.valid) {
-            isValid = false;
-            $(curInputs[i]).closest(".form-group").addClass("has-error");
-          }
-        }
-
-        if (isValid)
-          nextStepSteps.removeAttr('disabled').trigger('click');
-      });
-
-      $('div.setup-panel-2 div a.btn-amber').trigger('click');
-    });
-  </script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    AOS.init();
-  </script>
- <script src="js/main.js"></script>
 </body>
 
 </html>

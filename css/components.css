@@ -4963,6 +4963,10 @@ text-align: center;
 .swiper-slide img:hover  {
   transform: scale(1.1) !important;
 }
+.footer_block {
+  display: grid; 
+  grid-template-columns: 1fr .4fr;
+}
 /* 
 ///////////////////////////media//////////////////////// */
 @media screen and (max-width:1550px){
@@ -5594,7 +5598,9 @@ text-align: center;
   .section-offers__title-bg {   
     left: 0rem !important;
   }
-
+  .footer_block {
+    grid-template-columns: 1fr 1fr;
+  }
   .splide__arrows {
       width: 100% !important;
   }
