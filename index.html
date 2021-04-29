@@ -428,7 +428,7 @@
     
   <div style="width: 100%;">
     <div class="ui-title section-offers__title-bg is-theme-bg meetUs">MEET US</div>
-    <h2 class="h2 center h2Blog meet">Where we can meet in person</h2>
+    <h2 class="h2 center h2Blog meet">Meet Us</h2>
   </div>  
     </div> 
   
@@ -438,7 +438,7 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="https://uploads-ssl.webflow.com/5e7886c7c78e1c8639bc0566/601190fc5d106173b952679b_Blog-small-preview.jpg">
+          <img src="images/photo_2021-04-27_17-38-30.jpg">
           <p style="font-weight: bold;">Conference 1</p>
           <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta temporibus nam laboriosam necessitatibus aliquam eos vero deleniti omnis voluptas. Fuga cumque debitis adipisci suscipit unde earum at officia! Asperiores?</p>
           <button class="btn-reverse btn-arrow">
@@ -447,7 +447,7 @@
         </div>
         
         <div class="swiper-slide">
-          <img src="https://uploads-ssl.webflow.com/5e7886c7c78e1c8639bc0566/601190fc5d106173b952679b_Blog-small-preview.jpg">
+          <img src="images/photo_2021-04-27_17-38-31.jpg">
           <p style="font-weight: bold;">Conference 2</p>
           <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta temporibus nam laboriosam necessitatibus aliquam eos vero deleniti omnis voluptas. Fuga cumque debitis adipisci suscipit unde earum at officia! Asperiores?</p>
           <button class="btn-reverse btn-arrow">
@@ -455,7 +455,7 @@
           </button>
         </div>
         <div class="swiper-slide">
-          <img src="https://uploads-ssl.webflow.com/5e7886c7c78e1c8639bc0566/601190fc5d106173b952679b_Blog-small-preview.jpg">
+          <img src="images/photo_2021-04-27_17-38-32.jpg">
           <p style="font-weight: bold;">Conference 3</p>
           <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta temporibus nam laboriosam necessitatibus aliquam eos vero deleniti omnis voluptas. Fuga cumque debitis adipisci suscipit unde earum at officia! Asperiores?</p>
           <button class="btn-reverse btn-arrow">
@@ -463,17 +463,8 @@
           </button>
         </div>
         <div class="swiper-slide">
-          <img src="https://uploads-ssl.webflow.com/5e7886c7c78e1c8639bc0566/601190fc5d106173b952679b_Blog-small-preview.jpg">
+          <img src="images/photo_2021-04-27_17-38-33.jpg">
           <p style="font-weight: bold;">Conference 4</p>
-          <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta temporibus nam laboriosam necessitatibus aliquam eos vero deleniti omnis voluptas. Fuga cumque debitis adipisci suscipit unde earum at officia! Asperiores?</p>
-          <button class="btn-reverse btn-arrow">
-            <span>Details<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
-          </button>
-        </div>
-
-        <div class="swiper-slide">
-          <img src="https://uploads-ssl.webflow.com/5e7886c7c78e1c8639bc0566/601190fc5d106173b952679b_Blog-small-preview.jpg">
-          <p style="font-weight: bold;">Conference 5</p>
           <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta temporibus nam laboriosam necessitatibus aliquam eos vero deleniti omnis voluptas. Fuga cumque debitis adipisci suscipit unde earum at officia! Asperiores?</p>
           <button class="btn-reverse btn-arrow">
             <span>Details<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
@@ -488,7 +479,6 @@
 
 
  <style>
-
 
     .swiper-slide {
       background-position: center;
@@ -578,20 +568,39 @@
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
       grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
+      centeredSlides: true,     
       coverflowEffect: {
         rotate: 20,
         stretch: 0,
-        depth: 200,
+        depth: 100,
         modifier: 1,
         slideShadows: true,
       },
       pagination: {
         el: '.swiper-pagination',
       },
-      loop:true,
+      loop:true, 
+      freeMode: true,
+      breakpoints: {   
+        2000:{
+          slidesPerView: 4,
+          spaceBetween: 300,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 100,
+        },
+        900: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        } ,
+    200: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    }
+  }
     });
+
   </script>
   <script>
     AOS.init();
