@@ -122,6 +122,40 @@ $('#email-form').validate({
     }
 });
 
+$('#email-form-contactPage').validate({
+    rules: {
+        contact_first_name: {
+            required:true,
+            minlength:3,
+            lettersonly:true           
+        },
+        contact_last_name: {
+            required:true,
+            minlength:3,
+            lettersonly:true 
+        },
+        contactEmail: {
+            required: true,
+            email: true
+          },
+        contact_phone_contactPage:{
+            required: true,
+            phone_numberCheck:true
+        }          
+    },
+ 
+    submitHandler: function () {
+        $('#email-form-contactPage').hide();
+         $('.w-form-done_contactPage').show();
+        // form.submit();
+        setTimeout(function(){ 
+            $('#email-form-contactPage').show();
+             $('.w-form-done_contactPage').hide();
+            $('#email-form-contactPage')[0].reset();          
+
+         }, 3000);
+    }
+});
 /////////////////validate SignUp Form/////////////
 $(document).ready(function () {
     jQuery.validator.addMethod("lettersonly", function (value, element) {

@@ -382,14 +382,14 @@ a:focus:after {
 input.w-button {
   -webkit-appearance: button;
 }
-
-.w-form-done {
+ 
+.w-form-done, .w-form-done_contactPage {
   display: none;
   padding: 20px;
   text-align: center;
   background-color: #dddddd;
 }
-.w-form-fail {
+.w-form-fail, .w-form-fail_contactPage {
   display: none;
   margin-top: 10px;
   padding: 10px;
@@ -4012,6 +4012,7 @@ a {
   display: flex;
   min-height: 100vh;
   margin-top: -100vh;
+  padding-bottom: 200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -4050,7 +4051,7 @@ a {
 }
 
 .section-4 {
-  padding: 200px 0px 150px 0px;
+  padding: 0px 0px 250px 0px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -4059,13 +4060,14 @@ a {
   background-size: cover;
 }
 .section-2 {
-  padding: 200px 0px 0px 0px;
+  padding: 0px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   background-position: 100% 100%;
   background-size: cover;
+  padding-bottom: 80px;
 }
 .h2 {
   color: #ededed;
@@ -4145,7 +4147,7 @@ a {
   background-position: 0% 50%, 0px 0px;
   background-size: contain, auto;
   background-repeat: no-repeat, repeat;
-  padding: 80px 15px 80px 15px;
+  padding: 0px 15px 280px 15px;
 }
 
 .link-block {
@@ -4169,8 +4171,6 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* height: 100vh; */
-    /* margin-top: -20vh; */
   padding: 25px 15px;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -4205,9 +4205,8 @@ a {
   padding-bottom: 40px;
 }
 
-.section-5 {
-  padding: 120px 15px;
-  padding: 100px 15px;
+.section-5 { 
+  padding: 0px 15px 100px 15pz;
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5424,6 +5423,12 @@ text-align: center;
 }
 
 @media (max-width: 960px) {
+  .section-5 {
+    padding-bottom: 80;
+}
+  .main_container { 
+    padding-bottom: 0px;
+  }
   .section-offers-footer__btn {
       -webkit-box-flex:0;
       -ms-flex: 0 0 100%;
@@ -5535,7 +5540,7 @@ text-align: center;
   }
 
   #TopOffers {
-    margin-top: 0;
+    margin-top: 100px;
   }
 
 }
@@ -5608,6 +5613,7 @@ text-align: center;
 }
 
 @media screen and (max-width:700px){
+
   #Blog-Form {
     display: block;
   }
@@ -6240,6 +6246,9 @@ line-height: 30px;
   }
 }
 @media screen and  (max-width:435px){
+  #TopOffers {
+    margin-top: 0px;
+}
   .country .tableHideName p {
     padding-top: 20px;
   }
@@ -6360,10 +6369,6 @@ line-height: 30px;
     padding-bottom: 20px;
   }
  
-  .section-5 {
-    padding-bottom: 0;
-
-  }
 }
 @media screen and (max-width:360px){
   .icons-offer {
