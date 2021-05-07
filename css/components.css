@@ -4976,6 +4976,9 @@ text-align: center;
   transform: scaleX(-1);
   z-index: -1;
 }
+.swiper-container a:hover {
+  text-decoration: underline;
+}
 /* 
 ///////////////////////////media//////////////////////// */
 @media screen and (max-width:1550px){
