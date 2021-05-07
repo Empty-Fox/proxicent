@@ -675,7 +675,7 @@ textarea.w-select {
   /* height:100%; */
 }
 .swiper-slide p {
-  padding: 0 10px !important;
+  padding: 20px 10px 0!important;
 }
 .swiper-container-3d .swiper-slide-shadow-left , .swiper-container-3d .swiper-slide-shadow-right{
   background-image: none !important;
