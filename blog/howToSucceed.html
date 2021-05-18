@@ -8,6 +8,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="howToSucceed.css" rel="stylesheet" type="text/css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -24,411 +25,39 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-
-    <style>
-        .blog_image1 {
-            transform: rotate(90deg);
-            transform: rotate(87deg);
-            margin-top: auto;
-        }
-
-        .blog_image2 {
-            transform: rotate(90deg);
-            transform: scaleX(-1);
-            margin-top: 400px;
-            margin-left: 80%;
-        }
-
-        .curent_blogImage {
-            background-image: url(../images/photo_2021-04-27_17-31-42.jpg);
-            position: relative;
-            display: block;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            max-height: 700px;
-            min-height: 70vh;
-            min-width: 100%;
-            background-color: #fff;
-            background-position: 50% 60%;
-            background-size: cover;
-            -o-object-fit: fill;
-            object-fit: fill;
-        }
-
-        #Blog_pageBlog .h2.center.h2Blog {
-            width: 100%;
-        }
-
-        #Blog_pageBlog.section-4 {
-            padding: 150px 15px 200px 15px;
-        }
-
-        #Blog_pageBlog .blockBlog {
-            padding-bottom: 150px;
-        }
-
-        #Blog_pageBlog .ui-title.section-offers__title-bg.is-theme-bg.blog {
-            margin-top: -50px;
-        }
-
-        #Blog_pageBlog .blog_image {
-            margin-top: -208px;
-            right: 0;
-            left: auto;
-            transform: scale(1, 1);
-        }
-
-        #email-form {
-            position: relative;
-            max-width: 800px;
-            margin: -60px auto 0px;
-            padding-top: 10px;
-            padding-left: 40px;
-            float: none;
-            border-radius: 25px;
-            display: block;
-            max-width: 800px;
-            min-height: 0px;
-            margin-bottom: -220px;
-            padding: 40px;
-            border-radius: 25px 0px 0px 25px;
-            background-color: #193c6d;
-            background-size: 100%;
-            background-image: -webkit-linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
-            background-image: -moz-linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
-            background-image: -ms-linear-gradient(105deg, #193c6d, #022350fa 0, #021836fa 100%);
-            background-image: -o-linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
-            background-image: linear-gradient(105deg, #193c6d, #022350fa, #021836fa);
-            box-shadow: 4px 4px 20px 11px #d6d6d6;
-            color: #eaeaea;
-        }
-
-        label {
-            margin-bottom: 10px;
-            font-size: 12px;
-            line-height: 20px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .text-block-2 {
-            max-width: 1200px;
-            margin: 0px auto 20px;
-            font-size: 40px;
-            font-weight: 600;
-            text-align: center;
-            line-height: 62px;
-        }
-
-        .blog1Section {
-            margin-bottom: 0%;
-            margin-left: auto;
-            padding: 0% 10% 60px;
-            background-color: transparent;
-        }
-
-        .text-block-3 {
-            max-width: 800px;
-            margin-top: 5%;
-            margin-right: auto;
-            margin-left: auto;
-            text-align: left;
-            color: #021836fa;
-        }
-
-        ul {
-            padding-left: 40px;
-        }
-
-        .paragraph {
-            line-height: initial;
-            color: #021836fa;
-        }
-
-        .block_btn_seeAllPosts {
-            height: 100px;
-            margin-top: 100px;
-        }
-
-        .block_btn_seeAllPosts a {
-            float: right;
-            margin-right: 100px;
-            margin-top: 50px;
-            line-height: 30px;
-        }
-
-        .contactText {
-            width: 100%;
-            text-align: center;
-            opacity: .3;
-            z-index: 0;
-            color: transparent;
-            text-shadow: 5px 1px 1px rgb(163 163 163), -5px 1px 1px #021836fa;
-            position: relative;
-            top: 0%;
-            right: auto;
-            bottom: auto;
-            font-size: 200px;
-            line-height: 1em;
-            font-weight: 700;
-            letter-spacing: -.02em;
-            white-space: nowrap;
-            text-transform: uppercase;
-            padding-top: 100px;
-        }
-
-        #Blog-Form {
-            display: grid;
-            max-width: 800px;
-            margin-top: 40px;
-            margin-right: auto;
-            margin-left: auto;
-            -webkit-box-pack: stretch;
-            -webkit-justify-content: stretch;
-            -ms-flex-pack: stretch;
-            justify-content: stretch;
-            grid-auto-columns: 1fr;
-            grid-column-gap: 20px;
-            grid-row-gap: 20px;
-            -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-            -ms-grid-rows: auto;
-            grid-template-rows: auto;
-        }
-
-        .blog1_mainBlock {
-            position: relative;
-            margin: -20vh 0% 0%;
-            padding: 5% 5% 7%;
-            background-color: #fdfcfc;
-            -webkit-box-shadow: 0 60px 50px rgb(255 255 255 / 25%);
-            box-shadow: 0 60px 50px rgb(255 255 255 / 25%);
-            position: relative;
-            z-index: 2;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            color: #021836fa;
-            font-size: 20px;
-            font-weight: 200;
-            text-align: center;
-            letter-spacing: 0.33px;
-            line-height: 1.7em;
-        }
-
-        @media screen and (max-width:1300px) {
-            #email-form {
-                margin: -40px auto 0px;
-            }
-
-            .contactText {
-                font-size: 150px;
-            }
-        }
-
-        @media screen and (max-width: 1100px) {
-            .contactText {
-                font-size: 100px;
-                text-shadow: 2px 1px 1px rgb(163 163 163), -2px 1px 1px #021836fa;
-            }
-
-            #email-form {
-                margin: 20px 0px;
-            }
-        }
-
-        @media screen and (max-width:700px) {
-            #Blog-Form {
-                display: block;
-            }
-
-            .btn.fancy-btn {
-                font-size: 10px;
-                line-height: 22px;
-            }
-        }
-
-        @media screen and (max-width: 650px) {
-            .contactText {
-                font-size: 50px;
-                text-shadow: 2px 1px 1px rgb(163 163 163), -1px 1px 1px #021836fa;
-            }
-
-            .btn.fancy-btn {
-                padding: 19px 60px;
-                font-size: 12px;
-            }
-
-            #email-form {
-                padding: 10px;
-            }
-
-            .block_btn_seeAllPosts {
-                margin-top: 0;
-            }
-
-        }
-
-        @media screen and (max-width:500px) {
-            .blog1Section {
-                padding: 0% 10px 20px !important;
-            }
-        }
-
-        @media screen and (max-width: 450px) {
-            #email-form {
-                padding: 10px;
-                padding-bottom: 50px;
-            }
-
-            #Blog-Form {
-                -ms-grid-columns: 1fr;
-                grid-template-columns: 1fr;
-                margin-top: 0;
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
-            }
-
-            .btn.fancy-btn {
-                font-size: 12px;
-                letter-spacing: 1px;
-                line-height: 28px;
-            }
-
-            .text-block-2 {
-                font-size: 30px;
-                line-height: 42px;
-            }
-
-            .block_btn_seeAllPosts {
-                margin-top: inherit;
-            }
-
-            .btn.fancy-btn.w-button:before {
-                top: 5px;
-                right: 13px;
-            }
-
-            .contactText {
-                font-size: 50px;
-                line-height: 50px;
-                padding-top: 50px;
-                padding-bottom: 30px;
-            }
-
-            .blog1Section {
-                padding: 0% 10px 10px;
-                background-color: transparent;
-            }
-
-            .text-block-3 {
-                line-height: 18px;
-                font-size: 14px;
-            }
-        }
-
-        @media screen and (max-width:400px) {
-            .btn.fancy-btn {
-                padding: 5px 40px;
-            }
-
-            .btn.fancy-btn.w-button:before {
-                top: -2px;
-                right: 5px;
-            }
-
-            .block_btn_seeAllPosts {
-                margin-top: inherit;
-            }
-        }
-
-        @media screen and (max-width:350px) {
-            .btn.fancy-btn {
-                font-size: 10px;
-                line-height: 38px;
-            }
-
-            .blog1Section {
-                padding: 0% 5px 20px !important;
-            }
-
-            .blog1_mainBlock {
-                padding: 5px;
-            }
-
-            .btn.fancy-btn {
-                padding: 5px 50px 5px 40px;
-            }
-
-            .block_btn_seeAllPosts a {
-                float: none;
-                margin-left: 15%;
-                width: 70%;
-            }
-        }
-
-        @media screen and (max-width:300px) {
-            .btn.fancy-btn.orange.dark.w-button {
-                padding: 1px 40px 3px 20px;
-            }
-
-            .btn.fancy-btn.w-button:before {
-                top: -2px;
-                right: 13px;
-            }
-
-            .block_btn_seeAllPosts a {
-                width: 60%;
-            }
-
-            .block_btn_seeAllPosts {
-                margin-left: 10%;
-            }
-        }
-    </style>
+   
 </head>
 
 <body>
 
     <div id="Home">
-        <div data-collapse="medium" class="navbar w-nav" style=" padding-left: 20px;">
-            <a href="../index.html" style="color: white; line-height: 60px; float: left; ">
-                <img src="../images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo"
-                    style="width: 200px; ">
+        <div data-collapse="medium" class="navbar w-nav">
+            <a href="../index.html" class="logo_menu">
+                <img src="../images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo">
             </a>
-            <nav class="nav-menu w-nav-menu nav-1" style=" width: 80%;">
+            <nav class="nav-menu w-nav-menu nav-1">
                 <a href="../index.html#Home" class="nav w-nav-link link-1">Home</a>
                 <a href="../index.html#AboutUs" class="nav  w-nav-link link-1">About us</a>
                 <a href="../index.html#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
 
                 <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
+
                 <a href="../blog.html" class="nav w-nav-link link-1 activeMenu">Blog</a>
                 <a href="../index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us</a>
-
                 <a href="../login.html" class="nav w-nav-link link-1">Login</a>
-
                 <div class="dropdown">
                     <button class="dropbtn">
                         <img src="../images/united-kingdom.png">
-                        <span style="padding-left:4px; font-size: 12px;"> EN</span>
-                        <i class="fa fa-caret-down" style="color: white;"></i>
+                        <span> EN</span>
+                        <i class="fa fa-caret-down"></i>
                     </button>
-
                     <div class="dropdown-content">
-                        <a href="#"> <img src="../images/russia.png"><span style="padding-left:4px; font-size: 12px;">
-                                RU</span> </a>
-                        <a href="#"> <img src="../images/spain.png"> <span style="padding-left:4px; font-size: 12px;">
-                                ES</span></a>
+                        <a href="#"> <img src="../images/russia.png"><span>RU</span> </a>
+                        <a href="#"> <img src="../images/spain.png"> <span>ES</span></a>
                     </div>
-
                 </div>
-
-
                 <a href="../signup.html" class="register w-nav-link">Register</a>
             </nav>
-
             <div class="menu-button-2 w-nav-button">
                 <div class="lottie-animation-3">
                     <!-- //////////////////////////////////////////////////////////////////// -->
@@ -437,16 +66,11 @@
                         <span class="line2"></span>
                         <span class="line3"></span>
                     </button>
-
                 </div>
             </div>
-
         </div>
-
     </div>
-
-    <div class="curent_blogImage">
-    </div>
+    <div class="curent_blogImage"></div>
     <img src="../images/2.png" class="blog_image blog_image1">
     <img src="../images/2.png" class="blog_image blog_image2">
     <section class="blog1Section">
@@ -679,34 +303,30 @@
                     <img src="../images/2.png" class="blog_image blog_image_3">
                     <form id="email-form" name="email-form" class="w-clearfix" method="POST" action="" role="form">
                         <div id="Blog-Form">
-                            <div id="">
+                            <div>
                                 <label for="First-Name-1" id="contact-first-name">First name *</label>
-                                <input type="text" class="form-field w-input" name="First_Name_2" id="First-Name-2"
-                                    required>
+                                <input type="text" class="form-field w-input" name="First_Name_2" id="First-Name-2" required>
                             </div>
-                            <div id="">
+                            <div>
                                 <label for="Last-Name-3" id="contact-last-name">Last name *</label>
-                                <input type="text" class="form-field w-input" name="Last_Name_2" id="Last-Name-2"
-                                    required>
+                                <input type="text" class="form-field w-input" name="Last_Name_2" id="Last-Name-2" required>
                             </div>
-                            <div id="">
+                            <div>
                                 <label for="Email-3" id="contact-email">WORK Email *</label>
                                 <input type="email" class="form-field w-input" name="Email_2" id="Email-2">
                             </div>
-                            <div id="">
+                            <div>
                                 <label for="Contact-Phone-Number-3" id="contact-phone">Phone</label>
                                 <input type="tel" class="form-field w-input" name="Contact_Phone_Number_2"
                                     id="Contact-Phone-Number-2">
-                            </div>
-    
+                            </div>    
                         </div>
-                        <div id="">
+                        <div>
                             <label for="Message-3" id="contact-message">Message *</label>
                             <textarea id="Message-2" name="Message-2" class="form-field w-input" required></textarea>
-                        </div>
-    
+                        </div>    
                         <button type="submit" class="btn fancy-btn orange dark w-button">REQUEST A FREE DEMO</button>
-                        </form>
+                    </form>
                     <div class="w-form-done">
                         <div>Thank you! Your submission has been received!</div>
                     </div>
@@ -715,48 +335,29 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-
     </section>
     <div class="block_btn_seeAllPosts">
         <a href="../blog.html" class="btn fancy-btn orange dark w-button">SEE ALL POSTS</a>
-
     </div>
-
-
-
     <footer class="footer">
         <div class="footer_block">
             <div>
                 <div class="text-block-6">
-                    <p style="text-align: left">All Rights Reserved. © Proxicent <span id="year"></span></p>
+                    <p>All Rights Reserved. © Proxicent <span id="year"></span></p>
                 </div>
             </div>
-            <div class="text-block-6" style="display: grid; grid-template-columns: 1fr 1fr;">
-                <div> <a href="#" style="text-decoration: underline; color: #ededed;">Terms conditions</a></div>
-                <div> <a href="#" style="text-decoration: underline; color: #ededed;">Privacy Policy</a></div>
+            <div class="text-block-6 text-block-6_grid">
+                <div> <a href="#">Terms conditions</a></div>
+                <div> <a href="#">Privacy Policy</a></div>
             </div>
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script>
-        gsap.to(".ourWord", { duration: 2, x: 200 });
-        gsap.to(".blogWord", { duration: 2, x: -200 });
-
-    </script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
-<script src="../js/main.js"></script>
-<script src="../js/validate.js"></script>
-
+    <script src="../js/main.js"></script>
+    <script src="../js/validate.js"></script>
 </body>
-
 </html>
