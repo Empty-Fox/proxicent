@@ -26,9 +26,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-
-
-
     <style>
         #Blog_pageBlog .blog_image {
             margin-top: -208px;
@@ -44,7 +41,6 @@
             display: table;
             clear: both;
         }
-
         #Blog_pageBlog {
             height: 80vh;
         }
@@ -79,7 +75,7 @@
             letter-spacing: 0.33px;
             line-height: 1.7em;
         }
-        .contactText p:nth-child(3){           
+        .contactText p:nth-child(3) {           
             color: #ededed;
             padding: 20px;
             font-size: 20px;
@@ -146,14 +142,13 @@
         }
         .btn.fancy-btn.w-button:hover:after {
             right: -20%;
-        }
-     
-    @media screen and (max-width:1500px){
+        }     
+        @media screen and (max-width:1500px){
             .contactText p:first-child {
                 font-size: 120px;
             }
-    }
-    @media screen and (max-width:1200px) {
+        }
+        @media screen and (max-width:1200px) {
             .contactText p:first-child {
                 font-size: 100px;
             }
@@ -163,172 +158,156 @@
             .contactText p:nth-child(2) {
                 margin-top: -100px;
             }
-    }
-    @media screen and (max-width:1050px) {
-            .section-4 {
-            padding: 200px 15px 200px 15px;
         }
-        .contactText p:first-child {
+        @media screen and (max-width:1050px) {
+            .section-4 {
+                padding: 200px 15px 200px 15px;
+            }
+            .contactText p:first-child {
                 font-size: 80px;
             }
-        .contactText p:first-child {
-            padding-top: 0;
+            .contactText p:first-child {
+                padding-top: 0;
+            }
+            #Blog-Form-contactPage {
+                -ms-grid-columns: 1fr;
+                grid-template-columns: 1fr;
+            }
+            .blog_contactForm {
+                margin-top: 0;
+            }
         }
-        #Blog-Form-contactPage {
-            -ms-grid-columns: 1fr;
-            grid-template-columns: 1fr;
+        @media screen and (max-width:850px) {
+            .contactText {   
+                width: 100%;
+                float: none;
+            }
+            #email-form-contactPage {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                position: initial;
+            }
+            #Blog_pageBlog {
+                height: inherit;
+            }
+            .contactText p:nth-child(2) {
+                margin-top: -150px;
+            }
         }
-        .blog_contactForm {
-            margin-top: 0;
+        @media screen and (max-width:550px) {
+            #Blog_pageBlog .blog_image {
+                margin-top: -98px;
+            }
+            .btn.fancy-btn.w-button:hover:after {
+                width: 100%;
+                right: 0;
+            }
+            .btn.fancy-btn.w-button:hover:before {
+                transform: translateX(0px);
+            }
         }
-
-    }
-    @media screen and (max-width:850px) {
-        .contactText {   
-            width: 100%;
-            float: none;
+        @media screen and (max-width:450px) {
+            #Blog_pageBlog .blog_image {
+                margin-top: -58px;
+            }
+            .btn.fancy-btn {
+                font-size: 12px;
+                letter-spacing: 0.1px;
+            }
         }
-        #email-form-contactPage {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            position: initial;
+        @media screen and (max-width:400px) {
+            .btn.fancy-btn {
+                padding: 12px 40px;
+            }
+            .section-4 {
+                padding: 150px 5px 150px 5px;
+            }
+            #email-form-contactPage {  
+                padding: 20px;
+            }        
+            .btn.fancy-btn.w-button:before {
+                top: -3px;
+                right: 5px;
+            }
+            #Blog_pageBlog .blog_image {
+                margin-top: -58px;
+            }
+            .contactText p:first-child {
+                font-size: 50px;
+            }
+            #Blog-Form-contactPage div:nth-child(3){
+                text-align: left;
+            }        
         }
-        #Blog_pageBlog {
-            height: inherit;
+        @media screen and (max-width:300px) {
+            .btn.fancy-btn {
+                font-size: 10px;
+                letter-spacing: 0.1px;
+            }        
+            .btn.fancy-btn.w-button:before {
+                top: 0px;
+                right: 14px;
+            }
         }
-    }
-    @media screen and (max-width:550px) {
-        #Blog_pageBlog .blog_image {
-            margin-top: -98px;
-        }
-        .btn.fancy-btn.w-button:hover:after {
-            width: 100%;
-            right: 0;
-        }
-        .btn.fancy-btn.w-button:hover:before {
-            transform: translateX(0px);
-        }
-    }
-    @media screen and (max-width:450px) {
-        #Blog_pageBlog .blog_image {
-            margin-top: -58px;
-        }
-        .btn.fancy-btn {
-            font-size: 12px;
-            letter-spacing: 0.1px;
-        }
-    }
-    @media screen and (max-width:400px) {
-        .btn.fancy-btn {
-            padding: 12px 40px;
-        }
-        .section-4 {
-            padding: 150px 5px 150px 5px;
-        }
-        #email-form-contactPage {  
-            padding: 20px;
-        }
-     
-        .btn.fancy-btn.w-button:before {
-            top: -3px;
-            right: 5px;
-        }
-        #Blog_pageBlog .blog_image {
-            margin-top: -58px;
-        }
-        .contactText p:first-child {
-            font-size: 50px;
-        }
-        #Blog-Form-contactPage div:nth-child(3){
-            text-align: left;
-        }
-       
-    }
-    @media screen and (max-width:300px) {
-        .btn.fancy-btn {
-            font-size: 10px;
-            letter-spacing: 0.1px;
-        }
-     
-        .btn.fancy-btn.w-button:before {
-            top: 0px;
-            right: 14px;
-        }
-    }
-
-
     </style>
+
 </head>
 
 <body>
     <div id="Home">
-        <div data-collapse="medium" class="navbar w-nav" style=" padding-left: 20px;">
-          <a  href="index.html" style="color: white; line-height: 60px; float: left; ">
-            <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo" style="width: 200px; ">   
+        <div data-collapse="medium" class="navbar w-nav">
+          <a  href="index.html" class="logo_menu">
+            <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo">   
           </a>
-          <nav class="nav-menu w-nav-menu nav-1" style=" width: 80%;">
+          <nav class="nav-menu w-nav-menu nav-1">
             <a href="index.html#Home" class="nav w-nav-link link-1">Home</a>
             <a href="index.html#AboutUs" class="nav  w-nav-link link-1">About us</a>
             <a href="index.html#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
     
             <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
+
             <a href="blog.html" class="nav w-nav-link link-1">Blog</a>
-            <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us</a>
-    
-            <a href="login.html" class="nav w-nav-link link-1">Login</a>
-    
+            <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us</a>    
+            <a href="login.html" class="nav w-nav-link link-1">Login</a>    
             <div class="dropdown">
               <button class="dropbtn">
                 <img src="images/united-kingdom.png">
-                <span style="padding-left:4px; font-size: 12px;"> EN</span>
-                <i class="fa fa-caret-down" style="color: white;"></i>
-              </button>
-    
+                <span> EN</span>
+                <i class="fa fa-caret-down"></i>
+              </button>    
               <div class="dropdown-content">
-                <a href="#"> <img src="images/russia.png"><span style="padding-left:4px; font-size: 12px;"> RU</span> </a>
-                <a href="#"> <img src="images/spain.png"> <span style="padding-left:4px; font-size: 12px;"> ES</span></a>
-              </div>
-    
-            </div>
-    
-    
+                <a href="javascript:void(0)"> <img src="images/russia.png"><span> RU</span> </a>
+                <a href="javascript:void(0)"> <img src="images/spain.png"> <span> ES</span></a>
+              </div>    
+            </div>  
             <a href="signup.html" class="register w-nav-link">Register</a>
           </nav>
     
           <div class="menu-button-2 w-nav-button">
             <div class="lottie-animation-3">
               <!-- //////////////////////////////////////////////////////////////////// -->
-              <button type="button" class="header__menu" id="headerCollapseButton">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
-            </button>
-    
+                <button type="button" class="header__menu" id="headerCollapseButton">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </button>    
             </div>
-          </div>
-    
+          </div>    
         </div>
-    
-      </div>
-
+    </div>
 
     <section id="Blog_pageBlog" class="section-4">
-        <img src="images/2.png" class="blog_image" style="z-index: -1;">
+        <img src="images/2.png" class="blog_image section-4_blogimage">
         <div class="blog_contactForm">
             <div class="form_blog">
                 <div class="contactText">
                     <p>
                         contact <br>Us
                     </p>                   
-                    <p>Some title</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolores enim ex amet architecto tempore animi
-                            eaque nostrum sed error itaque voluptatibus harum fuga, dignissimos repudiandae reiciendis
-                            unde rerum veniam.</p>
-                
-
+                    <p>Fill the form if you have any useful information or a project you want to discuss with us. </p>
+                    <p>We will reply to you to provide the most efficient solution.</p>  
                 </div>
-
                 <form id="email-form-contactPage" name="email-form-contactPage" class="form blog">
                     <div id="Blog-Form-contactPage">
                         <div>
@@ -347,7 +326,6 @@
                             <label for="contact_phone_contactPage">Phone</label>
                             <input type="tel" class="form-field w-input" name="contact_phone_contactPage" id="contact_phone_contactPage">
                         </div>
-
                     </div>
                     <div>
                         <label for="message_contactPage">Message *</label>
@@ -356,7 +334,6 @@
                     <div>
                         <button type="submit" class="btn fancy-btn orange dark w-button">REQUEST A FREE DEMO</button>
                     </div>
-
                 </form>
                 <div class="w-form-done_contactPage">
                     <div>Thank you! Your submission has been received!</div>
@@ -368,9 +345,6 @@
         </div>
     </section>
 
-
-
-
     <footer class="footer">
         <div class="footer_block">
             <div>
@@ -378,32 +352,13 @@
                     <p style="text-align: left">All Rights Reserved. © Proxicent <span id="year"></span></p>
                 </div>
             </div>
-            <div class="text-block-6" style="display: grid; grid-template-columns: 1fr 1fr;">
-                <div> <a href="#" style="text-decoration: underline; color: #ededed;">Terms conditions</a></div>
-                <div> <a href="#" style="text-decoration: underline; color: #ededed;">Privacy Policy</a></div>
+            <div class="text-block-6 text-block-6_grid">
+                <div> <a href="#">Terms conditions</a></div>
+                <div> <a href="#">Privacy Policy</a></div>
             </div>
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
-
-        gsap.to(".ourWord", { duration: 2, x: 200 });
-        gsap.to(".blogWord", { duration: 2, x: -200 });
-
-        gsap.to(".scrolltext1", {
-            scrollTrigger: {
-                trigger: ".scrolltext1",
-                scrub: "true",
-                toggleActions: "restart pause reverse pause"
-            }, scale: .5, duration: 3, opacity: .45,
-        });
-
-    </script>
-
-    
+ 
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/validate.js"></script>
@@ -411,8 +366,6 @@
     <script>
         AOS.init();
     </script>
-
-
 
 </body>
 

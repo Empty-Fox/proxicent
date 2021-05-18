@@ -144,8 +144,6 @@
         top: 13px;
         right: 9px;
       }
-
-
     }
 
     @media screen and (max-width: 300px) {
@@ -180,39 +178,33 @@
 <body>
 
   <div id="Home">
-    <div data-collapse="medium" class="navbar w-nav" style=" padding-left: 20px;">
-      <a href="index.html" style="color: white; line-height: 60px; float: left; ">
-        <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo" style="width: 200px; ">
+    <div data-collapse="medium" class="navbar w-nav">
+      <a href="index.html" class="logo_menu">
+        <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo">
       </a>
-      <nav class="nav-menu w-nav-menu nav-1" style=" width: 80%;">
+      <nav class="nav-menu w-nav-menu nav-1">
         <a href="index.html#Home" class="nav w-nav-link link-1">Home</a>
         <a href="index.html#AboutUs" class="nav  w-nav-link link-1">About us</a>
         <a href="index.html#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
 
         <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
+
         <a href="blog.html" class="nav w-nav-link link-1 activeMenu">Blog</a>
         <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us</a>
-
         <a href="login.html" class="nav w-nav-link link-1">Login</a>
-
         <div class="dropdown">
           <button class="dropbtn">
             <img src="images/united-kingdom.png">
-            <span style="padding-left:4px; font-size: 12px;"> EN</span>
-            <i class="fa fa-caret-down" style="color: white;"></i>
+            <span> EN</span>
+            <i class="fa fa-caret-down"></i>
           </button>
-
           <div class="dropdown-content">
-            <a href="#"> <img src="images/russia.png"><span style="padding-left:4px; font-size: 12px;"> RU</span> </a>
-            <a href="#"> <img src="images/spain.png"> <span style="padding-left:4px; font-size: 12px;"> ES</span></a>
+            <a href="javascript:void(0)"> <img src="images/russia.png"><span> RU</span> </a>
+            <a href="javascript:void(0)"> <img src="images/spain.png"> <span> ES</span></a>
           </div>
-
         </div>
-
-
         <a href="signup.html" class="register w-nav-link">Register</a>
       </nav>
-
       <div class="menu-button-2 w-nav-button">
         <div class="lottie-animation-3">
           <!-- //////////////////////////////////////////////////////////////////// -->
@@ -221,14 +213,10 @@
             <span class="line2"></span>
             <span class="line3"></span>
           </button>
-
         </div>
       </div>
-
     </div>
-
   </div>
-
 
   <section id="Blog_pageBlog" class="section-4">
     <div class="ui-title section-offers__title-bg is-theme-bg blog">
@@ -236,29 +224,25 @@
       <p class="blogWord">BLOG</p>
     </div>
     <img src="images/2.png" class="blog_image">
-    <img src="images/2.png" class="blog_image" style="left: 0; transform: rotate(180deg);">
+    <img src="images/2.png" class="blog_image blog_image2">
     <div class="blockBlog">
       <div class="w-container" class="div-block">
         <div class="blockContainer">
           <h2 class="h2 center h2Blog" data-aos="zoom-in" data-aos-duration="2000">What's news in the Proxicent world
           </h2>
-          <p class="paragraph center"><strong>Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Possimus nulla
-              ut, ipsam placeat nemo explicabo. Commodi, sint facere rem ducimus ullam eaque alias illo labore quaerat
-              qui enim porro facilis.</strong></p>
+          <p class="paragraph center"><strong>In our blog you can find any information, including news and upcoming conferences in the finance and crypto field.</strong>
+          </p>
         </div>
       </div>
     </div>
-    <div style="width: 100%;">
+    <div class="section-4_block">
       <div class="collection-list-wrapper w-dyn-list slider">
         <div class="page1 page">
           <div class="collection-list-2 w-dyn-items w-row">
             <div class="collection-item-2 w-dyn-item w-col-4 grid">
               <a href="blog/cryptoVertical.html" class="link-block w-inline-block">
-                <div style="background-image:url(images/photo_2021-04-27_17-31-40.jpg)" class="div-block-13">
-                </div>
+                <div style="background-image:url(images/photo_2021-04-27_17-31-40.jpg)" class="div-block-13"></div>
                 <div class="div-block-14">
-                  <!-- <div class="text-block-6">February 2, 2021</div> -->
                   <h3 class="heading-3">Crypto vertical: trending funnels and traffic sources</h3>
                 </div>
               </a>
@@ -267,7 +251,6 @@
               <a href="blog/cryptocurency.html" class="link-block w-inline-block">
                 <div style="background-image:url(images/photo_2021-04-27_17-31-41.jpg)" class="div-block-13"></div>
                 <div class="div-block-14">
-                  <!-- <div class="text-block-6">January 28, 2021</div> -->
                   <h3 class="heading-3">Cryptocurrency and brokers: regulated and unregulated</h3>
                 </div>
               </a>
@@ -276,78 +259,11 @@
               <a href="blog/howToSucceed.html" class="link-block w-inline-block">
                 <div style="background-image:url(images/photo_2021-04-27_17-31-42.jpg)" class="div-block-13"></div>
                 <div class="div-block-14">
-                  <!-- <div class="text-block-6">January 28, 2021</div> -->
                   <h3 class="heading-3">How to succeed in crypto vertical</h3>
                 </div>
               </a>
             </div>
           </div>
-          <!-- <div class="collection-list-2 w-dyn-items w-row">
-            <div class="collection-item-2 w-dyn-item w-col-4 grid">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url(images/blogImage1.jpg)" class="div-block-13">
-                </div>
-                <div class="div-block-14">
-                  <div class="text-block-6">February 2, 2021</div>
-                  <h3 class="heading-3">launches Sales as a Service to all our partners</h3>
-                </div>
-              </a>
-            </div>
-            <div class="collection-item-2 w-dyn-item  w-col-4">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url(images/blogImage1.jpg)" class="div-block-13"></div>
-                <div class="div-block-14">
-                  <div class="text-block-6">January 28, 2021</div>
-                  <h3 class="heading-3">Trusting the experts to set up your customer’s stores pays off for
-                    small businesses</h3>
-                </div>
-              </a>
-            </div>
-            <div class="collection-item-2 w-dyn-item w-col-4">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url(images/blogImage1.jpg)" class="div-block-13"></div>
-                <div class="div-block-14">
-                  <div class="text-block-6">January 28, 2021</div>
-                  <h3 class="heading-3">...proprietary cloud-based QA tool drastically reduces
-                    turnaround time and errors</h3>
-                </div>
-              </a>
-            </div>
-
-          </div>
-          <div class="collection-list-2 w-dyn-items w-row">
-            <div class="collection-item-2 w-dyn-item w-col-4 grid">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url(images/blogImage1.jpg)" class="div-block-13">
-                </div>
-                <div class="div-block-14">
-                  <div class="text-block-6">February 2, 2021</div>
-                  <h3 class="heading-3">launches Sales as a Service to all our partners</h3>
-                </div>
-              </a>
-            </div>
-            <div class="collection-item-2 w-dyn-item  w-col-4">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url(images/blogImage1.jpg)" class="div-block-13"></div>
-                <div class="div-block-14">
-                  <div class="text-block-6">January 28, 2021</div>
-                  <h3 class="heading-3">Trusting the experts to set up your customer’s stores pays off for
-                    small businesses</h3>
-                </div>
-              </a>
-            </div>
-            <div class="collection-item-2 w-dyn-item w-col-4">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url(images/blogImage1.jpg)" class="div-block-13"></div>
-                <div class="div-block-14">
-                  <div class="text-block-6">January 28, 2021</div>
-                  <h3 class="heading-3">...proprietary cloud-based QA tool drastically reduces
-                    turnaround time and errors</h3>
-                </div>
-              </a>
-            </div>
-
-          </div> -->
         </div>
 
         <!-- <div class="page2 page">
@@ -450,139 +366,22 @@
 
           </div>
         </div>
-       
-        <div class="page3 page">
-          <div class="collection-list-2 w-dyn-items w-row">
-            <div class="collection-item-2 w-dyn-item w-col-4 grid">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url" class="div-block-13">
-                </div>
-                <div class="div-block-14">
-                  <div class="text-block-6">February 2, 2021</div>
-                  <h3 class="heading-3">page3</h3>
-                </div>
-              </a>
-            </div>
-            <div class="collection-item-2 w-dyn-item  w-col-4">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url" class="div-block-13"></div>
-                <div class="div-block-14">
-                  <div class="text-block-6">January 28, 2021</div>
-                  <h3 class="heading-3">page3</h3>
-                </div>
-              </a>
-            </div>
-            <div class="collection-item-2 w-dyn-item w-col-4">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url" class="div-block-13"></div>
-                <div class="div-block-14">
-                  <div class="text-block-6">January 28, 2021</div>
-                  <h3 class="heading-3">page3s</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="collection-list-2 w-dyn-items w-row">
-            <div class="collection-item-2 w-dyn-item w-col-4 grid">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url" class="div-block-13">
-                </div>
-                <div class="div-block-14">
-                  <div class="text-block-6">February 2, 2021</div>
-                  <h3 class="heading-3">page3</h3>
-                </div>
-              </a>
-            </div>
-            <div class="collection-item-2 w-dyn-item  w-col-4">
-              <a href="blog/blog1.html" class="link-block w-inline-block">
-                <div style="background-image:url" class="div-block-13"></div>
-                <div class="div-block-14">
-                  <div class="text-block-6">January 28, 2021</div>
-                  <h3 class="heading-3"></h3>
-                </div>
-              </a>
-            </div>  
-          </div>
-         
-        </div>
+               
         <div>
           <a id="next" class="btn fancy-btn orange dark w-button slidebutton" style="float: left;">Next</a>
           <a id="prev" class="btn fancy-btn orange dark w-button slidebutton" style="float: right; ">Prev</a>
          
-        </div> -->
-
-
-
+        </div>  -->
 
       </div>
     </div>
-    </div>
-
-    <script>
-      let active = 0;
-      let el = $(".page");
-      let total = el.length - 1;
-      const toggle = (el, index) => {
-        el.hide()
-        el.eq(index).show()
-      }
-      toggle(el, active)
-
-      // function prev() {
-      //   this.id === 'prev' ? active -= 1 : active += 1;
-      //   if (active > total) {active = 0; console.log('more total')};
-      //   if (active < 0) {active = total;console.log('les zero')}
-      //   toggle(el, active);
-      //   console.log('total'+total)
-      //   console.log('active'+active)
-      // }
-
-      $('.slidebutton').on('click', function () {
-        this.id === 'prev' ? active -= 1 : active += 1;
-        if (active > total) { active = 0; }
-        if (active < 0) active = total
-        toggle(el, active)
-      });
-
-    </script>
   </section>
 
-  <div class="getInToch" style="display: flex;
-width: 100%;
-height: inherit;
--webkit-box-orient: horizontal;
--webkit-box-direction: normal;
--webkit-flex-direction: row;
--ms-flex-direction: row;
-flex-direction: row;
--webkit-box-pack: center;
--webkit-justify-content: center;
--ms-flex-pack: center;
-justify-content: center;
--webkit-box-align: center;
--webkit-align-items: center;
--ms-flex-align: center;
-align-items: center;
--webkit-align-self: auto;
--ms-flex-item-align: auto;
-align-self: auto;
-text-align: center;
-">
+  <div class="getInToch">
     <div>
-      <div class="scrolltext1" style="will-change: opacity, transform; opacity: 1; 
-            width: 100%;           
-    height: 100%;
-    color: #fff;
-    transform: translate3d(0px, 0px, 0px) scale3d(1.24139, 1.24139, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;     position: relative;
-        left: 0%;
-        top: 0%;
-        right: 0%;
-        bottom: 0%;
-        opacity: 0.1;
-        font-size: 200px;
-        text-align: center;">
+      <div class="scrolltext1">
         <p class="scrolltext1_p">
-          GET&nbsp;IN&nbsp;TOUCH
+          GET IN TOUCH
         </p>
       </div>
       <div class="section-hp-cta-container">
@@ -591,16 +390,11 @@ text-align: center;
             <div class="section-hp-cta-column-left w-col w-col-1"></div>
             <div class="section-hp-cta-column-right w-col w-col-10">
               <div class="div-block-5-copy w-clearfix">
-                <div class="cta-paragraph center" style="background-color: hsla(0, 0%, 100%, 0);
-                color: #fff;
-                font-size: 35px;
-                line-height: 1.5em;
-                text-align: center; ">
-                  <p style="  
-    word-wrap: break-word;  ">Connect with us to learn more about our ....</p><br>
+                <div class="cta-paragraph center">
+                  <p>We are happy to help you if have you any additional questions.<br>
+                    Email us for any business inquiries.</p><br>
                 </div>
-                <a href="contact.html" class="btn fancy-btn orange dark w-button btn_reach">Reach out to
-                  us</a>
+                <a href="contact.html" class="btn fancy-btn orange dark w-button btn_reach">Reach out to us</a>
               </div>
             </div>
             <div class="column w-col w-col-1"></div>
@@ -610,7 +404,6 @@ text-align: center;
     </div>
   </div>
 
-
   <footer class="footer">
     <div class="footer_block">
       <div>
@@ -618,57 +411,23 @@ text-align: center;
           <p style="text-align: left">All Rights Reserved. © Proxicent <span id="year"></span></p>
         </div>
       </div>
-      <div class="text-block-6" style="display: grid; grid-template-columns: 1fr 1fr;">
-        <div> <a href="#" style="text-decoration: underline; color: #ededed;">Terms conditions</a></div>
-        <div> <a href="#" style="text-decoration: underline; color: #ededed;">Privacy Policy</a></div>
+      <div class="text-block-6 text-block-6_grid">
+        <div> <a href="#">Terms conditions</a></div>
+        <div> <a href="#">Privacy Policy</a></div>
       </div>
     </div>
   </footer>
 
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-    if (window.matchMedia("(min-width:1201px)").matches) {
-      gsap.to(".ourWord", { duration: 2, x: 200 });
-      gsap.to(".blogWord", { duration: 2, x: -200 });
-    }
-    if (window.matchMedia("(max-width: 1200px)").matches) {
-      gsap.to(".ourWord", { duration: 2, x: 100 });
-      gsap.to(".blogWord", { duration: 2, x: -100 });
-    } if (window.matchMedia("(max-width: 900px)").matches) {
-      gsap.to(".ourWord", { duration: 2, x: 40 });
-      gsap.to(".blogWord", { duration: 2, x: -40 });
-    } if (window.matchMedia("(max-width: 750px)").matches) {
-      gsap.to(".ourWord", { duration: 2, x: 40 });
-      gsap.to(".blogWord", { duration: 2, x: -40 });
-    }
-    if (window.matchMedia("(max-width:500px)").matches) {
-      gsap.to(".ourWord", { duration: 2, x: -25 });
-      gsap.to(".blogWord", { duration: 2, x: 25 });
-    }
-
-
-    gsap.to(".scrolltext1", {
-      scrollTrigger: {
-        trigger: ".scrolltext1",
-        scrub: "true",
-        toggleActions: "restart pause reverse pause"
-      }, scale: .5, duration: 3, opacity: .45,
-    });
-
-  </script>
+  <script src='js/blog_page.js'></script>
 
   <script src="js/main.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
   <script>
     AOS.init();
   </script>
-
-
 
 </body>
 

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="utf-8">
   <title>Proxicent</title>
@@ -10,7 +9,8 @@
 
   <link href="css/components.css" rel="stylesheet" type="text/css">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com"> <link
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
     href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -18,97 +18,208 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
 
-    
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+  <style>
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      height: 700px;
+      margin-bottom: 60px;
+    }
+    .swiper_height {
+      height: 200px;
+      background-color: #021836fa;
+    }
+    .swiper-slide p {
+      color: #ededed;
+      font-size: 16px;
+      padding: 10px;
+    }
+    :root {
+      --swiper-theme-color: #ededed;
+    }
+    @media screen and (max-width:2250px) {
+      .swiper_height {
+        height: 250px;
+      }
+    }
+    @media screen and (max-width:2000px) {
+      .swiper_height {
+        height: 220px;
+      }
+    }
+    @media screen and (max-width:1800px) {
+      .swiper_height {
+        height: 250px;
+      }
+    }
+    @media screen and (max-width:1700px) {
+      .swiper_height {
+        height: 280px;
+      }
+      .swiper-slide {
+        height: 650px;
+      }
+    }
+    @media screen and (max-width:1700px) {
+      .swiper-slide {
+        height: 650px;
+      }
+    }
+    @media screen and (max-width:1350px) {
+      .swiper-slide {
+        height: 600px;
+      }
+      .swiper_height {
+        height: 300px;
+      }
+    } 
+    @media screen and (max-width: 970px) {
+      .swiper_height {
+        height: 350px;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      .swiper_height {
+        height: 300px;
+      }
+      .swiper-slide {
+        height: 630px;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      .swiper_height {
+        height: 300px;
+      }
+      .swiper-slide {
+        height: 600px;
+      }
+    }
+    @media screen and (max-width: 750px) {
+      .swiper-slide {
+        height: 600px;
+      }
+    }
+    @media screen and (max-width: 650px) {
+      .swiper-slide {
+        height: 600px;
+      }
+      .swiper_height {
+        height: 350px;
+      }
+    }
+    @media screen and (max-width:600px) {
+      .swiper_height {
+        height: 380px;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      .swiper_height {
+        height: 400px;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .swiper-slide {
+        height: 650px;
+      }
+      .swiper_height {
+        height: 280px;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      .swiper-slide {
+        height: 610px;
+      }
+    }
+    @media screen and (max-width:400px) {
+      .swiper_height {
+        height: 330px;
+      }
+    }
+    @media screen and (max-width: 300px) {
+      .swiper_height {
+        height: 380px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <div id="Home">
-    <div data-collapse="medium" class="navbar w-nav" style=" padding-left: 20px;">
-      <a  href="index.html" style="color: white; line-height: 60px; float: left; ">
-        <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo" style="width: 200px; ">   
+    <div data-collapse="medium" class="navbar w-nav">
+      <a href="index.html" class="logo_menu">
+        <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo">
       </a>
-      <nav class="nav-menu w-nav-menu nav-1" style=" width: 80%;">
+      <nav class="nav-menu w-nav-menu nav-1">
         <a href="#Home" class="nav w-nav-link link-1 activeMenu">Home</a>
         <a href="#AboutUs" class="nav  w-nav-link link-1">About us</a>
         <a href="#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
 
         <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
+
         <a href="blog.html" class="nav w-nav-link link-1">Blog</a>
         <a href="#MeetUsConferences" class="nav  w-nav-link link-1">Meet us</a>
-
         <a href="login.html" class="nav w-nav-link link-1">Login</a>
 
         <div class="dropdown">
           <button class="dropbtn">
             <img src="images/united-kingdom.png">
-            <span style="padding-left:4px; font-size: 12px;"> EN</span>
-            <i class="fa fa-caret-down" style="color: white;"></i>
+            <span> EN</span>
+            <i class="fa fa-caret-down"></i>
           </button>
-
           <div class="dropdown-content">
-            <a href="#"> <img src="images/russia.png"><span style="padding-left:4px; font-size: 12px;"> RU</span> </a>
-            <a href="#"> <img src="images/spain.png"> <span style="padding-left:4px; font-size: 12px;"> ES</span></a>
+            <a href="javascript:void(0)"> <img src="images/russia.png"><span> RU</span> </a>
+            <a href="javascript:void(0)"> <img src="images/spain.png"> <span> ES</span></a>
           </div>
-
         </div>
-
-
         <a href="signup.html" class="register w-nav-link">Register</a>
       </nav>
-
       <div class="menu-button-2 w-nav-button">
-        <div class="lottie-animation-3">
-          <!-- //////////////////////////////////////////////////////////////////// -->
+        <div class="lottie-animation-3">   
           <button type="button" class="header__menu" id="headerCollapseButton">
             <span class="line1"></span>
             <span class="line2"></span>
             <span class="line3"></span>
-        </button>
-
+          </button>
         </div>
       </div>
-
     </div>
-
   </div>
 
   <div class="imageGFirstBlock">
     <img src="images/tr5.png">
   </div>
-  
 
   <div id="mediaContainer">
-
     <div id="orbit-system">
-      <div class="system">       
-        <div class="eclipse eclipse1"></div>       
+      <div class="system">
+        <div class="eclipse eclipse1"></div>
         <div class="eclipse eclipse2">
           <div class="circle circle1"></div>
           <div class="circle circle2"></div>
-          <div class="circle circle3"></div> 
+          <div class="circle circle3"></div>
           <div class="circle circle4"></div>
         </div>
 
         <div class="eclipse eclipse3">
           <div class="circle circle1"></div>
           <div class="circle circle2"></div>
-          <div class="circle circle3"></div> 
+          <div class="circle circle3"></div>
           <div class="circle circle4"></div>
           <div class="circle circle5"></div>
         </div>
         <div class="eclipse eclipse4">
           <div class="circle circle1"></div>
           <div class="circle circle2"></div>
-          <div class="circle circle3"></div> 
+          <div class="circle circle3"></div>
           <div class="circle circle4"></div>
           <div class="circle circle5"></div>
         </div>
@@ -117,7 +228,6 @@
   </div>
 
   <div class="main_container">
-  
     <section id="MainPage" class="section-main_container">
       <div class="main-block">
         <div class="div-block-10">
@@ -126,46 +236,54 @@
           <p class="heading_smaller">for Crypto Traffic </p>
         </div>
       </div>
-      <div style="z-index: 9;  position: relative; ">
-        <div style="width: 100%;">
+      <div class="main_container_created">
+        <div class="main_container_created_block">
           <div class="text-main-block">
-            <p data-aos="fade-up" data-aos-duration="1000" >
-              Created by a unique and powered-up team of professionals to provide you individual and best-performing solutions to monetize your traffic  
+            <p data-aos="fade-up" data-aos-duration="1000">
+              Created by a unique and powered-up team of professionals to provide you individual and best-performing
+              solutions to monetize your traffic
             </p>
-            
-            <a href="signup.html" class="btn fancy-btn orange dark w-button" data-aos="fade-up" data-aos-duration="500">Join us</a>
-            <p class="text-main-block_secondP">to discover the whole potential of our <br> next-gen platform in the finance field </p>
-           
+            <a href="signup.html" class="btn fancy-btn orange dark w-button" data-aos="fade-up"
+              data-aos-duration="500">Join us</a>
+            <p class="text-main-block_secondP">to discover the whole potential of our <br> next-gen platform in the
+              finance field </p>
           </div>
         </div>
       </div>
       <div class="icons-offer">
-        <div class="section-offers-advantage"><span class="ui-icon section-offers-advantage__icon">
-        <img src="images/think-different.svg">
-      
-      </span> <span class="section-offers-advantage__name"><span>Unique <br>landing
-          pages</span></span>
-    </div>
-    <div class="section-offers-advantage"><span class="ui-icon section-offers-advantage__icon">
-      <img src="images/conversation.svg">
-      
-      </span> <span class="section-offers-advantage__name"><span>24/7 <br>Support</span></span></div>
-    <div class="section-offers-advantage"><span class="ui-icon section-offers-advantage__icon">
-      <img src="images/money.svg">
-      
-      </span> <span class="section-offers-advantage__name"><span>Payouts <br>up to 1000$</span></span>
-    </div>
-    <div class="section-offers-advantage"><span class="ui-icon section-offers-advantage__icon">
-      <img src="images/time-management.svg">
-      
-      </span> <span class="section-offers-advantage__name"><span>Immediate <br>payouts</span></span>
-    </div>
+        <div class="section-offers-advantage">
+          <span class="ui-icon section-offers-advantage__icon">
+            <img src="images/think-different.svg">
+          </span> 
+          <span class="section-offers-advantage__name"><span>Unique <br>landing pages</span></span>
+        </div>
+        <div class="section-offers-advantage">
+          <span class="ui-icon section-offers-advantage__icon">
+            <img src="images/conversation.svg">
+          </span> 
+          <span class="section-offers-advantage__name">
+            <span>24/7 <br>Support</span>
+          </span>
+        </div>
+        <div class="section-offers-advantage">
+          <span class="ui-icon section-offers-advantage__icon">
+            <img src="images/money.svg">
+          </span> 
+          <span class="section-offers-advantage__name">
+            <span>Payouts <br>up to 1000$</span>
+          </span>
+        </div>
+        <div class="section-offers-advantage">
+          <span class="ui-icon section-offers-advantage__icon">
+            <img src="images/time-management.svg">
+          </span> 
+          <span class="section-offers-advantage__name">
+            <span>Immediate <br>payouts</span>
+          </span>
+        </div>
       </div>
     </section>
-    
- 
   </div>
-
 
   <section id="AboutUs" class="section-2">
     <div class="ui-title section-offers__title-bg is-theme-bg about">ABOUT US</div>
@@ -174,45 +292,50 @@
         <div class="column-29">
           <div class="section-one-column-left">
             <div class="section-one-div-1">
-              <div class="section-one-div-2">                
-                  <div class="medium-title"> <p> About Us</p></div>
+              <div class="section-one-div-2">
+                <div class="medium-title">
+                  <p> About Us</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="section-one-column-right w-clearfix">         
-            <p class="paragraph">Our primary mission is to help our partners grow. To achieve the mission, we engage a target audience and build a strategy of communication. Being the long-term player in the affiliate marketing industry, we analyze in detail every click and every conversion on a platform to create the most effective marketing flow. Our managers assist you non-stop to provide the highest level of support at any time.
+          <div class="section-one-column-right w-clearfix">
+            <p class="paragraph">Our primary mission is to help our partners grow. To achieve the mission, we engage a
+              target audience and build a strategy of communication. Being the long-term player in the affiliate
+              marketing industry, we analyze in detail every click and every conversion on a platform to create the most
+              effective marketing flow. Our managers assist you non-stop to provide the highest level of support at any
+              time.
             </p>
-            <p class="paragraph" style="padding-bottom: 0; text-decoration: underline; text-transform: uppercase; padding-bottom: 20px;">Our benefits:
+            <p class="paragraph paragraph2">
+              Our benefits:
             </p>
-            <ul class="paragraph" style="margin-left: 40px;">
+            <ul class="paragraph paragraph3">
               <li>Highest CPA </li>
               <li>CRG deals </li>
               <li>Exclusive funnels</li>
               <li>Smart delivery algorithm</li>
               <li>Transparent CRM</li>
             </ul>
-           </div>
-          <div style="clear: both;"></div>
+          </div>
+          <div class="clear_both"></div>
         </div>
-        <img class="w-container-image" src="images/2.png">  
+        <img class="w-container-image" src="images/2.png">
       </div>
     </div>
   </section>
 
-  <section id="TopOffers" class="section-offers section-3" style="display: block;">   
+  <section id="TopOffers" class="section-offers section-3">
     <div class="topOffersHeader">TOP OFFERS</div>
-<div class="offerPlanet">
-  <img src="images/Digital-Globe-3.png">
-</div> 
-
-</div>  
-
+    <div class="offerPlanet">
+      <img src="images/Digital-Globe-3.png">
+    </div>
     <div class="section-offers__body main-wrap">
       <div class="section-offers__container">
-        
         <div class="section-offers__box">
-           <table class="table_price">
-            <caption><h2 class="ui-title section-offers__title is-theme-accent-gradient is-size-h2 h2TopOffers">TOP offers</h2></caption>
+          <table class="table_price">
+            <caption>
+              <h2 class="ui-title section-offers__title is-theme-accent-gradient is-size-h2 h2TopOffers">TOP offers</h2>
+            </caption>
             <tr>
               <th>#</th>
               <th>Offer Name</th>
@@ -220,145 +343,159 @@
               <th>Payout Up To</th>
             </tr>
             <tr>
-              <td> 
-                <p><span class="hideRang">#</span>1</p> 
+              <td>
+                <p><span class="hideRang">#</span>1</p>
               </td>
               <td>
-                <div class="tableHideName"><p>Offer Name</p></div>
-                <div class="tableShowedName"> 
-                  <p>Amazon Invest</p>                 
+                <div class="tableHideName">
+                  <p>Offer Name</p>
                 </div>
-               
+                <div class="tableShowedName">
+                  <p>Amazon Invest</p>
+                </div>
               </td>
               <td class="country">
-                <div class="tableHideName"><p>GEO</p></div>
-                <div class="tableShowedName"> 
-                <p>CH, AT, DE, NO, SE, FI, DK</p>
+                <div class="tableHideName">
+                  <p>GEO</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p>CH, AT, DE, NO, SE, FI, DK</p>
+                </div>
               </td>
               <td>
-                <div class="tableHideName"><p>Payout Up To</p></div>
-                <div class="tableShowedName"> 
-                <p class="valut">$1100</p>
+                <div class="tableHideName">
+                  <p>Payout Up To</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p class="valut">$1100</p>
+                </div>
               </td>
             </tr>
             <tr>
-              <td> 
-                <p><span class="hideRang">#</span>2</p> 
+              <td>
+                <p><span class="hideRang">#</span>2</p>
               </td>
               <td>
-                <div class="tableHideName"><p>Offer Name</p></div>
-                <div class="tableShowedName"> 
-                  <p>Yuan Pay</p>                 
+                <div class="tableHideName">
+                  <p>Offer Name</p>
                 </div>
-               
+                <div class="tableShowedName">
+                  <p>Yuan Pay</p>
+                </div>
               </td>
               <td class="country">
-                <div class="tableHideName"><p>GEO</p></div>
-                <div class="tableShowedName"> 
-                <p>UK, NL, DK, SE, NO, FI </p>
+                <div class="tableHideName">
+                  <p>GEO</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p>UK, NL, DK, SE, NO, FI </p>
+                </div>
               </td>
               <td>
-                <div class="tableHideName"><p>Payout Up To</p></div>
-                <div class="tableShowedName"> 
-                <p class="valut">$1000</p>
+                <div class="tableHideName">
+                  <p>Payout Up To</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p class="valut">$1000</p>
+                </div>
               </td>
             </tr>
             <tr>
-              <td> 
-                <p><span class="hideRang">#</span>3</p> 
+              <td>
+                <p><span class="hideRang">#</span>3</p>
               </td>
               <td>
-                <div class="tableHideName"><p>Offer Name</p></div>
-                <div class="tableShowedName"> 
+                <div class="tableHideName">
+                  <p>Offer Name</p>
+                </div>
+                <div class="tableShowedName">
                   <p>Profit Secret</p>
                 </div>
-               
               </td>
               <td class="country">
-                <div class="tableHideName"><p>GEO</p></div>
-                <div class="tableShowedName"> 
-                <p>IT, ES, AU, CA</p>
+                <div class="tableHideName">
+                  <p>GEO</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p>IT, ES, AU, CA</p>
+                </div>
               </td>
               <td>
-                <div class="tableHideName"><p>Payout Up To</p></div>
-                <div class="tableShowedName"> 
-                <p class="valut">$800</p>
+                <div class="tableHideName">
+                  <p>Payout Up To</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p class="valut">$800</p>
+                </div>
               </td>
             </tr>
             <tr>
-              <td> 
-                <p><span class="hideRang">#</span>4</p> 
+              <td>
+                <p><span class="hideRang">#</span>4</p>
               </td>
               <td>
-                <div class="tableHideName"><p>Offer Name</p></div>
-                <div class="tableShowedName"> 
+                <div class="tableHideName">
+                  <p>Offer Name</p>
+                </div>
+                <div class="tableShowedName">
                   <p>Oil Profit</p>
                 </div>
-               
               </td>
               <td class="country">
-                <div class="tableHideName"><p>GEO</p></div>
-                <div class="tableShowedName"> 
-                <p>RU, PL, CZ, LT, LV, EE</p>
+                <div class="tableHideName">
+                  <p>GEO</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p>RU, PL, CZ, LT, LV, EE</p>
+                </div>
               </td>
               <td>
-                <div class="tableHideName"><p>Payout Up To</p></div>
-                <div class="tableShowedName"> 
-                <p class="valut">$650</p>
+                <div class="tableHideName">
+                  <p>Payout Up To</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p class="valut">$650</p>
+                </div>
               </td>
             </tr>
             <tr>
-              <td> 
-                <p><span class="hideRang">#</span>5</p> 
+              <td>
+                <p><span class="hideRang">#</span>5</p>
               </td>
               <td>
-                <div class="tableHideName"><p>Offer Name</p></div>
-                <div class="tableShowedName"> 
+                <div class="tableHideName">
+                  <p>Offer Name</p>
+                </div>
+                <div class="tableShowedName">
                   <p>Finance Education</p>
                 </div>
-               
               </td>
               <td class="country">
-                <div class="tableHideName"><p>GEO</p></div>
-                <div class="tableShowedName"> 
-                <p>EU, GCC, Asia </p>
+                <div class="tableHideName">
+                  <p>GEO</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p>EU, GCC, Asia </p>
+                </div>
               </td>
               <td>
-                <div class="tableHideName"><p>Payout Up To</p></div>
-                <div class="tableShowedName"> 
-                <p class="valut">$800</p>
+                <div class="tableHideName">
+                  <p>Payout Up To</p>
                 </div>
-              
+                <div class="tableShowedName">
+                  <p class="valut">$800</p>
+                </div>
               </td>
             </tr>
-            </table>         
-          
-          <div class="section-offers-footer hide-sm">         
+          </table>
+          <div class="section-offers-footer hide-sm">
             <div class="section-offers-footer__btn">
-              <a href="signup.html" class="btn fancy-btn orange dark w-button" data-aos="fade-up" data-aos-duration="500">Join
+              <a href="signup.html" class="btn fancy-btn orange dark w-button" data-aos="fade-up"
+                data-aos-duration="500">Join
                 Proxicent</a>
-            </div>          
+            </div>
           </div>
-         
-        </div>    
+        </div>
       </div>
     </div>
   </section>
@@ -370,308 +507,194 @@
       <div class="w-container" class="div-block">
         <div class="blockContainer">
           <h2 class="h2 center h2Blog">Blog</h2>
-          <p class="paragraph center" >
-            In our blog you can find any information, including news and upcoming conferences in the finance and crypto field.             
-          </p>         
+          <p class="paragraph center">
+            In our blog you can find any information, including news and upcoming conferences in the finance and crypto
+            field.
+          </p>
         </div>
-
       </div>
     </div>
-
-
-    <div style="width: 100%;">
+    <div class="section-4_block">
       <div class="collection-list-wrapper w-dyn-list">
         <div class="collection-list-2 w-dyn-items w-row">
           <div class="collection-item-2 w-dyn-item w-col-4 grid">
             <a href="blog/cryptoVertical.html" class="link-block w-inline-block">
-              <div style="background-image:url(images/photo_2021-04-27_17-31-40.jpg)"
-                class="div-block-13">
+              <div style="background-image:url(images/photo_2021-04-27_17-31-40.jpg)" class="div-block-13">
               </div>
-              <div class="div-block-14">               
+              <div class="div-block-14">
                 <h3 class="heading-3">Crypto vertical: trending funnels and traffic sources</h3>
               </div>
-            </a></div>
+            </a>
+          </div>
           <div class="collection-item-2 w-dyn-item  w-col-4">
             <a href="blog/cryptocurency.html" class="link-block w-inline-block">
-              <div style="background-image:url(images/photo_2021-04-27_17-31-41.jpg)"
-                class="div-block-13"></div>
-              <div class="div-block-14">              
+              <div style="background-image:url(images/photo_2021-04-27_17-31-41.jpg)" class="div-block-13"></div>
+              <div class="div-block-14">
                 <h3 class="heading-3">Cryptocurrency and brokers: regulated and unregulated</h3>
               </div>
-            </a></div>
+            </a>
+          </div>
           <div class="collection-item-2 w-dyn-item w-col-4">
             <a href="blog/howToSucceed.html" class="link-block w-inline-block">
-              <div 
-                style="background-image:url(images/photo_2021-04-27_17-31-42.jpg)"
-                class="div-block-13"></div>
-              <div class="div-block-14">              
+              <div style="background-image:url(images/photo_2021-04-27_17-31-42.jpg)" class="div-block-13"></div>
+              <div class="div-block-14">
                 <h3 class="heading-3">How to succeed in crypto vertical</h3>
               </div>
-            </a></div>
-
+            </a>
+          </div>
         </div>
         <div class="w-pagination-wrapper">
-          <a href="blog.html" class="btn fancy-btn orange dark w-button" data-aos="fade-up" data-aos-duration="500">Next</a>
+          <a href="blog.html" class="btn fancy-btn orange dark w-button" data-aos="fade-up"
+            data-aos-duration="500">Next</a>
           <link rel="prerender" href="">
         </div>
       </div>
     </div>
-
   </section>
 
-  <section id="MeetUsConferences" class="section-5 section-events" style="width: 100%; ">
-    
-  <div style="width: 100%;">
-    <div class="ui-title section-offers__title-bg is-theme-bg meetUs">MEET US</div>
-    <h2 class="h2 center h2Blog meet">Meet Us</h2>
-  </div>  
-    </div> 
-  
-<div class="swiperMeetUs">
-
-
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/photo_2021-04-27_17-38-30.jpg">
-          <div class="swiper_height">
-            <p style="text-align: center; font-size: 18px;">Don’t miss a chance to meet the Proxicent team at the <b> AIBC UAE</b>. </p>
-              <p style=" text-indent: 1.5em;">The event will take place <span style="font-style: italic;">from the 25th to 26th May 2021, in the emirate of Dubai. </span>
-              The AIBC Summit brings together fin-tech and crypto experts, business owners, and politicians from all around the world. </p>
-              <p style=" text-indent: 1.5em;">Take an opportunity to dive into the blockchain, AI, and crypto environment.</p>
-            <p style="font-size: 14px;text-align: center;">Contact us: <a href="mailto: business@proxicent.com" style="color: #ededed; line-height: 16px;"> business@proxicent.com</a></p>
-          </div> 
-                
-          <button class="btn-reverse btn-arrow"  style="background-color: #0d2c5a;" onclick=" window.open('https://aibc.world/events/uae/general-info/','_blank')">
-            <span>Details
-              <svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g>
-              </svg>
-            </span>
-          </button>
-        </div>
-        
-        <div class="swiper-slide">
-          <img src="images/photo_2021-04-27_17-38-31.jpg">
-          <div class="swiper_height">
-          <p style="text-align: center; font-size: 18px;"><b>The Affiliate Grand Slam </b>takes place at Dubai Expo, UAE. </p>
-          <p  style=" text-indent: 1.5em;">  Join the Proxicent Team <span style="font-style: italic;">on 25-26th of May </span>to discover the latest trends and technologies from long-term players in the affiliate marketing industry.</p>
-          <p style="font-size: 14px;text-align: center;">Contact us: <a href="mailto: business@proxicent.com" style="color: #ededed; line-height: 16px;"> business@proxicent.com</a></p>
-        </div>
-        
-          <button class="btn-reverse btn-arrow"  style="background-color: #0d2c5a;"  onclick=" window.open('https://www.affiliategrandslam.com/','_blank')">
-            <span>Details<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
-          </button>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/photo_2021-04-27_17-38-32.jpg">
-          <div class="swiper_height">
-          <p  style="text-align: center; font-size: 18px;"><b>Affiliate World Europe</b> is a two-day conference event taking place in Barcelona <span style="font-style: italic;"> on 7-8 July 2021.</span> </p>
-          <p style=" text-indent: 1.5em;"> Get on track with the Proxicent Team this summer and meet the opportunities to develop your career path. </p>
-          <p style=" text-indent: 1.5em;">Experts will take the stage and present new insights, data-driven strategies, and innovative ideas on affiliate and eCommerce marketing.</p>
-          <p style="font-size: 14px;text-align: center;">Contact us: <a href="mailto: business@proxicent.com" style="color: #ededed; line-height: 16px;"> business@proxicent.com</a></p>
+  <section id="MeetUsConferences" class="section-5 section-events">
+    <div class="section-5_block">
+      <div class="ui-title section-offers__title-bg is-theme-bg meetUs">MEET US</div>
+      <h2 class="h2 center h2Blog meet">Meet Us</h2>
+    </div>   
+    <div class="swiperMeetUs">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/photo_2021-04-27_17-38-30.jpg">
+            <div class="swiper_height">
+              <p class="swiper_height_p1">Don’t miss a chance to meet the Proxicent team at the <b>
+                  AIBC UAE</b>. </p>
+              <p class="swiper_height_p2">The event will take place <span class="swiper_height_p2_from">from the 25th
+                  to 26th May 2021, in the emirate of Dubai. </span>
+                The AIBC Summit brings together fin-tech and crypto experts, business owners, and politicians from all
+                around the world. </p>
+              <p class="swiper_height_p3">Take an opportunity to dive into the blockchain, AI, and crypto
+                environment.</p>
+              <p class="swiper_height_p4">Contact us: <a href="mailto: business@proxicent.com"> business@proxicent.com</a></p>
+            </div>
+            <button class="btn-reverse btn-arrow" onclick="window.open('https://aibc.world/events/uae/general-info/','_blank')">
+              <span>Details
+                <svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+                  enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+                  <g>
+                    <line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34"
+                      y2="12.9"></line>
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                      points="22.2,1.1 34,12.9 22.2,24.7   "></polyline>
+                  </g>
+                </svg>
+              </span>
+            </button>
           </div>
-         
-          <button class="btn-reverse btn-arrow"  style="background-color: #0d2c5a;"  onclick=" window.open('https://affiliateworldconferences.com/europe/','_blank')">
-            <span>Details<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
-          </button>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/photo_2021-04-27_17-38-33.jpg">
-          <div class="swiper_height">
-          <p style="text-align: center; font-size: 18px;">Meet the Proxicent team at <b>the iFX EXPO</b> - leading B2B conference in online trading, financial services, and fin-tech. </p>
-          <p style=" text-indent: 1.5em;">Speakers will share unique and innovative ideas so you can push your career forward. </p>
-           <p>Let’s share this experience!<br>
-            When: 19-20 May 2021<br>
-            Where: Dubai | Grand Hyatt Hotel</p>
-            <p style="font-size: 14px;text-align: center;">Contact us: <a href="mailto: business@proxicent.com" style="color: #ededed; line-height: 16px;"> business@proxicent.com</a></p>
+          <div class="swiper-slide">
+            <img src="images/photo_2021-04-27_17-38-31.jpg">
+            <div class="swiper_height">
+              <p class="swiper_height_p1"><b>The Affiliate Grand Slam </b>takes place at Dubai Expo,
+                UAE. </p>
+              <p class="swiper_height_p2"> Join the Proxicent Team <span class="swiper_height_p2_from">on 25-26th of
+                  May </span>to discover the latest trends and technologies from long-term players in the affiliate
+                marketing industry.</p>
+              <p class="swiper_height_p4">Contact us: <a href="mailto: business@proxicent.com"> business@proxicent.com</a></p>
+            </div>
+            <button class="btn-reverse btn-arrow" 
+              onclick="window.open('https://www.affiliategrandslam.com/','_blank')">
+              <span>Details<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+                  enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+                  <g>
+                    <line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34"
+                      y2="12.9"></line>
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                      points="22.2,1.1 34,12.9 22.2,24.7   "></polyline>
+                  </g>
+                </svg>
+              </span>
+            </button>
           </div>
-          
-          <button class="btn-reverse btn-arrow" style="background-color: #0d2c5a;" onclick=" window.open('https://ifxexpo.com/dubai/','_blank')">
-            <span>Details<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
-          </button>
-        </div>
+          <div class="swiper-slide">
+            <img src="images/photo_2021-04-27_17-38-32.jpg">
+            <div class="swiper_height">
+              <p class="swiper_height_p1"><b>Affiliate World Europe</b> is a two-day conference
+                event taking place in Barcelona <span class="swiper_height_p2_from"> on 7-8 July 2021.</span> </p>
+              <p class="swiper_height_p2"> Get on track with the Proxicent Team this summer and meet the
+                opportunities to develop your career path. </p>
+              <p class="swiper_height_p3">Experts will take the stage and present new insights, data-driven
+                strategies, and innovative ideas on affiliate and eCommerce marketing.</p>
+              <p class="swiper_height_p4">Contact us: <a href="mailto: business@proxicent.com"> business@proxicent.com</a></p>
+            </div>
+            <button class="btn-reverse btn-arrow" style="background-color: #0d2c5a;"
+              onclick=" window.open('https://affiliateworldconferences.com/europe/','_blank')">
+              <span>Details<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+                  enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+                  <g>
+                    <line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34"
+                      y2="12.9"></line>
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                      points="22.2,1.1 34,12.9 22.2,24.7   "></polyline>
+                  </g>
+                </svg></span>
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/photo_2021-04-27_17-38-33.jpg">
+            <div class="swiper_height">
+              <p class="swiper_height_p1">Meet the Proxicent team at <b>the iFX EXPO</b> - leading
+                B2B conference in online trading, financial services, and fin-tech. </p>
+              <p class="swiper_height_p2">Speakers will share unique and innovative ideas so you can push your
+                career forward. </p>
+              <p>Let’s share this experience!<br>
+                When: 19-20 May 2021<br>
+                Where: Dubai | Grand Hyatt Hotel</p>
+              <p class="swiper_height_p4">Contact us: <a href="mailto: business@proxicent.com"> business@proxicent.com</a></p>
+            </div>
+            <button class="btn-reverse btn-arrow"
+              onclick=" window.open('https://ifxexpo.com/dubai/','_blank')">
+              <span>Details
+                <svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+                  enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+                  <g>
+                    <line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34"
+                      y2="12.9"></line>
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                      points="22.2,1.1 34,12.9 22.2,24.7   "></polyline>
+                  </g>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>        
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-  
-
-
- <style>
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;    
-      height: 700px;     
-      margin-bottom: 60px;  
-    }
-   .swiper_height {
-     height: 200px;
-     background-color: #021836fa;
-   }
-    .swiper-slide p {
-      color:#ededed;
-      font-size: 16px;
-     
-      padding: 10px;
-    }
-
-    :root {
-    --swiper-theme-color: #ededed;
-}
-@media screen and (max-width:2250px){
-  .swiper_height {
-    height: 250px;
-}
-}
-
-@media screen and (max-width:2000px){
-  .swiper_height {
-    height: 220px;
-}
-}
-@media screen and (max-width:1800px){
-  .swiper_height {
-    height: 250px;
-}
-}
-@media screen and (max-width:1700px){
-  .swiper_height {
-    height: 280px;
-}
-.swiper-slide {
-    height: 650px;
-}
-    
-}
-@media screen and (max-width:1700px){
-
-.swiper-slide {
-    height: 650px;
-}
-    
-}
-@media screen and (max-width:1350px){
-  .swiper-slide {  
-    height: 600px;
-}
-.swiper_height {
-    height: 300px;
-}
- }
- @media screen and (max-width:1250px){
-
- }
-@media screen and (max-width:1100px) {
-
-}
-@media screen and (max-width: 970px){
-  .swiper_height {
-    height: 350px;
-}
-}
-@media screen and (max-width: 900px){
-  .swiper_height {
-    height: 300px;
-}
-.swiper-slide {  
-    height: 630px;
-}
-}
-
-@media screen and (max-width: 800px){
-  .swiper_height {
-    height: 300px;
-}
-.swiper-slide {  
-    height: 600px;
-}
-}
-@media screen and (max-width: 750px){
-  .swiper-slide {
-    height: 600px;
-}
-}
-
-@media screen and (max-width: 650px){
-  .swiper-slide {
-    height: 600px;
-}
-.swiper_height {
-    height: 350px;
-}
-}
-@media screen and (max-width:600px){
-  .swiper_height {
-    height: 380px;
-}
-}
-@media screen and (max-width: 550px){
-  .swiper_height {
-    height: 400px;
-}
-}
-
-@media screen and (max-width: 500px){
-  .swiper-slide {
-    height: 650px;
-}
-.swiper_height {
-    height: 280px;
-}
-}
-@media screen and (max-width: 450px){
-  .swiper-slide {
-    height: 610px;
-}
-
-}
-
-@media screen and (max-width:400px){
-  .swiper_height {
-    height: 330px;
-}
-}
-@media screen and (max-width: 300px){
-  .swiper_height {
-    height: 380px;
-}
-}
-
-
- </style>
-  
-   
-
+    </div> 
   </section>
 
   <div id="contact-us" class="section-7 g">
-    <div class="ui-title section-offers__title-bg is-theme-bg contact" >CONTACT US</div>
+    <div class="ui-title section-offers__title-bg is-theme-bg contact">CONTACT US</div>
     <div class="w-container">
       <div class="column  w-col-4 w-col-stack">
-        
         <h2 class="h2 center h2ContactUs" data-aos="zoom-in" data-aos-duration="1000">Contact Us</h2>
-        
       </div>
       <div class="column-2 w-col-8 w-col-stack">
-        <form id="email-form-2" name="email-form-2" class="w-clearfix" method="POST" action="" role="form" >
+        <form id="email-form-2" name="email-form-2" class="w-clearfix" method="POST" action="" role="form">
           <input type="text" class="field w-input" name="name" placeholder="* Full Name" id="name">
           <input type="email" class="field w-input" name="email" placeholder="* Email" id="email-2">
           <input type="text" class="field w-input" name="subject" placeholder="*Subject" id="Subject">
-          <textarea placeholder="* Message" maxlength="5000"id="Message" name="message" class="field w-input" ></textarea>
+          <textarea placeholder="* Message" maxlength="5000" id="Message" name="message"
+            class="field w-input"></textarea>
           <button class="btn fancy-btn orange dark w-button" type="submit">Send</button>
         </form>
-        <div class="suc w-form-done" id="print-message" style="display: none;">
+        <div class="suc w-form-done" id="print-message">
           <div><strong>Thank you!</strong> Your submission has been received!</div>
         </div>
       </div>
     </div>
-
     <img src="images/2.png" class="contact-image">
-
   </div>
-
 
   <div class="side-nav">
     <a href="#Home" class="side-nav-link _w-inline-block w--current"></a>
@@ -683,30 +706,30 @@
 
   <footer class="footer">
     <div class="footer_block">
-        <div>
-            <div class="text-block-6">
-                <p style="text-align: left">All Rights Reserved. © Proxicent <span id="year"></span></p>
-            </div>
+      <div>
+        <div class="text-block-6">
+          <p style="text-align: left">All Rights Reserved. © Proxicent <span id="year"></span></p>
         </div>
-        <div class="text-block-6" style="display: grid; grid-template-columns: 1fr 1fr;">
-            <div> <a href="#" style="text-decoration: underline; color: #ededed;">Terms conditions</a></div>
-            <div> <a href="#" style="text-decoration: underline; color: #ededed;">Privacy Policy</a></div>
-        </div>
+      </div>
+      <div class="text-block-6 text-block-6_grid">
+        <div> <a href="#">Terms conditions</a></div>
+        <div> <a href="#">Privacy Policy</a></div>
+      </div>
     </div>
-</footer>
+  </footer>
+  
   <script src="js/main.js"></script>
   <script src="js/navigateMenuFirstPage.js"></script>
   <script src="js/validate.js"></script>
-
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <!-- Initialize Swiper -->
-   <script>
+
+  <!-- Initialize Swiper -->
+  <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
       grabCursor: true,
-      centeredSlides: true,     
+      centeredSlides: true,
       coverflowEffect: {
         rotate: 20,
         stretch: 0,
@@ -717,10 +740,10 @@
       pagination: {
         el: '.swiper-pagination',
       },
-      loop:true, 
+      loop: true,
       freeMode: true,
-      breakpoints: {   
-        2000:{
+      breakpoints: {
+        2000: {
           slidesPerView: 3,
           spaceBetween: 300,
         },
@@ -731,25 +754,25 @@
         900: {
           slidesPerView: 3,
           spaceBetween: 50,
-        } ,
+        },
         500: {
           slidesPerView: 2,
           spaceBetween: 50,
-        } ,
-        
-    200: {
-      slidesPerView: 1,
-      spaceBetween: 10
-    }
+        },
 
-  },
-  autoplay: {
+        200: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        }
+
+      },
+      autoplay: {
         delay: 3000,
         disableOnInteraction: false,
       },
     });
-
   </script>
+
   <script>
     AOS.init();
   </script>

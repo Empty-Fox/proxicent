@@ -126,3 +126,8 @@ $(window).scroll(function() {
       $('.nav-menu.w-nav-menu.nav-1').removeClass('openHeader__full');
       $('#headerCollapseButton').removeClass('open_burger');
   });
+
+  
+
+
+  

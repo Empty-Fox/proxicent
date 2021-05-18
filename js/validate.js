@@ -169,7 +169,6 @@ $(document).ready(function () {
 
 
     var val = {
-
       // Specify validation rules
       rules: {
         email_sign_up: {
@@ -270,10 +269,7 @@ $(document).ready(function () {
           // console.log(form);
           // console.log(submit);                 
         },
-
-
         validations: val,
-
       }
     ).navigateTo(0);
 
