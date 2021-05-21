@@ -185,9 +185,7 @@ label {
     .btn.fancy-btn {
         font-size: 12px;
         letter-spacing: 0.1px;
-    }
-    .btn.fancy-btn {
-        padding: 12px 60px;
+        padding: 12px 65px;
     }
     .btn.fancy-btn.w-button:before {
         top: -3px;
