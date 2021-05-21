@@ -186,6 +186,11 @@ ul {
         margin: 20px 0px;
     }
 }
+@media screen and (max-width:800px){
+    .btn.fancy-btn {
+        padding: 10px 60px;
+    }
+}
 @media screen and (max-width:700px) {
     #Blog-Form {
         display: block;
@@ -201,7 +206,7 @@ ul {
         text-shadow: 2px 1px 1px rgb(163 163 163), -1px 1px 1px #021836fa;
     }
     .btn.fancy-btn {
-        padding: 19px 60px;
+        padding: 19px 70px;
         font-size: 12px;
     }
     #email-form {
@@ -217,6 +222,10 @@ ul {
     }
 }
 @media screen and (max-width: 450px) {
+    .btn.fancy-btn {
+        padding: 8px 70px;
+        font-size: 12px;
+    }
     #email-form {
         padding: 10px;
         padding-bottom: 50px;
@@ -241,8 +250,8 @@ ul {
         margin-top: inherit;
     }
     .btn.fancy-btn.w-button:before {
-        top: 5px;
-        right: 13px;
+        top: -2px;
+        right: 30px;
     }
     .contactText {
         font-size: 50px;
@@ -260,12 +269,12 @@ ul {
     }
 }
 @media screen and (max-width:400px) {
-    .btn.fancy-btn {
-        padding: 5px 40px;
-    }
     .btn.fancy-btn.w-button:before {
         top: -2px;
-        right: 5px;
+        right: 30px;
+    }
+    .btn.fancy-btn {
+        padding: 5px 60px;
     }
     .block_btn_seeAllPosts {
         margin-top: inherit;
@@ -274,16 +283,13 @@ ul {
 @media screen and (max-width:350px) {
     .btn.fancy-btn {
         font-size: 10px;
-        line-height: 38px;
+        line-height: 30px;
     }
     .blog1Section {
         padding: 0% 5px 20px !important;
     }
     .blog1_mainBlock {
         padding: 5px;
-    }
-    .btn.fancy-btn {
-        padding: 5px 50px 5px 40px;
     }
     .block_btn_seeAllPosts a {
         float: none;
@@ -293,16 +299,14 @@ ul {
 }
 @media screen and (max-width:300px) {
     .btn.fancy-btn.orange.dark.w-button {
-        padding: 1px 40px 3px 20px;
+        padding: 1px 60px 3px 20px;
     }
     .btn.fancy-btn.w-button:before {
         top: -2px;
-        right: 13px;
+        right: 38px;
     }
-    .block_btn_seeAllPosts a {
-        width: 60%;
-    }
-    .block_btn_seeAllPosts {
-        margin-left: 10%;
+    .btn.fancy-btn {
+        font-size: 10px;
+        line-height: 35px;
     }
 }

@@ -51,12 +51,14 @@
     #Blog_pageBlog #next.btn.fancy-btn,
     #Blog_pageBlog #prev.btn.fancy-btn,
     .btn.fancy-btn.orange.dark.w-button.btn_reach {
-      line-height: 24px !important;
+      line-height: 20px !important;
     }
   }
 
   @media screen and (max-width: 400px) {
-
+    #Blog_pageBlog #next.btn.fancy-btn, #Blog_pageBlog #prev.btn.fancy-btn, .btn.fancy-btn.orange.dark.w-button.btn_reach {
+      line-height: 30px !important;
+    }
     #Blog_pageBlog .section-offers__title-bg,
     #Blog .blog {
       font-size: 60px !important;
@@ -82,7 +84,6 @@
 
     .btn.fancy-btn.orange.dark.w-button.btn_reach::before {
       top: 3px;
-      right: 5px;
     }
 
     #Blog_pageBlog #next.btn.fancy-btn,
@@ -109,11 +110,6 @@
       top: 13px;
       left: 7px;
     }
-
-    .btn.fancy-btn.orange.dark.w-button.btn_reach::before {
-      top: 13px;
-      right: 9px;
-    }
   }
 
   @media screen and (max-width: 300px) {
@@ -124,12 +120,11 @@
     }
 
     .btn.fancy-btn.orange.dark.w-button.btn_reach {
-      line-height: 24px !important;
-    }
-
+      line-height: 32px !important;
+    }    
     .btn.fancy-btn.orange.dark.w-button.btn_reach::before {
       top: 6px;
-      right: 14px;
+      right: 38px;
     }
 
     #next.btn.fancy-btn.w-button:before {

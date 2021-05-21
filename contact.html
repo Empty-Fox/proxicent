@@ -32,46 +32,52 @@
 <body>
     <div id="Home">
         <div data-collapse="medium" class="navbar w-nav">
-          <a  href="index.html" class="logo_menu">
-            <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo">   
+          <a href="index.html" class="logo_menu">
+            <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo">
           </a>
           <nav class="nav-menu w-nav-menu nav-1">
-            <a href="index.html#Home" class="nav w-nav-link link-1">Home</a>
-            <a href="index.html#AboutUs" class="nav  w-nav-link link-1">About us</a>
-            <a href="index.html#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
+            <a href="index.html#Home" class="nav w-nav-link link-1 lang" key="menu_homeText">Home</a>
+            <a href="index.html#AboutUs" class="nav  w-nav-link link-1 lang" key="menu_aboutUs">About us</a>
+            <a href="index.html#TopOffers" class="nav  w-nav-link link-1 lang" key="menu_topOffers"> Top Offers</a>
     
             <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
-
-            <a href="blog.html" class="nav w-nav-link link-1">Blog</a>
-            <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us</a>    
-            <a href="login.html" class="nav w-nav-link link-1">Login</a>    
-            <div class="dropdown">
-              <button class="dropbtn">
-                <img src="images/united-kingdom.png">
-                <span> EN</span>
-                <i class="fa fa-caret-down"></i>
-              </button>    
-              <div class="dropdown-content">
-                <a href="javascript:void(0)"> <img src="images/russia.png"><span> RU</span> </a>
-                <a href="javascript:void(0)"> <img src="images/spain.png"> <span> ES</span></a>
-              </div>    
-            </div>  
-            <a href="signup.html" class="register w-nav-link">Register</a>
-          </nav>
     
-          <div class="menu-button-2 w-nav-button">
-            <div class="lottie-animation-3">
-              <!-- //////////////////////////////////////////////////////////////////// -->
-                <button type="button" class="header__menu" id="headerCollapseButton">
-                    <span class="line1"></span>
-                    <span class="line2"></span>
-                    <span class="line3"></span>
-                </button>    
+            <a href="blog.html" class="nav w-nav-link link-1 lang" key="menu_blog">Blog</a>
+            <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1 lang" key="menu_meetUs">Meet us</a>
+            <a href="login.html" class="nav w-nav-link link-1 lang" key="menu_login">Login</a>        
+            <div id="lang_selector" class="language-dropdown dropdown">
+              <label for="toggle" class="lang-flag lang-en translate" title="Click to select the language">
+                <span class="flag"></span>   
+                <span id="lang_selected" style="font-size: 12px;" >EN</span>
+              </label>
+              <ul class="lang-list ">
+                <li class="lang lang-en selected translate" title="EN" id="en">
+                  <span class="flag"></span>
+                  <span style="font-size: 12px;">EN</span>
+                </li>
+                <li class="lang lang-ru translate" title="RU" id="ru">
+                  <span class="flag"></span>
+                  <span style="font-size: 12px;">RU</span>
+                </li>
+                <li class="lang lang-es translate" title="ES" id="es">
+                  <span class="flag"></span>
+                  <span style="font-size: 12px;">ES</span>
+                </li>
+              </ul>
             </div>
-          </div>    
+            <a href="signup.html" class="register w-nav-link lang" key="register">Register</a>
+          </nav>
+          <div class="menu-button-2 w-nav-button">
+            <div class="lottie-animation-3">   
+              <button type="button" class="header__menu" id="headerCollapseButton">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
-
+      </div>
     <section id="Blog_pageBlog" class="section-4">
         <img src="images/2.png" class="blog_image section-4_blogimage">
         <div class="blog_contactForm">
@@ -80,8 +86,8 @@
                     <p>
                         contact <br>Us
                     </p>                   
-                    <p>Fill the form if you have any useful information or a project you want to discuss with us. </p>
-                    <p>We will reply to you to provide the most efficient solution.</p>  
+                    <p class="lang" key="fillTheForm">Fill the form if you have any useful information or a project you want to discuss with us. </p>
+                    <p class="lang" key="weWillReply">We will reply to you to provide the most efficient solution.</p>  
                 </div>
                 <form id="email-form-contactPage" name="email-form-contactPage" class="form blog">
                     <div id="Blog-Form-contactPage">
@@ -107,7 +113,7 @@
                         <textarea id="message_contactPage" name="message_contactPage" required class="form-field w-input"></textarea>
                     </div>                  
                     <div>
-                        <button type="submit" class="btn fancy-btn orange dark w-button">REQUEST A FREE DEMO</button>
+                        <button type="submit" class="btn fancy-btn orange dark w-button lang" key="send">SEND</button>
                     </div>
                 </form>
                 <div class="w-form-done_contactPage">
@@ -141,7 +147,7 @@
     <script>
         AOS.init();
     </script>
-
+  <script src="js/translate_text.js"></script>
 </body>
 
 </html>

@@ -96,7 +96,7 @@ input {
   position: relative;
   z-index: 100;
   overflow: visible;
-  padding: 20px 60px;
+  padding: 20px 60px !important;
   background-color: transparent;
   -webkit-transform: translate(0px, 0px) translate(0px, 0px);
   -ms-transform: translate(0px, 0px) translate(0px, 0px);
@@ -579,6 +579,10 @@ option {
   margin-right: 30px; 
   display: contents;
 }
+.btn.fancy-btn.w-button:hover:after {
+  width: 100% !important;
+}
+
 @media only screen and (max-width:1000px) {
   .wrapper section:first-child {
     width: 100%;
@@ -665,6 +669,15 @@ option {
       text-align: left;
       font-size: 12px;
   }
+  .next.btn.fancy-btn.orange.dark.w-button.nextBtn-2.float-right.btn_step2 {
+    padding: 20px 60px 20px 60px !important;
+  }
+  .previous.btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left {
+    padding: 20px 45px !important;
+  }
+  .submit.btn.fancy-btn.orange.dark.w-button.float-right.nextBtn-2.submit {
+    padding: 18px 70px 18px 30px !important
+  }
 }
 @media only screen and (max-width:460px) {
   .tabs_column2 {
@@ -678,7 +691,7 @@ option {
     line-height: 7px;
   }
   .btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left::before {
-    top: 15px;
+    top: 12px;
     left: 12px;
   }
   .paragraphSignUp1 {
@@ -736,7 +749,7 @@ option {
     font-size: 16px;
   }
   .btn.fancy-btn {
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left::before {
     top: 11px;
@@ -750,6 +763,15 @@ option {
     width: 30px;
     height: 30px;
   }
+  .previous.btn.fancy-btn.orange.dark.w-button.prevBtn-2.float-left {
+    padding: 15px 25px 15px 35px !important;
+  }
+  .submit.btn.fancy-btn.orange.dark.w-button.float-right.nextBtn-2.submit {
+    padding: 18px 60px 18px 30px !important
+  }
+  .next.btn.fancy-btn.orange.dark.w-button.nextBtn-2.float-right.btn_step2 {
+    padding: 15px 60px 15px 50px !important;
+}
 }
 @media only screen and (max-width:300px) {
   .wrapper section:first-child {

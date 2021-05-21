@@ -159,28 +159,36 @@
         <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo">
       </a>
       <nav class="nav-menu w-nav-menu nav-1">
-        <a href="#Home" class="nav w-nav-link link-1 activeMenu">Home</a>
-        <a href="#AboutUs" class="nav  w-nav-link link-1">About us</a>
-        <a href="#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
+        <a href="#Home" class="nav w-nav-link link-1 activeMenu lang" key="menu_homeText">Home</a>
+        <a href="#AboutUs" class="nav  w-nav-link link-1 lang" key="menu_aboutUs">About us</a>
+        <a href="#TopOffers" class="nav  w-nav-link link-1 lang" key="menu_topOffers">Top Offers</a>
 
         <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
 
-        <a href="blog.html" class="nav w-nav-link link-1">Blog</a>
-        <a href="#MeetUsConferences" class="nav  w-nav-link link-1">Meet us</a>
-        <a href="login.html" class="nav w-nav-link link-1">Login</a>
-
-        <div class="dropdown">
-          <button class="dropbtn">
-            <img src="images/united-kingdom.png">
-            <span> EN</span>
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="javascript:void(0)"> <img src="images/russia.png"><span> RU</span> </a>
-            <a href="javascript:void(0)"> <img src="images/spain.png"> <span> ES</span></a>
-          </div>
+        <a href="blog.html" class="nav w-nav-link link-1 lang" key="menu_blog">Blog</a>
+        <a href="#MeetUsConferences" class="nav  w-nav-link link-1 lang" key="menu_meetUs">Meet us</a>
+        <a href="login.html" class="nav w-nav-link link-1 lang" key="menu_login">Login</a>        
+        <div id="lang_selector" class="language-dropdown dropdown">
+          <label for="toggle" class="lang-flag lang-en translate" title="Click to select the language">
+            <span class="flag"></span>   
+            <span id="lang_selected" style="font-size: 12px;" >EN</span>
+          </label>
+          <ul class="lang-list ">
+            <li class="lang lang-en selected translate" title="EN" id="en">
+              <span class="flag"></span>
+              <span style="font-size: 12px;">EN</span>
+            </li>
+            <li class="lang lang-ru translate" title="RU" id="ru">
+              <span class="flag"></span>
+              <span style="font-size: 12px;">RU</span>
+            </li>
+            <li class="lang lang-es translate" title="ES" id="es">
+              <span class="flag"></span>
+              <span style="font-size: 12px;">ES</span>
+            </li>
+          </ul>
         </div>
-        <a href="signup.html" class="register w-nav-link">Register</a>
+        <a href="signup.html" class="register w-nav-link lang" key="register">Register</a>
       </nav>
       <div class="menu-button-2 w-nav-button">
         <div class="lottie-animation-3">   
@@ -193,7 +201,6 @@
       </div>
     </div>
   </div>
-
   <div class="imageGFirstBlock">
     <img src="images/tr5.png">
   </div>
@@ -232,21 +239,24 @@
       <div class="main-block">
         <div class="div-block-10">
           <h1 class="heading">PROXICENT</h1>
-          <p class="heading_smaller">Exclusive Affiliate Network</p>
-          <p class="heading_smaller">for Crypto Traffic </p>
+          <p class="heading_smaller lang" key="exclusive_affiliate">Exclusive Affiliate Network</p>
+          <p class="heading_smaller lang" key="for_crypto">for Crypto Traffic </p>
         </div>
       </div>
       <div class="main_container_created">
         <div class="main_container_created_block">
           <div class="text-main-block">
-            <p data-aos="fade-up" data-aos-duration="1000">
+            <p data-aos="fade-up" data-aos-duration="1000" class="lang" key="created_by">
               Created by a unique and powered-up team of professionals to provide you individual and best-performing
               solutions to monetize your traffic
             </p>
-            <a href="signup.html" class="btn fancy-btn orange dark w-button" data-aos="fade-up"
+            <a href="signup.html" class="btn fancy-btn orange dark w-button lang" key="join_us" data-aos="fade-up"
               data-aos-duration="500">Join us</a>
-            <p class="text-main-block_secondP">to discover the whole potential of our <br> next-gen platform in the
-              finance field </p>
+            <p class="text-main-block_secondP">
+              <span class="lang" key="to_discover">to discover the whole potential of our</span> 
+              <br> 
+              <span class="lang" key="next-gen"> next-gen platform in the finance field </span>
+             </p>
           </div>
         </div>
       </div>
@@ -255,14 +265,17 @@
           <span class="ui-icon section-offers-advantage__icon">
             <img src="images/think-different.svg">
           </span> 
-          <span class="section-offers-advantage__name"><span>Unique <br>landing pages</span></span>
+          <span class="section-offers-advantage__name"><span class="lang" key="unique">Unique</span> 
+          <br>
+          <span class="lang" key="landing_pages">landing pages</span>          
+        </span>
         </div>
         <div class="section-offers-advantage">
           <span class="ui-icon section-offers-advantage__icon">
             <img src="images/conversation.svg">
           </span> 
           <span class="section-offers-advantage__name">
-            <span>24/7 <br>Support</span>
+            <span>24/7 <br><span class="lang" key="support">Support</span></span>
           </span>
         </div>
         <div class="section-offers-advantage">
@@ -270,7 +283,11 @@
             <img src="images/money.svg">
           </span> 
           <span class="section-offers-advantage__name">
-            <span>Payouts <br>up to 1000$</span>
+            <span> 
+              <span class="lang" key="payouts">Payouts</span>
+              <br>
+              <span class="lang" key="up_to">up to </span>1000$
+            </span>
           </span>
         </div>
         <div class="section-offers-advantage">
@@ -278,15 +295,19 @@
             <img src="images/time-management.svg">
           </span> 
           <span class="section-offers-advantage__name">
-            <span>Immediate <br>payouts</span>
+            <span>
+              <span class="lang" key="immediate">Immediate</span> 
+            <br>
+            <span class="lang" key="payouts">payouts</span>            
+          </span>
           </span>
         </div>
       </div>
     </section>
   </div>
 
-  <section id="AboutUs" class="section-2">
-    <div class="ui-title section-offers__title-bg is-theme-bg about">ABOUT US</div>
+  <section class="section-2">
+    <div class="ui-title section-offers__title-bg is-theme-bg about" id="AboutUs">ABOUT US</div>
     <div class="columns w-row ">
       <div class="w-container">
         <div class="column-29">
@@ -294,27 +315,25 @@
             <div class="section-one-div-1">
               <div class="section-one-div-2">
                 <div class="medium-title">
-                  <p> About Us</p>
+                  <p class="lang" key="key_about"> About Us</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="section-one-column-right w-clearfix">
-            <p class="paragraph">Our primary mission is to help our partners grow. To achieve the mission, we engage a
+            <p class="paragraph lang" key="our_primary">Our primary mission is to help our partners grow. To achieve the mission, we engage a
               target audience and build a strategy of communication. Being the long-term player in the affiliate
               marketing industry, we analyze in detail every click and every conversion on a platform to create the most
               effective marketing flow. Our managers assist you non-stop to provide the highest level of support at any
               time.
             </p>
-            <p class="paragraph paragraph2">
-              Our benefits:
-            </p>
+            <p class="paragraph paragraph2 lang" key="our_benefits">Our benefits:</p>
             <ul class="paragraph paragraph3">
-              <li>Highest CPA </li>
-              <li>CRG deals </li>
-              <li>Exclusive funnels</li>
-              <li>Smart delivery algorithm</li>
-              <li>Transparent CRM</li>
+              <li class="lang" key="highest_cpa">Highest CPA</li>
+              <li class="lang" key="crg_deals">CRG deals</li>
+              <li class="lang" key="exclusive_funnels">Exclusive funnels</li>
+              <li class="lang" key="smart_delivery">Smart delivery algorithm</li>
+              <li class="lang" key="transparent_CRM">Transparent CRM</li>
             </ul>
           </div>
           <div class="clear_both"></div>
@@ -334,7 +353,7 @@
         <div class="section-offers__box">
           <table class="table_price">
             <caption>
-              <h2 class="ui-title section-offers__title is-theme-accent-gradient is-size-h2 h2TopOffers">TOP offers</h2>
+              <h2 class="ui-title section-offers__title is-theme-accent-gradient is-size-h2 h2TopOffers lang" key="top_offers">TOP offers</h2>
             </caption>
             <tr>
               <th>#</th>
@@ -491,8 +510,7 @@
           <div class="section-offers-footer hide-sm">
             <div class="section-offers-footer__btn">
               <a href="signup.html" class="btn fancy-btn orange dark w-button" data-aos="fade-up"
-                data-aos-duration="500">Join
-                Proxicent</a>
+                data-aos-duration="500">Join Proxicent</a>
             </div>
           </div>
         </div>
@@ -506,10 +524,9 @@
     <div class="blockBlog">
       <div class="w-container" class="div-block">
         <div class="blockContainer">
-          <h2 class="h2 center h2Blog">Blog</h2>
-          <p class="paragraph center">
-            In our blog you can find any information, including news and upcoming conferences in the finance and crypto
-            field.
+          <h2 class="h2 center h2Blog lang" key="menu_blog">Blog</h2>
+          <p class="paragraph center lang" key="in_ourB">
+            In our blog you can find any information, including news and upcoming conferences in the finance and crypto field.
           </p>
         </div>
       </div>
@@ -522,7 +539,7 @@
               <div style="background-image:url(images/photo_2021-04-27_17-31-40.jpg)" class="div-block-13">
               </div>
               <div class="div-block-14">
-                <h3 class="heading-3">Crypto vertical: trending funnels and traffic sources</h3>
+                <h3 class="heading-3 lang" key="crypto_vertical">Crypto vertical: trending funnels and traffic sources</h3>
               </div>
             </a>
           </div>
@@ -530,7 +547,7 @@
             <a href="blog/cryptocurency.html" class="link-block w-inline-block">
               <div style="background-image:url(images/photo_2021-04-27_17-31-41.jpg)" class="div-block-13"></div>
               <div class="div-block-14">
-                <h3 class="heading-3">Cryptocurrency and brokers: regulated and unregulated</h3>
+                <h3 class="heading-3 lang" key="cryptocurrency_and">Cryptocurrency and brokers: regulated and unregulated</h3>
               </div>
             </a>
           </div>
@@ -538,15 +555,14 @@
             <a href="blog/howToSucceed.html" class="link-block w-inline-block">
               <div style="background-image:url(images/photo_2021-04-27_17-31-42.jpg)" class="div-block-13"></div>
               <div class="div-block-14">
-                <h3 class="heading-3">How to succeed in crypto vertical</h3>
+                <h3 class="heading-3 lang" key="how_to">How to succeed in crypto vertical</h3>
               </div>
             </a>
           </div>
         </div>
         <div class="w-pagination-wrapper">
-          <a href="blog.html" class="btn fancy-btn orange dark w-button" data-aos="fade-up"
-            data-aos-duration="500">Next</a>
-          <link rel="prerender" href="">
+          <a href="blog.html" class="btn fancy-btn orange dark w-button lang" data-aos="fade-up"
+            data-aos-duration="500" key="next">Next</a>
         </div>
       </div>
     </div>
@@ -555,7 +571,7 @@
   <section id="MeetUsConferences" class="section-5 section-events">
     <div class="section-5_block">
       <div class="ui-title section-offers__title-bg is-theme-bg meetUs">MEET US</div>
-      <h2 class="h2 center h2Blog meet">Meet Us</h2>
+      <h2 class="h2 center h2Blog meet lang" key="menu_meetUs">Meet Us</h2>
     </div>   
     <div class="swiperMeetUs">
       <div class="swiper-container">
@@ -677,7 +693,7 @@
     <div class="ui-title section-offers__title-bg is-theme-bg contact">CONTACT US</div>
     <div class="w-container">
       <div class="column  w-col-4 w-col-stack">
-        <h2 class="h2 center h2ContactUs" data-aos="zoom-in" data-aos-duration="1000">Contact Us</h2>
+        <h2 class="h2 center h2ContactUs lang" key="contactUs" data-aos="zoom-in" data-aos-duration="1000">Contact Us</h2>
       </div>
       <div class="column-2 w-col-8 w-col-stack">
         <form id="email-form-2" name="email-form-2" class="w-clearfix" method="POST" action="" role="form">
@@ -686,7 +702,7 @@
           <input type="text" class="field w-input" name="subject" placeholder="*Subject" id="Subject">
           <textarea placeholder="* Message" maxlength="5000" id="Message" name="message"
             class="field w-input"></textarea>
-          <button class="btn fancy-btn orange dark w-button" type="submit">Send</button>
+          <button class="btn fancy-btn orange dark w-button lang" type="submit" key="send">Send</button>
         </form>
         <div class="suc w-form-done" id="print-message">
           <div><strong>Thank you!</strong> Your submission has been received!</div>
@@ -717,7 +733,7 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="js/main.js"></script>
   <script src="js/navigateMenuFirstPage.js"></script>
   <script src="js/validate.js"></script>
@@ -776,7 +792,6 @@
   <script>
     AOS.init();
   </script>
-
+  <script src="js/translate_text.js"></script>
 </body>
-
 </html>

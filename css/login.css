@@ -65,7 +65,7 @@
 }
 .blockLogin {
     position: absolute;
-    width: 950px;
+    width: 80%;
 }
 .btn.fancy-btn.dark {
     color: #ededed;
@@ -74,7 +74,7 @@
     position: relative;
     z-index: 100;
     overflow: visible;
-    padding: 20px 60px;
+    padding: 20px 60px !important;
     background-color: transparent;
     -webkit-transform: translate(0px, 0px) translate(0px, 0px);
     -ms-transform: translate(0px, 0px) translate(0px, 0px);
@@ -152,6 +152,9 @@
     perspective-origin: 50% 50%;
     animation: animation 100s linear infinite;
     z-index: -5;
+}
+.wrapper img {
+    caret-color:transparent;
 }
 @keyframes animation {
     100% {
@@ -365,10 +368,7 @@ input {
     background: url(images/get-in-touch.png) no-repeat center center / cover;
     margin: 0;
 }
-@media only screen and (max-width:800px) {
-    .blockLogin {
-        width: 100%;
-    }
+@media only screen and (max-width:800px) {  
     .signup-tabs__wrap {
         width: 90%;
     }
@@ -383,5 +383,18 @@ input {
         float: none;
         margin-top: 0px;
         text-align: center;
+    }
+    .btn.fancy-btn {
+        padding: 18px 60px !important;
+    }
+}
+@media screen and (max-width:450px){
+    .btn.fancy-btn {
+        padding: 12px 60px !important;
+    }
+}
+@media screen and (max-width:300px){
+    .btn.fancy-btn {
+        padding: 14px 60px !important;
     }
 }

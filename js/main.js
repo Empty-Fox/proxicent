@@ -129,5 +129,25 @@ $(window).scroll(function() {
 
   
 
-
+/////////////////dropdown language menu/////////
+$(document).ready(function(){
+    $("#lang_selector").click(function(){
+      $(".language-dropdown").toggleClass("open");
+      $(".language-dropdown label").toggleClass("active");
+    });
+    $("ul.lang-list li").click(function(){
+      $("ul.lang-list li").removeClass("selected");
+      $(this).addClass("selected");
+      if($(this).hasClass('lang-en')){
+        $(".language-dropdown").find(".lang-flag").addClass("lang-en").removeClass("lang-es").removeClass("lang-ru");
+        $("#lang_selected").html("<p>EN</p>");
+      }else if($(this).hasClass('lang-ru')){
+        $(".language-dropdown").find(".lang-flag").addClass("lang-ru").removeClass("lang-es").removeClass("lang-en");
+      $("#lang_selected").html("<p>RU</p>")
+      }else{
+        $(".language-dropdown").find(".lang-flag").addClass("lang-es").removeClass("lang-en").removeClass("lang-ru");
+        $("#lang_selected").html("<p>ES</p>")
+      }    
+    });
+  });
   

@@ -32,38 +32,45 @@
 </head>
 
 <body>
-
   <div id="Home">
     <div data-collapse="medium" class="navbar w-nav">
       <a href="index.html" class="logo_menu">
         <img src="images/logo_proxicent.png" loading="lazy" alt="Proxicent" class="logo">
       </a>
       <nav class="nav-menu w-nav-menu nav-1">
-        <a href="index.html#Home" class="nav w-nav-link link-1 ">Home</a>
-        <a href="index.html#AboutUs" class="nav w-nav-link link-1">About us</a>
-        <a href="index.html#TopOffers" class="nav w-nav-link link-1"> Top Offers</a>
+        <a href="index.html#Home" class="nav w-nav-link link-1 lang" key="menu_homeText">Home</a>
+        <a href="index.html#AboutUs" class="nav  w-nav-link link-1">About us</a>
+        <a href="index.html#TopOffers" class="nav  w-nav-link link-1"> Top Offers</a>
 
         <!-- <a href="#Testimonials" class="nav m co w-nav-link">Testimonials </a> -->
 
         <a href="blog.html" class="nav w-nav-link link-1">Blog</a>
         <a href="index.html#MeetUsConferences" class="nav  w-nav-link link-1">Meet us</a>
-        <a href="login.html" class="nav w-nav-link link-1">Login</a>
-        <div class="dropdown">
-          <button class="dropbtn">
-            <img src="images/united-kingdom.png">
-            <span> EN</span>
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#"> <img src="images/russia.png"><span> RU</span> </a>
-            <a href="#"> <img src="images/spain.png"> <span> ES</span></a>
-          </div>
+        <a href="login.html" class="nav w-nav-link link-1">Login</a>        
+        <div id="lang_selector" class="language-dropdown dropdown">
+          <label for="toggle" class="lang-flag lang-en " title="Click to select the language">
+            <span class="flag"></span>   
+            <span id="lang_selected" style="font-size: 12px;">EN</span>
+          </label>
+          <ul class="lang-list">
+            <li class="lang lang-en selected" title="EN">
+              <span class="flag"></span>
+              <span style="font-size: 12px;">EN</span>
+            </li>
+            <li class="lang lang-ru" title="RU">
+              <span class="flag"></span>
+              <span style="font-size: 12px;">RU</span>
+            </li>
+            <li class="lang lang-es" title="ES">
+              <span class="flag"></span>
+              <span style="font-size: 12px;">ES</span>
+            </li>
+          </ul>
         </div>
         <a href="signup.html" class="register w-nav-link activeMenu">Register</a>
       </nav>
       <div class="menu-button-2 w-nav-button">
-        <div class="lottie-animation-3">
-          <!-- //////////////////////////////////////////////////////////////////// -->
+        <div class="lottie-animation-3">   
           <button type="button" class="header__menu" id="headerCollapseButton">
             <span class="line1"></span>
             <span class="line2"></span>
@@ -73,7 +80,6 @@
       </div>
     </div>
   </div>
-
   <div class="wrapper">
     <section>      
       <div class="section-signup__header">
@@ -314,7 +320,7 @@
   <script>
       AOS.init();
   </script>
-
+  <script src="js/translate_text.js"></script>
 </body>
 
 </html>
