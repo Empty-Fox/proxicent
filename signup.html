@@ -50,20 +50,20 @@
         <div id="lang_selector" class="language-dropdown dropdown">
           <label for="toggle" class="lang-flag lang-en " title="Click to select the language">
             <span class="flag"></span>   
-            <span id="lang_selected" style="font-size: 12px;">EN</span>
+            <span id="lang_selected">EN</span>
           </label>
           <ul class="lang-list">
             <li class="lang lang-en selected" title="EN">
               <span class="flag"></span>
-              <span style="font-size: 12px;">EN</span>
+              <span>EN</span>
             </li>
             <li class="lang lang-ru" title="RU">
               <span class="flag"></span>
-              <span style="font-size: 12px;">RU</span>
+              <span>RU</span>
             </li>
             <li class="lang lang-es" title="ES">
               <span class="flag"></span>
-              <span style="font-size: 12px;">ES</span>
+              <span>ES</span>
             </li>
           </ul>
         </div>
@@ -85,57 +85,53 @@
       <div class="section-signup__header">
         <h1 class="heading" data-aos="zoom-out-up">Register</h1>
       </div>
-      <form id="signUp_form">
+      <form id="signUp_form" name="form">
         <!-- Circles which indicates the steps of the form: -->
         <div class="steps-form-2">
           <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
             <div class="steps-step-2">
               <button class="btn btn-amber btn-circle-2 waves-effect ml-0 step" data-toggle="tooltip"
                 data-placement="top" title="Basic Information">
-                1</button>
+                1
+              </button>
             </div>
             <div class="steps-step-2">
               <button class="btn btn-amber btn-circle-2 waves-effect ml-0 step" data-toggle="tooltip"
                 data-placement="top" title="Basic Information">
-                2</button>
+                2
+              </button>
             </div>
             <div class="steps-step-2">
               <button class="btn btn-amber btn-circle-2 waves-effect ml-0 step" data-toggle="tooltip"
                 data-placement="top" title="Basic Information">
-                3</button>
+                3
+              </button>
             </div>
           </div>
         </div>
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
           <div class="tabs__input-group main-inputs">
-            <input type="email" name="email_sign_up" placeholder="Email*" value="" id="email_sign_up"
-              class="signUp_input_style">
+            <input type="email" name="email_sign_up" placeholder="Email*" value="" id="email_sign_up" class="signUp_input_style">
             <div class="tabs_column2">
               <div class="tabs_column2_width">
-                <input id="password_sign_up" type="password" name="password_sign_up" placeholder="Password*"
-                  class="signUp_input_style">
+                <input id="password_sign_up" type="password" name="password_sign_up" placeholder="Password*" class="signUp_input_style">
               </div>
               <div class="tabs_column2_width">
-                <input type="password" name="confirm" id="confirm" name="confirm" placeholder="Confirm password*"
-                  class="signUp_input_style">
+                <input type="password" name="confirm" id="confirm" name="confirm" placeholder="Confirm password*" class="signUp_input_style">
               </div>
             </div>
           </div>
           <div class="tabs__input-group">
             <div class="tabs_column2">
               <div class="tabs_column2_width">
-                <input type="text" name="name_sign_up" value="" placeholder="Name" id="name_sign_up"
-                  class="signUp_input_style">
+                <input type="text" name="name_sign_up" value="" placeholder="Name" id="name_sign_up" class="signUp_input_style">
               </div>
               <div class="tabs_column2_width">
-                <input type="text" name="country_sign_up" value="" placeholder="Country" id="country_sign_up"
-                  class="signUp_input_style">
+                <input type="text" name="country_sign_up" value="" placeholder="Country" id="country_sign_up" class="signUp_input_style">
               </div>
             </div>
-            <input type="text" name="address_sign_up" value="" placeholder="Address" id="address_sign_up"
-              class="signUp_input_style">
-
+            <input type="text" name="address_sign_up" value="" placeholder="Address" id="address_sign_up" class="signUp_input_style">
             <div class="tabs_column2 ">
               <div class="padd tabs_column2_width">             
                 <select name="select_Type">
@@ -146,19 +142,15 @@
                 </select>     
               </div>
               <div class="tabs_column2_width">
-                <input type="text" name="contact info" value="" placeholder="Contact Info" required
-                  class="signUp_input_style">
+                <input type="text" name="contact info" value="" placeholder="Contact Info" required class="signUp_input_style">
               </div>
             </div>
-
             <div class="tabs_column2">
               <div class="tabs_column2_width">
-                <input type="text" name="company_name" value="" placeholder="Company name" required
-                  class="signUp_input_style">
+                <input type="text" name="company_name" value="" placeholder="Company name" required class="signUp_input_style">
               </div>
               <div class="tabs_column2_width">
-                <input type="url" name="url_company" value="" placeholder="URL (company / personal / etc.)" required
-                  class="signUp_input_style">
+                <input type="url" name="url_company" value="" placeholder="URL (company / personal / etc.)" required class="signUp_input_style">
               </div>
             </div>
           </div>
@@ -289,10 +281,8 @@
         <div class="steps_overflow">
           <div class="steps_overflow_btns">
             <button type="button" class="previous btn fancy-btn orange dark w-button prevBtn-2 float-left">Previous</button>
-            <button type="button"
-              class="next btn fancy-btn orange dark w-button nextBtn-2 float-right btn_step2">Next</button>
-            <button type="button"
-              class="submit btn fancy-btn orange dark w-button float-right nextBtn-2 submit">Submit</button>
+            <button type="button" class="next btn fancy-btn orange dark w-button nextBtn-2 float-right btn_step2">Next</button>
+            <button type="button" class="submit btn fancy-btn orange dark w-button float-right nextBtn-2 submit">Submit</button>
           </div>
         </div>
       </form>

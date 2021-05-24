@@ -2282,6 +2282,9 @@ text-align: center;
   border-radius: 3px;
   z-index: 2;
 }
+.lang span:nth-child(2), #lang_selected {
+  font-size: 12px;
+}
 .language-dropdown .lang-flag .flag,
 .language-dropdown .lang-list .lang .flag {
   float: left;

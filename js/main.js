@@ -1,153 +1,68 @@
-////////////carousel sweep adaptive
-// if ($(window).width() >1100) {
-//     new Splide('.splide', {
-//     type: 'loop',
-//     perMove: 1,
-//     lazyLoad: false,
-//     focus: 1,
-//     perPage: 4,
-//     interval: 5000,
-//     pauseOnHover: true,
-//     autoplay: true,
-//     gap: .1,
-//     classes: {           
-//       next: 'splide__arrow--next splidebtn',
-//     }    
-//   }).mount();
-// }
-// else
-// if ($(window).width() >800) {
-// new Splide('.splide', {
-//     type: 'loop',
-//     perMove: 1,
-//     lazyLoad: false,
-//     focus: 1,
-//     perPage: 3,
-//     interval: 5000,
-//     pauseOnHover: true,
-//     autoplay: true,
-//     gap: .1,
-//     classes: {           
-//       next: 'splide__arrow--next btn fancy-btn orange dark w-button',
-//     }    
-//   }).mount();
-// }
+$(document).ready(function () {
 
-// else
-// if ($(window).width() >500) {
-// new Splide('.splide', {
-//     type: 'loop',
-//     perMove: 0,
-//     lazyLoad: false,
-//     focus: 0,
-//     perPage: 2,
-//     interval: 5000,
-//     pauseOnHover: true,
-//     autoplay: true,
-//     gap: .1,
-//     classes: {           
-//       next: 'splide__arrow--next btn fancy-btn orange dark w-button',
-//     }    
-//   }).mount();
-// }
-
-// else
-// if ($(window).width() >0) {
-// new Splide('.splide', {
-//     type: 'loop',
-//     perMove: 0,
-//     lazyLoad: false,
-//     focus: 0,
-//     perPage: 1,
-//     interval: 5000,
-//     pauseOnHover: true,
-//     autoplay: true,
-//     gap: .1,
-//     classes: {           
-//       next: 'splide__arrow--next btn fancy-btn orange dark w-button',
-//     }    
-//   }).mount();
-// }
-
-
-
-
-// .......................Поява блоку при загрузці..............
-// $(window).ready(function(){
-//   $(".container").fadeIn(1000);
-// });
-//  ....................меняем цвет фона при прокрутке..............
-// $(document).ready(function () {
-//   var scroll_pos = 0;
-//   $(window).scroll(function () {
-//       scroll_pos = $(this).scrollTop();
-  
-//       if (scroll_pos >10){
-//           $(".heading").css('transform', 'scale(2)');
-//           $(".heading").css('opacity', '0.1');
-       
-//       }            
-//       else {
-//           $(".heading").css('transform', 'scale(1)');
-//           $(".heading").css('opacity', '1');
-       
-//       }                                                   
-  
-//   });
-// });
-
-
-//////////////////menu scroll
-$(window).scroll(function() {    
-  var scroll = $(window).scrollTop();
-
-  if (scroll >= 100) {
+  //////////////////menu scroll
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 100) {
       $(".navbar.w-nav").addClass("menuColor");
       console.log('navbar')
-  } else {
+    } else {
       $(".navbar.w-nav").removeClass("menuColor");
-  }
-});
+    }
+  });
 
-      ////////////////////////////////////
-      document.getElementById("year").innerHTML = new Date().getFullYear();
+  ////////////////////////////////////
+  document.getElementById("year").innerHTML = new Date().getFullYear();
 
-         ///////burger button///////////
+  ///////burger button///////////
 
-     $('#headerCollapseButton').click(function () {
-      $(this).toggleClass('open_burger');
-      $(".nav-menu.w-nav-menu.nav-1").toggleClass('openHeader__full');
+  $('#headerCollapseButton').click(function () {
+    $(this).toggleClass('open_burger');
+    $(".nav-menu.w-nav-menu.nav-1").toggleClass('openHeader__full');
   });
   $('.nav.w-nav-link.link-1').click(function () {
-      $('.nav-menu.w-nav-menu.nav-1').removeClass('openHeader__full');
-      $('#headerCollapseButton').removeClass('open_burger');
+    $('.nav-menu.w-nav-menu.nav-1').removeClass('openHeader__full');
+    $('#headerCollapseButton').removeClass('open_burger');
   });
   $('.dropdown-content a').click(function () {
-      $('.nav-menu.w-nav-menu.nav-1').removeClass('openHeader__full');
-      $('#headerCollapseButton').removeClass('open_burger');
+    $('.nav-menu.w-nav-menu.nav-1').removeClass('openHeader__full');
+    $('#headerCollapseButton').removeClass('open_burger');
   });
 
-  
+  /////////////////dropdown language menu/////////
 
-/////////////////dropdown language menu/////////
-$(document).ready(function(){
-    $("#lang_selector").click(function(){
-      $(".language-dropdown").toggleClass("open");
-      $(".language-dropdown label").toggleClass("active");
-    });
-    $("ul.lang-list li").click(function(){
-      $("ul.lang-list li").removeClass("selected");
-      $(this).addClass("selected");
-      if($(this).hasClass('lang-en')){
-        $(".language-dropdown").find(".lang-flag").addClass("lang-en").removeClass("lang-es").removeClass("lang-ru");
-        $("#lang_selected").html("<p>EN</p>");
-      }else if($(this).hasClass('lang-ru')){
-        $(".language-dropdown").find(".lang-flag").addClass("lang-ru").removeClass("lang-es").removeClass("lang-en");
+  $("#lang_selector").click(function () {
+    $(".language-dropdown").toggleClass("open");
+    $(".language-dropdown label").toggleClass("active");
+  });
+  $("ul.lang-list li").click(function () {
+    $("ul.lang-list li").removeClass("selected");
+    $(this).addClass("selected");
+    if ($(this).hasClass('lang-en')) {
+      $(".language-dropdown").find(".lang-flag").addClass("lang-en").removeClass("lang-es").removeClass("lang-ru");
+      $("#lang_selected").html("<p>EN</p>");
+    } else if ($(this).hasClass('lang-ru')) {
+      $(".language-dropdown").find(".lang-flag").addClass("lang-ru").removeClass("lang-es").removeClass("lang-en");
       $("#lang_selected").html("<p>RU</p>")
-      }else{
-        $(".language-dropdown").find(".lang-flag").addClass("lang-es").removeClass("lang-en").removeClass("lang-ru");
-        $("#lang_selected").html("<p>ES</p>")
-      }    
-    });
+    } else {
+      $(".language-dropdown").find(".lang-flag").addClass("lang-es").removeClass("lang-en").removeClass("lang-ru");
+      $("#lang_selected").html("<p>ES</p>")
+    }
   });
-  
+
+  //////////////meet us links
+
+  $("#aibcWorld").on("click", function () {
+    window.open("https://aibc.world/events/uae/general-info/", "_blank");
+  });
+  $("#affiliategrandslam").on("click", function () {
+    window.open("https://www.affiliategrandslam.com/", "_blank");
+  });
+  $("#affiliateworldconferences").on("click", function () {
+    window.open("https://affiliateworldconferences.com/europe/", "_blank");
+  });
+  $("#ifxexpo").on("click", function () {
+    window.open("https://ifxexpo.com/dubai/", "_blank");
+  });
+
+});
