@@ -85,7 +85,7 @@
       <div class="section-signup__header">
         <h1 class="heading" data-aos="zoom-out-up">Register</h1>
       </div>
-      <form id="signUp_form" name="form">
+      <form id="signUp_form" name="form" action="" method="post">
         <!-- Circles which indicates the steps of the form: -->
         <div class="steps-form-2">
           <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
@@ -112,29 +112,29 @@
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
           <div class="tabs__input-group main-inputs">
-            <input type="email" name="email_sign_up" placeholder="Email*" value="" id="email_sign_up" class="signUp_input_style">
+            <input type="email" name="email" placeholder="Email*" value="" id="email_sign_up" class="signUp_input_style">
             <div class="tabs_column2">
               <div class="tabs_column2_width">
-                <input id="password_sign_up" type="password" name="password_sign_up" placeholder="Password*" class="signUp_input_style">
+                <input id="password_sign_up" type="password" name="password" placeholder="Password*" class="signUp_input_style">
               </div>
               <div class="tabs_column2_width">
-                <input type="password" name="confirm" id="confirm" name="confirm" placeholder="Confirm password*" class="signUp_input_style">
+                <input type="password" name="confirm" id="confirm" name="confirm_password" placeholder="Confirm password*" class="signUp_input_style">
               </div>
             </div>
           </div>
           <div class="tabs__input-group">
             <div class="tabs_column2">
               <div class="tabs_column2_width">
-                <input type="text" name="name_sign_up" value="" placeholder="Name" id="name_sign_up" class="signUp_input_style">
+                <input type="text" name="first_name" value="" placeholder="Name" id="name_sign_up" class="signUp_input_style">
               </div>
               <div class="tabs_column2_width">
-                <input type="text" name="country_sign_up" value="" placeholder="Country" id="country_sign_up" class="signUp_input_style">
+                <input type="text" name="country" value="" placeholder="Country" id="country_sign_up" class="signUp_input_style">
               </div>
             </div>
-            <input type="text" name="address_sign_up" value="" placeholder="Address" id="address_sign_up" class="signUp_input_style">
+            <input type="text" name="address" value="" placeholder="Address" id="address_sign_up" class="signUp_input_style">
             <div class="tabs_column2 ">
               <div class="padd tabs_column2_width">             
-                <select name="select_Type">
+                <select name="select_type">
                   <option value=""><span class="im_type_color"> IM Type*</span></option>
                   <option value="Skype">Skype</option>
                   <option value="Telegram">Telegram</option>
@@ -142,7 +142,7 @@
                 </select>     
               </div>
               <div class="tabs_column2_width">
-                <input type="text" name="contact info" value="" placeholder="Contact Info" required class="signUp_input_style">
+                <input type="text" name="contact" value="" placeholder="Contact Info" required class="signUp_input_style">
               </div>
             </div>
             <div class="tabs_column2">
@@ -159,30 +159,30 @@
           <div class="block2_nameVerticals"><h3>Name main verticals </h3></div>
           <section class="paragraph paragraphSignUp1">
             <div class="paragraphcolumn_block">
-              <input type='checkbox' name="gradeRange[]" />
-              <input id='Crypto' type='checkbox' name="gradeRange[]" />
+              <input type='checkbox' name="gradeRange[]" value="" />
+              <input id='Crypto' type='checkbox' name="gradeRange[]" value="Crypto"/>
               <label for='Crypto'><span></span>Crypto</label>
 
-              <input id='ForexFinance' type='checkbox' name="gradeRange[]" />
+              <input id='ForexFinance' type='checkbox' name="gradeRange[]" value="forex_cripto"/>
               <label for='ForexFinance'><span></span>Forex / Finance</label>
 
-              <input id='Gambling' type='checkbox' name="gradeRange[]" />
+              <input id='Gambling' type='checkbox' name="gradeRange[]" value="Gambling" />
               <label for='Gambling'><span></span>Gambling</label>
 
-              <input id='AdultCasualDating' type='checkbox' name="gradeRange[]" />
+              <input id='AdultCasualDating' type='checkbox' name="gradeRange[]" value="Adult_Casual_Dating" />
               <label for='AdultCasualDating'><span></span>Adult / Casual Dating</label>
 
-              <input id='MainstreamDating' type='checkbox' name="gradeRange[]" />
+              <input id='MainstreamDating' type='checkbox' name="gradeRange[]" value="Mainstream_Dating"/>
               <label for='MainstreamDating'><span></span>Mainstream Dating</label>
             </div>
             <div class="paragraphcolumn_block">
-              <input id='Livecams' type='checkbox' name="gradeRange[]" />
+              <input id='Livecams' type='checkbox' name="gradeRange[]" value="Livecams" />
               <label for='Livecams'><span></span>Livecams</label>
 
-              <input id='Adult Games' type='checkbox' name="gradeRange[]" />
+              <input id='Adult Games' type='checkbox' name="gradeRange[]" value="AdultGames" />
               <label for='Adult Games'><span></span>Adult Games</label>
 
-              <input id='Other' type='checkbox' name="gradeRange[]" />
+              <input id='Other' type='checkbox' name="gradeRange[]" value="Other"/>
               <label for='Other'><span></span>Other</label>
             </div>
           </section>
@@ -193,33 +193,33 @@
           <div class="name_traffic"><h3>What traffic types do you generally use for promotional purposes? </h3></div>
           <section class="paragraph section_checkbox trafficBox">
             <div class="paragraphcolumn_block">
-              <input type='checkbox' name="trafficRange[]" />
-              <input id='SEODoorways' type='checkbox' name="trafficRange[]" />
+              <input type='checkbox' name="trafficRange[]" value=""/>
+              <input id='SEODoorways' type='checkbox' name="trafficRange[]" value="SEO/Doorways"/>
               <label for='SEODoorways'><span></span>SEO / Doorways</label>
 
-              <input id='PPC' type='checkbox' name="trafficRange[]" />
+              <input id='PPC' type='checkbox' name="trafficRange[]" value="PPC(Google, Yahoo, Yandex etc.)"/>
               <label for='PPC'><span></span>PPC (Google, Yahoo, Yandex etc.)</label>
 
-              <input id='NativeAds' type='checkbox' name="trafficRange[]" />
+              <input id='NativeAds' type='checkbox' name="trafficRange[]" value="Native Ads"/>
               <label for='NativeAds'><span></span>Native Ads</label>
 
-              <input id='AdNetworks' type='checkbox' name="trafficRange[]" />
+              <input id='AdNetworks' type='checkbox' name="trafficRange[]" value="Ad Networks"/>
               <label for='AdNetworks'><span></span>Ad Networks</label>
 
-              <input id='SocialMedia' type='checkbox' name="trafficRange[]" />
+              <input id='SocialMedia' type='checkbox' name="trafficRange[]" value="Social Media"/>
               <label for='SocialMedia'><span></span>Social Media</label>
             </div>
             <div class="paragraphcolumn_block">
-              <input id='Email' type='checkbox' name="trafficRange[]" />
+              <input id='Email' type='checkbox' name="trafficRange[]" value="Email"/>
               <label for='Email'><span></span>Email</label>
 
-              <input id='Popunder' type='checkbox' name="trafficRange[]" />
+              <input id='Popunder' type='checkbox' name="trafficRange[]" value="Popunder"/>
               <label for='Popunder'><span></span>Popunder</label>
 
-              <input id='PushNotifications' type='checkbox' name="trafficRange[]" />
+              <input id='PushNotifications' type='checkbox' name="trafficRange[]" value="Push Notifications"/>
               <label for='PushNotifications'><span></span>Push Notifications</label>
 
-              <input id='Other2' type='checkbox' name="trafficRange[]" />
+              <input id='Other2' type='checkbox' name="trafficRange[]" value="Other"/>
               <label for='Other2'><span></span>Other</label>
             </div>
           </section>          
@@ -228,28 +228,28 @@
           <div class="nameGeo"><h3>TOP Geo</h3></div>
           <section class="paragraph section_checkbox">
             <div class="columnOf3">
-              <input type='checkbox' name="geoRange[]" />
-              <input id='TIER1' type='checkbox' name="geoRange[]" />
+              <input type='checkbox' name="geoRange[]" value=""/>
+              <input id='TIER1' type='checkbox' name="geoRange[]" value="TIER1"/>
               <label for='TIER1'><span></span>TIER1</label>
 
-              <input id='Europe' type='checkbox' name="geoRange[]" />
+              <input id='Europe' type='checkbox' name="geoRange[]" value="Europe"/>
               <label for='Europe'><span></span>Europe</label>
 
-              <input id='RU-speakingcountries' type='checkbox' name="geoRange[]" />
+              <input id='RU-speakingcountries' type='checkbox' name="geoRange[]" value="RU-speaking countries"/>
               <label for='RU-speakingcountries'><span></span>RU-speaking countries</label>
             </div>
             <div class="columnOf3">
-              <input id='LATAM' type='checkbox' name="geoRange[]" />
+              <input id='LATAM' type='checkbox' name="geoRange[]" value="LATAM"/>
               <label for='LATAM'><span></span>LATAM</label>
 
-              <input id='GCC' type='checkbox' name="geoRange[]" />
+              <input id='GCC' type='checkbox' name="geoRange[]" value="GCC"/>
               <label for='GCC'><span></span>GCC</label>
 
-              <input id='Asia-Pacific' type='checkbox' name="geoRange[]" />
+              <input id='Asia-Pacific' type='checkbox' name="geoRange[]" value="Asia-Pacific"/>
               <label for='Asia-Pacific'><span></span>Asia-Pacific</label>
             </div>
             <div class="columnOf3">
-              <input id='Other3' type='checkbox' name="geoRange[]" />
+              <input id='Other3' type='checkbox' name="geoRange[]" value="Other"/>
               <label for='Other3'><span></span>Other</label>
             </div>
           </section>
@@ -269,11 +269,11 @@
               </div>
             </div>
             <div class="paragraphcolumn_block last_page">
-              <input type='checkbox' name="agreeNews[]" />
-              <input id='agreeNews' type='checkbox' name="agreeNews[]" />
+              <input type='checkbox' name="agreeNews[]" value=""/>
+              <input id='agreeNews' type='checkbox' name="agreeNews[]" value="I agree to receive news"/>
               <label for='agreeNews'><span></span>I agree to receive news</label>
-              <input type='checkbox' name="agreeTerms[]" />
-              <input id='agreeTerms' type='checkbox' name="agreeTerms[]" />
+              <input type='checkbox' name="agreeTerms[]" value=""/>
+              <input id='agreeTerms' type='checkbox' name="agreeTerms[]" value="I agree with terms & conditions"/>
               <label for='agreeTerms'><span></span><p>I agree with <a href="#" class="last_page_terms"> terms & conditions</a></p></label>
             </div>
           </section>
@@ -282,10 +282,13 @@
           <div class="steps_overflow_btns">
             <button type="button" class="previous btn fancy-btn orange dark w-button prevBtn-2 float-left">Previous</button>
             <button type="button" class="next btn fancy-btn orange dark w-button nextBtn-2 float-right btn_step2">Next</button>
-            <button type="button" class="submit btn fancy-btn orange dark w-button float-right nextBtn-2 submit">Submit</button>
+            <button type="submit" class="submit btn fancy-btn orange dark w-button float-right nextBtn-2 submit">Submit</button>
           </div>
         </div>
       </form>
+      <div class="w-form-done_signUp">
+        <div style="color: black;">Registration was successful!</div>
+    </div>
     </section>
   </div>
 

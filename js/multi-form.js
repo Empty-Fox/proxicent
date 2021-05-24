@@ -1,4 +1,4 @@
-(function ($) {
+(function ($) {  
   $.fn.multiStepForm = function (args) {
     if (args === null || typeof args !== 'object' || $.isArray(args))
       throw " : Called with Invalid argument";

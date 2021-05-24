@@ -378,7 +378,7 @@ a:focus:after {
 input.w-button {
   -webkit-appearance: button;
 } 
-.w-form-done, .w-form-done_contactPage {
+.w-form-done, .w-form-done_contactPage, .w-form-done_signUp {
   display: none;
   padding: 20px;
   text-align: center;

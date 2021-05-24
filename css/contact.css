@@ -83,6 +83,7 @@ label {
     grid-template-rows: auto;
 }
 #email-form-contactPage {
+    z-index: 9;
     position: absolute;        
     padding-top: 10px;
     padding-left: 40px;
